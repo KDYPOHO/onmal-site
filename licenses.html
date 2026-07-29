@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>오픈소스 고지 — 온말 Onmal</title>
+<meta name="description" content="온말이 사용하는 오픈소스 소프트웨어·모델·글꼴과 각 라이선스.">
+<link rel="icon" href="onmal_64.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+  :root{
+    --ink:#0F131C; --night:#161C2A; --line:#2A3550;
+    --jade:#5FD3B2; --moon:#F2C879; --paper:#ECE7DD; --dim:#9AA3B5;
+    --display:"Gowun Batang", serif;
+    --body:"Pretendard Variable", Pretendard, system-ui, sans-serif;
+    --mono:"JetBrains Mono", ui-monospace, monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--ink);color:var(--paper);font-family:var(--body);
+    font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:820px;margin:0 auto;padding:0 24px}
+  a{color:var(--jade)}
+  ::selection{background:var(--jade);color:var(--ink)}
+  :focus-visible{outline:2px solid var(--jade);outline-offset:3px;border-radius:4px}
+
+  nav{display:flex;align-items:center;gap:14px;padding:26px 0}
+  nav img{width:34px;height:34px;border-radius:9px}
+  nav b{font-family:var(--display);font-weight:700;font-size:21px}
+  nav a.home{margin-left:auto;font-family:var(--mono);font-size:12.5px;color:var(--dim);
+    text-decoration:none;border:1px solid var(--line);padding:7px 13px;border-radius:999px}
+  nav a.home:hover{color:var(--paper);border-color:var(--jade)}
+
+  header{padding:44px 0 10px}
+  .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--jade)}
+  h1{font-family:var(--display);font-weight:700;font-size:clamp(30px,4.5vw,44px);line-height:1.25;margin-top:14px}
+  .meta{margin-top:14px;font-family:var(--mono);font-size:12.5px;color:var(--dim)}
+
+  article{padding:24px 0 80px}
+  h2{font-family:var(--display);font-weight:700;font-size:23px;margin:52px 0 16px;line-height:1.35}
+  p{margin:12px 0}
+  p.dim{color:var(--dim)}
+  code{font-family:var(--mono);font-size:13.5px;background:var(--night);
+    border:1px solid var(--line);border-radius:6px;padding:2px 7px}
+  table{width:100%;border-collapse:collapse;margin:18px 0;font-size:14.5px}
+  th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+  thead th{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--jade);border-bottom-color:var(--jade)}
+  td .lic{font-family:var(--mono);font-size:12.5px;color:var(--dim)}
+  .attrib{margin:24px 0;border:1px solid var(--moon);border-radius:14px;padding:22px 24px;
+    background:rgba(242,200,121,.06)}
+  .attrib b{color:var(--moon)}
+  ul{margin:12px 0 12px 22px}
+  li{margin:6px 0}
+
+  footer{padding:40px 0 80px;border-top:1px solid var(--line);color:var(--dim);font-size:13.5px}
+  footer a{color:var(--dim)}
+  footer a:hover{color:var(--paper)}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <nav>
+    <img src="onmal_128.png" alt="">
+    <b>온말</b>
+    <a class="home" href="index.html">← 홈페이지</a>
+  </nav>
+
+  <header>
+    <p class="kicker">법적 고지</p>
+    <h1>오픈소스 고지</h1>
+    <p class="meta">최종 갱신 2026-07-30</p>
+    <p class="dim">온말은 아래 오픈소스 소프트웨어와 모델을 사용합니다. 각 저작권자와 라이선스를
+      밝힙니다. 같은 문서가 앱 안(정보 → 오픈소스 고지)에도 들어 있습니다.</p>
+  </header>
+
+  <article>
+    <h2>저작자 표시 — Opus-MT (Helsinki-NLP)</h2>
+    <div class="attrib">
+      <b>Opus-MT models by Helsinki-NLP, licensed under CC BY 4.0.</b><br>
+      <a href="https://creativecommons.org/licenses/by/4.0/">creativecommons.org/licenses/by/4.0</a>
+    </div>
+    <p>온말의 로컬 번역은 University of Helsinki 언어기술 연구 그룹(Helsinki-NLP)의
+      <a href="https://github.com/Helsinki-NLP/Opus-MT">Opus-MT</a> 모델 가중치를 사용합니다.
+      추론을 위해 ONNX 형식으로 변환했으며, 가중치 자체는 수정하지 않았습니다.</p>
+    <p class="dim">라이선스는 언어쌍마다 다릅니다. 다음 언어쌍은 CC-BY-4.0입니다 —
+      영어→한국어(<code>opus-mt-tc-big-en-ko</code>), 중국어→영어(<code>opus-mt-zh-en</code>),
+      러시아어→영어(<code>opus-mt-ru-en</code>), 영어→독일어(<code>opus-mt-en-de</code>).
+      나머지 언어쌍은 Apache-2.0입니다.</p>
+
+    <h2>소프트웨어</h2>
+    <table>
+      <thead><tr><th>구성요소</th><th>저작권자</th><th>라이선스</th><th>용도</th></tr></thead>
+      <tbody>
+        <tr><td><a href="https://github.com/dotnet/runtime">.NET</a></td><td>.NET Foundation and Contributors</td><td class="lic">MIT</td><td>런타임</td></tr>
+        <tr><td><a href="https://github.com/naudio/NAudio">NAudio</a></td><td>Mark Heath &amp; Contributors</td><td class="lic">MIT</td><td>장치 루프백·마이크 캡처</td></tr>
+        <tr><td><a href="https://github.com/microsoft/onnxruntime">ONNX Runtime</a></td><td>Microsoft Corporation</td><td class="lic">MIT</td><td>VAD·번역 모델 추론</td></tr>
+        <tr><td><a href="https://github.com/dotnet/machinelearning">Microsoft.ML.Tokenizers</a></td><td>.NET Foundation</td><td class="lic">MIT</td><td>SentencePiece 토크나이저</td></tr>
+        <tr><td><a href="https://github.com/sandrohanea/whisper.net">Whisper.net</a></td><td>Sandro Hanea</td><td class="lic">MIT</td><td>whisper.cpp 바인딩</td></tr>
+        <tr><td><a href="https://github.com/ggerganov/whisper.cpp">whisper.cpp</a></td><td>Georgi Gerganov</td><td class="lic">MIT</td><td>음성 인식 추론 엔진</td></tr>
+        <tr><td><a href="https://github.com/rlabrecque/Steamworks.NET">Steamworks.NET</a></td><td>Riley Labrecque</td><td class="lic">MIT</td><td>스팀 연동</td></tr>
+      </tbody>
+    </table>
+
+    <h2>모델</h2>
+    <table>
+      <thead><tr><th>모델</th><th>저작권자</th><th>라이선스</th><th>용도</th></tr></thead>
+      <tbody>
+        <tr><td><a href="https://github.com/openai/whisper">Whisper</a> (ggml 변환본)</td><td>OpenAI</td><td class="lic">MIT</td><td>음성 인식·언어 감지</td></tr>
+        <tr><td><a href="https://github.com/snakers4/silero-vad">Silero VAD</a></td><td>Silero Team</td><td class="lic">MIT</td><td>발화 구간 감지</td></tr>
+        <tr><td><a href="https://github.com/Helsinki-NLP/Opus-MT">Opus-MT</a></td><td>Helsinki-NLP</td><td class="lic">CC-BY-4.0 / Apache-2.0</td><td>로컬 번역 — 위 저작자 표시 참조</td></tr>
+      </tbody>
+    </table>
+
+    <h2>글꼴</h2>
+    <table>
+      <thead><tr><th>글꼴</th><th>저작권자</th><th>라이선스</th><th>상태</th></tr></thead>
+      <tbody>
+        <tr><td><a href="https://github.com/orioncactus/pretendard">Pretendard</a></td><td>길형진 (Kil Hyung-jin)</td><td class="lic">SIL OFL 1.1</td><td>앱에 동봉 (Regular · Medium · SemiBold)</td></tr>
+        <tr><td><a href="https://github.com/JetBrains/JetBrainsMono">JetBrains Mono</a></td><td>JetBrains s.r.o.</td><td class="lic">SIL OFL 1.1</td><td>이 웹페이지에서 사용</td></tr>
+        <tr><td><a href="https://fonts.google.com/specimen/Gowun+Batang">Gowun Batang</a></td><td>Yanghee Ryu, Yang Jang</td><td class="lic">SIL OFL 1.1</td><td>이 웹페이지에서 사용</td></tr>
+      </tbody>
+    </table>
+    <p class="dim">동봉된 Pretendard의 OFL 라이선스 전문은 앱 배포물의 <code>assets\fonts\OFL.txt</code> 에
+      포함되어 있습니다.</p>
+
+    <h2>아이콘</h2>
+    <table>
+      <thead><tr><th>세트</th><th>저작권자</th><th>라이선스</th></tr></thead>
+      <tbody>
+        <tr><td><a href="https://github.com/phosphor-icons/homepage">Phosphor Icons</a></td><td>Phosphor Icons</td><td class="lic">MIT</td></tr>
+        <tr><td><a href="https://github.com/lucide-icons/lucide">Lucide</a></td><td>Lucide Contributors</td><td class="lic">ISC</td></tr>
+      </tbody>
+    </table>
+
+    <h2>상표</h2>
+    <p class="dim">Steam 및 Steam 로고는 Valve Corporation의 상표입니다. Discord는 Discord Inc.의
+      상표입니다. Windows는 Microsoft Corporation의 상표입니다. 온말은 위 기업들과 제휴 관계가
+      없으며, 호환성을 설명하기 위해서만 명칭을 사용합니다.</p>
+
+    <h2>라이선스 전문</h2>
+    <ul>
+      <li>MIT — <a href="https://opensource.org/licenses/MIT">opensource.org/licenses/MIT</a></li>
+      <li>Apache-2.0 — <a href="https://www.apache.org/licenses/LICENSE-2.0">apache.org/licenses/LICENSE-2.0</a></li>
+      <li>ISC — <a href="https://opensource.org/licenses/ISC">opensource.org/licenses/ISC</a></li>
+      <li>SIL OFL 1.1 — <a href="https://openfontlicense.org/">openfontlicense.org</a></li>
+      <li>CC-BY-4.0 — <a href="https://creativecommons.org/licenses/by/4.0/legalcode">creativecommons.org/licenses/by/4.0/legalcode</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><a href="index.html">홈페이지</a> · <a href="privacy.html">개인정보처리방침</a> · <a href="terms.html">이용약관</a></p>
+  </footer>
+</div>
+</body>
+</html>
