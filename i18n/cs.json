@@ -96,7 +96,7 @@
   "road.r7": "Výkon — slabší PC a integrovaná grafika",
   "road.r8": "Příprava vydání — stránka obchodu, revize dokumentů",
   "road.r9": "Kandidát vydání — zmrazení funkcí, jen opravy",
-  "road.r10": "Plné vydání — stále zdarma",
+  "road.r10": "Vydání 1.0 — pohodlí hlasové aplikace, která je pořád zapnutá, stále zdarma",
   "road.now": "teď",
   "road.alpha": "alfa",
   "road.beta": "beta",
@@ -113,7 +113,7 @@
   "faq.q4": "Potřebuji internet?",
   "faq.a4": "Jen jednou, ke stažení rozpoznávacího modelu. Pak rozpoznávání i překlad běží na vašem PC a fungují i offline.",
   "faq.q5": "Překládá se i můj hlas?",
-  "faq.a5": "Ne. Onmal se mikrofonu vůbec nedotýká. Poslouchá hlasy spoluhráčů — zvuk přehrávaný na vašem PC — a titulky ukazuje jen na vaší obrazovce. Co říkáte vy, odchází beze změny.",
+  "faq.a5": "Ne. Onmal mikrofon nepoužívá, pokud jej sami nezvolíte jako zdroj. Poslouchá hlasy spoluhráčů — zvuk přehrávaný na vašem PC — a titulky ukazuje jen na vaší obrazovce. Co říkáte vy, odchází beze změny.",
   "faq.q6": "Nezpomalí se hra?",
   "faq.a6": "Hra na prvním místě — to je princip návrhu. Počítá se jen, když někdo mluví; rozpoznávací model se volí podle volné grafické paměti a těžké funkce jsou ve výchozím stavu vypnuté. Každé PC je jiné, proto v alfě a betě změříme běh se skutečnými hrami a čísla zveřejníme.",
 

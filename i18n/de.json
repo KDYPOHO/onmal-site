@@ -96,7 +96,7 @@
   "road.r7": "Leistung — schwache PCs und integrierte Grafik",
   "road.r8": "Release-Vorbereitung — Store-Seite, Dokumentenprüfung",
   "road.r9": "Release-Kandidat — Feature-Freeze, nur noch Fehlerbehebungen",
-  "road.r10": "Vollrelease — weiterhin kostenlos",
+  "road.r10": "Release 1.0 — so bequem wie eine Voice-App, die immer anbleibt, weiterhin kostenlos",
   "road.now": "jetzt",
   "road.alpha": "Alpha",
   "road.beta": "Beta",
@@ -113,7 +113,7 @@
   "faq.q4": "Brauche ich Internet?",
   "faq.a4": "Nur einmal, um das Erkennungsmodell herunterzuladen. Danach laufen Erkennung und Übersetzung auf deinem PC und funktionieren auch offline.",
   "faq.q5": "Wird meine Stimme auch übersetzt?",
-  "faq.a5": "Nein. Onmal rührt dein Mikrofon nicht an. Es hört die Stimmen deiner Mitspieler — den Ton, der auf deinem PC wiedergegeben wird — und zeigt Untertitel nur auf deinem Bildschirm. Was du sagst, geht unverändert raus.",
+  "faq.a5": "Nein. Onmal nutzt dein Mikrofon nicht, außer du wählst es selbst als Quelle. Es hört die Stimmen deiner Mitspieler — den Ton, der auf deinem PC wiedergegeben wird — und zeigt Untertitel nur auf deinem Bildschirm. Was du sagst, geht unverändert raus.",
   "faq.q6": "Macht es mein Spiel langsamer?",
   "faq.a6": "Das Spiel zuerst — das ist das Designprinzip. Gerechnet wird nur, während jemand spricht; das Erkennungsmodell richtet sich nach dem freien Grafikspeicher, und schwere Funktionen sind ab Werk aus. Jeder PC ist anders, deshalb messen wir in Alpha und Beta parallel zu echten Spielen und veröffentlichen die Zahlen.",
 

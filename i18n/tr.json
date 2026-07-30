@@ -96,7 +96,7 @@
   "road.r7": "Performans — düşük donanımlı PC'ler ve tümleşik grafikler",
   "road.r8": "Çıkış hazırlığı — mağaza sayfası, belge incelemesi",
   "road.r9": "Sürüm adayı — özellik dondurma, yalnızca hata düzeltme",
-  "road.r10": "Tam sürüm — hâlâ ücretsiz",
+  "road.r10": "1.0 çıkışı — hep açık kalan bir ses uygulaması rahatlığı, yine ücretsiz",
   "road.now": "şimdi",
   "road.alpha": "alfa",
   "road.beta": "beta",
@@ -113,7 +113,7 @@
   "faq.q4": "İnternet gerekiyor mu?",
   "faq.a4": "Yalnızca bir kez, tanıma modelini indirmek için. Sonrasında tanıma da çeviri de bilgisayarında çalışır ve çevrimdışı da çalışmaya devam eder.",
   "faq.q5": "Benim sesim de çevriliyor mu?",
-  "faq.a5": "Hayır. Onmal mikrofona hiç dokunmaz. Takım arkadaşlarının seslerini — bilgisayarında çalınan sesi — dinler ve altyazıları yalnızca senin ekranında gösterir. Söylediklerin olduğu gibi gider.",
+  "faq.a5": "Hayır. Kaynak olarak kendin seçmedikçe Onmal mikrofonu kullanmaz. Takım arkadaşlarının seslerini — bilgisayarında çalınan sesi — dinler ve altyazıları yalnızca senin ekranında gösterir. Söylediklerin olduğu gibi gider.",
   "faq.q6": "Oyunum yavaşlamaz mı?",
   "faq.a6": "Önce oyun — tasarım ilkesi bu. Yalnızca biri konuşurken hesap yapar, tanıma modelini boş ekran kartı belleğine göre seçer ve ağır özellikler varsayılan olarak kapalıdır. Her bilgisayar farklı; alfa ve betada gerçek oyunlarla birlikte ölçüp sayıları yayımlayacağız.",
 

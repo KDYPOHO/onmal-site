@@ -96,7 +96,7 @@
   "road.r7": "Wydajność — słabsze PC i grafika zintegrowana",
   "road.r8": "Przygotowanie premiery — strona sklepu, przegląd dokumentów",
   "road.r9": "Kandydat do wydania — zamrożenie funkcji, tylko poprawki",
-  "road.r10": "Pełna premiera — nadal za darmo",
+  "road.r10": "Premiera 1.0 — wygoda aplikacji głosowej, która zawsze jest włączona, nadal za darmo",
   "road.now": "teraz",
   "road.alpha": "alfa",
   "road.beta": "beta",
@@ -113,7 +113,7 @@
   "faq.q4": "Czy potrzebny jest internet?",
   "faq.a4": "Tylko raz, do pobrania modelu rozpoznawania. Potem rozpoznawanie i tłumaczenie działają na twoim komputerze, także offline.",
   "faq.q5": "Czy mój głos też jest tłumaczony?",
-  "faq.a5": "Nie. Onmal w ogóle nie dotyka mikrofonu. Słucha głosów kolegów z drużyny — dźwięku odtwarzanego na twoim komputerze — i pokazuje napisy tylko na twoim ekranie. To, co mówisz, wychodzi bez zmian.",
+  "faq.a5": "Nie. Onmal nie używa mikrofonu, chyba że sam wybierzesz go jako źródło. Słucha głosów kolegów z drużyny — dźwięku odtwarzanego na twoim komputerze — i pokazuje napisy tylko na twoim ekranie. To, co mówisz, wychodzi bez zmian.",
   "faq.q6": "Czy gra nie zwolni?",
   "faq.a6": "Gra jest najważniejsza — to zasada projektowa. Obliczenia idą tylko wtedy, gdy ktoś mówi; model rozpoznawania dobierany jest do wolnej pamięci karty graficznej, a ciężkie funkcje są domyślnie wyłączone. Każdy komputer jest inny, więc w alfie i becie zmierzymy działanie razem z prawdziwymi grami i opublikujemy liczby.",
 

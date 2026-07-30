@@ -96,7 +96,7 @@
   "road.r7": "Desempenho — PCs modestos e gráficos integrados",
   "road.r8": "Preparação do lançamento — página da loja, revisão de documentos",
   "road.r9": "Candidato a lançamento — recursos congelados, só correções",
-  "road.r10": "Lançamento completo — continua grátis",
+  "road.r10": "Lançamento 1.0 — o conforto de um app de voz sempre ligado, e continua grátis",
   "road.now": "agora",
   "road.alpha": "alfa",
   "road.beta": "beta",
@@ -113,7 +113,7 @@
   "faq.q4": "Precisa de internet?",
   "faq.a4": "Só uma vez, para baixar o modelo de reconhecimento. Depois disso, reconhecimento e tradução rodam no seu PC e continuam funcionando offline.",
   "faq.q5": "Ele também traduz a minha voz?",
-  "faq.a5": "Não. O Onmal não toca no seu microfone. Ele escuta as vozes do seu time — o som que toca no seu PC — e mostra legendas só na sua tela. O que você fala sai do jeito que sempre saiu.",
+  "faq.a5": "Não. O Onmal não usa seu microfone, a menos que você o escolha como fonte. Ele escuta as vozes do time — o som que toca no seu PC — e mostra legendas só na sua tela. O que você fala sai do jeito que sempre saiu.",
   "faq.q6": "Não vai deixar meu jogo lento?",
   "faq.a6": "O jogo vem primeiro: esse é o princípio do projeto. Ele só calcula enquanto alguém fala, escolhe o modelo de reconhecimento conforme a memória de vídeo livre e as funções pesadas vêm desligadas. Cada PC é diferente, então no alfa e no beta vamos medir junto com jogos reais e publicar os números.",
 

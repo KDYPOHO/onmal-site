@@ -96,7 +96,7 @@
   "road.r7": "Hiệu năng — PC yếu và đồ họa tích hợp",
   "road.r8": "Chuẩn bị phát hành — trang cửa hàng, rà soát tài liệu",
   "road.r9": "Bản ứng viên — đóng băng tính năng, chỉ sửa lỗi",
-  "road.r10": "Phát hành chính thức — vẫn miễn phí",
+  "road.r10": "Phát hành 1.0 — thoải mái như app voice luôn bật sẵn, vẫn miễn phí",
   "road.now": "hiện tại",
   "road.alpha": "alpha",
   "road.beta": "beta",
@@ -113,7 +113,7 @@
   "faq.q4": "Có cần Internet không?",
   "faq.a4": "Chỉ một lần, để tải mô hình nhận dạng. Sau đó nhận dạng và dịch đều chạy trên máy bạn, không có mạng vẫn hoạt động.",
   "faq.q5": "Giọng của tôi có bị dịch không?",
-  "faq.a5": "Không. Onmal hoàn toàn không đụng đến micro. Nó nghe giọng đồng đội — âm thanh phát trên máy bạn — và chỉ hiện phụ đề trên màn hình của bạn. Lời bạn nói vẫn đi ra như bình thường.",
+  "faq.a5": "Không. Onmal không dùng micro trừ khi bạn tự chọn nó làm nguồn. Nó nghe giọng đồng đội — âm thanh phát trên máy bạn — và chỉ hiện phụ đề trên màn hình của bạn. Lời bạn nói vẫn đi ra như bình thường.",
   "faq.q6": "Game có bị chậm không?",
   "faq.a6": "Game là trên hết — đó là nguyên tắc thiết kế. Chỉ tính toán khi có người nói, tự chọn mô hình nhận dạng theo dung lượng VRAM còn trống, và các tính năng nặng mặc định tắt. Máy mỗi người mỗi khác, nên ở giai đoạn alpha và beta chúng tôi sẽ đo cùng game thật và công bố số liệu.",
 

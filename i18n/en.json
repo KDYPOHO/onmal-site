@@ -96,7 +96,7 @@
   "road.r7": "Performance — low-end PCs and integrated graphics",
   "road.r8": "Release prep — store page, document review",
   "road.r9": "Release candidate — feature freeze, bug fixes only",
-  "road.r10": "Full release — still free",
+  "road.r10": "Full release — the always-on comfort of a voice app, still free",
   "road.now": "now",
   "road.alpha": "alpha",
   "road.beta": "beta",
@@ -113,7 +113,7 @@
   "faq.q4": "Do I need an internet connection?",
   "faq.a4": "Only once, to download the recognition model. After that, recognition and translation both run on your PC and keep working offline.",
   "faq.q5": "Does it translate my voice too?",
-  "faq.a5": "No. Onmal never touches your microphone. It listens to your teammates' voices — the sound playing on your PC — and shows subtitles only on your screen. What you say goes out untouched.",
+  "faq.a5": "No. Onmal does not use your microphone unless you pick it as a source yourself. It listens to your teammates' voices — the sound playing on your PC — and shows subtitles only on your screen. What you say goes out untouched.",
   "faq.q6": "Won't it slow down my game?",
   "faq.a6": "The game comes first — that is the design principle. It computes only while someone is speaking, picks the recognition model to fit your spare GPU memory, and ships with the heavy features off. Every PC differs though, so we will measure it alongside real games in alpha and beta and publish the numbers.",
 

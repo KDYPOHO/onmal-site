@@ -96,7 +96,7 @@
   "road.r7": "Suorituskyky — vaatimattomat koneet ja integroitu grafiikka",
   "road.r8": "Julkaisun valmistelu — kauppasivu, asiakirjojen tarkistus",
   "road.r9": "Julkaisuehdokas — ominaisuudet jäädytetty, vain korjauksia",
-  "road.r10": "Täysi julkaisu — yhä ilmainen",
+  "road.r10": "Julkaisu 1.0 — aina päällä olevan äänisovelluksen vaivattomuus, yhä ilmainen",
   "road.now": "nyt",
   "road.alpha": "alfa",
   "road.beta": "beta",
@@ -113,7 +113,7 @@
   "faq.q4": "Tarvitsenko nettiyhteyden?",
   "faq.a4": "Vain kerran, tunnistusmallin lataamiseen. Sen jälkeen tunnistus ja käännös pyörivät omalla koneellasi ja toimivat myös offline-tilassa.",
   "faq.q5": "Käännetäänkö myös minun ääneni?",
-  "faq.a5": "Ei. Onmal ei koske mikrofoniisi lainkaan. Se kuuntelee tiimikavereiden ääniä — koneellasi toistettavaa ääntä — ja näyttää tekstitykset vain sinun ruudullasi. Puheesi lähtee kuten ennenkin.",
+  "faq.a5": "Ei. Onmal ei käytä mikrofonia, ellet itse valitse sitä lähteeksi. Se kuuntelee tiimikavereiden ääniä — koneellasi toistettavaa ääntä — ja näyttää tekstitykset vain sinun ruudullasi. Puheesi lähtee kuten ennenkin.",
   "faq.q6": "Eikö peli hidastu?",
   "faq.a6": "Peli ensin — se on suunnitteluperiaate. Laskentaa tehdään vain jonkun puhuessa, tunnistusmalli valitaan vapaan näyttömuistin mukaan ja raskaat ominaisuudet ovat oletuksena pois päältä. Jokainen kone on erilainen, joten alfassa ja betassa mittaamme oikeiden pelien rinnalla ja julkaisemme luvut.",
 

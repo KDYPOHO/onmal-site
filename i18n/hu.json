@@ -96,7 +96,7 @@
   "road.r7": "Teljesítmény — gyengébb gépek és integrált grafika",
   "road.r8": "Megjelenés előkészítése — bolti oldal, dokumentum-átnézés",
   "road.r9": "Kiadásra jelölt — funkciófagyasztás, csak hibajavítás",
-  "road.r10": "Teljes megjelenés — továbbra is ingyen",
+  "road.r10": "1.0 megjelenés — a mindig bekapcsolva hagyott hangalkalmazás kényelme, továbbra is ingyen",
   "road.now": "most",
   "road.alpha": "alfa",
   "road.beta": "béta",
@@ -113,7 +113,7 @@
   "faq.q4": "Kell hozzá internet?",
   "faq.a4": "Csak egyszer, a felismerési modell letöltéséhez. Utána a felismerés és a fordítás a saját gépeden fut, és offline is működik.",
   "faq.q5": "Az én hangomat is fordítja?",
-  "faq.a5": "Nem. Az Onmal egyáltalán nem nyúl a mikrofonhoz. A csapattársak hangját hallgatja — a gépeden lejátszott hangot —, és a feliratokat csak a te képernyődön mutatja. Amit mondasz, változatlanul megy ki.",
+  "faq.a5": "Nem. Az Onmal nem használja a mikrofont, hacsak te magad nem választod forrásnak. A csapattársak hangját hallgatja — a gépeden lejátszott hangot —, és a feliratokat csak a te képernyődön mutatja. Amit mondasz, változatlanul megy ki.",
   "faq.q6": "Nem lassul le a játék?",
   "faq.a6": "A játék az első — ez a tervezési elv. Csak akkor számol, amikor valaki beszél; a felismerő modellt a szabad videómemóriához igazítja, a nehéz funkciók pedig alapból ki vannak kapcsolva. Minden gép más, ezért alfa és béta alatt valódi játékok mellett mérünk, és közzétesszük a számokat.",
 

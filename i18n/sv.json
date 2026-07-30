@@ -96,7 +96,7 @@
   "road.r7": "Prestanda — enklare datorer och integrerad grafik",
   "road.r8": "Släppförberedelser — butikssida, dokumentgranskning",
   "road.r9": "Release candidate — funktioner frysta, bara buggfixar",
-  "road.r10": "Full release — fortfarande gratis",
+  "road.r10": "Lansering 1.0 — bekvämt som en röstapp som alltid står på, fortfarande gratis",
   "road.now": "nu",
   "road.alpha": "alfa",
   "road.beta": "beta",
@@ -113,7 +113,7 @@
   "faq.q4": "Behöver jag internet?",
   "faq.a4": "Bara en gång, för att ladda ner igenkänningsmodellen. Därefter körs igenkänning och översättning på din dator och fortsätter fungera offline.",
   "faq.q5": "Översätts min röst också?",
-  "faq.a5": "Nej. Onmal rör aldrig din mikrofon. Den lyssnar på lagkamraternas röster — ljudet som spelas upp på din dator — och visar undertexter bara på din skärm. Det du säger går ut som vanligt.",
+  "faq.a5": "Nej. Onmal använder inte din mikrofon om du inte själv väljer den som källa. Den lyssnar på lagkamraternas röster — ljudet som spelas upp på din dator — och visar undertexter bara på din skärm. Det du säger går ut som vanligt.",
   "faq.q6": "Blir spelet inte långsammare?",
   "faq.a6": "Spelet först — det är designprincipen. Beräkningar sker bara medan någon pratar, igenkänningsmodellen väljs efter ledigt grafikminne och tunga funktioner är avstängda som standard. Alla datorer är olika, så i alfa och beta mäter vi tillsammans med riktiga spel och publicerar siffrorna.",
 

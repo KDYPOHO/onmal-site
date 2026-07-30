@@ -96,7 +96,7 @@
   "road.r7": "Prestaties — bescheiden pc's en geïntegreerde graphics",
   "road.r8": "Releasevoorbereiding — winkelpagina, documentcontrole",
   "road.r9": "Release candidate — functies bevroren, alleen bugfixes",
-  "road.r10": "Volledige release — nog steeds gratis",
+  "road.r10": "Release 1.0 — het gemak van een voice-app die altijd aanstaat, nog steeds gratis",
   "road.now": "nu",
   "road.alpha": "alfa",
   "road.beta": "bèta",
@@ -113,7 +113,7 @@
   "faq.q4": "Heb ik internet nodig?",
   "faq.a4": "Maar één keer, om het herkenningsmodel te downloaden. Daarna draaien herkenning en vertaling op je pc en blijven ze offline werken.",
   "faq.q5": "Wordt mijn stem ook vertaald?",
-  "faq.a5": "Nee. Onmal raakt je microfoon niet aan. Het luistert naar de stemmen van je teamgenoten — het geluid dat op je pc wordt afgespeeld — en toont ondertitels alleen op jouw scherm. Wat jij zegt gaat gewoon door.",
+  "faq.a5": "Nee. Onmal gebruikt je microfoon niet, tenzij je die zelf als bron kiest. Het luistert naar de stemmen van je teamgenoten — het geluid dat op je pc wordt afgespeeld — en toont ondertitels alleen op jouw scherm. Wat jij zegt gaat gewoon door.",
   "faq.q6": "Wordt mijn game er niet trager van?",
   "faq.a6": "De game gaat voor — dat is het ontwerpprincipe. Er wordt alleen gerekend terwijl iemand praat, het herkenningsmodel wordt gekozen op basis van vrij videogeheugen en zware functies staan standaard uit. Elke pc is anders, dus in alfa en bèta meten we naast echte games en publiceren we de cijfers.",
 

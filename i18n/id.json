@@ -96,7 +96,7 @@
   "road.r7": "Performa — PC spek rendah dan grafis terintegrasi",
   "road.r8": "Persiapan rilis — halaman toko, tinjauan dokumen",
   "road.r9": "Kandidat rilis — fitur dibekukan, hanya perbaikan bug",
-  "road.r10": "Rilis penuh — tetap gratis",
+  "road.r10": "Rilis 1.0 — senyaman aplikasi voice yang selalu menyala, tetap gratis",
   "road.now": "sekarang",
   "road.alpha": "alfa",
   "road.beta": "beta",
@@ -113,7 +113,7 @@
   "faq.q4": "Perlu internet?",
   "faq.a4": "Hanya sekali, untuk mengunduh model pengenalan. Setelah itu pengenalan dan terjemahan berjalan di PC kamu dan tetap bekerja secara offline.",
   "faq.q5": "Apakah suaraku ikut diterjemahkan?",
-  "faq.a5": "Tidak. Onmal sama sekali tidak menyentuh mikrofon. Ia mendengar suara rekan setim — suara yang diputar di PC kamu — dan menampilkan subtitle hanya di layarmu. Ucapanmu keluar seperti biasa.",
+  "faq.a5": "Tidak. Onmal tidak memakai mikrofon kecuali kamu sendiri memilihnya sebagai sumber. Ia mendengar suara rekan setim — suara yang diputar di PC kamu — dan menampilkan subtitle hanya di layarmu. Ucapanmu keluar seperti biasa.",
   "faq.q6": "Apakah game jadi lambat?",
   "faq.a6": "Game yang utama — itu prinsip desainnya. Hanya menghitung saat ada yang bicara, memilih model pengenalan sesuai sisa memori GPU, dan fitur berat dimatikan secara bawaan. Tiap PC berbeda, jadi di alpha dan beta kami akan mengukurnya bersama game sungguhan dan memublikasikan angkanya.",
 

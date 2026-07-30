@@ -96,7 +96,7 @@
   "road.r7": "Ydeevne — beskedne pc'er og integreret grafik",
   "road.r8": "Udgivelsesforberedelse — butiksside, dokumentgennemgang",
   "road.r9": "Release candidate — funktioner fastfrosset, kun fejlrettelser",
-  "road.r10": "Fuld udgivelse — stadig gratis",
+  "road.r10": "Udgivelse 1.0 — bekvemt som en voice-app, der altid er tændt, stadig gratis",
   "road.now": "nu",
   "road.alpha": "alfa",
   "road.beta": "beta",
@@ -113,7 +113,7 @@
   "faq.q4": "Kræver det internet?",
   "faq.a4": "Kun én gang, for at hente genkendelsesmodellen. Derefter kører genkendelse og oversættelse på din pc og bliver ved med at virke offline.",
   "faq.q5": "Bliver min stemme også oversat?",
-  "faq.a5": "Nej. Onmal rører aldrig din mikrofon. Den lytter til holdkammeraternes stemmer — lyden der afspilles på din pc — og viser undertekster kun på din skærm. Det, du siger, går ud som normalt.",
+  "faq.a5": "Nej. Onmal bruger ikke din mikrofon, medmindre du selv vælger den som kilde. Den lytter til holdkammeraternes stemmer — lyden der afspilles på din pc — og viser undertekster kun på din skærm. Det, du siger, går ud som normalt.",
   "faq.q6": "Bliver spillet langsommere?",
   "faq.a6": "Spillet først — det er designprincippet. Der regnes kun, mens nogen taler, genkendelsesmodellen vælges efter ledig grafikhukommelse, og tunge funktioner er slået fra som standard. Hver pc er forskellig, så i alfa og beta måler vi sammen med rigtige spil og offentliggør tallene.",
 

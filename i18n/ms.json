@@ -96,7 +96,7 @@
   "road.r7": "Prestasi — PC spesifikasi rendah dan grafik bersepadu",
   "road.r8": "Persediaan keluaran — halaman kedai, semakan dokumen",
   "road.r9": "Calon keluaran — ciri dibekukan, pembetulan pepijat sahaja",
-  "road.r10": "Keluaran penuh — masih percuma",
+  "road.r10": "Pelancaran 1.0 — keselesaan aplikasi suara yang sentiasa terbuka, kekal percuma",
   "road.now": "sekarang",
   "road.alpha": "alfa",
   "road.beta": "beta",
@@ -113,7 +113,7 @@
   "faq.q4": "Perlukan internet?",
   "faq.a4": "Hanya sekali, untuk memuat turun model pengecaman. Selepas itu pengecaman dan terjemahan berjalan pada PC anda dan terus berfungsi secara luar talian.",
   "faq.q5": "Adakah suara saya turut diterjemahkan?",
-  "faq.a5": "Tidak. Onmal langsung tidak menyentuh mikrofon. Ia mendengar suara rakan sepasukan — bunyi yang dimainkan pada PC anda — dan memaparkan sari kata hanya pada skrin anda. Kata-kata anda keluar seperti biasa.",
+  "faq.a5": "Tidak. Onmal tidak menggunakan mikrofon melainkan anda sendiri memilihnya sebagai sumber. Ia mendengar suara rakan sepasukan — bunyi yang dimainkan pada PC anda — dan memaparkan sari kata hanya pada skrin anda. Kata-kata anda keluar seperti biasa.",
   "faq.q6": "Adakah permainan menjadi perlahan?",
   "faq.a6": "Permainan didahulukan — itu prinsip reka bentuk. Ia hanya mengira semasa seseorang bercakap, memilih model pengecaman mengikut baki memori GPU, dan ciri berat dimatikan secara lalai. Setiap PC berbeza, jadi pada alfa dan beta kami akan mengukurnya bersama permainan sebenar dan menyiarkan angkanya.",
 
