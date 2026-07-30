@@ -86,7 +86,7 @@
   "road.kicker": "Ütemterv",
   "road.h2": "0.1-től 1.0-ig — teljesítési feltételek, nem dátumok.",
   "road.lede": "Minden szakasz csak akkor lép tovább, ha a feltételei teljesültek, nem amikor a naptár mondja. Nincs kapkodás — és az alapalkalmazás végig ingyenes marad.",
-  "road.vision": "A végső cél egy társ, amit minden játéknál egyszerűen bekapcsolva hagysz — olyan természetesen, mint egy hangcsevegő appot. Telepítsd és felejtsd el: amint idegen nyelvű hívás hangzik el, az Onmal csendben munkához lát.",
+  "road.vision": "A végső cél egy társ, amit minden játéknál egyszerűen bekapcsolva hagysz — olyan természetesen, mint egy hangcsevegő appot. Telepítsd és felejtsd el: amint idegen nyelvű hívás hangzik el, az Onmal csendben munkához lát. Nem akar új platform lenni: a hangsúly magán a fordítás tökéletesítésén van, a közösségi rész pedig könnyedén a már használt Steamre és Discordra épül.",
   "road.r1": "A valós idejű fordított feliratok váza — helyi felismerés, fordítás, overlay",
   "road.r2": "Stabilizálás — hosszú munkamenetek, futás igazi játékok mellett",
   "road.r3": "Alfateszt — néhány tesztelő útmutató nélkül jut el a telepítéstől a feliratokig",

@@ -86,7 +86,7 @@
   "road.kicker": "Tiekartta",
   "road.h2": "0.1:stä 1.0:aan — valmistumiskriteerit, eivät päivämäärät.",
   "road.lede": "Jokainen vaihe etenee vasta, kun sen kriteerit täyttyvät, ei kalenterin käskystä. Ei kiirettä — ja perussovellus pysyy ilmaisena loppuun asti.",
-  "road.vision": "Lopullinen tavoite on kumppani, jonka jätät päälle aina pelatessasi — yhtä luontevasti kuin äänichat-sovelluksen. Asenna ja unohda: heti kun vieraskielinen kutsu kuuluu, Onmal ryhtyy hiljaa töihin.",
+  "road.vision": "Lopullinen tavoite on kumppani, jonka jätät päälle aina pelatessasi — yhtä luontevasti kuin äänichat-sovelluksen. Asenna ja unohda: heti kun vieraskielinen kutsu kuuluu, Onmal ryhtyy hiljaa töihin. Se ei yritä olla uusi alusta: painopiste on itse käännöksen hiomisessa, ja sosiaalinen puoli nojaa kevyesti Steamiin ja Discordiin, joita jo käytät.",
   "road.r1": "Reaaliaikaisten käännöstekstitysten runko — paikallinen tunnistus, käännös, overlay",
   "road.r2": "Vakautus — pitkät istunnot, ajo oikeiden pelien rinnalla",
   "road.r3": "Alfatesti — muutama testaaja pääsee asennuksesta tekstityksiin ilman ohjeita",

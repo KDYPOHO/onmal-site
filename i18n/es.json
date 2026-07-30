@@ -86,7 +86,7 @@
   "road.kicker": "Hoja de ruta",
   "road.h2": "De 0.1 a 1.0 — criterios de salida, no fechas.",
   "road.lede": "Cada fase avanza cuando cumple sus criterios, no cuando lo dice el calendario. Sin prisas, y la aplicación base sigue siendo gratuita hasta el final.",
-  "road.vision": "La meta final es un compañero que dejas encendido cada vez que juegas, con la misma naturalidad que una app de chat de voz. Instálalo y olvídate: en cuanto suene una llamada en otro idioma, Onmal se pone a trabajar en silencio.",
+  "road.vision": "La meta final es un compañero que dejas encendido cada vez que juegas, con la misma naturalidad que una app de chat de voz. Instálalo y olvídate: en cuanto suene una llamada en otro idioma, Onmal se pone a trabajar en silencio. No pretende ser una plataforma nueva: el foco está en perfeccionar la traducción, y lo social se apoya ligeramente sobre Steam y Discord, que ya usas.",
   "road.r1": "El esqueleto de los subtítulos traducidos en tiempo real: reconocimiento local, traducción, overlay",
   "road.r2": "Estabilización: sesiones largas, funcionando junto a juegos reales",
   "road.r3": "Prueba alfa: unos pocos testers llegan de la instalación a los subtítulos sin instrucciones",

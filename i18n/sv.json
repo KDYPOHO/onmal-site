@@ -86,7 +86,7 @@
   "road.kicker": "Färdplan",
   "road.h2": "Från 0.1 till 1.0 — kriterier, inte datum.",
   "road.lede": "Varje fas går vidare först när kriterierna är uppfyllda, inte när kalendern säger till. Ingen brådska — och basappen förblir gratis hela vägen.",
-  "road.vision": "Slutmålet är en följeslagare du låter vara på varje gång du spelar, lika självklart som en röstchattapp. Installera och glöm — i samma stund som ett anrop på ett främmande språk hörs börjar Onmal tyst arbeta.",
+  "road.vision": "Slutmålet är en följeslagare du låter vara på varje gång du spelar, lika självklart som en röstchattapp. Installera och glöm — i samma stund som ett anrop på ett främmande språk hörs börjar Onmal tyst arbeta. Den försöker inte bli en ny plattform: fokus ligger på att göra själva översättningen utmärkt, medan det sociala vilar lätt på Steam och Discord som du redan använder.",
   "road.r1": "Skelettet för realtidsöversatta undertexter — lokal igenkänning, översättning, overlay",
   "road.r2": "Stabilisering — långa sessioner, körning bredvid riktiga spel",
   "road.r3": "Alfatest — några testare går från installation till undertexter utan instruktioner",
