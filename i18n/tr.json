@@ -7,7 +7,7 @@
   "hero.lede": "Yabancı takım arkadaşının ne dediğini anlamadığın için çağrıları mı kaçırıyorsun? Onmal senin yerine dinler ve çevrilmiş altyazıları doğrudan oyunun üzerine koyar.",
   "hero.soon": "Steam çıkışı hazırlanıyor",
   "hero.how": "Nasıl çalışır",
-  "hero.note": "Her şey senin bilgisayarında işlenir. Konuşmalar hiçbir yere gönderilmez.",
+  "hero.note": "Mikrofon kullanılmaz. Takım arkadaşlarının sesleri bilgisayarının içinde işlenir, konuşmalar hiçbir yere gönderilmez.",
 
   "frame.bar": "Oyun çalışıyor · kenarlıksız pencere",
   "frame.live": "Dinliyor",
@@ -86,6 +86,7 @@
   "road.kicker": "Yol haritası",
   "road.h2": "0.1'den 1.0'a — tarih değil, tamamlanma ölçütleri.",
   "road.lede": "Her aşama takvim değil, ölçütler karşılandığında ilerler. Acele yok — temel uygulama sonuna kadar ücretsiz kalır.",
+  "road.vision": "Nihai hedef, sesli sohbet uygulaması kadar doğal biçimde her oyunda açık bıraktığın bir yoldaş. Kur ve unut — yabancı dilde bir çağrı duyulduğu anda Onmal sessizce işe koyulur.",
   "road.r1": "Gerçek zamanlı çeviri altyazılarının iskeleti — yerel tanıma, çeviri, overlay",
   "road.r2": "Kararlılık — uzun oturumlar, gerçek oyunlarla birlikte çalışma doğrulaması",
   "road.r3": "Alfa testi — birkaç testçi hiç talimatsız kurulumdan altyazıya ulaşır",
@@ -111,6 +112,10 @@
   "faq.a3": "Belirli bir oyuna bağlı değil. Oyun kenarlıksız pencere modunda çalışabiliyorsa altyazılar üstüne binebilir. Ses içinse takımının konuştuğu uygulamayı seçmen yeterli: oyun içi ses ya da Discord.",
   "faq.q4": "İnternet gerekiyor mu?",
   "faq.a4": "Yalnızca bir kez, tanıma modelini indirmek için. Sonrasında tanıma da çeviri de bilgisayarında çalışır ve çevrimdışı da çalışmaya devam eder.",
+  "faq.q5": "Benim sesim de çevriliyor mu?",
+  "faq.a5": "Hayır. Onmal mikrofona hiç dokunmaz. Takım arkadaşlarının seslerini — bilgisayarında çalınan sesi — dinler ve altyazıları yalnızca senin ekranında gösterir. Söylediklerin olduğu gibi gider.",
+  "faq.q6": "Oyunum yavaşlamaz mı?",
+  "faq.a6": "Önce oyun — tasarım ilkesi bu. Yalnızca biri konuşurken hesap yapar, tanıma modelini boş ekran kartı belleğine göre seçer ve ağır özellikler varsayılan olarak kapalıdır. Her bilgisayar farklı; alfa ve betada gerçek oyunlarla birlikte ölçüp sayıları yayımlayacağız.",
 
   "legal.kicker": "Yasal",
   "legal.h2": "Geçerli belgelerin tamamı bunlar.",

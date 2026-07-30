@@ -7,7 +7,7 @@
   "hero.lede": "Du verpasst Calls, weil du nicht verstehst, was ein ausländischer Mitspieler sagt? Onmal hört für dich zu und legt übersetzte Untertitel direkt über dein Spiel.",
   "hero.soon": "Steam-Release in Vorbereitung",
   "hero.how": "So funktioniert es",
-  "hero.note": "Alles wird auf deinem PC verarbeitet. Gespräche werden nirgendwohin gesendet.",
+  "hero.note": "Kein Mikrofon im Spiel. Die Stimmen deiner Mitspieler werden in deinem PC verarbeitet, Gespräche werden nirgendwohin gesendet.",
 
   "frame.bar": "Spiel läuft · randloses Fenster",
   "frame.live": "Höre zu",
@@ -86,6 +86,7 @@
   "road.kicker": "Roadmap",
   "road.h2": "Von 0.1 bis 1.0 — Fertigkriterien statt Termine.",
   "road.lede": "Jede Stufe geht erst weiter, wenn ihre Kriterien erfüllt sind, nicht wenn der Kalender es sagt. Ohne Eile — und die Basis-App bleibt durchgehend kostenlos.",
+  "road.vision": "Das Zielbild ist ein Begleiter, den du bei jedem Spielen einfach anlässt — so selbstverständlich wie eine Voice-Chat-App. Installieren, vergessen: Sobald ein Call in einer fremden Sprache kommt, arbeitet Onmal leise los.",
   "road.r1": "Das Gerüst der Echtzeit-Untertitel — lokale Erkennung, Übersetzung, Overlay",
   "road.r2": "Stabilisierung — lange Sitzungen, Betrieb neben echten Spielen",
   "road.r3": "Alpha-Test — wenige Tester kommen ohne Anleitung von der Installation bis zu den Untertiteln",
@@ -111,6 +112,10 @@
   "faq.a3": "Es ist an kein bestimmtes Spiel gebunden. Läuft das Spiel im randlosen Fenstermodus, können die Untertitel darüber erscheinen. Beim Ton wählst du einfach die App, über die dein Team spricht: Ingame-Voice oder Discord.",
   "faq.q4": "Brauche ich Internet?",
   "faq.a4": "Nur einmal, um das Erkennungsmodell herunterzuladen. Danach laufen Erkennung und Übersetzung auf deinem PC und funktionieren auch offline.",
+  "faq.q5": "Wird meine Stimme auch übersetzt?",
+  "faq.a5": "Nein. Onmal rührt dein Mikrofon nicht an. Es hört die Stimmen deiner Mitspieler — den Ton, der auf deinem PC wiedergegeben wird — und zeigt Untertitel nur auf deinem Bildschirm. Was du sagst, geht unverändert raus.",
+  "faq.q6": "Macht es mein Spiel langsamer?",
+  "faq.a6": "Das Spiel zuerst — das ist das Designprinzip. Gerechnet wird nur, während jemand spricht; das Erkennungsmodell richtet sich nach dem freien Grafikspeicher, und schwere Funktionen sind ab Werk aus. Jeder PC ist anders, deshalb messen wir in Alpha und Beta parallel zu echten Spielen und veröffentlichen die Zahlen.",
 
   "legal.kicker": "Rechtliches",
   "legal.h2": "Diese Dokumente sind alles, was gilt.",

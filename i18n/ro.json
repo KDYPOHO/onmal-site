@@ -7,7 +7,7 @@
   "hero.lede": "Ratezi call-uri pentru că nu înțelegi ce spune un coechipier străin? Onmal ascultă pentru tine și pune subtitrări traduse direct peste joc.",
   "hero.soon": "Lansarea pe Steam în pregătire",
   "hero.how": "Cum funcționează",
-  "hero.note": "Totul se procesează pe PC-ul tău. Conversațiile nu sunt trimise nicăieri.",
+  "hero.note": "Fără microfon. Vocile coechipierilor sunt procesate în PC-ul tău, iar conversațiile nu sunt trimise nicăieri.",
 
   "frame.bar": "Joc pornit · fereastră fără margini",
   "frame.live": "Ascult",
@@ -86,6 +86,7 @@
   "road.kicker": "Foaie de parcurs",
   "road.h2": "De la 0.1 la 1.0 — criterii de finalizare, nu date.",
   "road.lede": "Fiecare etapă avansează doar când criteriile ei sunt îndeplinite, nu când zice calendarul. Fără grabă — iar aplicația de bază rămâne gratuită până la capăt.",
+  "road.vision": "Imaginea finală este un însoțitor pe care îl lași pornit la fiecare joc, la fel de firesc ca o aplicație de chat vocal. Instalează și uită — în clipa în care se aude un call într-o limbă străină, Onmal se apucă tăcut de treabă.",
   "road.r1": "Scheletul subtitrărilor traduse în timp real — recunoaștere locală, traducere, overlay",
   "road.r2": "Stabilizare — sesiuni lungi, rulare lângă jocuri reale",
   "road.r3": "Test alfa — câțiva testeri ajung de la instalare la subtitrări fără instrucțiuni",
@@ -111,6 +112,10 @@
   "faq.a3": "Nu e legat de vreun joc anume. Dacă jocul poate rula în fereastră fără margini, subtitrările pot apărea deasupra. Pentru sunet, alege aplicația prin care vorbește echipa: vocea din joc sau Discord.",
   "faq.q4": "Am nevoie de internet?",
   "faq.a4": "Doar o dată, pentru a descărca modelul de recunoaștere. Apoi recunoașterea și traducerea rulează pe PC-ul tău și merg și offline.",
+  "faq.q5": "Îmi traduce și vocea mea?",
+  "faq.a5": "Nu. Onmal nu atinge deloc microfonul. Ascultă vocile coechipierilor — sunetul redat pe PC-ul tău — și arată subtitrări doar pe ecranul tău. Ce spui tu pleacă neschimbat.",
+  "faq.q6": "Nu-mi va încetini jocul?",
+  "faq.a6": "Jocul e pe primul loc — acesta e principiul de proiectare. Calculează doar cât timp vorbește cineva, alege modelul de recunoaștere după memoria video liberă, iar funcțiile grele vin dezactivate. Fiecare PC e diferit, așa că în alfa și beta vom măsura alături de jocuri reale și vom publica cifrele.",
 
   "legal.kicker": "Juridic",
   "legal.h2": "Acestea sunt toate documentele aplicabile.",

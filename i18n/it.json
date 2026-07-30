@@ -7,7 +7,7 @@
   "hero.lede": "Perdi le call perché non capisci cosa dice un compagno straniero? Onmal ascolta per te e mette i sottotitoli tradotti direttamente sopra il gioco.",
   "hero.soon": "Uscita su Steam in preparazione",
   "hero.how": "Come funziona",
-  "hero.note": "Tutto viene elaborato sul tuo PC. Le conversazioni non vengono inviate da nessuna parte.",
+  "hero.note": "Niente microfono. Le voci dei tuoi compagni vengono elaborate dentro il tuo PC e le conversazioni non vengono inviate da nessuna parte.",
 
   "frame.bar": "Gioco in esecuzione · finestra senza bordi",
   "frame.live": "In ascolto",
@@ -86,6 +86,7 @@
   "road.kicker": "Roadmap",
   "road.h2": "Da 0.1 a 1.0 — criteri di completamento, non date.",
   "road.lede": "Ogni fase avanza solo quando i suoi criteri sono soddisfatti, non quando lo dice il calendario. Senza fretta — e l'app base resta gratuita fino alla fine.",
+  "road.vision": "L'obiettivo finale è un compagno che lasci acceso ogni volta che giochi, con la stessa naturalezza di un'app di chat vocale. Installalo e dimenticalo: appena arriva una call in un'altra lingua, Onmal si mette al lavoro in silenzio.",
   "road.r1": "Lo scheletro dei sottotitoli tradotti in tempo reale — riconoscimento locale, traduzione, overlay",
   "road.r2": "Stabilizzazione — sessioni lunghe, esecuzione accanto a giochi veri",
   "road.r3": "Test alfa — pochi tester arrivano dall'installazione ai sottotitoli senza istruzioni",
@@ -111,6 +112,10 @@
   "faq.a3": "Non è legato a nessun gioco specifico. Se il gioco può girare in finestra senza bordi, i sottotitoli possono comparire sopra. Per l'audio, scegli l'app da cui parla il team: la voce di gioco o Discord.",
   "faq.q4": "Serve internet?",
   "faq.a4": "Solo una volta, per scaricare il modello di riconoscimento. Poi riconoscimento e traduzione girano sul tuo PC e continuano a funzionare offline.",
+  "faq.q5": "Traduce anche la mia voce?",
+  "faq.a5": "No. Onmal non tocca affatto il microfono. Ascolta le voci dei compagni — il suono riprodotto sul tuo PC — e mostra i sottotitoli solo sul tuo schermo. Quello che dici parte così com'è.",
+  "faq.q6": "Non rallenterà il gioco?",
+  "faq.a6": "Prima il gioco: è il principio di progettazione. Calcola solo mentre qualcuno parla, sceglie il modello di riconoscimento in base alla memoria video libera e le funzioni pesanti sono disattivate di default. Ogni PC è diverso: in alpha e beta misureremo insieme a giochi veri e pubblicheremo i numeri.",
 
   "legal.kicker": "Note legali",
   "legal.h2": "Questi documenti sono tutto ciò che si applica.",

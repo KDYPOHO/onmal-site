@@ -7,7 +7,7 @@
   "hero.lede": "Mis je calls omdat je een buitenlandse teamgenoot niet verstaat? Onmal luistert voor je en zet vertaalde ondertitels direct over je game.",
   "hero.soon": "Steam-release in voorbereiding",
   "hero.how": "Hoe het werkt",
-  "hero.note": "Alles wordt op je pc verwerkt. Gesprekken worden nergens naartoe gestuurd.",
+  "hero.note": "Geen microfoon. De stemmen van je teamgenoten worden binnen je pc verwerkt en gesprekken worden nergens heen gestuurd.",
 
   "frame.bar": "Game actief · randloos venster",
   "frame.live": "Luistert",
@@ -86,6 +86,7 @@
   "road.kicker": "Roadmap",
   "road.h2": "Van 0.1 naar 1.0 — criteria, geen datums.",
   "road.lede": "Elke fase gaat pas verder als de criteria zijn gehaald, niet als de kalender het zegt. Geen haast — en de basisapp blijft de hele weg gratis.",
+  "road.vision": "Het einddoel is een metgezel die je bij elke game gewoon aan laat staan, zo vanzelfsprekend als een voicechat-app. Installeren en vergeten — zodra er een call in een vreemde taal klinkt, gaat Onmal stilletjes aan het werk.",
   "road.r1": "Het skelet van realtime vertaalde ondertitels — lokale herkenning, vertaling, overlay",
   "road.r2": "Stabilisatie — lange sessies, draaien naast echte games",
   "road.r3": "Alfatest — enkele testers gaan zonder uitleg van installatie tot ondertitels",
@@ -111,6 +112,10 @@
   "faq.a3": "Het is niet gebonden aan één specifieke game. Als de game in randloos venster kan draaien, kunnen de ondertitels erboven verschijnen. Voor het geluid kies je gewoon de app waar je team doorheen praat: in-game voice of Discord.",
   "faq.q4": "Heb ik internet nodig?",
   "faq.a4": "Maar één keer, om het herkenningsmodel te downloaden. Daarna draaien herkenning en vertaling op je pc en blijven ze offline werken.",
+  "faq.q5": "Wordt mijn stem ook vertaald?",
+  "faq.a5": "Nee. Onmal raakt je microfoon niet aan. Het luistert naar de stemmen van je teamgenoten — het geluid dat op je pc wordt afgespeeld — en toont ondertitels alleen op jouw scherm. Wat jij zegt gaat gewoon door.",
+  "faq.q6": "Wordt mijn game er niet trager van?",
+  "faq.a6": "De game gaat voor — dat is het ontwerpprincipe. Er wordt alleen gerekend terwijl iemand praat, het herkenningsmodel wordt gekozen op basis van vrij videogeheugen en zware functies staan standaard uit. Elke pc is anders, dus in alfa en bèta meten we naast echte games en publiceren we de cijfers.",
 
   "legal.kicker": "Juridisch",
   "legal.h2": "Deze documenten zijn alles wat geldt.",

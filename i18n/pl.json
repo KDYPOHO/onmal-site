@@ -7,7 +7,7 @@
   "hero.lede": "Przegapiasz zagrania, bo nie rozumiesz, co mówi zagraniczny towarzysz? Onmal słucha za ciebie i nakłada przetłumaczone napisy prosto na grę.",
   "hero.soon": "Premiera na Steam w przygotowaniu",
   "hero.how": "Jak to działa",
-  "hero.note": "Wszystko przetwarzane jest na twoim PC. Rozmowy nigdzie nie są wysyłane.",
+  "hero.note": "Bez mikrofonu. Głosy kolegów z drużyny są przetwarzane w twoim komputerze, a rozmowy nigdzie nie są wysyłane.",
 
   "frame.bar": "Gra uruchomiona · okno bez ramek",
   "frame.live": "Słucham",
@@ -86,6 +86,7 @@
   "road.kicker": "Plan rozwoju",
   "road.h2": "Od 0.1 do 1.0 — kryteria ukończenia, nie daty.",
   "road.lede": "Każdy etap idzie dalej dopiero po spełnieniu kryteriów, a nie według kalendarza. Bez pośpiechu — a podstawowa aplikacja pozostaje darmowa do końca.",
+  "road.vision": "Docelowy obraz to towarzysz, którego zostawiasz włączonego przy każdej grze — tak naturalnie jak aplikację czatu głosowego. Zainstaluj i zapomnij: gdy tylko padnie call w obcym języku, Onmal cicho bierze się do pracy.",
   "road.r1": "Szkielet napisów tłumaczonych na żywo — lokalne rozpoznawanie, tłumaczenie, nakładka",
   "road.r2": "Stabilizacja — długie sesje, działanie obok prawdziwych gier",
   "road.r3": "Test alfa — kilku testerów przechodzi od instalacji do napisów bez instrukcji",
@@ -111,6 +112,10 @@
   "faq.a3": "Nie jest przypisany do żadnej konkretnej gry. Jeśli gra działa w oknie bez ramki, napisy mogą pojawić się nad nią. Dźwięk: wybierz aplikację, przez którą mówi drużyna — czat w grze albo Discord.",
   "faq.q4": "Czy potrzebny jest internet?",
   "faq.a4": "Tylko raz, do pobrania modelu rozpoznawania. Potem rozpoznawanie i tłumaczenie działają na twoim komputerze, także offline.",
+  "faq.q5": "Czy mój głos też jest tłumaczony?",
+  "faq.a5": "Nie. Onmal w ogóle nie dotyka mikrofonu. Słucha głosów kolegów z drużyny — dźwięku odtwarzanego na twoim komputerze — i pokazuje napisy tylko na twoim ekranie. To, co mówisz, wychodzi bez zmian.",
+  "faq.q6": "Czy gra nie zwolni?",
+  "faq.a6": "Gra jest najważniejsza — to zasada projektowa. Obliczenia idą tylko wtedy, gdy ktoś mówi; model rozpoznawania dobierany jest do wolnej pamięci karty graficznej, a ciężkie funkcje są domyślnie wyłączone. Każdy komputer jest inny, więc w alfie i becie zmierzymy działanie razem z prawdziwymi grami i opublikujemy liczby.",
 
   "legal.kicker": "Informacje prawne",
   "legal.h2": "To wszystkie obowiązujące dokumenty.",

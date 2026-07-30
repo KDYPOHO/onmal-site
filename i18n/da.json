@@ -7,7 +7,7 @@
   "hero.lede": "Misser du calls, fordi du ikke forstår, hvad en udenlandsk holdkammerat siger? Onmal lytter for dig og lægger oversatte undertekster direkte hen over spillet.",
   "hero.soon": "Steam-udgivelse forberedes",
   "hero.how": "Sådan virker det",
-  "hero.note": "Alt behandles på din pc. Samtaler sendes ingen steder hen.",
+  "hero.note": "Ingen mikrofon. Holdkammeraternes stemmer behandles inde i din pc, og samtaler sendes ingen steder hen.",
 
   "frame.bar": "Spil kører · rammeløst vindue",
   "frame.live": "Lytter",
@@ -86,6 +86,7 @@
   "road.kicker": "Køreplan",
   "road.h2": "Fra 0.1 til 1.0 — kriterier, ikke datoer.",
   "road.lede": "Hver fase går først videre, når dens kriterier er opfyldt, ikke når kalenderen siger til. Intet hastværk — og basisappen forbliver gratis hele vejen.",
+  "road.vision": "Slutmålet er en makker, du lader være tændt, hver gang du spiller — lige så naturligt som en voicechat-app. Installér og glem — i det øjeblik et call lyder på et fremmed sprog, går Onmal stille i gang.",
   "road.r1": "Skelettet til realtidsoversatte undertekster — lokal genkendelse, oversættelse, overlay",
   "road.r2": "Stabilisering — lange sessioner, kørsel ved siden af rigtige spil",
   "road.r3": "Alfatest — få testere går fra installation til undertekster uden instruktioner",
@@ -111,6 +112,10 @@
   "faq.a3": "Det er ikke bundet til noget bestemt spil. Hvis spillet kan køre i kantløs vinduestilstand, kan underteksterne vises ovenpå. Til lyden vælger du bare den app, holdet taler igennem: spillets egen stemmechat eller Discord.",
   "faq.q4": "Kræver det internet?",
   "faq.a4": "Kun én gang, for at hente genkendelsesmodellen. Derefter kører genkendelse og oversættelse på din pc og bliver ved med at virke offline.",
+  "faq.q5": "Bliver min stemme også oversat?",
+  "faq.a5": "Nej. Onmal rører aldrig din mikrofon. Den lytter til holdkammeraternes stemmer — lyden der afspilles på din pc — og viser undertekster kun på din skærm. Det, du siger, går ud som normalt.",
+  "faq.q6": "Bliver spillet langsommere?",
+  "faq.a6": "Spillet først — det er designprincippet. Der regnes kun, mens nogen taler, genkendelsesmodellen vælges efter ledig grafikhukommelse, og tunge funktioner er slået fra som standard. Hver pc er forskellig, så i alfa og beta måler vi sammen med rigtige spil og offentliggør tallene.",
 
   "legal.kicker": "Jura",
   "legal.h2": "Disse dokumenter er alt, hvad der gælder.",

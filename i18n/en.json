@@ -7,7 +7,7 @@
   "hero.lede": "Missing calls because you can't tell what a foreign teammate just said. Onmal listens for you and puts translated subtitles right over your game.",
   "hero.soon": "Steam release in preparation",
   "hero.how": "How it works",
-  "hero.note": "Everything is processed on your PC. Conversations are never sent anywhere.",
+  "hero.note": "No microphone involved. Your teammates' voices are processed inside your PC, and conversations are never sent anywhere.",
 
   "frame.bar": "Game running · borderless window mode",
   "frame.live": "Listening",
@@ -86,6 +86,7 @@
   "road.kicker": "Roadmap",
   "road.h2": "From 0.1 to 1.0 — completion criteria, not dates.",
   "road.lede": "Each stage moves on only when its exit criteria are met, not when a calendar says so. No rushing — and the base app stays free the whole way.",
+  "road.vision": "The end picture is a companion you leave on whenever you game, as naturally as a voice chat app. Install it, forget it — the moment a foreign call comes in, Onmal quietly goes to work.",
   "road.r1": "The skeleton of real-time translated subtitles — local recognition, translation, overlay",
   "road.r2": "Stabilization — long sessions, running alongside real games",
   "road.r3": "Alpha test — a few testers go from install to subtitles with no instructions",
@@ -111,6 +112,10 @@
   "faq.a3": "It is not tied to any specific game. If the game can run in borderless windowed mode, subtitles can appear on top. For audio, pick whichever app your team voice comes from — in-game voice chat or Discord.",
   "faq.q4": "Do I need an internet connection?",
   "faq.a4": "Only once, to download the recognition model. After that, recognition and translation both run on your PC and keep working offline.",
+  "faq.q5": "Does it translate my voice too?",
+  "faq.a5": "No. Onmal never touches your microphone. It listens to your teammates' voices — the sound playing on your PC — and shows subtitles only on your screen. What you say goes out untouched.",
+  "faq.q6": "Won't it slow down my game?",
+  "faq.a6": "The game comes first — that is the design principle. It computes only while someone is speaking, picks the recognition model to fit your spare GPU memory, and ships with the heavy features off. Every PC differs though, so we will measure it alongside real games in alpha and beta and publish the numbers.",
 
   "legal.kicker": "Legal",
   "legal.h2": "These documents are all that applies.",

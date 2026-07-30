@@ -7,7 +7,7 @@
   "hero.lede": "Ketinggalan info karena tidak paham ucapan rekan tim asing? Onmal mendengarkan untukmu dan menaruh subtitle terjemahan langsung di atas game.",
   "hero.soon": "Rilis Steam sedang disiapkan",
   "hero.how": "Cara kerjanya",
-  "hero.note": "Semua diproses di PC-mu. Percakapan tidak dikirim ke mana pun.",
+  "hero.note": "Tanpa mikrofon. Suara rekan setim diproses di dalam PC kamu, dan percakapan tidak pernah dikirim ke mana pun.",
 
   "frame.bar": "Game berjalan · jendela tanpa bingkai",
   "frame.live": "Mendengarkan",
@@ -86,6 +86,7 @@
   "road.kicker": "Peta jalan",
   "road.h2": "Dari 0.1 ke 1.0 — kriteria selesai, bukan tanggal.",
   "road.lede": "Setiap tahap hanya maju saat kriterianya terpenuhi, bukan saat kalender menyuruh. Tanpa terburu-buru — dan aplikasi dasar tetap gratis sampai akhir.",
+  "road.vision": "Gambaran akhirnya: pendamping yang kamu biarkan menyala setiap kali bermain, senatural aplikasi voice chat. Pasang lalu lupakan — begitu terdengar call dalam bahasa asing, Onmal diam-diam mulai bekerja.",
   "road.r1": "Kerangka subtitle terjemahan real-time — pengenalan lokal, terjemahan, overlay",
   "road.r2": "Stabilisasi — sesi panjang, berjalan bersama game sungguhan",
   "road.r3": "Uji alfa — beberapa penguji sampai ke subtitle tanpa instruksi",
@@ -111,6 +112,10 @@
   "faq.a3": "Tidak terikat pada game tertentu. Jika game bisa berjalan dalam mode jendela tanpa bingkai, subtitle bisa muncul di atasnya. Untuk audio, pilih saja aplikasi tempat tim bicara: voice dalam game atau Discord.",
   "faq.q4": "Perlu internet?",
   "faq.a4": "Hanya sekali, untuk mengunduh model pengenalan. Setelah itu pengenalan dan terjemahan berjalan di PC kamu dan tetap bekerja secara offline.",
+  "faq.q5": "Apakah suaraku ikut diterjemahkan?",
+  "faq.a5": "Tidak. Onmal sama sekali tidak menyentuh mikrofon. Ia mendengar suara rekan setim — suara yang diputar di PC kamu — dan menampilkan subtitle hanya di layarmu. Ucapanmu keluar seperti biasa.",
+  "faq.q6": "Apakah game jadi lambat?",
+  "faq.a6": "Game yang utama — itu prinsip desainnya. Hanya menghitung saat ada yang bicara, memilih model pengenalan sesuai sisa memori GPU, dan fitur berat dimatikan secara bawaan. Tiap PC berbeda, jadi di alpha dan beta kami akan mengukurnya bersama game sungguhan dan memublikasikan angkanya.",
 
   "legal.kicker": "Hukum",
   "legal.h2": "Dokumen yang berlaku hanya ini.",

@@ -7,7 +7,7 @@
   "hero.lede": "Meneekö calleja ohi, koska et ymmärrä ulkomaista tiimikaveria? Onmal kuuntelee puolestasi ja tuo käännetyt tekstitykset suoraan pelin päälle.",
   "hero.soon": "Steam-julkaisu valmisteilla",
   "hero.how": "Näin se toimii",
-  "hero.note": "Kaikki käsitellään omalla koneellasi. Keskusteluja ei lähetetä minnekään.",
+  "hero.note": "Ei mikrofonia. Tiimikavereiden äänet käsitellään koneesi sisällä, eikä keskusteluja lähetetä minnekään.",
 
   "frame.bar": "Peli käynnissä · reunaton ikkuna",
   "frame.live": "Kuuntelee",
@@ -86,6 +86,7 @@
   "road.kicker": "Tiekartta",
   "road.h2": "0.1:stä 1.0:aan — valmistumiskriteerit, eivät päivämäärät.",
   "road.lede": "Jokainen vaihe etenee vasta, kun sen kriteerit täyttyvät, ei kalenterin käskystä. Ei kiirettä — ja perussovellus pysyy ilmaisena loppuun asti.",
+  "road.vision": "Lopullinen tavoite on kumppani, jonka jätät päälle aina pelatessasi — yhtä luontevasti kuin äänichat-sovelluksen. Asenna ja unohda: heti kun vieraskielinen kutsu kuuluu, Onmal ryhtyy hiljaa töihin.",
   "road.r1": "Reaaliaikaisten käännöstekstitysten runko — paikallinen tunnistus, käännös, overlay",
   "road.r2": "Vakautus — pitkät istunnot, ajo oikeiden pelien rinnalla",
   "road.r3": "Alfatesti — muutama testaaja pääsee asennuksesta tekstityksiin ilman ohjeita",
@@ -111,6 +112,10 @@
   "faq.a3": "Se ei ole sidottu mihinkään tiettyyn peliin. Jos peli voi pyöriä reunattomassa ikkunatilassa, tekstitykset voivat näkyä sen päällä. Äänen osalta valitse vain sovellus, jonka kautta tiimi puhuu: pelin oma ääni tai Discord.",
   "faq.q4": "Tarvitsenko nettiyhteyden?",
   "faq.a4": "Vain kerran, tunnistusmallin lataamiseen. Sen jälkeen tunnistus ja käännös pyörivät omalla koneellasi ja toimivat myös offline-tilassa.",
+  "faq.q5": "Käännetäänkö myös minun ääneni?",
+  "faq.a5": "Ei. Onmal ei koske mikrofoniisi lainkaan. Se kuuntelee tiimikavereiden ääniä — koneellasi toistettavaa ääntä — ja näyttää tekstitykset vain sinun ruudullasi. Puheesi lähtee kuten ennenkin.",
+  "faq.q6": "Eikö peli hidastu?",
+  "faq.a6": "Peli ensin — se on suunnitteluperiaate. Laskentaa tehdään vain jonkun puhuessa, tunnistusmalli valitaan vapaan näyttömuistin mukaan ja raskaat ominaisuudet ovat oletuksena pois päältä. Jokainen kone on erilainen, joten alfassa ja betassa mittaamme oikeiden pelien rinnalla ja julkaisemme luvut.",
 
   "legal.kicker": "Lakiasiat",
   "legal.h2": "Nämä asiakirjat ovat kaikki, mitä sovelletaan.",

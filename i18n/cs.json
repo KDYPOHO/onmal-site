@@ -7,7 +7,7 @@
   "hero.lede": "Přicházíte o cally, protože nerozumíte zahraničnímu spoluhráči? Onmal poslouchá za vás a pokládá přeložené titulky přímo přes hru.",
   "hero.soon": "Vydání na Steamu se připravuje",
   "hero.how": "Jak to funguje",
-  "hero.note": "Vše se zpracovává na vašem PC. Konverzace se nikam neodesílají.",
+  "hero.note": "Žádný mikrofon. Hlasy spoluhráčů se zpracovávají uvnitř vašeho PC a rozhovory se nikam neposílají.",
 
   "frame.bar": "Hra běží · okno bez rámečku",
   "frame.live": "Poslouchám",
@@ -86,6 +86,7 @@
   "road.kicker": "Plán vývoje",
   "road.h2": "Od 0.1 k 1.0 — kritéria dokončení, ne data.",
   "road.lede": "Každá fáze pokračuje, až když splní svá kritéria, ne když velí kalendář. Bez spěchu — a základní aplikace zůstává zdarma až do konce.",
+  "road.vision": "Konečným cílem je společník, kterého necháte zapnutý při každém hraní — stejně samozřejmě jako aplikaci hlasového chatu. Nainstalujte a zapomeňte: jakmile zazní call v cizím jazyce, Onmal se tiše pustí do práce.",
   "road.r1": "Kostra titulků s překladem v reálném čase — lokální rozpoznávání, překlad, overlay",
   "road.r2": "Stabilizace — dlouhé seance, běh vedle skutečných her",
   "road.r3": "Alfa test — pár testerů dojde od instalace k titulkům bez návodu",
@@ -111,6 +112,10 @@
   "faq.a3": "Není vázán na konkrétní hru. Pokud hra umí běžet v okně bez okrajů, titulky se nad ní zobrazí. U zvuku prostě vyberte aplikaci, přes kterou tým mluví: herní hlas nebo Discord.",
   "faq.q4": "Potřebuji internet?",
   "faq.a4": "Jen jednou, ke stažení rozpoznávacího modelu. Pak rozpoznávání i překlad běží na vašem PC a fungují i offline.",
+  "faq.q5": "Překládá se i můj hlas?",
+  "faq.a5": "Ne. Onmal se mikrofonu vůbec nedotýká. Poslouchá hlasy spoluhráčů — zvuk přehrávaný na vašem PC — a titulky ukazuje jen na vaší obrazovce. Co říkáte vy, odchází beze změny.",
+  "faq.q6": "Nezpomalí se hra?",
+  "faq.a6": "Hra na prvním místě — to je princip návrhu. Počítá se jen, když někdo mluví; rozpoznávací model se volí podle volné grafické paměti a těžké funkce jsou ve výchozím stavu vypnuté. Každé PC je jiné, proto v alfě a betě změříme běh se skutečnými hrami a čísla zveřejníme.",
 
   "legal.kicker": "Právní informace",
   "legal.h2": "Platí jen tyto dokumenty.",

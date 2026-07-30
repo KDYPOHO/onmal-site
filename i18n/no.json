@@ -7,7 +7,7 @@
   "hero.lede": "Går du glipp av calls fordi du ikke forstår en utenlandsk lagkamerat? Onmal lytter for deg og legger oversatte undertekster rett over spillet.",
   "hero.soon": "Steam-lansering forberedes",
   "hero.how": "Slik virker det",
-  "hero.note": "Alt behandles på PC-en din. Samtaler sendes ingen steder.",
+  "hero.note": "Ingen mikrofon. Lagkameratenes stemmer behandles inne i PC-en din, og samtaler sendes ingen steder.",
 
   "frame.bar": "Spill kjører · kantløst vindu",
   "frame.live": "Lytter",
@@ -86,6 +86,7 @@
   "road.kicker": "Veikart",
   "road.h2": "Fra 0.1 til 1.0 — kriterier, ikke datoer.",
   "road.lede": "Hver fase går videre først når kriteriene er oppfylt, ikke når kalenderen sier det. Ingen hastverk — og basisappen forblir gratis hele veien.",
+  "road.vision": "Sluttmålet er en følgesvenn du lar stå på hver gang du spiller, like naturlig som en stemmechat-app. Installer og glem — i det øyeblikket et call på et fremmed språk høres, begynner Onmal stille å jobbe.",
   "road.r1": "Skjelettet for sanntidsoversatte undertekster — lokal gjenkjenning, oversettelse, overlegg",
   "road.r2": "Stabilisering — lange økter, kjøring ved siden av ekte spill",
   "road.r3": "Alfatest — noen få testere går fra installasjon til undertekster uten instruksjoner",
@@ -111,6 +112,10 @@
   "faq.a3": "Det er ikke knyttet til noe bestemt spill. Hvis spillet kan kjøres i kantløs vindusmodus, kan undertekstene vises oppå. For lyden velger du bare appen laget snakker gjennom: spillets egen stemmechat eller Discord.",
   "faq.q4": "Trenger jeg internett?",
   "faq.a4": "Bare én gang, for å laste ned gjenkjenningsmodellen. Etterpå kjører gjenkjenning og oversettelse på PC-en din og fortsetter å virke uten nett.",
+  "faq.q5": "Blir stemmen min også oversatt?",
+  "faq.a5": "Nei. Onmal rører aldri mikrofonen din. Den lytter til lagkameratenes stemmer — lyden som spilles av på PC-en din — og viser undertekster bare på din skjerm. Det du sier går ut som vanlig.",
+  "faq.q6": "Blir spillet tregere?",
+  "faq.a6": "Spillet først — det er designprinsippet. Det regnes bare mens noen snakker, gjenkjenningsmodellen velges etter ledig skjermkortminne, og tunge funksjoner er av som standard. Hver PC er forskjellig, så i alfa og beta måler vi sammen med ekte spill og publiserer tallene.",
 
   "legal.kicker": "Juridisk",
   "legal.h2": "Disse dokumentene er alt som gjelder.",

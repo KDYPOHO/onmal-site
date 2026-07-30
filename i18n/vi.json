@@ -7,7 +7,7 @@
   "hero.lede": "Bỏ lỡ thông tin vì không hiểu đồng đội nước ngoài nói gì? Onmal nghe thay bạn và đặt phụ đề đã dịch ngay trên màn hình game.",
   "hero.soon": "Đang chuẩn bị phát hành trên Steam",
   "hero.how": "Cách hoạt động",
-  "hero.note": "Mọi thứ được xử lý trên PC của bạn. Cuộc trò chuyện không được gửi đi đâu cả.",
+  "hero.note": "Không dùng micro. Giọng đồng đội được xử lý ngay trong máy bạn, cuộc trò chuyện không bị gửi đi đâu cả.",
 
   "frame.bar": "Game đang chạy · cửa sổ không viền",
   "frame.live": "Đang nghe",
@@ -86,6 +86,7 @@
   "road.kicker": "Lộ trình",
   "road.h2": "Từ 0.1 đến 1.0 — theo tiêu chí hoàn thành, không theo ngày.",
   "road.lede": "Mỗi giai đoạn chỉ tiến khi đạt tiêu chí, không phải khi lịch bảo thế. Không vội — và bản chính vẫn miễn phí đến cùng.",
+  "road.vision": "Đích đến cuối cùng là một người bạn đồng hành bật sẵn mỗi lần chơi game, tự nhiên như app voice chat. Cài xong rồi quên đi — khoảnh khắc có call bằng tiếng nước ngoài, Onmal lặng lẽ vào việc.",
   "road.r1": "Khung xương của phụ đề dịch thời gian thực — nhận dạng cục bộ, dịch, overlay",
   "road.r2": "Ổn định — phiên dài, chạy song song với game thật",
   "road.r3": "Thử nghiệm alpha — vài tester đi từ cài đặt đến phụ đề mà không cần hướng dẫn",
@@ -111,6 +112,10 @@
   "faq.a3": "Không gắn với game cụ thể nào. Nếu game chạy được ở chế độ cửa sổ không viền, phụ đề có thể hiện lên trên. Về âm thanh, chỉ cần chọn ứng dụng mà đồng đội đang nói: voice trong game hay Discord đều được.",
   "faq.q4": "Có cần Internet không?",
   "faq.a4": "Chỉ một lần, để tải mô hình nhận dạng. Sau đó nhận dạng và dịch đều chạy trên máy bạn, không có mạng vẫn hoạt động.",
+  "faq.q5": "Giọng của tôi có bị dịch không?",
+  "faq.a5": "Không. Onmal hoàn toàn không đụng đến micro. Nó nghe giọng đồng đội — âm thanh phát trên máy bạn — và chỉ hiện phụ đề trên màn hình của bạn. Lời bạn nói vẫn đi ra như bình thường.",
+  "faq.q6": "Game có bị chậm không?",
+  "faq.a6": "Game là trên hết — đó là nguyên tắc thiết kế. Chỉ tính toán khi có người nói, tự chọn mô hình nhận dạng theo dung lượng VRAM còn trống, và các tính năng nặng mặc định tắt. Máy mỗi người mỗi khác, nên ở giai đoạn alpha và beta chúng tôi sẽ đo cùng game thật và công bố số liệu.",
 
   "legal.kicker": "Pháp lý",
   "legal.h2": "Chỉ có chừng này tài liệu áp dụng.",

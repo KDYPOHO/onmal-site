@@ -7,7 +7,7 @@
   "hero.lede": "Vous ratez des calls parce que vous ne comprenez pas un coéquipier étranger ? Onmal écoute à votre place et affiche des sous-titres traduits directement sur le jeu.",
   "hero.soon": "Sortie Steam en préparation",
   "hero.how": "Comment ça marche",
-  "hero.note": "Tout est traité sur votre PC. Les conversations ne sont envoyées nulle part.",
+  "hero.note": "Aucun micro. Les voix de vos coéquipiers sont traitées dans votre PC et les conversations ne sont envoyées nulle part.",
 
   "frame.bar": "Jeu en cours · fenêtré sans bordure",
   "frame.live": "À l'écoute",
@@ -86,6 +86,7 @@
   "road.kicker": "Feuille de route",
   "road.h2": "De 0.1 à 1.0 — des critères d'achèvement, pas des dates.",
   "road.lede": "Chaque étape n'avance que lorsque ses critères sont remplis, pas quand le calendrier le dit. Sans précipitation — et l'application de base reste gratuite jusqu'au bout.",
+  "road.vision": "Le but final : un compagnon qu'on laisse allumé à chaque partie, aussi naturellement qu'une appli de chat vocal. Installez-le, oubliez-le — dès qu'un call arrive dans une autre langue, Onmal se met discrètement au travail.",
   "road.r1": "Le squelette des sous-titres traduits en temps réel — reconnaissance locale, traduction, overlay",
   "road.r2": "Stabilisation — longues sessions, fonctionnement à côté de vrais jeux",
   "road.r3": "Test alpha — quelques testeurs vont de l'installation aux sous-titres sans instructions",
@@ -111,6 +112,10 @@
   "faq.a3": "Il n'est lié à aucun jeu en particulier. Si le jeu peut tourner en fenêtré sans bordure, les sous-titres peuvent s'afficher par-dessus. Pour le son, choisissez l'appli où parle votre équipe : chat vocal du jeu ou Discord.",
   "faq.q4": "Faut-il une connexion internet ?",
   "faq.a4": "Une seule fois, pour télécharger le modèle de reconnaissance. Ensuite, reconnaissance et traduction tournent sur votre PC et continuent de fonctionner hors ligne.",
+  "faq.q5": "Ma voix est-elle traduite aussi ?",
+  "faq.a5": "Non. Onmal ne touche jamais à votre micro. Il écoute les voix de vos coéquipiers — le son qui sort sur votre PC — et n'affiche les sous-titres que sur votre écran. Ce que vous dites part tel quel.",
+  "faq.q6": "Ça ne va pas ralentir mon jeu ?",
+  "faq.a6": "Le jeu d'abord : c'est le principe de conception. Onmal ne calcule que pendant que quelqu'un parle, choisit le modèle de reconnaissance selon la mémoire graphique disponible, et les fonctions lourdes sont désactivées par défaut. Chaque PC est différent : en alpha et bêta, nous mesurerons avec de vrais jeux et publierons les chiffres.",
 
   "legal.kicker": "Mentions légales",
   "legal.h2": "Ces documents sont tout ce qui s'applique.",

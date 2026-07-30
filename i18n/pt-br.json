@@ -7,7 +7,7 @@
   "hero.lede": "Perdendo calls porque não entende o que o companheiro estrangeiro disse? O Onmal ouve por você e coloca legendas traduzidas direto sobre o jogo.",
   "hero.soon": "Lançamento na Steam em preparação",
   "hero.how": "Como funciona",
-  "hero.note": "Tudo é processado no seu PC. As conversas não são enviadas para lugar nenhum.",
+  "hero.note": "Sem microfone. As vozes do seu time são processadas dentro do seu PC e as conversas nunca são enviadas a lugar nenhum.",
 
   "frame.bar": "Jogo rodando · janela sem bordas",
   "frame.live": "Ouvindo",
@@ -86,6 +86,7 @@
   "road.kicker": "Roteiro",
   "road.h2": "De 0.1 a 1.0 — critérios de conclusão, não datas.",
   "road.lede": "Cada fase só avança quando cumpre seus critérios, não quando o calendário manda. Sem pressa — e o app base continua gratuito até o fim.",
+  "road.vision": "O objetivo final é um companheiro que você deixa ligado sempre que joga, com a mesma naturalidade de um app de voz. Instale e esqueça: assim que soar uma call em outro idioma, o Onmal entra em ação em silêncio.",
   "road.r1": "O esqueleto das legendas traduzidas em tempo real — reconhecimento local, tradução, overlay",
   "road.r2": "Estabilização — sessões longas, rodando junto com jogos de verdade",
   "road.r3": "Teste alfa — poucos testers vão da instalação às legendas sem instruções",
@@ -111,6 +112,10 @@
   "faq.a3": "Não é preso a nenhum jogo específico. Se o jogo rodar em janela sem bordas, as legendas aparecem por cima. Para o áudio, escolha o app por onde o time fala: voz do próprio jogo ou Discord.",
   "faq.q4": "Precisa de internet?",
   "faq.a4": "Só uma vez, para baixar o modelo de reconhecimento. Depois disso, reconhecimento e tradução rodam no seu PC e continuam funcionando offline.",
+  "faq.q5": "Ele também traduz a minha voz?",
+  "faq.a5": "Não. O Onmal não toca no seu microfone. Ele escuta as vozes do seu time — o som que toca no seu PC — e mostra legendas só na sua tela. O que você fala sai do jeito que sempre saiu.",
+  "faq.q6": "Não vai deixar meu jogo lento?",
+  "faq.a6": "O jogo vem primeiro: esse é o princípio do projeto. Ele só calcula enquanto alguém fala, escolhe o modelo de reconhecimento conforme a memória de vídeo livre e as funções pesadas vêm desligadas. Cada PC é diferente, então no alfa e no beta vamos medir junto com jogos reais e publicar os números.",
 
   "legal.kicker": "Jurídico",
   "legal.h2": "Estes documentos são tudo o que se aplica.",

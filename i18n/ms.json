@@ -7,7 +7,7 @@
   "hero.lede": "Terlepas panggilan kerana tidak faham apa yang rakan sepasukan asing katakan? Onmal mendengar untuk anda dan meletakkan sari kata terjemahan terus di atas permainan.",
   "hero.soon": "Keluaran Steam sedang disediakan",
   "hero.how": "Cara ia berfungsi",
-  "hero.note": "Semuanya diproses pada PC anda. Perbualan tidak dihantar ke mana-mana.",
+  "hero.note": "Tanpa mikrofon. Suara rakan sepasukan diproses di dalam PC anda, dan perbualan tidak dihantar ke mana-mana.",
 
   "frame.bar": "Permainan berjalan · tetingkap tanpa bingkai",
   "frame.live": "Mendengar",
@@ -86,6 +86,7 @@
   "road.kicker": "Pelan hala tuju",
   "road.h2": "Dari 0.1 ke 1.0 — kriteria siap, bukan tarikh.",
   "road.lede": "Setiap peringkat hanya bergerak apabila kriterianya dipenuhi, bukan ikut kalendar. Tidak tergesa-gesa — dan aplikasi asas kekal percuma hingga akhir.",
+  "road.vision": "Gambaran akhirnya ialah teman yang anda biarkan terbuka setiap kali bermain, senatural aplikasi sembang suara. Pasang dan lupakan — sebaik sahaja kedengaran call dalam bahasa asing, Onmal senyap-senyap mula bekerja.",
   "road.r1": "Rangka sari kata terjemahan masa nyata — pengecaman tempatan, terjemahan, tindanan",
   "road.r2": "Penstabilan — sesi panjang, berjalan bersama permainan sebenar",
   "road.r3": "Ujian alfa — beberapa penguji sampai ke sari kata tanpa arahan",
@@ -111,6 +112,10 @@
   "faq.a3": "Ia tidak terikat pada mana-mana permainan tertentu. Jika permainan boleh berjalan dalam mod tetingkap tanpa bingkai, sari kata boleh muncul di atasnya. Untuk audio, pilih sahaja aplikasi tempat pasukan bercakap: suara dalam permainan atau Discord.",
   "faq.q4": "Perlukan internet?",
   "faq.a4": "Hanya sekali, untuk memuat turun model pengecaman. Selepas itu pengecaman dan terjemahan berjalan pada PC anda dan terus berfungsi secara luar talian.",
+  "faq.q5": "Adakah suara saya turut diterjemahkan?",
+  "faq.a5": "Tidak. Onmal langsung tidak menyentuh mikrofon. Ia mendengar suara rakan sepasukan — bunyi yang dimainkan pada PC anda — dan memaparkan sari kata hanya pada skrin anda. Kata-kata anda keluar seperti biasa.",
+  "faq.q6": "Adakah permainan menjadi perlahan?",
+  "faq.a6": "Permainan didahulukan — itu prinsip reka bentuk. Ia hanya mengira semasa seseorang bercakap, memilih model pengecaman mengikut baki memori GPU, dan ciri berat dimatikan secara lalai. Setiap PC berbeza, jadi pada alfa dan beta kami akan mengukurnya bersama permainan sebenar dan menyiarkan angkanya.",
 
   "legal.kicker": "Undang-undang",
   "legal.h2": "Dokumen yang terpakai hanyalah ini.",

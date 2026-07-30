@@ -7,7 +7,7 @@
   "hero.lede": "Missar du calls för att du inte förstår vad en utländsk lagkamrat säger? Onmal lyssnar åt dig och lägger översatta undertexter direkt över spelet.",
   "hero.soon": "Steam-släpp förbereds",
   "hero.how": "Så fungerar det",
-  "hero.note": "Allt bearbetas på din dator. Samtal skickas ingenstans.",
+  "hero.note": "Ingen mikrofon. Lagkamraternas röster bearbetas inne i din dator och samtal skickas ingenstans.",
 
   "frame.bar": "Spel igång · kantlöst fönster",
   "frame.live": "Lyssnar",
@@ -86,6 +86,7 @@
   "road.kicker": "Färdplan",
   "road.h2": "Från 0.1 till 1.0 — kriterier, inte datum.",
   "road.lede": "Varje fas går vidare först när kriterierna är uppfyllda, inte när kalendern säger till. Ingen brådska — och basappen förblir gratis hela vägen.",
+  "road.vision": "Slutmålet är en följeslagare du låter vara på varje gång du spelar, lika självklart som en röstchattapp. Installera och glöm — i samma stund som ett anrop på ett främmande språk hörs börjar Onmal tyst arbeta.",
   "road.r1": "Skelettet för realtidsöversatta undertexter — lokal igenkänning, översättning, overlay",
   "road.r2": "Stabilisering — långa sessioner, körning bredvid riktiga spel",
   "road.r3": "Alfatest — några testare går från installation till undertexter utan instruktioner",
@@ -111,6 +112,10 @@
   "faq.a3": "Det är inte knutet till något särskilt spel. Om spelet kan köras i kantlöst fönsterläge kan undertexterna visas ovanpå. För ljudet väljer du bara appen laget pratar genom: spelets egen röstchatt eller Discord.",
   "faq.q4": "Behöver jag internet?",
   "faq.a4": "Bara en gång, för att ladda ner igenkänningsmodellen. Därefter körs igenkänning och översättning på din dator och fortsätter fungera offline.",
+  "faq.q5": "Översätts min röst också?",
+  "faq.a5": "Nej. Onmal rör aldrig din mikrofon. Den lyssnar på lagkamraternas röster — ljudet som spelas upp på din dator — och visar undertexter bara på din skärm. Det du säger går ut som vanligt.",
+  "faq.q6": "Blir spelet inte långsammare?",
+  "faq.a6": "Spelet först — det är designprincipen. Beräkningar sker bara medan någon pratar, igenkänningsmodellen väljs efter ledigt grafikminne och tunga funktioner är avstängda som standard. Alla datorer är olika, så i alfa och beta mäter vi tillsammans med riktiga spel och publicerar siffrorna.",
 
   "legal.kicker": "Juridik",
   "legal.h2": "Dessa dokument är allt som gäller.",
