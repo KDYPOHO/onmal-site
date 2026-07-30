@@ -8,6 +8,7 @@
 <meta property="og:title" content="온말 Onmal — 팀원의 말을 내 말로">
 <meta property="og:description" content="게임 중 팀원의 외국어를 실시간 자막으로. 내 PC에서 돌아가는 무료 통역 비서.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://kdypoho.github.io/onmal-site/onmal_128.png">
 <link rel="icon" href="onmal_64.png">
 <script>(function(){try{var t=localStorage.getItem('onmal-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -137,6 +138,11 @@
   .limit h3{font-size:15.5px;font-weight:600;margin-bottom:7px;color:var(--moon)}
   .limit p{font-size:14.5px;color:var(--dim)}
 
+  /* faq */
+  .faq{display:grid;grid-template-columns:1fr 1fr;gap:26px 44px;margin-top:44px}
+  .faq .qa h3{font-size:15.5px;font-weight:600;margin-bottom:7px;color:var(--jade)}
+  .faq .qa p{font-size:14.5px;color:var(--dim)}
+
   /* specs */
   table{width:100%;border-collapse:collapse;margin-top:40px;font-size:14.5px}
   th,td{text-align:left;padding:15px 16px;border-bottom:1px solid var(--line);vertical-align:top}
@@ -241,13 +247,13 @@
     <div class="flow">
       <div class="step">
         <div class="code" data-i18n="how.c1">01 · 듣기</div>
-        <h3 data-i18n="how.t1">Discord 소리만 골라서</h3>
-        <p data-i18n="how.p1">Windows의 프로세스 단위 오디오 캡처를 씁니다. 게임 총성과 BGM은 들어오지 않습니다.</p>
+        <h3 data-i18n="how.t1">팀보이스가 나오는 앱만 골라서</h3>
+        <p data-i18n="how.p1">게임 자체 보이스챗이든 Discord든, Windows의 프로세스 단위 캡처로 지정한 앱의 소리만 받습니다. 다른 앱 소리는 섞이지 않습니다.</p>
       </div>
       <div class="step">
         <div class="code" data-i18n="how.c2">02 · 자르기</div>
         <h3 data-i18n="how.t2">말할 때만 반응</h3>
-        <p data-i18n="how.p2">발화 감지가 사람 목소리 구간만 잘라냅니다. 조용할 땐 아무 일도 하지 않습니다.</p>
+        <p data-i18n="how.p2">발화 감지가 사람 목소리 구간만 잘라냅니다. 총성과 배경음은 걸러내고, 조용할 땐 아무 일도 하지 않습니다.</p>
       </div>
       <div class="step">
         <div class="code" data-i18n="how.c3">03 · 알아듣기</div>
@@ -260,6 +266,12 @@
         <p data-i18n="how.p4">게임을 가리지 않는 자리에, 클릭이 통과하는 자막으로. 조작을 방해하지 않습니다.</p>
       </div>
     </div>
+  </section>
+
+  <section id="name">
+    <p class="kicker" data-i18n="name.kicker">이름의 뜻</p>
+    <h2 data-i18n="name.h2">온말 — 온전한 말, 모든 말.</h2>
+    <p class="sub-lede" data-i18n="name.p1">'온'은 '온 세상', '온종일'처럼 빠짐없이 전부를 뜻하는 순우리말입니다. 어떤 언어든 흘려듣지 않고, 팀원의 말을 온전하게 내 말로 옮기는 것 — 이 앱이 하려는 일을 이름에 담았습니다.</p>
   </section>
 
   <section>
@@ -293,7 +305,7 @@
       </div>
       <div class="limit">
         <h3 data-i18n="limits.t2">앱별 소리 분리는 Windows 11부터</h3>
-        <p data-i18n="limits.p2">Discord 소리만 골라 듣는 기능은 Windows 11(또는 Windows 10 빌드 20348 이상)에서 동작합니다. 그 이하에서는 시스템 소리 전체를 받습니다.</p>
+        <p data-i18n="limits.p2">지정한 앱의 소리만 골라 듣는 기능은 Windows 11(또는 Windows 10 빌드 20348 이상)에서 동작합니다. 그 이하에서는 시스템 소리 전체를 받습니다.</p>
       </div>
       <div class="limit">
         <h3 data-i18n="limits.t3">완벽한 번역은 아닙니다</h3>
@@ -362,6 +374,29 @@
     </div>
   </section>
 
+  <section id="faq">
+    <p class="kicker" data-i18n="faq.kicker">자주 묻는 질문</p>
+    <h2 data-i18n="faq.h2">설치 전에 가장 많이 받는 질문들.</h2>
+    <div class="faq">
+      <div class="qa">
+        <h3 data-i18n="faq.q1">정말 무료인가요?</h3>
+        <p data-i18n="faq.a1">네. 본체는 지금도, 정식 출시 후에도 무료입니다. 계정도, 결제도, 광고도 없습니다.</p>
+      </div>
+      <div class="qa">
+        <h3 data-i18n="faq.q2">게임에서 밴 당하지 않나요?</h3>
+        <p data-i18n="faq.a2">온말은 게임 프로세스에 아무 코드도 넣지 않습니다. 게임 입장에서 온말은 화면 위에 떠 있는 별개의 창일 뿐입니다. 다만 최종 판단은 각 게임사의 몫이므로, 대회처럼 민감한 자리에서는 주최 측 규정을 먼저 확인하세요.</p>
+      </div>
+      <div class="qa">
+        <h3 data-i18n="faq.q3">어떤 게임에서 쓸 수 있나요?</h3>
+        <p data-i18n="faq.a3">특정 게임 전용이 아닙니다. 게임을 '테두리 없는 창 모드'로 실행할 수 있으면 자막을 띄울 수 있습니다. 소리는 게임 내 보이스챗이든 Discord든, 팀보이스가 나오는 앱을 고르면 됩니다.</p>
+      </div>
+      <div class="qa">
+        <h3 data-i18n="faq.q4">인터넷이 필요한가요?</h3>
+        <p data-i18n="faq.a4">처음에 인식 모델을 받을 때만 필요합니다. 그 뒤로는 인식과 번역 모두 내 PC에서 처리되므로 인터넷 없이도 동작합니다.</p>
+      </div>
+    </div>
+  </section>
+
   <section id="legal">
     <p class="kicker" data-i18n="legal.kicker">법적 고지</p>
     <h2 data-i18n="legal.h2">적용되는 문서는 이게 전부입니다.</h2>
@@ -395,6 +430,7 @@
       <a href="licenses.html" data-i18n="footer.licenses">오픈소스 고지</a>
       <a href="https://github.com/KDYPOHO/onmal-site">GitHub</a>
       <a href="https://github.com/KDYPOHO/onmal-site/issues" data-i18n="footer.contact">문의 · 버그 신고</a>
+      <a href="mailto:todaklife@gmail.com">todaklife@gmail.com</a>
     </div>
     <div>온말 · Onmal</div>
     <small data-i18n-html="footer.small">

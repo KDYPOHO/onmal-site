@@ -11,4 +11,5 @@
 (`.nojekyll` 로 Jekyll 처리를 끕니다).
 
 앱 소스 코드는 별도의 비공개 저장소에서 관리합니다.
-문의와 버그 신고는 이 저장소의 [Issues](https://github.com/KDYPOHO/onmal-site/issues)로 받습니다.
+문의와 버그 신고는 이메일(todaklife@gmail.com) 또는 이 저장소의
+[Issues](https://github.com/KDYPOHO/onmal-site/issues)로 받습니다.
