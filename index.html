@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +9,7 @@
 <meta property="og:description" content="게임 중 팀원의 외국어를 실시간 자막으로. 내 PC에서 돌아가는 무료 통역 비서.">
 <meta property="og:type" content="website">
 <link rel="icon" href="onmal_64.png">
+<script>(function(){try{var t=localStorage.getItem('onmal-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -17,10 +18,17 @@
   :root{
     --ink:#0F131C; --night:#161C2A; --indigo:#1E2A45; --line:#2A3550;
     --jade:#5FD3B2; --moon:#F2C879; --paper:#ECE7DD; --dim:#9AA3B5; --coral:#E8705F;
+    --card-bg:linear-gradient(170deg,rgba(30,42,69,.42),transparent);
     --display:"Gowun Batang", serif;
     --body:"Pretendard Variable", Pretendard, system-ui, sans-serif;
     --mono:"JetBrains Mono", ui-monospace, monospace;
     --ease:cubic-bezier(.32,.72,0,1);
+  }
+  /* 라이트 팔레트. 옥빛은 흰 배경에서 대비가 무너지므로 짙은 계열로 바꿉니다. */
+  html[data-theme="light"]{
+    --ink:#F6F2E9; --night:#FFFFFF; --indigo:#E9E4D7; --line:#D9D2C1;
+    --jade:#0E7A5C; --moon:#8A6A1B; --paper:#232B38; --dim:#5C6675; --coral:#B84B3B;
+    --card-bg:#FFFFFF;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
@@ -30,19 +38,28 @@
     background-image:radial-gradient(1100px 620px at 76% -8%, #22314F 0%, transparent 62%);
     background-repeat:no-repeat;
   }
+  html[data-theme="light"] body{background-image:none}
   .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
   a{color:inherit}
   ::selection{background:var(--jade);color:var(--ink)}
   :focus-visible{outline:2px solid var(--jade);outline-offset:3px;border-radius:4px}
 
   /* ── nav ── */
-  nav{display:flex;align-items:center;gap:14px;padding:26px 0}
+  nav{display:flex;align-items:center;gap:12px;padding:26px 0;flex-wrap:wrap}
   nav img{width:34px;height:34px;border-radius:9px}
   nav b{font-family:var(--display);font-weight:700;font-size:21px;letter-spacing:.02em}
   nav .sp{flex:1}
   nav a.gh{font-family:var(--mono);font-size:12.5px;color:var(--dim);text-decoration:none;
     border:1px solid var(--line);padding:7px 13px;border-radius:999px;transition:.12s ease-out}
   nav a.gh:hover{color:var(--paper);border-color:var(--jade)}
+  .lsel{font-family:var(--mono);font-size:12.5px;color:var(--dim);background:transparent;
+    border:1px solid var(--line);border-radius:999px;padding:7px 10px;cursor:pointer;max-width:170px}
+  .lsel:hover{color:var(--paper);border-color:var(--jade)}
+  .lsel option{color:#111;background:#fff}
+  .tbtn{width:37px;height:37px;border-radius:999px;border:1px solid var(--line);
+    background:transparent;color:var(--dim);cursor:pointer;font-size:15px;line-height:1;
+    transition:.12s ease-out}
+  .tbtn:hover{color:var(--paper);border-color:var(--jade)}
 
   /* ── hero ── */
   .hero{padding:56px 0 20px;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
@@ -63,13 +80,14 @@
   .soon i{width:8px;height:8px;border-radius:99px;background:var(--moon);flex-shrink:0}
   .note{margin-top:16px;font-size:13px;color:var(--dim)}
 
-  /* ── signature: live subtitle demo ── */
+  /* ── signature: live subtitle demo. 게임 화면 묘사라 테마와 무관하게 어둡습니다 ── */
   .frame{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#0A0E15;
     box-shadow:0 24px 70px rgba(0,0,0,.55)}
+  html[data-theme="light"] .frame{box-shadow:0 18px 50px rgba(70,60,35,.22)}
   .frame .bar{display:flex;align-items:center;gap:7px;padding:11px 14px;
-    border-bottom:1px solid var(--line);background:rgba(30,42,69,.4)}
+    border-bottom:1px solid #2A3550;background:rgba(30,42,69,.4)}
   .dot{width:9px;height:9px;border-radius:99px;background:#2A3550}
-  .bar span{margin-left:8px;font-family:var(--mono);font-size:11.5px;color:var(--dim)}
+  .bar span{margin-left:8px;font-family:var(--mono);font-size:11.5px;color:#9AA3B5}
   .stage{position:relative;aspect-ratio:16/10;
     background:
       radial-gradient(520px 300px at 22% 18%, rgba(60,86,140,.42), transparent 66%),
@@ -77,28 +95,28 @@
       linear-gradient(168deg,#16203A 0%,#0D1220 100%);
     display:flex;align-items:flex-end;justify-content:center;padding:0 20px 17%}
   .live{position:absolute;top:14px;right:16px;display:flex;align-items:center;gap:7px;
-    font-family:var(--mono);font-size:11px;color:var(--jade)}
-  .live i{width:7px;height:7px;border-radius:99px;background:var(--jade);
+    font-family:var(--mono);font-size:11px;color:#5FD3B2}
+  .live i{width:7px;height:7px;border-radius:99px;background:#5FD3B2;
     animation:pulse 1.9s var(--ease) infinite}
   @keyframes pulse{0%,100%{opacity:.35;transform:scale(.82)}50%{opacity:1;transform:scale(1)}}
 
   .subs{width:100%;max-width:460px;display:flex;flex-direction:column;gap:7px}
   .sub{background:rgba(15,19,28,.62);backdrop-filter:blur(9px);
     border:1px solid rgba(95,211,178,.16);border-radius:11px;padding:11px 14px;
-    display:flex;gap:11px;align-items:baseline;
+    display:flex;gap:11px;align-items:baseline;color:#ECE7DD;
     text-shadow:0 2px 6px rgba(0,0,0,.7);transition:.35s var(--ease)}
   .sub.old{opacity:.42}
-  .sub .lang{font-family:var(--mono);font-size:11px;color:var(--jade);
+  .sub .lang{font-family:var(--mono);font-size:11px;color:#5FD3B2;
     flex-shrink:0;min-width:44px;letter-spacing:.03em}
   .sub .tx{font-size:15.5px;line-height:1.45}
-  .sub .tx.src{color:var(--dim);font-style:italic}
+  .sub .tx.src{color:#9AA3B5;font-style:italic}
 
   /* ── sections ── */
   section{padding:92px 0}
   .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.13em;text-transform:uppercase;
     color:var(--jade);margin-bottom:16px}
   h2{font-family:var(--display);font-weight:700;font-size:clamp(27px,3.4vw,38px);
-    line-height:1.28;letter-spacing:-.01em;max-width:22ch}
+    line-height:1.28;letter-spacing:-.01em;max-width:24ch}
   .sub-lede{margin-top:16px;color:var(--dim);max-width:56ch}
 
   .flow{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:48px;
@@ -109,7 +127,7 @@
   .step p{font-size:14px;color:var(--dim);line-height:1.6}
 
   .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px}
-  .card{border:1px solid var(--line);border-radius:14px;padding:26px;background:linear-gradient(170deg,rgba(30,42,69,.42),transparent)}
+  .card{border:1px solid var(--line);border-radius:14px;padding:26px;background:var(--card-bg)}
   .card h3{font-size:17px;font-weight:600;margin-bottom:10px}
   .card p{font-size:14.5px;color:var(--dim)}
 
@@ -124,9 +142,10 @@
   th,td{text-align:left;padding:15px 16px;border-bottom:1px solid var(--line);vertical-align:top}
   thead th{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;
     color:var(--jade);border-bottom-color:var(--jade)}
-  tbody th{font-weight:500;color:var(--dim);width:24%}
+  tbody th{font-weight:500;color:var(--dim);width:20%}
   td{color:var(--paper)}
-  td.rec{color:var(--paper)}
+  .spec-note{margin-top:18px;font-size:13.5px;color:var(--dim);border-left:2px solid var(--moon);
+    padding-left:16px;max-width:72ch}
 
   /* langs */
   .langs{display:flex;flex-wrap:wrap;gap:7px;margin-top:36px}
@@ -136,17 +155,18 @@
 
   /* roadmap */
   .road{margin-top:44px;border-top:1px solid var(--line)}
-  .road div{display:grid;grid-template-columns:120px 1fr auto;gap:20px;padding:19px 0;
+  .road>div{display:grid;grid-template-columns:88px 1fr auto;gap:20px;padding:17px 0;
     border-bottom:1px solid var(--line);align-items:baseline}
-  .road .when{font-family:var(--mono);font-size:12px;color:var(--jade)}
-  .road .what{font-size:15.5px}
-  .road .who{font-family:var(--mono);font-size:11.5px;color:var(--dim)}
+  .road .when{font-family:var(--mono);font-size:12.5px;color:var(--jade)}
+  .road .what{font-size:15px}
+  .road .who{font-family:var(--mono);font-size:11px;color:var(--ink);background:var(--jade);
+    border-radius:999px;padding:3px 10px;justify-self:end}
+  .road .who.soft{background:transparent;color:var(--dim);border:1px solid var(--line)}
 
   /* legal cards */
   .legal-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px}
   .legal-cards a{display:block;border:1px solid var(--line);border-radius:14px;padding:24px;
-    text-decoration:none;background:linear-gradient(170deg,rgba(30,42,69,.42),transparent);
-    transition:.15s var(--ease)}
+    text-decoration:none;background:var(--card-bg);transition:.15s var(--ease)}
   .legal-cards a:hover{border-color:var(--jade);transform:translateY(-2px)}
   .legal-cards h3{font-size:16.5px;font-weight:600;margin-bottom:9px}
   .legal-cards p{font-size:14px;color:var(--dim)}
@@ -165,8 +185,8 @@
     .cards{grid-template-columns:1fr}
     .legal-cards{grid-template-columns:1fr}
     .limits{grid-template-columns:1fr}
-    .road div{grid-template-columns:88px 1fr;gap:12px}
-    .road .who{grid-column:2}
+    .road>div{grid-template-columns:64px 1fr;gap:12px}
+    .road .who{grid-column:2;justify-self:start}
     section{padding:66px 0}
   }
   @media (prefers-reduced-motion:reduce){
@@ -182,28 +202,30 @@
     <img src="onmal_128.png" alt="">
     <b>온말</b>
     <span class="sp"></span>
+    <select id="langSel" class="lsel" aria-label="Language"></select>
+    <button id="themeBtn" class="tbtn" aria-label="Theme">◐</button>
     <a class="gh" href="https://github.com/KDYPOHO/onmal-site">GitHub</a>
   </nav>
 
   <header class="hero">
     <div>
-      <p class="eyebrow">Windows · Steam · 무료</p>
-      <h1>팀원의 말을<br><em>내 말로</em> 듣습니다.</h1>
-      <p class="lede">게임 중에 외국인 팀원이 뭐라고 하는지 몰라 콜을 놓치는 일. 온말이 대신 듣고, 화면 위에 번역 자막으로 띄웁니다.</p>
+      <p class="eyebrow" data-i18n="hero.eyebrow">Windows · Steam · 무료</p>
+      <h1 data-i18n-html="hero.h1">팀원의 말을<br><em>내 말로</em> 듣습니다.</h1>
+      <p class="lede" data-i18n="hero.lede">게임 중에 외국인 팀원이 뭐라고 하는지 몰라 콜을 놓치는 일. 온말이 대신 듣고, 화면 위에 번역 자막으로 띄웁니다.</p>
       <div class="cta">
-        <span class="soon"><i></i>Steam 출시 준비 중</span>
-        <a class="btn s" href="#how">어떻게 동작하나</a>
+        <span class="soon"><i></i><span data-i18n="hero.soon">Steam 출시 준비 중</span></span>
+        <a class="btn s" href="#how" data-i18n="hero.how">어떻게 동작하나</a>
       </div>
-      <p class="note">내 컴퓨터 안에서 처리됩니다. 대화는 어디로도 전송되지 않습니다.</p>
+      <p class="note" data-i18n="hero.note">내 컴퓨터 안에서 처리됩니다. 대화는 어디로도 전송되지 않습니다.</p>
     </div>
 
     <div class="frame" aria-hidden="true">
       <div class="bar">
         <i class="dot"></i><i class="dot"></i><i class="dot"></i>
-        <span>게임 실행 중 · 테두리 없는 창 모드</span>
+        <span data-i18n="frame.bar">게임 실행 중 · 테두리 없는 창 모드</span>
       </div>
       <div class="stage">
-        <div class="live"><i></i>듣는 중</div>
+        <div class="live"><i></i><span data-i18n="frame.live">듣는 중</span></div>
         <div class="subs" id="subs"></div>
       </div>
     </div>
@@ -212,100 +234,101 @@
 
 <div class="wrap">
   <section id="how">
-    <p class="kicker">듣고 · 알아듣고 · 옮긴다</p>
-    <h2>말이 끝나기도 전에 자막이 올라옵니다.</h2>
-    <p class="sub-lede">네 단계가 사용자 PC 안에서 이어집니다. 서버를 거치지 않으니 왕복 지연이 없고, 인터넷이 끊겨도 계속 동작합니다.</p>
+    <p class="kicker" data-i18n="how.kicker">듣고 · 알아듣고 · 옮긴다</p>
+    <h2 data-i18n="how.h2">말이 끝나기도 전에 자막이 올라옵니다.</h2>
+    <p class="sub-lede" data-i18n="how.lede">네 단계가 사용자 PC 안에서 이어집니다. 서버를 거치지 않으니 왕복 지연이 없고, 인터넷이 끊겨도 계속 동작합니다.</p>
 
     <div class="flow">
       <div class="step">
-        <div class="code">01 · 듣기</div>
-        <h3>Discord 소리만 골라서</h3>
-        <p>Windows의 프로세스 단위 오디오 캡처를 씁니다. 게임 총성과 BGM은 들어오지 않습니다.</p>
+        <div class="code" data-i18n="how.c1">01 · 듣기</div>
+        <h3 data-i18n="how.t1">Discord 소리만 골라서</h3>
+        <p data-i18n="how.p1">Windows의 프로세스 단위 오디오 캡처를 씁니다. 게임 총성과 BGM은 들어오지 않습니다.</p>
       </div>
       <div class="step">
-        <div class="code">02 · 자르기</div>
-        <h3>말할 때만 반응</h3>
-        <p>발화 감지가 사람 목소리 구간만 잘라냅니다. 조용할 땐 아무 일도 하지 않습니다.</p>
+        <div class="code" data-i18n="how.c2">02 · 자르기</div>
+        <h3 data-i18n="how.t2">말할 때만 반응</h3>
+        <p data-i18n="how.p2">발화 감지가 사람 목소리 구간만 잘라냅니다. 조용할 땐 아무 일도 하지 않습니다.</p>
       </div>
       <div class="step">
-        <div class="code">03 · 알아듣기</div>
-        <h3>무슨 언어인지 알아서</h3>
-        <p>언어를 미리 지정할 필요가 없습니다. 러시아어든 포르투갈어든 감지해서 받아씁니다.</p>
+        <div class="code" data-i18n="how.c3">03 · 알아듣기</div>
+        <h3 data-i18n="how.t3">무슨 언어인지 알아서</h3>
+        <p data-i18n="how.p3">언어를 미리 지정할 필요가 없습니다. 러시아어든 포르투갈어든 감지해서 받아씁니다.</p>
       </div>
       <div class="step">
-        <div class="code">04 · 옮기기</div>
-        <h3>내 언어로 화면 위에</h3>
-        <p>게임을 가리지 않는 자리에, 클릭이 통과하는 자막으로. 조작을 방해하지 않습니다.</p>
+        <div class="code" data-i18n="how.c4">04 · 옮기기</div>
+        <h3 data-i18n="how.t4">내 언어로 화면 위에</h3>
+        <p data-i18n="how.p4">게임을 가리지 않는 자리에, 클릭이 통과하는 자막으로. 조작을 방해하지 않습니다.</p>
       </div>
     </div>
   </section>
 
   <section>
-    <p class="kicker">비서처럼</p>
-    <h2>켜두면, 잊고 있어도 일합니다.</h2>
+    <p class="kicker" data-i18n="care.kicker">비서처럼</p>
+    <h2 data-i18n="care.h2">켜두면, 잊고 있어도 일합니다.</h2>
     <div class="cards">
       <div class="card">
-        <h3>설정은 처음 한 번</h3>
-        <p>소리를 가져올 앱과 내 언어만 고르면 끝입니다. 그 뒤로는 게임만 켜면 됩니다.</p>
+        <h3 data-i18n="care.t1">설정은 처음 한 번</h3>
+        <p data-i18n="care.p1">소리를 가져올 앱과 내 언어만 고르면 끝입니다. 그 뒤로는 게임만 켜면 됩니다.</p>
       </div>
       <div class="card">
-        <h3>내 API 키를 넣어도 됩니다</h3>
-        <p>기본 번역은 무료로 내장돼 있습니다. 더 정확한 번역이 필요하면 본인의 API 키를 넣어 쓸 수 있습니다. 키는 이 컴퓨터에만 암호화되어 저장됩니다.</p>
+        <h3 data-i18n="care.t2">내 API 키를 넣어도 됩니다</h3>
+        <p data-i18n="care.p2">기본 번역은 무료로 내장돼 있습니다. 더 정확한 번역이 필요하면 본인의 API 키를 넣어 쓸 수 있습니다. 키는 이 컴퓨터에만 암호화되어 저장됩니다.</p>
       </div>
       <div class="card">
-        <h3>대화가 밖으로 나가지 않습니다</h3>
-        <p>음성은 메모리에서 처리하고 버립니다. 기본 설정에서는 녹음도, 업로드도, 계정도 없습니다.</p>
+        <h3 data-i18n="care.t3">대화가 밖으로 나가지 않습니다</h3>
+        <p data-i18n="care.p3">음성은 메모리에서 처리하고 버립니다. 기본 설정에서는 녹음도, 업로드도, 계정도 없습니다.</p>
       </div>
     </div>
   </section>
 
   <section>
-    <p class="kicker">먼저 알려드립니다</p>
-    <h2>못 하는 것도 적어둡니다.</h2>
-    <p class="sub-lede">설치하고 나서 알게 되는 것보다, 지금 아는 편이 낫습니다.</p>
+    <p class="kicker" data-i18n="limits.kicker">먼저 알려드립니다</p>
+    <h2 data-i18n="limits.h2">못 하는 것도 적어둡니다.</h2>
+    <p class="sub-lede" data-i18n="limits.lede">설치하고 나서 알게 되는 것보다, 지금 아는 편이 낫습니다.</p>
 
     <div class="limits">
       <div class="limit">
-        <h3>독점 전체화면에서는 안 보입니다</h3>
-        <p>게임을 '테두리 없는 창 모드' 또는 '창 모드'로 실행해야 자막이 화면 위에 올라옵니다. 대부분의 게임이 설정에서 바꿀 수 있습니다.</p>
+        <h3 data-i18n="limits.t1">독점 전체화면에서는 안 보입니다</h3>
+        <p data-i18n="limits.p1">게임을 '테두리 없는 창 모드' 또는 '창 모드'로 실행해야 자막이 화면 위에 올라옵니다. 대부분의 게임이 설정에서 바꿀 수 있습니다.</p>
       </div>
       <div class="limit">
-        <h3>앱별 소리 분리는 Windows 11부터</h3>
-        <p>Discord 소리만 골라 듣는 기능은 Windows 11(또는 Windows 10 빌드 20348 이상)에서 동작합니다. 그 이하에서는 시스템 소리 전체를 받습니다.</p>
+        <h3 data-i18n="limits.t2">앱별 소리 분리는 Windows 11부터</h3>
+        <p data-i18n="limits.p2">Discord 소리만 골라 듣는 기능은 Windows 11(또는 Windows 10 빌드 20348 이상)에서 동작합니다. 그 이하에서는 시스템 소리 전체를 받습니다.</p>
       </div>
       <div class="limit">
-        <h3>완벽한 번역은 아닙니다</h3>
-        <p>총성과 고함이 섞인 음성은 사람도 못 알아듣습니다. 온말도 마찬가지입니다. 틀렸을 때는 틀렸다고 표시합니다.</p>
+        <h3 data-i18n="limits.t3">완벽한 번역은 아닙니다</h3>
+        <p data-i18n="limits.p3">총성과 고함이 섞인 음성은 사람도 못 알아듣습니다. 온말도 마찬가지입니다. 틀렸을 때는 틀렸다고 표시합니다.</p>
       </div>
       <div class="limit">
-        <h3>게임을 건드리지 않습니다</h3>
-        <p>게임 프로세스에 어떤 코드도 주입하지 않습니다. 안티치트에 걸릴 만한 동작을 하지 않는다는 뜻이고, 대신 위의 창 모드 제약이 생깁니다.</p>
+        <h3 data-i18n="limits.t4">게임을 건드리지 않습니다</h3>
+        <p data-i18n="limits.p4">게임 프로세스에 어떤 코드도 주입하지 않습니다. 안티치트에 걸릴 만한 동작을 하지 않는다는 뜻이고, 대신 위의 창 모드 제약이 생깁니다.</p>
       </div>
     </div>
   </section>
 
   <section>
-    <p class="kicker">사양</p>
-    <h2>게임과 함께 돌아가야 하므로,<br>정직하게 적었습니다.</h2>
+    <p class="kicker" data-i18n="spec.kicker">사양</p>
+    <h2 data-i18n-html="spec.h2">게임과 함께 돌아가야 하므로,<br>정직하게 적었습니다.</h2>
     <table>
       <thead>
-        <tr><th></th><th>최소</th><th>권장</th></tr>
+        <tr><th></th><th data-i18n="spec.min">최소</th><th data-i18n="spec.rec">권장</th></tr>
       </thead>
       <tbody>
-        <tr><th>운영체제</th><td>Windows 10 64-bit (21H2)</td><td class="rec">Windows 11 (22H2 이상)</td></tr>
-        <tr><th>프로세서</th><td>4코어 · AVX2 지원</td><td class="rec">6코어 이상</td></tr>
-        <tr><th>메모리</th><td>8 GB</td><td class="rec">16 GB</td></tr>
-        <tr><th>그래픽</th><td>DirectX 11 (자막 표시용)</td><td class="rec">RTX 2060 이상 · VRAM 6 GB</td></tr>
-        <tr><th>저장 공간</th><td>3 GB</td><td class="rec">10 GB</td></tr>
-        <tr><th>자막 지연</th><td>약 2~3초</td><td class="rec">약 1초</td></tr>
+        <tr><th data-i18n="spec.os">운영체제</th><td>Windows 10 64-bit (21H2)</td><td>Windows 11</td></tr>
+        <tr><th data-i18n="spec.cpu">프로세서</th><td data-i18n="spec.cpu_min">4코어 · AVX2 (인텔 6세대 / 라이젠 1세대 이상)</td><td data-i18n="spec.cpu_rec">6코어 이상 (인텔 i5-10400 / 라이젠 5 3600 급)</td></tr>
+        <tr><th data-i18n="spec.ram">메모리</th><td>8 GB</td><td>16 GB</td></tr>
+        <tr><th data-i18n="spec.gfx">그래픽</th><td data-i18n="spec.gfx_min">없어도 됩니다 — CPU 모드로 동작 (자막이 조금 늦어집니다)</td><td data-i18n="spec.gfx_rec">Vulkan 1.2 GPU — GeForce GTX 1650 이상 · Radeon RX 6600 이상 · Intel Arc A580 이상, 게임 실행 후 VRAM 1 GB 여유</td></tr>
+        <tr><th data-i18n="spec.disk">저장 공간</th><td>2 GB</td><td data-i18n="spec.disk_rec">5 GB (추가 언어쌍·높은 정확도 모델)</td></tr>
+        <tr><th data-i18n="spec.delay">자막 지연</th><td data-i18n="spec.delay_min">약 1.5~2초 (CPU)</td><td data-i18n="spec.delay_rec">약 1초 이내 (GPU 실측 0.7초)</td></tr>
       </tbody>
     </table>
+    <p class="spec-note" data-i18n="spec.note">지연은 NVIDIA RTX 4060에서 실측한 값입니다. AMD·인텔 GPU도 같은 Vulkan 경로를 쓰지만 아직 실측 전이며, 알파·베타 단계에서 검증할 예정입니다. 정확도는 기본적으로 이 컴퓨터의 GPU 메모리에 맞춰 자동으로 골라지고, 설정에서 언제든 바꿀 수 있습니다.</p>
   </section>
 
   <section>
-    <p class="kicker">언어</p>
-    <h2>스팀이 지원하는 모든 언어로,<br>스팀에 모인 모든 사람과.</h2>
-    <p class="sub-lede">인터페이스는 스팀 전체 지원 언어 31개로 제공합니다. 음성 인식은 그보다 훨씬 넓은 범위를 다룹니다.</p>
+    <p class="kicker" data-i18n="lang.kicker">언어</p>
+    <h2 data-i18n-html="lang.h2">스팀이 지원하는 모든 언어로,<br>스팀에 모인 모든 사람과.</h2>
+    <p class="sub-lede" data-i18n="lang.lede">인터페이스와 이 홈페이지는 스팀 전체 지원 언어 31개로 제공합니다. 음성 인식은 그보다 훨씬 넓은 범위를 다룹니다.</p>
     <div class="langs">
       <span class="chip">ko 한국어</span><span class="chip">en English</span><span class="chip">ja 日本語</span>
       <span class="chip">zh-CN 简体中文</span><span class="chip">zh-TW 繁體中文</span><span class="chip">ru Русский</span>
@@ -321,35 +344,43 @@
     </div>
   </section>
 
-  <section>
-    <p class="kicker">앞으로</p>
-    <h2>본체는 계속 무료입니다.</h2>
-    <p class="sub-lede">무료 버전만으로 쓸 만하지 않다면 그건 제품이 아니라 광고입니다.</p>
+  <section id="roadmap">
+    <p class="kicker" data-i18n="road.kicker">앞으로</p>
+    <h2 data-i18n="road.h2">0.1에서 1.0까지 — 날짜 대신 완료 기준.</h2>
+    <p class="sub-lede" data-i18n="road.lede">각 단계는 달력이 아니라 완료 기준을 채워야 넘어갑니다. 서두르지 않고, 본체는 끝까지 무료입니다.</p>
     <div class="road">
-      <div><span class="when">v1.0</span><span class="what">실시간 번역 자막 · 31개 언어 인터페이스 · 내 API 키 연결</span><span class="who">무료</span></div>
-      <div><span class="when">v1.1</span><span class="what">부분 자막 · 화자 구분 · 게임별 프로파일 · 자막 히스토리</span><span class="who">무료</span></div>
+      <div><span class="when">0.1</span><span class="what" data-i18n="road.r1">실시간 번역 자막의 뼈대 — 로컬 인식·번역·오버레이</span><span class="who" data-i18n="road.now">지금</span></div>
+      <div><span class="when">0.2</span><span class="what" data-i18n="road.r2">안정화 — 장시간 실행, 게임과 동시 구동 검증</span></div>
+      <div><span class="when">0.3</span><span class="what" data-i18n="road.r3">알파 테스트 — 소수 테스터가 설명 없이 설치부터 자막까지</span><span class="who soft" data-i18n="road.alpha">알파</span></div>
+      <div><span class="when">0.4</span><span class="what" data-i18n="road.r4">번역 확충 — 주요 언어쌍 동봉, OBS 호환 확인</span></div>
+      <div><span class="when">0.5</span><span class="what" data-i18n="road.r5">편의 — 자막 히스토리, 오버레이 프리셋</span></div>
+      <div><span class="when">0.6</span><span class="what" data-i18n="road.r6">베타 — 스팀 플레이테스트, 화자 구분, 게임별 프로파일</span><span class="who soft" data-i18n="road.beta">베타</span></div>
+      <div><span class="when">0.7</span><span class="what" data-i18n="road.r7">성능 — 저사양·내장 그래픽 배려</span></div>
+      <div><span class="when">0.8</span><span class="what" data-i18n="road.r8">출시 준비 — 상점 페이지, 문서 검토</span></div>
+      <div><span class="when">0.9</span><span class="what" data-i18n="road.r9">출시 후보 — 기능 동결, 버그만 수정</span></div>
+      <div><span class="when">1.0</span><span class="what" data-i18n="road.r10">정식 출시 — 계속 무료</span><span class="who" data-i18n="road.launch">목표</span></div>
     </div>
   </section>
 
   <section id="legal">
-    <p class="kicker">법적 고지</p>
-    <h2>적용되는 문서는 이게 전부입니다.</h2>
-    <p class="sub-lede">온말은 서버가 없고 계정을 만들지 않습니다. 그래서 문서도 짧습니다. 앱 안(정보 화면)에서도 같은 문서를 볼 수 있습니다.</p>
+    <p class="kicker" data-i18n="legal.kicker">법적 고지</p>
+    <h2 data-i18n="legal.h2">적용되는 문서는 이게 전부입니다.</h2>
+    <p class="sub-lede" data-i18n="legal.lede">온말은 서버가 없고 계정을 만들지 않습니다. 그래서 문서도 짧습니다. 앱 안(정보 화면)에서도 같은 문서를 볼 수 있습니다.</p>
     <div class="legal-cards">
       <a href="privacy.html">
-        <h3>개인정보처리방침</h3>
-        <p>무엇을 처리하고, 무엇을 절대 수집하지 않는지. 한 줄 요약: 온말은 서버가 없습니다.</p>
-        <span class="go">읽기 →</span>
+        <h3 data-i18n="legal.t1">개인정보처리방침</h3>
+        <p data-i18n="legal.p1">무엇을 처리하고, 무엇을 절대 수집하지 않는지. 한 줄 요약: 온말은 서버가 없습니다.</p>
+        <span class="go" data-i18n="legal.read">읽기 →</span>
       </a>
       <a href="terms.html">
-        <h3>이용약관</h3>
-        <p>이용 조건과 제한. 특히 "참여 중인 대화에서만 사용"은 꼭 읽어주세요.</p>
-        <span class="go">읽기 →</span>
+        <h3 data-i18n="legal.t2">이용약관</h3>
+        <p data-i18n="legal.p2">이용 조건과 제한. 특히 "참여 중인 대화에서만 사용"은 꼭 읽어주세요.</p>
+        <span class="go" data-i18n="legal.read">읽기 →</span>
       </a>
       <a href="licenses.html">
-        <h3>오픈소스 고지</h3>
-        <p>온말을 만드는 데 쓰인 오픈소스 소프트웨어·모델·글꼴과 각 라이선스.</p>
-        <span class="go">읽기 →</span>
+        <h3 data-i18n="legal.t3">오픈소스 고지</h3>
+        <p data-i18n="legal.p3">온말을 만드는 데 쓰인 오픈소스 소프트웨어·모델·글꼴과 각 라이선스.</p>
+        <span class="go" data-i18n="legal.read">읽기 →</span>
       </a>
     </div>
   </section>
@@ -358,15 +389,15 @@
 <footer>
   <div class="wrap">
     <div class="row">
-      <a href="#how">동작 방식</a>
-      <a href="privacy.html">개인정보처리방침</a>
-      <a href="terms.html">이용약관</a>
-      <a href="licenses.html">오픈소스 고지</a>
+      <a href="#how" data-i18n="footer.how">동작 방식</a>
+      <a href="privacy.html" data-i18n="footer.privacy">개인정보처리방침</a>
+      <a href="terms.html" data-i18n="footer.terms">이용약관</a>
+      <a href="licenses.html" data-i18n="footer.licenses">오픈소스 고지</a>
       <a href="https://github.com/KDYPOHO/onmal-site">GitHub</a>
-      <a href="https://github.com/KDYPOHO/onmal-site/issues">문의 · 버그 신고</a>
+      <a href="https://github.com/KDYPOHO/onmal-site/issues" data-i18n="footer.contact">문의 · 버그 신고</a>
     </div>
     <div>온말 · Onmal</div>
-    <small>
+    <small data-i18n-html="footer.small">
       Steam 및 Steam 로고는 Valve Corporation의 상표입니다. Discord는 Discord Inc.의 상표입니다.
       온말은 해당 기업과 제휴 관계가 없으며, 호환성을 설명하기 위해 명칭을 사용합니다.<br>
       음성 인식과 번역에 오픈소스 모델을 사용합니다. 전체 목록과 라이선스는 오픈소스 고지 문서에서 확인하실 수 있습니다.
@@ -374,48 +405,6 @@
   </div>
 </footer>
 
-<script>
-(function(){
-  var lines = [
-    { lang:"ru",    src:"Двое заходят на точку B",         dst:"적 두 명이 B사이트로 들어가고 있어" },
-    { lang:"ja",    src:"回復アイテム持ってる？",              dst:"회복 아이템 가진 사람 있어?" },
-    { lang:"pt-BR", src:"Cuidado, sniper na torre",         dst:"조심해, 저격수가 탑에 있어" },
-    { lang:"es",    src:"Voy a rotar por el túnel",         dst:"터널 쪽으로 돌아갈게" },
-    { lang:"de",    src:"Ich brauche Munition, bitte",      dst:"탄약이 필요해, 부탁해" },
-    { lang:"vi",    src:"Đợi tôi, tôi đang hồi máu",        dst:"기다려줘, 지금 회복 중이야" }
-  ];
-  var host = document.getElementById("subs");
-  if(!host) return;
-  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var i = 0, shown = [];
-
-  function render(){
-    host.innerHTML = "";
-    shown.forEach(function(item, idx){
-      var el = document.createElement("div");
-      el.className = "sub" + (idx === 0 && shown.length > 1 ? " old" : "");
-      el.innerHTML = '<span class="lang">' + item.lang + '</span>' +
-                     '<span class="tx' + (item.stage === "src" ? " src" : "") + '">' +
-                     (item.stage === "src" ? item.src : item.dst) + '</span>';
-      host.appendChild(el);
-    });
-  }
-
-  function push(){
-    var line = lines[i % lines.length];
-    var entry = { lang: line.lang, src: line.src, dst: line.dst, stage: "src" };
-    shown.push(entry);
-    if(shown.length > 2) shown.shift();
-    render();
-    setTimeout(function(){ entry.stage = "dst"; render(); }, reduce ? 0 : 620);
-    i++;
-  }
-
-  push();
-  if(!reduce){ setTimeout(push, 1800); setInterval(push, 3400); }
-  else { shown = [ {lang:lines[0].lang, dst:lines[0].dst, stage:"dst"},
-                   {lang:lines[1].lang, dst:lines[1].dst, stage:"dst"} ]; render(); }
-})();
-</script>
+<script src="site.js"></script>
 </body>
 </html>
