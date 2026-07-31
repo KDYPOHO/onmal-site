@@ -48,7 +48,12 @@
   .tbtn:hover{color:var(--paper);border-color:var(--jade)}
 
   header{padding:44px 0 10px}
-  .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--jade)}
+  .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--jade);display:flex;align-items:flex-end;gap:9px}
+  /* 신호 문법의 섹션 머리표 — 첫 화면과 같은 마크. 파형 3개판을 ::before 로 그립니다. */
+  .kicker::before{content:"";width:10px;height:12px;flex-shrink:0;margin-bottom:1px;
+    background:linear-gradient(currentColor,currentColor) 0 100%/2px 6px no-repeat,
+      linear-gradient(currentColor,currentColor) 4px 100%/2px 12px no-repeat,
+      linear-gradient(currentColor,currentColor) 8px 100%/2px 4px no-repeat}
   h1{font-family:var(--display);font-weight:700;font-size:clamp(30px,4.5vw,44px);line-height:1.25;margin-top:14px}
   .meta{margin-top:14px;font-family:var(--mono);font-size:12.5px;color:var(--dim)}
   .lede{margin-top:18px;color:var(--dim);font-size:17px}

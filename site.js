@@ -115,6 +115,38 @@
 
   if (lang !== "ko") { apply(lang); } else { apply("ko"); }
 
+  /* ── 실제 화면 탭 ────────────────────────────────────────────────────
+     상태는 .shots 의 data-shot <b>한 곳</b>에만 둡니다. 어떤 그림과 어떤 캡션이
+     보일지는 전부 CSS 가 정합니다 — 여기서 img.src 를 갈아끼우면 테마 전환과
+     두 곳에서 같은 것을 다투게 되고, 라이트에서 다크 화면이 뜨는 식으로 어긋납니다.
+
+     ⚠️ 이 블록은 데모 자막보다 <b>위</b>에 있어야 합니다. 아래쪽은 #subs 가 없으면
+        return 으로 함수를 빠져나가므로, 법적 문서 페이지가 아니어도 순서가 바뀌면
+        조용히 안 걸립니다. */
+  var shots = document.querySelector(".shots");
+  if (shots) {
+    var tabs = Array.prototype.slice.call(shots.querySelectorAll(".stab"));
+    var select = function (btn, focus) {
+      shots.setAttribute("data-shot", btn.getAttribute("data-shot"));
+      tabs.forEach(function (b) {
+        var on = b === btn;
+        b.setAttribute("aria-selected", on ? "true" : "false");
+        b.tabIndex = on ? 0 : -1;          // 로빙 탭인덱스 — 탭 줄 전체가 한 정거장
+      });
+      if (focus) { btn.focus(); }
+    };
+    tabs.forEach(function (btn, i) {
+      btn.tabIndex = btn.getAttribute("aria-selected") === "true" ? 0 : -1;
+      btn.addEventListener("click", function () { select(btn, false); });
+      btn.addEventListener("keydown", function (e) {
+        var step = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
+        if (!step) { return; }
+        e.preventDefault();
+        select(tabs[(i + step + tabs.length) % tabs.length], true);
+      });
+    });
+  }
+
   /* ── 데모 자막 ──────────────────────────────────────────────────────
      src(외국어)는 고정, dst(번역)는 지금 보고 있는 언어를 따라갑니다. */
   var DEMO_SRC = [

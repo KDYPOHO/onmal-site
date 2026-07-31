@@ -47,6 +47,51 @@
   ::selection{background:var(--jade);color:var(--ink)}
   :focus-visible{outline:2px solid var(--jade);outline-offset:3px;border-radius:4px}
 
+  /* ── 신호 문법 (2026-08-01) ────────────────────────────────────────
+     온말이 하는 일은 하나입니다: <b>고르지 않은 목소리</b>를 <b>고른 글</b>로 바꾸는 것.
+     앱 아이콘이 이미 그 그림입니다(파형 5개 위, 자막 바 아래). 그 변환을 UI 전체의
+     반복 문법으로 씁니다.
+
+       바 격자   두께 2px · 간격 2px · 피치 4px   ← 기존 4px 그리드 위
+       파형 높이 4 / 8 / 12 / 16 / 20            ← 같은 그리드
+       자막 높이 2                                ← 평평 = 다 옮겨진 상태
+       개수      5개. 좁으면 3개                   ← 아이콘의 48/32/16 축소 규칙과 같습니다
+       색        파형 = --jade  (아직 내 말이 아닌 것)
+                 자막 = --paper (내 말이 된 것)
+
+     🚫 장식으로 아무 데나 붙이지 마십시오. <b>변환이 일어나는 자리</b>와
+        <b>살아 있는 자리</b>에만 씁니다. 디자인 원칙 §1 은 "존재를 잊게 한다" 입니다 —
+        이 문법이 페이지마다 다섯 군데를 넘어가면 원칙을 어긴 것입니다.
+        지금 쓰는 자리: 섹션 머리 · 히어로 상태 · 4단계 흐름 · 화면 탭 · 푸터 앞 구분선. */
+  .sig{display:inline-flex;align-items:flex-end;gap:2px;height:20px;flex-shrink:0}
+  .sig b{width:2px;border-radius:1px;background:var(--jade);
+    transition:height .22s var(--ease), background-color .22s var(--ease)}
+  .sig b:nth-child(1){height:8px}
+  .sig b:nth-child(2){height:16px}
+  .sig b:nth-child(3){height:20px}
+  .sig b:nth-child(4){height:12px}
+  .sig b:nth-child(5){height:4px}
+  /* 옮겨진 상태: 전부 평평하고, 색이 본문 글자색으로 바뀝니다 */
+  .sig.done b{height:2px;background:var(--paper)}
+  /* 작은 자리용 3개판 */
+  .sig.sm{height:12px}
+  .sig.sm b:nth-child(1){height:6px}
+  .sig.sm b:nth-child(2){height:12px}
+  .sig.sm b:nth-child(3){height:4px}
+
+  /* 구분선: 왼쪽은 파형, 오른쪽은 한 줄 — 폭 전체로 변환을 한 번 더 말합니다 */
+  .sig-rule{display:flex;align-items:flex-end;gap:10px}
+  .sig-rule::after{content:"";flex:1;height:2px;background:var(--line);margin-bottom:1px}
+
+  /* 섹션 머리표. <b>마크업이 아니라 ::before</b> 로 그립니다 — 열 군데 넘는 kicker 에
+     <i> 를 손으로 넣으면 하나는 반드시 빠지고, 31개 언어 번역 키와도 무관해야 합니다. */
+  .kicker::before,.eyebrow::before{content:"";width:10px;height:12px;flex-shrink:0;
+    margin-bottom:1px;
+    background:
+      linear-gradient(currentColor,currentColor) 0   100%/2px 6px  no-repeat,
+      linear-gradient(currentColor,currentColor) 4px 100%/2px 12px no-repeat,
+      linear-gradient(currentColor,currentColor) 8px 100%/2px 4px  no-repeat}
+
   /* ── nav ── */
   nav{display:flex;align-items:center;gap:12px;padding:26px 0;flex-wrap:wrap}
   nav img{width:34px;height:34px;border-radius:9px}
@@ -67,7 +112,7 @@
   /* ── hero ── */
   .hero{padding:56px 0 20px;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
   .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;
-    color:var(--jade);margin-bottom:22px}
+    color:var(--jade);margin-bottom:22px;display:flex;align-items:flex-end;gap:9px}
   h1{font-family:var(--display);font-weight:700;font-size:clamp(38px,5.4vw,62px);
     line-height:1.16;letter-spacing:-.015em}
   h1 em{font-style:normal;color:var(--jade)}
@@ -90,48 +135,87 @@
     box-shadow:0 24px 70px rgba(0,0,0,.55)}
   html[data-theme="light"] .frame{box-shadow:0 18px 50px rgba(70,60,35,.22)}
   .frame .bar{display:flex;align-items:center;gap:7px;padding:11px 14px;
-    border-bottom:1px solid #2A3550;background:rgba(30,42,69,.4)}
-  .dot{width:9px;height:9px;border-radius:99px;background:#2A3550}
-  .bar span{margin-left:8px;font-family:var(--mono);font-size:11.5px;color:#9AA3B5}
+    border-bottom:1px solid #2A4552;background:rgba(27,48,60,.45)}
+  .dot{width:9px;height:9px;border-radius:99px;background:#2A4552}
+  .bar span{margin-left:8px;font-family:var(--mono);font-size:11.5px;color:#8FA6B2}
   .stage{position:relative;aspect-ratio:16/10;
     background:
       radial-gradient(520px 300px at 22% 18%, rgba(60,86,140,.42), transparent 66%),
       radial-gradient(420px 300px at 84% 82%, rgba(28,54,48,.5), transparent 68%),
       linear-gradient(168deg,#16203A 0%,#0D1220 100%);
     display:flex;align-items:flex-end;justify-content:center;padding:0 20px 17%}
-  .live{position:absolute;top:14px;right:16px;display:flex;align-items:center;gap:7px;
-    font-family:var(--mono);font-size:11px;color:#5FD3B2}
-  .live i{width:7px;height:7px;border-radius:99px;background:#5FD3B2;
-    animation:pulse 1.9s var(--ease) infinite}
-  @keyframes pulse{0%,100%{opacity:.35;transform:scale(.82)}50%{opacity:1;transform:scale(1)}}
+  /* '듣는 중' 은 점이 아니라 <b>파형</b>입니다. 앱의 상태 표시와 같은 형태 —
+     소리가 들어오고 있다는 사실을 모양 자체가 말합니다. */
+  .live{position:absolute;top:14px;right:16px;display:flex;align-items:flex-end;gap:8px;
+    font-family:var(--mono);font-size:11px;color:#3FC6E0}
+  .live .sig{height:14px}
+  .live .sig b{background:#3FC6E0;transform-origin:bottom;
+    animation:listen 1.25s var(--ease) infinite}
+  .live .sig b:nth-child(1){height:6px;animation-delay:0ms}
+  .live .sig b:nth-child(2){height:12px;animation-delay:110ms}
+  .live .sig b:nth-child(3){height:14px;animation-delay:220ms}
+  .live .sig b:nth-child(4){height:9px;animation-delay:330ms}
+  .live .sig b:nth-child(5){height:4px;animation-delay:440ms}
+  @keyframes listen{0%,100%{transform:scaleY(.28);opacity:.5}50%{transform:scaleY(1);opacity:1}}
 
+  /* 실제 오버레이가 그리는 것과 같은 3중 방어(백드롭 + 외곽선 + 그림자, 가이드 §4)입니다.
+     ⚠️ 여기 색은 <b>일부러 리터럴</b>입니다 — 게임 화면 위 자막은 페이지 테마를 따르지
+     않고 언제나 어둡습니다. 다만 값은 현재 아쿠아 팔레트의 다크 값과 같아야 합니다.
+     2026-08-01 에 옛 옥빛(#5FD3B2·#ECE7DD·#9AA3B5)이 남아 있던 것을 맞췄습니다. */
   .subs{width:100%;max-width:460px;display:flex;flex-direction:column;gap:7px}
-  .sub{background:rgba(15,19,28,.62);backdrop-filter:blur(9px);
-    border:1px solid rgba(95,211,178,.16);border-radius:11px;padding:11px 14px;
-    display:flex;gap:11px;align-items:baseline;color:#ECE7DD;
+  .sub{background:rgba(11,18,22,.62);backdrop-filter:blur(9px);
+    border:1px solid rgba(63,198,224,.16);border-radius:11px;padding:11px 14px;
+    display:flex;gap:11px;align-items:baseline;color:#E9EEF2;
     text-shadow:0 2px 6px rgba(0,0,0,.7);transition:.35s var(--ease)}
   .sub.old{opacity:.42}
-  .sub .lang{font-family:var(--mono);font-size:11px;color:#5FD3B2;
+  .sub .lang{font-family:var(--mono);font-size:11px;color:#3FC6E0;
     flex-shrink:0;min-width:44px;letter-spacing:.03em}
   .sub .tx{font-size:15.5px;line-height:1.45}
-  .sub .tx.src{color:#9AA3B5;font-style:italic}
+  /* 원문(아직 안 옮겨진 말)은 흐리게 — 신호 문법의 "파형" 쪽에 해당합니다 */
+  .sub .tx.src{color:#8FA6B2;font-style:italic}
 
-  /* ── 실제 화면 ── */
-  .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
-  .shots figure{margin:0}
-  .shots img{width:100%;height:auto;display:block;border-radius:12px;
-    border:1px solid var(--line);background:var(--night)}
-  /* 테마에 맞는 한 장만 보입니다. 둘 다 받아 두므로 전환이 즉각적입니다. */
-  .shots img.light{display:none}
-  html[data-theme="light"] .shots img.dark{display:none}
-  html[data-theme="light"] .shots img.light{display:block}
-  .shots figcaption{margin-top:12px;font-size:13.5px;color:var(--dim);line-height:1.55}
-  @media (max-width:860px){ .shots{grid-template-columns:1fr;gap:32px} }
+  /* ── 실제 화면 — 한 장씩, 크게 ──────────────────────────────────
+     2026-08-01: 3열로 나란히 두니 1180×820 짜리가 한 칸 330px 로 줄어 무엇이
+     적혀 있는지 하나도 안 읽혔습니다. 버튼으로 하나씩 고르고 폭을 다 씁니다.
+
+     ⚠️ 여섯 장(3화면 × 2테마)을 <b>겹쳐 쌓고 불투명도로만</b> 바꿉니다.
+        display:none 으로 숨기면 상자가 없어져 loading="lazy" 가 영영 받아오지
+        않고, 탭을 누르는 순간 빈 칸이 번쩍입니다. aspect-ratio 로 자리를 미리
+        잡아 두므로 늦게 도착해도 페이지가 밀리지 않습니다. */
+  .shot-tabs{display:flex;gap:8px;margin-top:44px;flex-wrap:wrap}
+  .stab{font-family:var(--body);font-size:14.5px;font-weight:600;color:var(--dim);
+    background:transparent;border:1px solid var(--line);border-radius:10px;
+    padding:11px 20px 9px;cursor:pointer;transition:.15s var(--ease);
+    display:flex;flex-direction:column;align-items:center;gap:8px}
+  .stab:hover{color:var(--paper);border-color:var(--jade)}
+  /* 고른 화면 아래에 <b>자막 바</b> 하나 — 신호 문법에서 '다 옮겨진' 형태입니다 */
+  .stab i{display:block;width:24px;height:2px;border-radius:1px;background:transparent;
+    transition:.15s var(--ease)}
+  .stab[aria-selected="true"]{color:var(--paper);border-color:var(--jade);background:var(--card-bg)}
+  .stab[aria-selected="true"] i{background:var(--jade)}
+
+  .shot-view{position:relative;margin-top:20px;border:1px solid var(--line);
+    border-radius:14px;overflow:hidden;background:var(--night);aspect-ratio:1180/820}
+  .shot-view img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;
+    opacity:0;transition:opacity .22s var(--ease)}
+  /* 지금 고른 화면 <b>과</b> 지금 테마, 둘 다 맞는 한 장만 드러납니다 */
+  html:not([data-theme="light"]) .shots[data-shot="home"]     img[data-k="home-dark"],
+  html:not([data-theme="light"]) .shots[data-shot="settings"] img[data-k="settings-dark"],
+  html:not([data-theme="light"]) .shots[data-shot="about"]    img[data-k="about-dark"],
+  html[data-theme="light"] .shots[data-shot="home"]     img[data-k="home-light"],
+  html[data-theme="light"] .shots[data-shot="settings"] img[data-k="settings-light"],
+  html[data-theme="light"] .shots[data-shot="about"]    img[data-k="about-light"]{opacity:1}
+
+  .shot-cap{margin-top:16px;font-size:14.5px;color:var(--dim);line-height:1.6;max-width:66ch}
+  .shot-cap span{display:none}
+  .shots[data-shot="home"]     .c-home,
+  .shots[data-shot="settings"] .c-settings,
+  .shots[data-shot="about"]    .c-about{display:block}
 
   /* ── sections ── */
   section{padding:92px 0}
   .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.13em;text-transform:uppercase;
-    color:var(--jade);margin-bottom:16px}
+    color:var(--jade);margin-bottom:16px;display:flex;align-items:flex-end;gap:9px}
   h2{font-family:var(--display);font-weight:700;font-size:clamp(27px,3.4vw,38px);
     line-height:1.28;letter-spacing:-.01em;max-width:24ch}
   .sub-lede{margin-top:16px;color:var(--dim);max-width:56ch}
@@ -139,7 +223,21 @@
   .flow{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:48px;
     background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
   .step{background:var(--night);padding:26px 22px}
-  .step .code{font-family:var(--mono);font-size:11.5px;color:var(--jade);letter-spacing:.06em}
+  .step .code{font-family:var(--mono);font-size:11.5px;color:var(--jade);letter-spacing:.06em;
+    display:flex;align-items:flex-end;gap:9px}
+  /* 네 단계가 곧 변환입니다. 파형이 단계마다 평평해져 04 에서 자막 바가 됩니다 —
+     글을 안 읽어도 이 앱이 무엇을 하는지 형태만으로 보입니다. */
+  .step .sig{height:14px}
+  .sig.k1 b:nth-child(1){height:6px}.sig.k1 b:nth-child(2){height:12px}
+  .sig.k1 b:nth-child(3){height:14px}.sig.k1 b:nth-child(4){height:9px}
+  .sig.k1 b:nth-child(5){height:4px}
+  .sig.k2 b:nth-child(1){height:4px}.sig.k2 b:nth-child(2){height:9px}
+  .sig.k2 b:nth-child(3){height:11px}.sig.k2 b:nth-child(4){height:6px}
+  .sig.k2 b:nth-child(5){height:3px}
+  .sig.k3 b:nth-child(1){height:3px}.sig.k3 b:nth-child(2){height:5px}
+  .sig.k3 b:nth-child(3){height:6px}.sig.k3 b:nth-child(4){height:4px}
+  .sig.k3 b:nth-child(5){height:2px}
+  .sig.k4 b{height:2px;background:var(--paper)}
   .step h3{font-size:16.5px;font-weight:600;margin:12px 0 8px}
   .step p{font-size:14px;color:var(--dim);line-height:1.6}
 
@@ -195,7 +293,9 @@
   .legal-cards .go{display:inline-block;margin-top:14px;font-family:var(--mono);
     font-size:12px;color:var(--jade)}
 
-  footer{padding:66px 0 90px;border-top:1px solid var(--line);color:var(--dim);font-size:13.5px}
+  /* 푸터 경계는 실선 대신 신호 구분선입니다 — 페이지의 마지막 한 번. */
+  footer{padding:0 0 90px;color:var(--dim);font-size:13.5px}
+  footer .sig-rule{margin-bottom:48px}
   footer .row{display:flex;gap:26px;flex-wrap:wrap;margin-bottom:20px}
   footer a{color:var(--dim);text-decoration:none;border-bottom:1px solid transparent}
   footer a:hover{color:var(--paper);border-bottom-color:var(--jade)}
@@ -253,7 +353,10 @@
         <span data-i18n="frame.bar">게임 실행 중 · 테두리 없는 창 모드</span>
       </div>
       <div class="stage">
-        <div class="live"><i></i><span data-i18n="frame.live">듣는 중</span></div>
+        <div class="live">
+          <i class="sig"><b></b><b></b><b></b><b></b><b></b></i>
+          <span data-i18n="frame.live">듣는 중</span>
+        </div>
         <div class="subs" id="subs"></div>
       </div>
     </div>
@@ -268,22 +371,22 @@
 
     <div class="flow">
       <div class="step">
-        <div class="code" data-i18n="how.c1">01 · 듣기</div>
+        <div class="code"><i class="sig k1" aria-hidden="true"><b></b><b></b><b></b><b></b><b></b></i><span data-i18n="how.c1">01 · 듣기</span></div>
         <h3 data-i18n="how.t1">팀보이스가 나오는 앱만 골라서</h3>
         <p data-i18n="how.p1">게임 자체 보이스챗이든 Discord든, Windows의 프로세스 단위 캡처로 지정한 앱의 소리만 받습니다. 다른 앱 소리는 섞이지 않습니다.</p>
       </div>
       <div class="step">
-        <div class="code" data-i18n="how.c2">02 · 자르기</div>
+        <div class="code"><i class="sig k2" aria-hidden="true"><b></b><b></b><b></b><b></b><b></b></i><span data-i18n="how.c2">02 · 자르기</span></div>
         <h3 data-i18n="how.t2">말할 때만 반응</h3>
         <p data-i18n="how.p2">발화 감지가 사람 목소리 구간만 잘라냅니다. 총성과 배경음은 걸러내고, 조용할 땐 아무 일도 하지 않습니다.</p>
       </div>
       <div class="step">
-        <div class="code" data-i18n="how.c3">03 · 알아듣기</div>
+        <div class="code"><i class="sig k3" aria-hidden="true"><b></b><b></b><b></b><b></b><b></b></i><span data-i18n="how.c3">03 · 알아듣기</span></div>
         <h3 data-i18n="how.t3">무슨 언어인지 알아서</h3>
         <p data-i18n="how.p3">언어를 미리 지정할 필요가 없습니다. 러시아어든 포르투갈어든 감지해서 받아씁니다.</p>
       </div>
       <div class="step">
-        <div class="code" data-i18n="how.c4">04 · 옮기기</div>
+        <div class="code"><i class="sig k4" aria-hidden="true"><b></b><b></b><b></b><b></b><b></b></i><span data-i18n="how.c4">04 · 옮기기</span></div>
         <h3 data-i18n="how.t4">내 언어로 화면 위에</h3>
         <p data-i18n="how.p4">게임을 가리지 않는 자리에, 클릭이 통과하는 자막으로. 조작을 방해하지 않습니다.</p>
       </div>
@@ -302,22 +405,38 @@
     <h2 data-i18n="shots.h2">설치하면 이렇게 생겼습니다.</h2>
     <p class="sub-lede" data-i18n="shots.lede">꾸민 그림이 아니라 앱을 띄워 그대로 찍은 화면입니다. 창은 세 개뿐입니다 — 홈에서 고르고, 설정에서 다듬고, 정보에서 확인합니다.</p>
 
-    <div class="shots">
-      <figure>
-        <img src="shots/home-dark.png" class="dark" alt="온말 홈 화면" loading="lazy" width="1180" height="820">
-        <img src="shots/home-light.png" class="light" alt="온말 홈 화면" loading="lazy" width="1180" height="820">
-        <figcaption data-i18n="shots.c1">홈 — 소리 가져올 곳과 내 언어. 정할 것은 이 둘뿐입니다.</figcaption>
-      </figure>
-      <figure>
-        <img src="shots/settings-dark.png" class="dark" alt="온말 설정 화면" loading="lazy" width="1180" height="820">
-        <img src="shots/settings-light.png" class="light" alt="온말 설정 화면" loading="lazy" width="1180" height="820">
-        <figcaption data-i18n="shots.c2">설정 — 자막 크기·위치, 창 색, 앱 언어. 밝게·어둡게 둘 다 있습니다.</figcaption>
-      </figure>
-      <figure>
-        <img src="shots/about-dark.png" class="dark" alt="온말 정보 화면" loading="lazy" width="1180" height="820">
-        <img src="shots/about-light.png" class="light" alt="온말 정보 화면" loading="lazy" width="1180" height="820">
-        <figcaption data-i18n="shots.c3">정보 — 사용 방법과 단축키, 그리고 법적 문서. 인터넷 없이도 읽힙니다.</figcaption>
-      </figure>
+    <!--
+      버튼 라벨은 앱의 `locales/*.json` 에 있는 `nav.home` · `nav.settings` · `nav.about`
+      을 그대로 가져왔습니다 (31개 언어 전부). 앱 창의 왼쪽 메뉴에 적힌 바로 그 낱말이라
+      사이트에서 본 이름과 설치한 뒤 보는 이름이 갈라지지 않습니다.
+
+      그림 설명은 <b>alt 가 아니라 캡션</b>이 합니다. 여섯 장을 겹쳐 두므로 alt 를 쓰면
+      화면 낭독기가 안 보이는 다섯 장까지 읽습니다.
+    -->
+    <div class="shots" data-shot="home">
+      <div class="shot-tabs" role="tablist" aria-label="온말 화면">
+        <button class="stab" type="button" role="tab" aria-selected="true"  data-shot="home">
+          <span data-i18n="shots.tab1">홈</span><i aria-hidden="true"></i></button>
+        <button class="stab" type="button" role="tab" aria-selected="false" data-shot="settings">
+          <span data-i18n="shots.tab2">설정</span><i aria-hidden="true"></i></button>
+        <button class="stab" type="button" role="tab" aria-selected="false" data-shot="about">
+          <span data-i18n="shots.tab3">정보</span><i aria-hidden="true"></i></button>
+      </div>
+
+      <div class="shot-view">
+        <img data-k="home-dark"      src="shots/home-dark.png"      alt="" loading="lazy" width="1180" height="820">
+        <img data-k="home-light"     src="shots/home-light.png"     alt="" loading="lazy" width="1180" height="820">
+        <img data-k="settings-dark"  src="shots/settings-dark.png"  alt="" loading="lazy" width="1180" height="820">
+        <img data-k="settings-light" src="shots/settings-light.png" alt="" loading="lazy" width="1180" height="820">
+        <img data-k="about-dark"     src="shots/about-dark.png"     alt="" loading="lazy" width="1180" height="820">
+        <img data-k="about-light"    src="shots/about-light.png"    alt="" loading="lazy" width="1180" height="820">
+      </div>
+
+      <p class="shot-cap" aria-live="polite">
+        <span class="c-home"     data-i18n="shots.c1">홈 — 소리 가져올 곳과 내 언어. 정할 것은 이 둘뿐입니다.</span>
+        <span class="c-settings" data-i18n="shots.c2">설정 — 자막 크기·위치, 창 색, 앱 언어. 밝게·어둡게 둘 다 있습니다.</span>
+        <span class="c-about"    data-i18n="shots.c3">정보 — 사용 방법과 단축키, 그리고 법적 문서. 인터넷 없이도 읽힙니다.</span>
+      </p>
     </div>
   </section>
 
@@ -485,6 +604,7 @@
 
 <footer>
   <div class="wrap">
+    <div class="sig-rule" aria-hidden="true"><i class="sig"><b></b><b></b><b></b><b></b><b></b></i></div>
     <div class="row">
       <a href="#how" data-i18n="footer.how">동작 방식</a>
       <a href="privacy.html" data-i18n="footer.privacy">개인정보처리방침</a>
