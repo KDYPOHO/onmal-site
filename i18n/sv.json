@@ -42,7 +42,7 @@
   "care.kicker": "Som en assistent",
   "care.h2": "Slå på en gång — det jobbar även när du glömt det.",
   "care.t1": "Ställs in en enda gång",
-  "care.p1": "Välj appen att lyssna på och ditt språk — klart. Sedan är det bara att starta spelet.",
+  "care.p1": "Välj appen att lyssna på och ditt språk — klart. Installerade spel hittas av sig själva, och väljer du ett spel startar undertexterna automatiskt i samma stund som det öppnas.",
   "care.t2": "Egen API-nyckel om du vill",
   "care.p2": "Den inbyggda översättningen är gratis. Vill du ha högre kvalitet kan du koppla in din egen API-nyckel. Nycklar lagras krypterade endast på den här datorn.",
   "care.t3": "Samtal lämnar inte din dator",
@@ -75,7 +75,7 @@
   "spec.disk": "Lagring",
   "spec.disk_rec": "5 GB (extra språkpar, noggrannare modeller)",
   "spec.delay": "Undertextfördröjning",
-  "spec.delay_min": "Ca 1,5–2 s (CPU)",
+  "spec.delay_min": "Cirka 1,2–1,5 s (CPU)",
   "spec.delay_rec": "Under ~1 s (0,7 s uppmätt på GPU)",
   "spec.note": "Fördröjningarna mättes på en NVIDIA RTX 4060. AMD- och Intel-GPU:er använder samma Vulkan-väg men har inte mätts ännu — det planeras till alfa- och betafasen. Noggrannheten väljs automatiskt efter GPU-minnet och kan ändras när som helst i inställningarna.",
 

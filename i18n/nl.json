@@ -42,7 +42,7 @@
   "care.kicker": "Als een assistent",
   "care.h2": "Eén keer aanzetten — het werkt, ook als je het vergeet.",
   "care.t1": "Eénmalige instelling",
-  "care.p1": "Kies de app om naar te luisteren en je taal — klaar. Daarna start je gewoon je game.",
+  "care.p1": "Kies de app om naar te luisteren en je taal — klaar. Geïnstalleerde games worden vanzelf gevonden, en kies je een game, dan starten de ondertitels automatisch zodra die opstart.",
   "care.t2": "Eigen API-sleutel mogelijk",
   "care.p2": "De ingebouwde vertaling is gratis. Wil je hogere kwaliteit, dan kun je je eigen API-sleutel invoeren. Sleutels worden alleen op deze computer versleuteld opgeslagen.",
   "care.t3": "Gesprekken verlaten je pc niet",
@@ -75,7 +75,7 @@
   "spec.disk": "Opslag",
   "spec.disk_rec": "5 GB (extra taalparen, nauwkeurigere modellen)",
   "spec.delay": "Ondertitelvertraging",
-  "spec.delay_min": "Ca. 1,5–2 s (CPU)",
+  "spec.delay_min": "Ongeveer 1,2–1,5 s (CPU)",
   "spec.delay_rec": "Onder ~1 s (0,7 s gemeten op GPU)",
   "spec.note": "De vertragingen zijn gemeten op een NVIDIA RTX 4060. AMD- en Intel-GPU's gebruiken hetzelfde Vulkan-pad maar zijn nog niet gemeten — dat staat gepland voor de alfa- en bètafase. De nauwkeurigheid wordt automatisch gekozen op basis van je GPU-geheugen en is altijd aan te passen in de instellingen.",
 

@@ -42,7 +42,7 @@
   "care.kicker": "Like an assistant",
   "care.h2": "Turn it on once, and it just works.",
   "care.t1": "Set up once",
-  "care.p1": "Pick the app to listen to and your language — that's it. After that, just launch your game.",
+  "care.p1": "Pick the app to listen to and your language — that's it. Installed games are found for you, and if you pick a game, subtitles start automatically the moment it launches.",
   "care.t2": "Bring your own API key if you want",
   "care.p2": "The built-in translation is free. If you want higher quality, you can plug in your own API key. Keys are stored encrypted on this computer only.",
   "care.t3": "Conversations never leave your PC",
@@ -75,7 +75,7 @@
   "spec.disk": "Storage",
   "spec.disk_rec": "5 GB (extra language pairs, higher-accuracy models)",
   "spec.delay": "Subtitle delay",
-  "spec.delay_min": "About 1.5–2 s (CPU)",
+  "spec.delay_min": "About 1.2–1.5 s (CPU)",
   "spec.delay_rec": "Under about 1 s (0.7 s measured on GPU)",
   "spec.note": "Delays were measured on an NVIDIA RTX 4060. AMD and Intel GPUs use the same Vulkan path but haven't been measured yet — that's planned for the alpha and beta stages. Accuracy is picked automatically to match your GPU memory, and you can change it in Settings at any time.",
 

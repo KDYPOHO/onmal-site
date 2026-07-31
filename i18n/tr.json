@@ -42,7 +42,7 @@
   "care.kicker": "Bir asistan gibi",
   "care.h2": "Bir kez aç — unutsan bile çalışır.",
   "care.t1": "Kurulum tek seferlik",
-  "care.p1": "Dinlenecek uygulamayı ve dilini seç — bu kadar. Sonrasında sadece oyunu başlat.",
+  "care.p1": "Dinlenecek uygulamayı ve dilini seç — bu kadar. Kurulu oyunlar kendiliğinden bulunur; bir oyun seçersen, oyun açıldığı anda altyazılar otomatik başlar.",
   "care.t2": "İstersen kendi API anahtarını kullan",
   "care.p2": "Yerleşik çeviri ücretsizdir. Daha yüksek kalite istersen kendi API anahtarını girebilirsin. Anahtarlar yalnızca bu bilgisayarda şifrelenmiş olarak saklanır.",
   "care.t3": "Konuşmalar bilgisayarından çıkmaz",
@@ -75,7 +75,7 @@
   "spec.disk": "Depolama",
   "spec.disk_rec": "5 GB (ek dil çiftleri, daha isabetli modeller)",
   "spec.delay": "Altyazı gecikmesi",
-  "spec.delay_min": "Yaklaşık 1,5–2 sn (CPU)",
+  "spec.delay_min": "Yaklaşık 1,2–1,5 sn (CPU)",
   "spec.delay_rec": "~1 sn altı (GPU'da ölçülen 0,7 sn)",
   "spec.note": "Gecikmeler NVIDIA RTX 4060 üzerinde ölçüldü. AMD ve Intel GPU'lar aynı Vulkan yolunu kullanır ama henüz ölçülmedi — alfa ve beta aşamalarında doğrulanacak. Doğruluk, GPU belleğine göre otomatik seçilir ve ayarlardan istediğin zaman değiştirilebilir.",
 

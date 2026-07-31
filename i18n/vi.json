@@ -42,7 +42,7 @@
   "care.kicker": "Như một trợ lý",
   "care.h2": "Bật một lần — nó tự làm việc dù bạn quên nó.",
   "care.t1": "Chỉ cần thiết lập một lần",
-  "care.p1": "Chọn ứng dụng cần nghe và ngôn ngữ của bạn — xong. Sau đó chỉ việc mở game.",
+  "care.p1": "Chọn ứng dụng cần nghe và ngôn ngữ của bạn — xong. Game đã cài được tự tìm thấy, và nếu chọn một game, phụ đề sẽ tự bắt đầu ngay khi game khởi động.",
   "care.t2": "Có thể dùng API key của riêng bạn",
   "care.p2": "Bản dịch tích hợp sẵn là miễn phí. Muốn chất lượng cao hơn, bạn có thể nhập API key của riêng mình. Key được mã hóa và chỉ lưu trên máy tính này.",
   "care.t3": "Cuộc trò chuyện không rời khỏi PC của bạn",
@@ -75,7 +75,7 @@
   "spec.disk": "Lưu trữ",
   "spec.disk_rec": "5 GB (thêm cặp ngôn ngữ, mô hình chính xác hơn)",
   "spec.delay": "Độ trễ phụ đề",
-  "spec.delay_min": "Khoảng 1,5–2 giây (CPU)",
+  "spec.delay_min": "Khoảng 1,2–1,5 giây (CPU)",
   "spec.delay_rec": "Dưới ~1 giây (đo được 0,7 giây trên GPU)",
   "spec.note": "Độ trễ được đo trên NVIDIA RTX 4060. GPU AMD và Intel dùng cùng đường Vulkan nhưng chưa được đo — dự kiến kiểm chứng trong giai đoạn alpha và beta. Độ chính xác được chọn tự động theo bộ nhớ GPU và có thể đổi bất cứ lúc nào trong cài đặt.",
 

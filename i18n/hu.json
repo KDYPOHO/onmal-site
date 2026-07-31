@@ -42,7 +42,7 @@
   "care.kicker": "Mint egy asszisztens",
   "care.h2": "Kapcsold be egyszer — dolgozik, ha el is felejted.",
   "care.t1": "Egyszeri beállítás",
-  "care.p1": "Válaszd ki a hallgatandó alkalmazást és a nyelved — ennyi. Utána csak indítsd a játékot.",
+  "care.p1": "Válaszd ki a hallgatandó appot és a nyelved — kész. A telepített játékok maguktól megtalálódnak, és ha kiválasztasz egy játékot, a feliratok automatikusan indulnak, amint elindul.",
   "care.t2": "Saját API-kulcsot is használhatsz",
   "care.p2": "A beépített fordítás ingyenes. Ha jobb minőséget szeretnél, megadhatod a saját API-kulcsodat. A kulcsokat titkosítva, csak ezen a gépen tároljuk.",
   "care.t3": "A beszélgetések nem hagyják el a géped",
@@ -75,7 +75,7 @@
   "spec.disk": "Tárhely",
   "spec.disk_rec": "5 GB (további nyelvpárok, pontosabb modellek)",
   "spec.delay": "Felirat késése",
-  "spec.delay_min": "Kb. 1,5–2 mp (CPU)",
+  "spec.delay_min": "Kb. 1,2–1,5 mp (CPU)",
   "spec.delay_rec": "Kb. 1 mp alatt (GPU-n mérve 0,7 mp)",
   "spec.note": "A késéseket NVIDIA RTX 4060-on mértük. Az AMD és Intel GPU-k ugyanazt a Vulkan-utat használják, de még nem mértük őket — ez az alfa és béta szakasz terve. A pontosság automatikusan a GPU-memóriához igazodik, és bármikor átállítható a beállításokban.",
 

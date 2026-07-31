@@ -42,7 +42,7 @@
   "care.kicker": "Come un assistente",
   "care.h2": "Accendilo una volta e lavora anche se te ne dimentichi.",
   "care.t1": "Si configura una volta sola",
-  "care.p1": "Scegli l'app da ascoltare e la tua lingua: fatto. Poi basta avviare il gioco.",
+  "care.p1": "Scegli l'app da ascoltare e la tua lingua — fatto. I giochi installati vengono trovati da soli e, se scegli un gioco, i sottotitoli partono automaticamente appena si avvia.",
   "care.t2": "Puoi usare la tua chiave API",
   "care.p2": "La traduzione integrata è gratuita. Se vuoi più qualità, puoi inserire la tua chiave API. Le chiavi sono salvate cifrate solo su questo computer.",
   "care.t3": "Le conversazioni non lasciano il tuo PC",
@@ -75,7 +75,7 @@
   "spec.disk": "Spazio su disco",
   "spec.disk_rec": "5 GB (coppie di lingue extra, modelli più accurati)",
   "spec.delay": "Ritardo dei sottotitoli",
-  "spec.delay_min": "Circa 1,5–2 s (CPU)",
+  "spec.delay_min": "Circa 1,2–1,5 s (CPU)",
   "spec.delay_rec": "Meno di ~1 s (0,7 s misurato su GPU)",
   "spec.note": "I ritardi sono stati misurati su una NVIDIA RTX 4060. Le GPU AMD e Intel usano lo stesso percorso Vulkan ma non sono ancora state misurate: è previsto per le fasi alfa e beta. La precisione viene scelta automaticamente in base alla memoria della GPU e si può cambiare in qualsiasi momento nelle impostazioni.",
 

@@ -42,7 +42,7 @@
   "care.kicker": "Jak asystent",
   "care.h2": "Włącz raz — działa, nawet gdy o nim zapomnisz.",
   "care.t1": "Konfiguracja tylko raz",
-  "care.p1": "Wybierz aplikację do słuchania i swój język — to wszystko. Potem po prostu odpal grę.",
+  "care.p1": "Wybierz aplikację do słuchania i swój język — gotowe. Zainstalowane gry znajdują się same, a jeśli wybierzesz grę, napisy wystartują automatycznie w chwili jej uruchomienia.",
   "care.t2": "Możesz użyć własnego klucza API",
   "care.p2": "Wbudowane tłumaczenie jest darmowe. Jeśli chcesz wyższej jakości, możesz podpiąć własny klucz API. Klucze są zaszyfrowane i trzymane tylko na tym komputerze.",
   "care.t3": "Rozmowy nie opuszczają twojego PC",
@@ -75,7 +75,7 @@
   "spec.disk": "Dysk",
   "spec.disk_rec": "5 GB (dodatkowe pary językowe, dokładniejsze modele)",
   "spec.delay": "Opóźnienie napisów",
-  "spec.delay_min": "Ok. 1,5–2 s (CPU)",
+  "spec.delay_min": "Około 1,2–1,5 s (CPU)",
   "spec.delay_rec": "Poniżej ~1 s (0,7 s zmierzone na GPU)",
   "spec.note": "Opóźnienia zmierzono na NVIDIA RTX 4060. Karty AMD i Intel używają tej samej ścieżki Vulkan, ale nie były jeszcze mierzone — to plan na fazy alfa i beta. Dokładność jest dobierana automatycznie do pamięci GPU i można ją w każdej chwili zmienić w ustawieniach.",
 

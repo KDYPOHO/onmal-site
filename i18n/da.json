@@ -42,7 +42,7 @@
   "care.kicker": "Som en assistent",
   "care.h2": "Tænd én gang — det arbejder, selv når du glemmer det.",
   "care.t1": "Opsættes kun én gang",
-  "care.p1": "Vælg appen, der skal lyttes til, og dit sprog — færdig. Derefter starter du bare spillet.",
+  "care.p1": "Vælg appen der skal lyttes til og dit sprog — færdig. Installerede spil findes af sig selv, og vælger du et spil, starter underteksterne automatisk i det øjeblik det åbner.",
   "care.t2": "Egen API-nøgle, hvis du vil",
   "care.p2": "Den indbyggede oversættelse er gratis. Vil du have højere kvalitet, kan du indsætte din egen API-nøgle. Nøgler gemmes krypteret kun på denne computer.",
   "care.t3": "Samtaler forlader ikke din pc",
@@ -75,7 +75,7 @@
   "spec.disk": "Lagerplads",
   "spec.disk_rec": "5 GB (ekstra sprogpar, mere præcise modeller)",
   "spec.delay": "Undertekstforsinkelse",
-  "spec.delay_min": "Ca. 1,5–2 s (CPU)",
+  "spec.delay_min": "Cirka 1,2–1,5 s (CPU)",
   "spec.delay_rec": "Under ~1 s (0,7 s målt på GPU)",
   "spec.note": "Forsinkelserne er målt på en NVIDIA RTX 4060. AMD- og Intel-GPU'er bruger samme Vulkan-vej, men er ikke målt endnu — det er planlagt til alfa- og betafasen. Nøjagtigheden vælges automatisk efter GPU-hukommelsen og kan altid ændres i indstillingerne.",
 

@@ -42,7 +42,7 @@
   "care.kicker": "Kuin avustaja",
   "care.h2": "Käynnistä kerran — se toimii, vaikka unohtaisit sen.",
   "care.t1": "Asetukset vain kerran",
-  "care.p1": "Valitse kuunneltava sovellus ja kielesi — siinä kaikki. Sen jälkeen vain käynnistä peli.",
+  "care.p1": "Valitse kuunneltava sovellus ja kielesi — siinä kaikki. Asennetut pelit löytyvät itsestään, ja jos valitset pelin, tekstitys käynnistyy automaattisesti heti pelin auetessa.",
   "care.t2": "Voit käyttää omaa API-avaintasi",
   "care.p2": "Sisäänrakennettu käännös on ilmainen. Jos haluat parempaa laatua, voit syöttää oman API-avaimesi. Avaimet tallennetaan salattuina vain tälle koneelle.",
   "care.t3": "Keskustelut eivät poistu koneeltasi",
@@ -75,7 +75,7 @@
   "spec.disk": "Tallennustila",
   "spec.disk_rec": "5 Gt (lisäkieliparit, tarkemmat mallit)",
   "spec.delay": "Tekstityksen viive",
-  "spec.delay_min": "Noin 1,5–2 s (CPU)",
+  "spec.delay_min": "Noin 1,2–1,5 s (CPU)",
   "spec.delay_rec": "Alle ~1 s (0,7 s mitattu GPU:lla)",
   "spec.note": "Viiveet mitattiin NVIDIA RTX 4060:lla. AMD:n ja Intelin GPU:t käyttävät samaa Vulkan-polkua, mutta niitä ei ole vielä mitattu — se on suunniteltu alfa- ja betavaiheisiin. Tarkkuus valitaan automaattisesti GPU-muistin mukaan, ja sen voi vaihtaa asetuksista milloin vain.",
 

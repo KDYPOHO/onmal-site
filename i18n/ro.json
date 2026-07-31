@@ -42,7 +42,7 @@
   "care.kicker": "Ca un asistent",
   "care.h2": "Pornește-l o dată — lucrează chiar dacă uiți de el.",
   "care.t1": "Se configurează o singură dată",
-  "care.p1": "Alege aplicația de ascultat și limba ta — atât. Apoi doar pornești jocul.",
+  "care.p1": "Alege aplicația de ascultat și limba ta — gata. Jocurile instalate sunt găsite singure, iar dacă alegi un joc, subtitrările pornesc automat în clipa în care se deschide.",
   "care.t2": "Poți folosi propria cheie API",
   "care.p2": "Traducerea încorporată e gratuită. Dacă vrei calitate mai bună, poți introduce propria cheie API. Cheile sunt stocate criptat doar pe acest calculator.",
   "care.t3": "Conversațiile nu părăsesc PC-ul tău",
@@ -75,7 +75,7 @@
   "spec.disk": "Stocare",
   "spec.disk_rec": "5 GB (perechi de limbi suplimentare, modele mai precise)",
   "spec.delay": "Întârzierea subtitrării",
-  "spec.delay_min": "Circa 1,5–2 s (CPU)",
+  "spec.delay_min": "Circa 1,2–1,5 s (CPU)",
   "spec.delay_rec": "Sub ~1 s (0,7 s măsurat pe GPU)",
   "spec.note": "Întârzierile au fost măsurate pe un NVIDIA RTX 4060. GPU-urile AMD și Intel folosesc aceeași cale Vulkan, dar nu au fost încă măsurate — e planificat pentru fazele alfa și beta. Precizia se alege automat după memoria GPU-ului și poate fi schimbată oricând din setări.",
 

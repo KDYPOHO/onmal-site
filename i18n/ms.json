@@ -42,7 +42,7 @@
   "care.kicker": "Seperti pembantu",
   "care.h2": "Hidupkan sekali — ia bekerja walau anda lupa.",
   "care.t1": "Tetapan sekali sahaja",
-  "care.p1": "Pilih aplikasi untuk didengar dan bahasa anda — selesai. Selepas itu, buka sahaja permainan.",
+  "care.p1": "Pilih aplikasi untuk didengar dan bahasa anda — selesai. Permainan yang dipasang ditemui sendiri, dan jika anda memilih permainan, sari kata bermula secara automatik sebaik sahaja ia dilancarkan.",
   "care.t2": "Boleh guna kunci API sendiri",
   "care.p2": "Terjemahan terbina dalam adalah percuma. Jika mahu kualiti lebih tinggi, anda boleh masukkan kunci API sendiri. Kunci disimpan bersulit hanya pada komputer ini.",
   "care.t3": "Perbualan tidak keluar dari PC anda",
@@ -75,7 +75,7 @@
   "spec.disk": "Storan",
   "spec.disk_rec": "5 GB (pasangan bahasa tambahan, model lebih tepat)",
   "spec.delay": "Lengah sari kata",
-  "spec.delay_min": "Kira-kira 1.5–2 s (CPU)",
+  "spec.delay_min": "Kira-kira 1.2–1.5 s (CPU)",
   "spec.delay_rec": "Bawah ~1 s (0.7 s diukur pada GPU)",
   "spec.note": "Lengah diukur pada NVIDIA RTX 4060. GPU AMD dan Intel menggunakan laluan Vulkan yang sama tetapi belum diukur — dirancang untuk disahkan pada peringkat alfa dan beta. Ketepatan dipilih secara automatik mengikut memori GPU dan boleh diubah pada bila-bila masa dalam tetapan.",
 

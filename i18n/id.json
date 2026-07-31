@@ -42,7 +42,7 @@
   "care.kicker": "Seperti asisten",
   "care.h2": "Nyalakan sekali — tetap bekerja meski kau lupa.",
   "care.t1": "Cukup diatur sekali",
-  "care.p1": "Pilih aplikasi yang didengar dan bahasamu — selesai. Setelah itu tinggal jalankan game.",
+  "care.p1": "Pilih aplikasi yang didengar dan bahasamu — selesai. Game yang terpasang ditemukan sendiri, dan jika kamu memilih game, subtitle mulai otomatis begitu game dijalankan.",
   "care.t2": "Boleh pakai API key milikmu",
   "care.p2": "Terjemahan bawaan gratis. Kalau ingin kualitas lebih tinggi, kamu bisa memasukkan API key milikmu sendiri. Kunci disimpan terenkripsi hanya di komputer ini.",
   "care.t3": "Percakapan tidak keluar dari PC-mu",
@@ -75,7 +75,7 @@
   "spec.disk": "Penyimpanan",
   "spec.disk_rec": "5 GB (pasangan bahasa tambahan, model lebih akurat)",
   "spec.delay": "Jeda subtitle",
-  "spec.delay_min": "Sekitar 1,5–2 dtk (CPU)",
+  "spec.delay_min": "Sekitar 1,2–1,5 dtk (CPU)",
   "spec.delay_rec": "Di bawah ~1 dtk (terukur 0,7 dtk di GPU)",
   "spec.note": "Jeda diukur pada NVIDIA RTX 4060. GPU AMD dan Intel memakai jalur Vulkan yang sama tapi belum diukur — direncanakan diverifikasi pada tahap alfa dan beta. Akurasi dipilih otomatis sesuai memori GPU dan bisa diubah kapan saja di pengaturan.",
 

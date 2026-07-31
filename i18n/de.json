@@ -42,7 +42,7 @@
   "care.kicker": "Wie ein Assistent",
   "care.h2": "Einmal einschalten — es arbeitet, auch wenn du es vergisst.",
   "care.t1": "Einmal einrichten",
-  "care.p1": "App zum Zuhören und deine Sprache wählen — fertig. Danach einfach nur das Spiel starten.",
+  "care.p1": "Wähle die App, die gehört werden soll, und deine Sprache — fertig. Installierte Spiele werden automatisch gefunden, und wählst du ein Spiel, starten die Untertitel automatisch, sobald es läuft.",
   "care.t2": "Eigener API-Schlüssel möglich",
   "care.p2": "Die eingebaute Übersetzung ist kostenlos. Für höhere Qualität kannst du deinen eigenen API-Schlüssel eintragen. Schlüssel werden nur auf diesem Rechner verschlüsselt gespeichert.",
   "care.t3": "Gespräche verlassen deinen PC nicht",
@@ -75,7 +75,7 @@
   "spec.disk": "Speicherplatz",
   "spec.disk_rec": "5 GB (zusätzliche Sprachpaare, genauere Modelle)",
   "spec.delay": "Untertitel-Verzögerung",
-  "spec.delay_min": "Ca. 1,5–2 s (CPU)",
+  "spec.delay_min": "Etwa 1,2–1,5 s (CPU)",
   "spec.delay_rec": "Unter ~1 s (0,7 s auf GPU gemessen)",
   "spec.note": "Die Verzögerungen wurden auf einer NVIDIA RTX 4060 gemessen. AMD- und Intel-GPUs nutzen denselben Vulkan-Pfad, wurden aber noch nicht vermessen — das ist für Alpha und Beta geplant. Die Genauigkeit wird automatisch passend zum GPU-Speicher gewählt und lässt sich jederzeit in den Einstellungen ändern.",
 

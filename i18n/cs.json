@@ -42,7 +42,7 @@
   "care.kicker": "Jako asistent",
   "care.h2": "Zapněte jednou — pracuje, i když na něj zapomenete.",
   "care.t1": "Nastavení jen jednou",
-  "care.p1": "Vyberte aplikaci k poslechu a svůj jazyk — hotovo. Pak už jen spouštíte hru.",
+  "care.p1": "Vyberte aplikaci k poslechu a svůj jazyk — hotovo. Nainstalované hry se najdou samy, a když si hru vyberete, titulky se spustí automaticky v okamžiku jejího startu.",
   "care.t2": "Můžete použít vlastní API klíč",
   "care.p2": "Vestavěný překlad je zdarma. Chcete-li vyšší kvalitu, můžete vložit vlastní API klíč. Klíče se ukládají šifrovaně jen na tomto počítači.",
   "care.t3": "Konverzace neopouštějí váš počítač",
@@ -75,7 +75,7 @@
   "spec.disk": "Úložiště",
   "spec.disk_rec": "5 GB (další jazykové páry, přesnější modely)",
   "spec.delay": "Zpoždění titulků",
-  "spec.delay_min": "Cca 1,5–2 s (CPU)",
+  "spec.delay_min": "Přibližně 1,2–1,5 s (CPU)",
   "spec.delay_rec": "Pod ~1 s (0,7 s naměřeno na GPU)",
   "spec.note": "Zpoždění byla naměřena na NVIDIA RTX 4060. GPU AMD a Intel používají stejnou cestu Vulkan, ale zatím nebyly změřeny — plánujeme to v alfě a betě. Přesnost se volí automaticky podle paměti GPU a kdykoli ji lze změnit v nastavení.",
 

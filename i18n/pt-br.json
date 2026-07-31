@@ -42,7 +42,7 @@
   "care.kicker": "Como um assistente",
   "care.h2": "Ligue uma vez e ele trabalha, mesmo esquecido.",
   "care.t1": "Configura só uma vez",
-  "care.p1": "Escolha o app para ouvir e o seu idioma — pronto. Depois é só abrir o jogo.",
+  "care.p1": "Escolha o app para ouvir e seu idioma — pronto. Os jogos instalados são encontrados sozinhos, e se você escolher um jogo, as legendas começam automaticamente assim que ele abre.",
   "care.t2": "Pode usar sua própria chave de API",
   "care.p2": "A tradução embutida é gratuita. Se quiser mais qualidade, dá para colocar sua própria chave de API. As chaves ficam criptografadas somente neste computador.",
   "care.t3": "As conversas não saem do seu PC",
@@ -75,7 +75,7 @@
   "spec.disk": "Armazenamento",
   "spec.disk_rec": "5 GB (pares de idiomas extras, modelos de maior precisão)",
   "spec.delay": "Atraso das legendas",
-  "spec.delay_min": "Cerca de 1,5–2 s (CPU)",
+  "spec.delay_min": "Cerca de 1,2–1,5 s (CPU)",
   "spec.delay_rec": "Menos de ~1 s (0,7 s medido em GPU)",
   "spec.note": "Os atrasos foram medidos numa NVIDIA RTX 4060. GPUs AMD e Intel usam o mesmo caminho Vulkan, mas ainda não foram medidas — isso está planejado para as fases alfa e beta. A precisão é escolhida automaticamente conforme a memória da sua GPU e pode ser alterada nas Configurações a qualquer momento.",
 
