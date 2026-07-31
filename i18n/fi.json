@@ -7,7 +7,7 @@
   "hero.lede": "Meneekö calleja ohi, koska et ymmärrä ulkomaista tiimikaveria? Onmal kuuntelee puolestasi ja tuo käännetyt tekstitykset suoraan pelin päälle.",
   "hero.soon": "Steam-julkaisu valmisteilla",
   "hero.how": "Näin se toimii",
-  "hero.note": "Ei mikrofonia. Tiimikavereiden äänet käsitellään koneesi sisällä, eikä keskusteluja lähetetä minnekään.",
+  "hero.note": "Mikrofonia käytetään vain, jos otat sen itse käyttöön. Joukkuetovereiden äänet käsitellään tietokoneesi sisällä, eikä keskusteluja lähetetä minnekään.",
 
   "frame.bar": "Peli käynnissä · reunaton ikkuna",
   "frame.live": "Kuuntelee",
@@ -113,7 +113,7 @@
   "faq.q4": "Tarvitsenko nettiyhteyden?",
   "faq.a4": "Vain kerran, tunnistusmallin lataamiseen. Sen jälkeen tunnistus ja käännös pyörivät omalla koneellasi ja toimivat myös offline-tilassa.",
   "faq.q5": "Käännetäänkö myös minun ääneni?",
-  "faq.a5": "Ei. Onmal ei käytä mikrofonia, ellet itse valitse sitä lähteeksi. Se kuuntelee tiimikavereiden ääniä — koneellasi toistettavaa ääntä — ja näyttää tekstitykset vain sinun ruudullasi. Puheesi lähtee kuten ennenkin.",
+  "faq.a5": "Ei oletuksena. Onmal ei koske mikrofoniisi, ellet itse ota sitä käyttöön — se kuuntelee joukkuetovereidesi ääniä eli tietokoneesi ääntä ja näyttää tekstitykset vain sinun ruudullasi. Jos otat asetuksista käyttöön sanomasi lähettämisen joukkuetovereiden kielellä, yksi lause kerrallaan käännetään heidän kielelleen ja viedään leikepöydälle. Mikrofoni avautuu vain siksi hetkeksi, ja sinä itse liität tekstin pelin chattiin.",
   "faq.q6": "Eikö peli hidastu?",
   "faq.a6": "Peli ensin — se on suunnitteluperiaate. Laskentaa tehdään vain jonkun puhuessa, tunnistusmalli valitaan vapaan näyttömuistin mukaan ja raskaat ominaisuudet ovat oletuksena pois päältä. Jokainen kone on erilainen, joten alfassa ja betassa mittaamme oikeiden pelien rinnalla ja julkaisemme luvut.",
 

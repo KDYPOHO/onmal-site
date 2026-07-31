@@ -7,7 +7,7 @@
   "hero.lede": "Bỏ lỡ thông tin vì không hiểu đồng đội nước ngoài nói gì? Onmal nghe thay bạn và đặt phụ đề đã dịch ngay trên màn hình game.",
   "hero.soon": "Đang chuẩn bị phát hành trên Steam",
   "hero.how": "Cách hoạt động",
-  "hero.note": "Không dùng micro. Giọng đồng đội được xử lý ngay trong máy bạn, cuộc trò chuyện không bị gửi đi đâu cả.",
+  "hero.note": "Micrô chỉ được dùng khi chính bạn bật nó. Giọng đồng đội được xử lý bên trong máy của bạn, và cuộc trò chuyện không bao giờ được gửi đi đâu.",
 
   "frame.bar": "Game đang chạy · cửa sổ không viền",
   "frame.live": "Đang nghe",
@@ -113,7 +113,7 @@
   "faq.q4": "Có cần Internet không?",
   "faq.a4": "Chỉ một lần, để tải mô hình nhận dạng. Sau đó nhận dạng và dịch đều chạy trên máy bạn, không có mạng vẫn hoạt động.",
   "faq.q5": "Giọng của tôi có bị dịch không?",
-  "faq.a5": "Không. Onmal không dùng micro trừ khi bạn tự chọn nó làm nguồn. Nó nghe giọng đồng đội — âm thanh phát trên máy bạn — và chỉ hiện phụ đề trên màn hình của bạn. Lời bạn nói vẫn đi ra như bình thường.",
+  "faq.a5": "Mặc định là không. Onmal không chạm vào micrô trừ khi bạn tự bật — nó nghe giọng đồng đội, tức âm thanh phát trên máy bạn, và chỉ hiện phụ đề trên màn hình của bạn. Nếu bạn bật trong cài đặt việc gửi lời mình nói bằng ngôn ngữ của đồng đội, mỗi lần một câu sẽ được dịch sang ngôn ngữ của họ và đặt vào bảng nhớ tạm. Micrô chỉ mở đúng lúc đó, và chính bạn là người dán câu ấy vào khung chat của game.",
   "faq.q6": "Game có bị chậm không?",
   "faq.a6": "Game là trên hết — đó là nguyên tắc thiết kế. Chỉ tính toán khi có người nói, tự chọn mô hình nhận dạng theo dung lượng VRAM còn trống, và các tính năng nặng mặc định tắt. Máy mỗi người mỗi khác, nên ở giai đoạn alpha và beta chúng tôi sẽ đo cùng game thật và công bố số liệu.",
 

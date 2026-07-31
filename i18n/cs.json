@@ -7,7 +7,7 @@
   "hero.lede": "Přicházíte o cally, protože nerozumíte zahraničnímu spoluhráči? Onmal poslouchá za vás a pokládá přeložené titulky přímo přes hru.",
   "hero.soon": "Vydání na Steamu se připravuje",
   "hero.how": "Jak to funguje",
-  "hero.note": "Žádný mikrofon. Hlasy spoluhráčů se zpracovávají uvnitř vašeho PC a rozhovory se nikam neposílají.",
+  "hero.note": "Mikrofon se použije, jen když ho sami zapnete. Hlasy spoluhráčů se zpracovávají uvnitř vašeho počítače a konverzace se nikam neodesílají.",
 
   "frame.bar": "Hra běží · okno bez rámečku",
   "frame.live": "Poslouchám",
@@ -113,7 +113,7 @@
   "faq.q4": "Potřebuji internet?",
   "faq.a4": "Jen jednou, ke stažení rozpoznávacího modelu. Pak rozpoznávání i překlad běží na vašem PC a fungují i offline.",
   "faq.q5": "Překládá se i můj hlas?",
-  "faq.a5": "Ne. Onmal mikrofon nepoužívá, pokud jej sami nezvolíte jako zdroj. Poslouchá hlasy spoluhráčů — zvuk přehrávaný na vašem PC — a titulky ukazuje jen na vaší obrazovce. Co říkáte vy, odchází beze změny.",
+  "faq.a5": "Ve výchozím nastavení ne. Onmal se mikrofonu nedotkne, dokud ho sami nezapnete — poslouchá hlasy spoluhráčů, tedy zvuk vašeho počítače, a titulky ukazuje jen na vaší obrazovce. Pokud v nastavení zapnete odesílání toho, co říkáte, v jazyce spoluhráčů, přeloží se vždy jedna věta do jejich jazyka a uloží se do schránky. Mikrofon se otevře jen na ten okamžik a do herního chatu ji vkládáte vy sami.",
   "faq.q6": "Nezpomalí se hra?",
   "faq.a6": "Hra na prvním místě — to je princip návrhu. Počítá se jen, když někdo mluví; rozpoznávací model se volí podle volné grafické paměti a těžké funkce jsou ve výchozím stavu vypnuté. Každé PC je jiné, proto v alfě a betě změříme běh se skutečnými hrami a čísla zveřejníme.",
 

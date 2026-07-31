@@ -7,7 +7,7 @@
   "hero.lede": "Yabancı takım arkadaşının ne dediğini anlamadığın için çağrıları mı kaçırıyorsun? Onmal senin yerine dinler ve çevrilmiş altyazıları doğrudan oyunun üzerine koyar.",
   "hero.soon": "Steam çıkışı hazırlanıyor",
   "hero.how": "Nasıl çalışır",
-  "hero.note": "Mikrofon kullanılmaz. Takım arkadaşlarının sesleri bilgisayarının içinde işlenir, konuşmalar hiçbir yere gönderilmez.",
+  "hero.note": "Mikrofon yalnızca siz açarsanız kullanılır. Takım arkadaşlarınızın sesleri bilgisayarınızın içinde işlenir ve konuşmalar hiçbir yere gönderilmez.",
 
   "frame.bar": "Oyun çalışıyor · kenarlıksız pencere",
   "frame.live": "Dinliyor",
@@ -113,7 +113,7 @@
   "faq.q4": "İnternet gerekiyor mu?",
   "faq.a4": "Yalnızca bir kez, tanıma modelini indirmek için. Sonrasında tanıma da çeviri de bilgisayarında çalışır ve çevrimdışı da çalışmaya devam eder.",
   "faq.q5": "Benim sesim de çevriliyor mu?",
-  "faq.a5": "Hayır. Kaynak olarak kendin seçmedikçe Onmal mikrofonu kullanmaz. Takım arkadaşlarının seslerini — bilgisayarında çalınan sesi — dinler ve altyazıları yalnızca senin ekranında gösterir. Söylediklerin olduğu gibi gider.",
+  "faq.a5": "Varsayılan olarak hayır. Siz açmadıkça Onmal mikrofonunuza dokunmaz — takım arkadaşlarınızın seslerini, yani bilgisayarınızda çalan sesi dinler ve altyazıyı yalnızca sizin ekranınızda gösterir. Ayarlardan söylediklerinizin takım arkadaşlarınızın dilinde gönderilmesini açarsanız, her seferinde tek bir cümle onların diline çevrilip panoya konur. Mikrofon yalnızca o an için açılır ve oyun sohbetine yapıştıran siz olursunuz.",
   "faq.q6": "Oyunum yavaşlamaz mı?",
   "faq.a6": "Önce oyun — tasarım ilkesi bu. Yalnızca biri konuşurken hesap yapar, tanıma modelini boş ekran kartı belleğine göre seçer ve ağır özellikler varsayılan olarak kapalıdır. Her bilgisayar farklı; alfa ve betada gerçek oyunlarla birlikte ölçüp sayıları yayımlayacağız.",
 

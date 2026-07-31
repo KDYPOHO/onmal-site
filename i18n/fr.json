@@ -7,7 +7,7 @@
   "hero.lede": "Vous ratez des calls parce que vous ne comprenez pas un coéquipier étranger ? Onmal écoute à votre place et affiche des sous-titres traduits directement sur le jeu.",
   "hero.soon": "Sortie Steam en préparation",
   "hero.how": "Comment ça marche",
-  "hero.note": "Aucun micro. Les voix de vos coéquipiers sont traitées dans votre PC et les conversations ne sont envoyées nulle part.",
+  "hero.note": "Le microphone n'est utilisé que si vous l'activez vous-même. Les voix de vos coéquipiers sont traitées dans votre PC et les conversations ne sont envoyées nulle part.",
 
   "frame.bar": "Jeu en cours · fenêtré sans bordure",
   "frame.live": "À l'écoute",
@@ -113,7 +113,7 @@
   "faq.q4": "Faut-il une connexion internet ?",
   "faq.a4": "Une seule fois, pour télécharger le modèle de reconnaissance. Ensuite, reconnaissance et traduction tournent sur votre PC et continuent de fonctionner hors ligne.",
   "faq.q5": "Ma voix est-elle traduite aussi ?",
-  "faq.a5": "Non. Onmal n'utilise pas votre micro, sauf si vous le choisissez vous-même comme source. Il écoute les voix de vos coéquipiers — le son qui sort sur votre PC — et n'affiche les sous-titres que sur votre écran. Ce que vous dites part tel quel.",
+  "faq.a5": "Pas par défaut. Onmal ne touche pas à votre microphone tant que vous ne l'activez pas : il écoute les voix de vos coéquipiers, c'est-à-dire le son de votre PC, et n'affiche les sous-titres que sur votre écran. Si vous activez dans les paramètres l'envoi de vos phrases dans la langue de vos coéquipiers, une phrase à la fois est traduite dans leur langue et placée dans le presse-papiers. Le microphone ne s'ouvre qu'à ce moment-là, et c'est vous qui la collez dans le chat du jeu.",
   "faq.q6": "Ça ne va pas ralentir mon jeu ?",
   "faq.a6": "Le jeu d'abord : c'est le principe de conception. Onmal ne calcule que pendant que quelqu'un parle, choisit le modèle de reconnaissance selon la mémoire graphique disponible, et les fonctions lourdes sont désactivées par défaut. Chaque PC est différent : en alpha et bêta, nous mesurerons avec de vrais jeux et publierons les chiffres.",
 

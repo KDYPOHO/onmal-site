@@ -7,7 +7,7 @@
   "hero.lede": "Perdi le call perché non capisci cosa dice un compagno straniero? Onmal ascolta per te e mette i sottotitoli tradotti direttamente sopra il gioco.",
   "hero.soon": "Uscita su Steam in preparazione",
   "hero.how": "Come funziona",
-  "hero.note": "Niente microfono. Le voci dei tuoi compagni vengono elaborate dentro il tuo PC e le conversazioni non vengono inviate da nessuna parte.",
+  "hero.note": "Il microfono viene usato solo se sei tu ad attivarlo. Le voci dei compagni vengono elaborate dentro il tuo PC e le conversazioni non vengono inviate da nessuna parte.",
 
   "frame.bar": "Gioco in esecuzione · finestra senza bordi",
   "frame.live": "In ascolto",
@@ -113,7 +113,7 @@
   "faq.q4": "Serve internet?",
   "faq.a4": "Solo una volta, per scaricare il modello di riconoscimento. Poi riconoscimento e traduzione girano sul tuo PC e continuano a funzionare offline.",
   "faq.q5": "Traduce anche la mia voce?",
-  "faq.a5": "No. Onmal non usa il microfono, a meno che non lo scelga tu come sorgente. Ascolta le voci dei compagni — il suono riprodotto sul tuo PC — e mostra i sottotitoli solo sul tuo schermo. Quello che dici parte così com'è.",
+  "faq.a5": "Non per impostazione predefinita. Onmal non tocca il microfono finché non lo attivi tu: ascolta le voci dei compagni, cioè l'audio del tuo PC, e mostra i sottotitoli solo sul tuo schermo. Se nelle impostazioni attivi l'invio di ciò che dici nella lingua dei compagni, una frase alla volta viene tradotta nella loro lingua e messa negli appunti. Il microfono si apre solo in quel momento, e sei tu a incollarla nella chat di gioco.",
   "faq.q6": "Non rallenterà il gioco?",
   "faq.a6": "Prima il gioco: è il principio di progettazione. Calcola solo mentre qualcuno parla, sceglie il modello di riconoscimento in base alla memoria video libera e le funzioni pesanti sono disattivate di default. Ogni PC è diverso: in alpha e beta misureremo insieme a giochi veri e pubblicheremo i numeri.",
 

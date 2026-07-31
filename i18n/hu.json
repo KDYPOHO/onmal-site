@@ -7,7 +7,7 @@
   "hero.lede": "Lemaradsz a callokról, mert nem érted, mit mond egy külföldi csapattárs? Az Onmal helyetted hallgat, és lefordított feliratokat tesz közvetlenül a játék fölé.",
   "hero.soon": "Steam-megjelenés előkészületben",
   "hero.how": "Hogyan működik",
-  "hero.note": "Mikrofon nélkül. A csapattársak hangja a gépeden belül kerül feldolgozásra, a beszélgetések sehová sem kerülnek elküldésre.",
+  "hero.note": "A mikrofon csak akkor kerül használatba, ha te magad bekapcsolod. A csapattársaid hangja a gépeden belül dolgozódik fel, a beszélgetéseket pedig sehová nem küldjük el.",
 
   "frame.bar": "Játék fut · keret nélküli ablak",
   "frame.live": "Hallgat",
@@ -113,7 +113,7 @@
   "faq.q4": "Kell hozzá internet?",
   "faq.a4": "Csak egyszer, a felismerési modell letöltéséhez. Utána a felismerés és a fordítás a saját gépeden fut, és offline is működik.",
   "faq.q5": "Az én hangomat is fordítja?",
-  "faq.a5": "Nem. Az Onmal nem használja a mikrofont, hacsak te magad nem választod forrásnak. A csapattársak hangját hallgatja — a gépeden lejátszott hangot —, és a feliratokat csak a te képernyődön mutatja. Amit mondasz, változatlanul megy ki.",
+  "faq.a5": "Alapértelmezés szerint nem. Az Onmal hozzá sem nyúl a mikrofonodhoz, amíg be nem kapcsolod — a csapattársaid hangját, vagyis a géped hangját hallgatja, és a feliratot csak a te képernyődön mutatja. Ha a beállításokban bekapcsolod, hogy amit mondasz, a csapattársaid nyelvén menjen el, egyszerre egy mondat fordítódik le az ő nyelvükre, és a vágólapra kerül. A mikrofon csak arra a pillanatra nyílik meg, és a játék csevegőjébe te magad illeszted be.",
   "faq.q6": "Nem lassul le a játék?",
   "faq.a6": "A játék az első — ez a tervezési elv. Csak akkor számol, amikor valaki beszél; a felismerő modellt a szabad videómemóriához igazítja, a nehéz funkciók pedig alapból ki vannak kapcsolva. Minden gép más, ezért alfa és béta alatt valódi játékok mellett mérünk, és közzétesszük a számokat.",
 

@@ -7,7 +7,7 @@
   "hero.lede": "Perdendo calls porque não entende o que o companheiro estrangeiro disse? O Onmal ouve por você e coloca legendas traduzidas direto sobre o jogo.",
   "hero.soon": "Lançamento na Steam em preparação",
   "hero.how": "Como funciona",
-  "hero.note": "Sem microfone. As vozes do seu time são processadas dentro do seu PC e as conversas nunca são enviadas a lugar nenhum.",
+  "hero.note": "O microfone só é usado se você mesmo ativar. As vozes dos colegas são processadas dentro do seu PC e as conversas nunca são enviadas para lugar nenhum.",
 
   "frame.bar": "Jogo rodando · janela sem bordas",
   "frame.live": "Ouvindo",
@@ -113,7 +113,7 @@
   "faq.q4": "Precisa de internet?",
   "faq.a4": "Só uma vez, para baixar o modelo de reconhecimento. Depois disso, reconhecimento e tradução rodam no seu PC e continuam funcionando offline.",
   "faq.q5": "Ele também traduz a minha voz?",
-  "faq.a5": "Não. O Onmal não usa seu microfone, a menos que você o escolha como fonte. Ele escuta as vozes do time — o som que toca no seu PC — e mostra legendas só na sua tela. O que você fala sai do jeito que sempre saiu.",
+  "faq.a5": "Por padrão, não. O Onmal não toca no seu microfone a menos que você ative — ele escuta as vozes dos colegas, ou seja, o som do seu PC, e mostra legendas apenas na sua tela. Se você ativar nas configurações o envio do que fala no idioma dos colegas, uma frase por vez é traduzida para o idioma deles e colocada na área de transferência. O microfone abre só naquele momento, e é você quem cola no chat do jogo.",
   "faq.q6": "Não vai deixar meu jogo lento?",
   "faq.a6": "O jogo vem primeiro: esse é o princípio do projeto. Ele só calcula enquanto alguém fala, escolhe o modelo de reconhecimento conforme a memória de vídeo livre e as funções pesadas vêm desligadas. Cada PC é diferente, então no alfa e no beta vamos medir junto com jogos reais e publicar os números.",
 

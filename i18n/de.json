@@ -7,7 +7,7 @@
   "hero.lede": "Du verpasst Calls, weil du nicht verstehst, was ein ausländischer Mitspieler sagt? Onmal hört für dich zu und legt übersetzte Untertitel direkt über dein Spiel.",
   "hero.soon": "Steam-Release in Vorbereitung",
   "hero.how": "So funktioniert es",
-  "hero.note": "Kein Mikrofon im Spiel. Die Stimmen deiner Mitspieler werden in deinem PC verarbeitet, Gespräche werden nirgendwohin gesendet.",
+  "hero.note": "Das Mikrofon wird nur benutzt, wenn Sie es selbst einschalten. Die Stimmen Ihrer Mitspieler werden in Ihrem PC verarbeitet, und Gespräche werden nirgendwohin gesendet.",
 
   "frame.bar": "Spiel läuft · randloses Fenster",
   "frame.live": "Höre zu",
@@ -113,7 +113,7 @@
   "faq.q4": "Brauche ich Internet?",
   "faq.a4": "Nur einmal, um das Erkennungsmodell herunterzuladen. Danach laufen Erkennung und Übersetzung auf deinem PC und funktionieren auch offline.",
   "faq.q5": "Wird meine Stimme auch übersetzt?",
-  "faq.a5": "Nein. Onmal nutzt dein Mikrofon nicht, außer du wählst es selbst als Quelle. Es hört die Stimmen deiner Mitspieler — den Ton, der auf deinem PC wiedergegeben wird — und zeigt Untertitel nur auf deinem Bildschirm. Was du sagst, geht unverändert raus.",
+  "faq.a5": "Standardmäßig nicht. Onmal rührt Ihr Mikrofon nicht an, solange Sie es nicht selbst einschalten — es hört die Stimmen Ihrer Mitspieler, also den Ton auf Ihrem PC, und zeigt Untertitel nur auf Ihrem Bildschirm. Wenn Sie in den Einstellungen das Senden Ihrer Sätze in der Sprache Ihrer Mitspieler einschalten, wird jeweils ein Satz in deren Sprache übersetzt und in die Zwischenablage gelegt. Das Mikrofon öffnet sich nur für diesen Moment, und eingefügt wird der Text im Spielchat von Ihnen selbst.",
   "faq.q6": "Macht es mein Spiel langsamer?",
   "faq.a6": "Das Spiel zuerst — das ist das Designprinzip. Gerechnet wird nur, während jemand spricht; das Erkennungsmodell richtet sich nach dem freien Grafikspeicher, und schwere Funktionen sind ab Werk aus. Jeder PC ist anders, deshalb messen wir in Alpha und Beta parallel zu echten Spielen und veröffentlichen die Zahlen.",
 

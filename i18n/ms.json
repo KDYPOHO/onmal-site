@@ -7,7 +7,7 @@
   "hero.lede": "Terlepas panggilan kerana tidak faham apa yang rakan sepasukan asing katakan? Onmal mendengar untuk anda dan meletakkan sari kata terjemahan terus di atas permainan.",
   "hero.soon": "Keluaran Steam sedang disediakan",
   "hero.how": "Cara ia berfungsi",
-  "hero.note": "Tanpa mikrofon. Suara rakan sepasukan diproses di dalam PC anda, dan perbualan tidak dihantar ke mana-mana.",
+  "hero.note": "Mikrofon hanya digunakan jika anda sendiri menghidupkannya. Suara rakan sepasukan diproses di dalam PC anda, dan perbualan tidak pernah dihantar ke mana-mana.",
 
   "frame.bar": "Permainan berjalan · tetingkap tanpa bingkai",
   "frame.live": "Mendengar",
@@ -113,7 +113,7 @@
   "faq.q4": "Perlukan internet?",
   "faq.a4": "Hanya sekali, untuk memuat turun model pengecaman. Selepas itu pengecaman dan terjemahan berjalan pada PC anda dan terus berfungsi secara luar talian.",
   "faq.q5": "Adakah suara saya turut diterjemahkan?",
-  "faq.a5": "Tidak. Onmal tidak menggunakan mikrofon melainkan anda sendiri memilihnya sebagai sumber. Ia mendengar suara rakan sepasukan — bunyi yang dimainkan pada PC anda — dan memaparkan sari kata hanya pada skrin anda. Kata-kata anda keluar seperti biasa.",
+  "faq.a5": "Tidak secara lalai. Onmal tidak menyentuh mikrofon anda melainkan anda menghidupkannya — ia mendengar suara rakan sepasukan, iaitu bunyi pada PC anda, dan memaparkan sari kata hanya pada skrin anda. Jika anda menghidupkan penghantaran apa yang anda cakap dalam bahasa rakan sepasukan di tetapan, satu ayat pada satu masa diterjemahkan ke bahasa mereka dan diletakkan di papan keratan. Mikrofon hanya dibuka pada saat itu, dan anda sendiri yang menampalnya ke sembang permainan.",
   "faq.q6": "Adakah permainan menjadi perlahan?",
   "faq.a6": "Permainan didahulukan — itu prinsip reka bentuk. Ia hanya mengira semasa seseorang bercakap, memilih model pengecaman mengikut baki memori GPU, dan ciri berat dimatikan secara lalai. Setiap PC berbeza, jadi pada alfa dan beta kami akan mengukurnya bersama permainan sebenar dan menyiarkan angkanya.",
 

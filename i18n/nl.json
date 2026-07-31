@@ -7,7 +7,7 @@
   "hero.lede": "Mis je calls omdat je een buitenlandse teamgenoot niet verstaat? Onmal luistert voor je en zet vertaalde ondertitels direct over je game.",
   "hero.soon": "Steam-release in voorbereiding",
   "hero.how": "Hoe het werkt",
-  "hero.note": "Geen microfoon. De stemmen van je teamgenoten worden binnen je pc verwerkt en gesprekken worden nergens heen gestuurd.",
+  "hero.note": "De microfoon wordt alleen gebruikt als je hem zelf aanzet. De stemmen van je teamgenoten worden binnen je pc verwerkt en gesprekken worden nergens naartoe gestuurd.",
 
   "frame.bar": "Game actief · randloos venster",
   "frame.live": "Luistert",
@@ -113,7 +113,7 @@
   "faq.q4": "Heb ik internet nodig?",
   "faq.a4": "Maar één keer, om het herkenningsmodel te downloaden. Daarna draaien herkenning en vertaling op je pc en blijven ze offline werken.",
   "faq.q5": "Wordt mijn stem ook vertaald?",
-  "faq.a5": "Nee. Onmal gebruikt je microfoon niet, tenzij je die zelf als bron kiest. Het luistert naar de stemmen van je teamgenoten — het geluid dat op je pc wordt afgespeeld — en toont ondertitels alleen op jouw scherm. Wat jij zegt gaat gewoon door.",
+  "faq.a5": "Standaard niet. Onmal raakt je microfoon niet aan tenzij je hem zelf aanzet — het luistert naar de stemmen van je teamgenoten, oftewel het geluid van je pc, en toont ondertitels alleen op jouw scherm. Zet je in de instellingen aan dat wat je zegt in de taal van je teamgenoten verstuurd wordt, dan wordt er telkens één zin naar hun taal vertaald en op het klembord gezet. De microfoon gaat alleen op dat moment open, en jij bent degene die het in de spelchat plakt.",
   "faq.q6": "Wordt mijn game er niet trager van?",
   "faq.a6": "De game gaat voor — dat is het ontwerpprincipe. Er wordt alleen gerekend terwijl iemand praat, het herkenningsmodel wordt gekozen op basis van vrij videogeheugen en zware functies staan standaard uit. Elke pc is anders, dus in alfa en bèta meten we naast echte games en publiceren we de cijfers.",
 

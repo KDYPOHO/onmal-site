@@ -7,7 +7,7 @@
   "hero.lede": "Ketinggalan info karena tidak paham ucapan rekan tim asing? Onmal mendengarkan untukmu dan menaruh subtitle terjemahan langsung di atas game.",
   "hero.soon": "Rilis Steam sedang disiapkan",
   "hero.how": "Cara kerjanya",
-  "hero.note": "Tanpa mikrofon. Suara rekan setim diproses di dalam PC kamu, dan percakapan tidak pernah dikirim ke mana pun.",
+  "hero.note": "Mikrofon hanya dipakai jika Anda sendiri menyalakannya. Suara rekan setim diproses di dalam PC Anda, dan percakapan tidak pernah dikirim ke mana pun.",
 
   "frame.bar": "Game berjalan · jendela tanpa bingkai",
   "frame.live": "Mendengarkan",
@@ -113,7 +113,7 @@
   "faq.q4": "Perlu internet?",
   "faq.a4": "Hanya sekali, untuk mengunduh model pengenalan. Setelah itu pengenalan dan terjemahan berjalan di PC kamu dan tetap bekerja secara offline.",
   "faq.q5": "Apakah suaraku ikut diterjemahkan?",
-  "faq.a5": "Tidak. Onmal tidak memakai mikrofon kecuali kamu sendiri memilihnya sebagai sumber. Ia mendengar suara rekan setim — suara yang diputar di PC kamu — dan menampilkan subtitle hanya di layarmu. Ucapanmu keluar seperti biasa.",
+  "faq.a5": "Tidak secara bawaan. Onmal tidak menyentuh mikrofon Anda kecuali Anda menyalakannya — ia mendengarkan suara rekan setim, yaitu suara yang diputar di PC Anda, dan menampilkan subtitel hanya di layar Anda. Jika Anda menyalakan pengiriman ucapan Anda dalam bahasa rekan setim di pengaturan, satu kalimat sekali jalan diterjemahkan ke bahasa mereka dan diletakkan di papan klip. Mikrofon hanya terbuka pada saat itu, dan Andalah yang menempelkannya ke obrolan game.",
   "faq.q6": "Apakah game jadi lambat?",
   "faq.a6": "Game yang utama — itu prinsip desainnya. Hanya menghitung saat ada yang bicara, memilih model pengenalan sesuai sisa memori GPU, dan fitur berat dimatikan secara bawaan. Tiap PC berbeda, jadi di alpha dan beta kami akan mengukurnya bersama game sungguhan dan memublikasikan angkanya.",
 

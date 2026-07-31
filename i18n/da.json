@@ -7,7 +7,7 @@
   "hero.lede": "Misser du calls, fordi du ikke forstår, hvad en udenlandsk holdkammerat siger? Onmal lytter for dig og lægger oversatte undertekster direkte hen over spillet.",
   "hero.soon": "Steam-udgivelse forberedes",
   "hero.how": "Sådan virker det",
-  "hero.note": "Ingen mikrofon. Holdkammeraternes stemmer behandles inde i din pc, og samtaler sendes ingen steder hen.",
+  "hero.note": "Mikrofonen bruges kun, hvis du selv slår den til. Dine holdkammeraters stemmer behandles inde i din pc, og samtaler sendes aldrig nogen steder hen.",
 
   "frame.bar": "Spil kører · rammeløst vindue",
   "frame.live": "Lytter",
@@ -113,7 +113,7 @@
   "faq.q4": "Kræver det internet?",
   "faq.a4": "Kun én gang, for at hente genkendelsesmodellen. Derefter kører genkendelse og oversættelse på din pc og bliver ved med at virke offline.",
   "faq.q5": "Bliver min stemme også oversat?",
-  "faq.a5": "Nej. Onmal bruger ikke din mikrofon, medmindre du selv vælger den som kilde. Den lytter til holdkammeraternes stemmer — lyden der afspilles på din pc — og viser undertekster kun på din skærm. Det, du siger, går ud som normalt.",
+  "faq.a5": "Ikke som standard. Onmal rører ikke din mikrofon, medmindre du selv slår det til — den lytter til dine holdkammeraters stemmer, altså lyden på din pc, og viser kun undertekster på din egen skærm. Slår du i indstillingerne til, at det du siger, sendes på holdkammeraternes sprog, oversættes én sætning ad gangen til deres sprog og lægges i udklipsholderen. Mikrofonen åbnes kun i det øjeblik, og det er dig selv, der indsætter teksten i spilchatten.",
   "faq.q6": "Bliver spillet langsommere?",
   "faq.a6": "Spillet først — det er designprincippet. Der regnes kun, mens nogen taler, genkendelsesmodellen vælges efter ledig grafikhukommelse, og tunge funktioner er slået fra som standard. Hver pc er forskellig, så i alfa og beta måler vi sammen med rigtige spil og offentliggør tallene.",
 
