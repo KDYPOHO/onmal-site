@@ -1,4 +1,4 @@
-{
+﻿{
   "meta.title": "Onmal — lời đồng đội, bằng ngôn ngữ của bạn",
   "meta.desc": "Hiểu tiếng nước ngoài của đồng đội trong khi chơi game và hiển thị phụ đề bằng ngôn ngữ của bạn ngay trên màn hình. Trình phiên dịch thời gian thực miễn phí chạy trên chính PC của bạn.",
 
@@ -133,5 +133,86 @@
   "footer.terms": "Điều khoản sử dụng",
   "footer.licenses": "Mã nguồn mở",
   "footer.contact": "Liên hệ · báo lỗi",
-  "footer.small": "Steam và logo Steam là thương hiệu của Valve Corporation. Discord là thương hiệu của Discord Inc. Onmal không liên kết với các công ty này và chỉ dùng tên để mô tả tính tương thích.<br>Nhận dạng giọng nói và dịch thuật dùng các mô hình mã nguồn mở. Danh sách đầy đủ và giấy phép nằm trong thông báo mã nguồn mở."
+  "footer.small": "Steam và logo Steam là thương hiệu của Valve Corporation. Discord là thương hiệu của Discord Inc. Onmal không liên kết với các công ty này và chỉ dùng tên để mô tả tính tương thích.<br>Nhận dạng giọng nói và dịch thuật dùng các mô hình mã nguồn mở. Danh sách đầy đủ và giấy phép nằm trong thông báo mã nguồn mở.",
+
+"lic.meta.title": "Thông báo mã nguồn mở — Onmal",
+  "lic.meta.desc": "Phần mềm, mô hình và phông chữ mã nguồn mở mà Onmal sử dụng, kèm chủ sở hữu bản quyền và giấy phép — cùng những thứ chúng tôi cố ý không dùng.",
+
+  "lic.home": "← Trang chủ",
+  "lic.kicker": "Thông báo pháp lý",
+  "lic.h1": "Thông báo mã nguồn mở",
+  "lic.lede": "Onmal chạy trên các phần mềm và mô hình mã nguồn mở được liệt kê dưới đây. Chúng tôi nêu rõ từng chủ sở hữu bản quyền và từng giấy phép — đồng thời ghi lại cả những thứ đã cố ý không dùng.",
+  "lic.updated": "Cập nhật lần cuối",
+  "lic.same_in_app": "Nội dung tương tự cũng có sẵn trong ứng dụng (Thông tin → Thông báo mã nguồn mở), nên có thể đọc mà không cần kết nối internet.",
+
+  "lic.attr_h2": "Ghi công — Opus-MT",
+  "lic.attr_p1": "Bản dịch cục bộ của Onmal sử dụng trọng số mô hình Opus-MT của Nhóm nghiên cứu công nghệ ngôn ngữ, Đại học Helsinki (Helsinki-NLP). Chúng tôi đã chuyển đổi sang định dạng ONNX để suy luận; bản thân các trọng số không bị thay đổi.",
+  "lic.attr_p2": "Giấy phép khác nhau tùy theo cặp ngôn ngữ. Bốn cặp dưới đây theo CC-BY-4.0 nên bắt buộc phải ghi công; các cặp còn lại theo Apache-2.0. Kiểm chứng ngày 29/07/2026.",
+  "lic.attr_apache": "Các cặp theo Apache-2.0: opus-mt-ko-en, opus-mt-ja-en, opus-mt-en-jap, opus-mt-en-zh, opus-mt-en-ru, opus-mt-es-en, opus-mt-en-es, opus-mt-roa-en, opus-mt-fr-en, opus-mt-en-fr, opus-mt-de-en.",
+
+  "lic.th_pair": "Cặp ngôn ngữ",
+  "lic.th_model": "Mô hình",
+  "lic.th_license": "Giấy phép",
+  "lic.th_component": "Thành phần",
+  "lic.th_holder": "Chủ sở hữu bản quyền",
+  "lic.th_use": "Mục đích",
+  "lic.th_font": "Phông chữ",
+  "lic.th_status": "Trạng thái",
+  "lic.th_set": "Bộ",
+  "lic.th_item": "Hạng mục",
+  "lic.th_reason": "Lý do không dùng",
+
+  "lic.pair_enko": "Tiếng Anh → tiếng Hàn",
+  "lic.pair_zhen": "Tiếng Trung → tiếng Anh",
+  "lic.pair_ruen": "Tiếng Nga → tiếng Anh",
+  "lic.pair_ende": "Tiếng Anh → tiếng Đức",
+
+  "lic.sw_h2": "Phần mềm",
+  "lic.sw_dotnet": "Môi trường chạy",
+  "lic.sw_naudio": "Thu vòng lặp thiết bị và micrô",
+  "lic.sw_ort": "Suy luận mô hình VAD và dịch",
+  "lic.sw_tokenizers": "Bộ tách token SentencePiece",
+  "lic.sw_whispernet": "Ràng buộc whisper.cpp",
+  "lic.sw_whispercpp": "Bộ máy suy luận nhận dạng giọng nói",
+  "lic.sw_steamworks": "Tích hợp Steam",
+  "lic.sw_xunit": "Kiểm thử (không kèm theo bản phát hành)",
+  "lic.sw_fluent": "Kiểm thử (không kèm theo bản phát hành)",
+  "lic.sw_note": "Từ phiên bản 7.0, FluentAssertions chuyển sang giấy phép thương mại. Onmal cố định ở bản 6.12.2 theo Apache-2.0.",
+
+  "lic.model_h2": "Mô hình",
+  "lic.model_whisper": "Nhận dạng giọng nói và phát hiện ngôn ngữ (bản chuyển đổi ggml)",
+  "lic.model_vad": "Phát hiện đoạn có giọng nói",
+  "lic.model_opusmt": "Dịch cục bộ — xem phần ghi công ở trên",
+  "lic.model_note": "Trọng số mô hình không đi kèm ứng dụng. Chúng được tải về riêng và mỗi tệp đều được kiểm tra bằng SHA-256.",
+
+  "lic.font_h2": "Phông chữ",
+  "lic.font_pretendard": "Đi kèm ứng dụng (Regular · Medium · SemiBold)",
+  "lic.font_jetbrains": "Không đi kèm — dùng trên trang web này",
+  "lic.font_noto": "Không đi kèm — thay bằng phông hệ thống",
+  "lic.font_gowun": "Không đi kèm — dùng trên trang web này",
+  "lic.font_note1": "Toàn văn giấy phép OFL của phông Pretendard đi kèm được phân phối cùng ứng dụng. Theo OFL, phông chữ không bao giờ được bán riêng và Reserved Font Name là \"Pretendard\".",
+  "lic.font_note2": "Những phông chúng tôi không kèm theo sẽ được thay bằng phông đã có sẵn trên hệ thống. Chúng không được chúng tôi phân phối nên không phát sinh nghĩa vụ OFL.",
+
+  "lic.icon_h2": "Biểu tượng",
+  "lic.icon_lucide": "Đang dùng — 17 biểu tượng cửa sổ cài đặt được nhúng dưới dạng đường dẫn SVG. Không dùng gói hay phông biểu tượng.",
+  "lic.icon_phosphor": "Ứng viên (chưa dùng)",
+  "lic.icon_note": "ISC yêu cầu giữ nguyên thông báo bản quyền. Bảng này và phần chú thích đầu tệp mã nguồn chính là thông báo đó.",
+
+  "lic.excl_h2": "Những gì chúng tôi chọn không dùng",
+  "lic.excl_intro": "Chúng tôi cũng ghi lại những gì đã loại bỏ. Việc này giúp khỏi phải tìm hiểu lại \"vì sao hồi đó không dùng?\" và cho thấy Onmal xử lý giấy phép ra sao.",
+  "lic.excl_nllb": "Chỉ dành cho mục đích phi thương mại. Bất kể chất lượng dịch thế nào, nó không được đưa vào mã nguồn này.",
+  "lic.excl_parakeet": "Nhanh, nhưng làm phát sinh thêm nghĩa vụ ghi công. Bản v1 chỉ dùng Whisper (MIT).",
+  "lic.excl_ffmpeg": "Có thể không tương thích với Steamworks SDK. Chúng tôi tự triển khai phần lấy mẫu lại.",
+  "lic.excl_apple": "Giấy phép chỉ giới hạn cho phần mềm chạy trên hệ điều hành của Apple. Không thể dùng trong ứng dụng Windows.",
+  "lic.excl_ct2": "Giấy phép không có vấn đề, nhưng không có API C ổn định nên chúng tôi sẽ phải tự phân phối lớp bao gói gốc. Đã thay bằng ONNX Runtime.",
+
+  "lic.tm_h2": "Nhãn hiệu",
+  "lic.tm_p": "Steam và biểu trưng Steam là nhãn hiệu của Valve Corporation. Discord là nhãn hiệu của Discord Inc. Windows là nhãn hiệu của Microsoft Corporation. Onmal không liên kết với các công ty này và chỉ dùng tên của họ để mô tả khả năng tương thích.",
+
+  "lic.full_h2": "Toàn văn giấy phép",
+  "lic.full_p": "Có thể xem toàn văn của từng giấy phép tại đây.",
+
+  "lic.f_home": "Trang chủ",
+  "lic.f_privacy": "Chính sách quyền riêng tư",
+  "lic.f_terms": "Điều khoản dịch vụ"
 }

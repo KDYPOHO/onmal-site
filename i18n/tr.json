@@ -1,4 +1,4 @@
-{
+﻿{
   "meta.title": "Onmal — takım arkadaşlarının sözleri, senin dilinde",
   "meta.desc": "Oyun sırasında takım arkadaşlarının yabancı dilini anlar ve ekranın üzerinde kendi dilinde altyazı olarak gösterir. Kendi bilgisayarında çalışan ücretsiz gerçek zamanlı çevirmen.",
 
@@ -133,5 +133,86 @@
   "footer.terms": "Kullanım koşulları",
   "footer.licenses": "Açık kaynak",
   "footer.contact": "İletişim · hata bildir",
-  "footer.small": "Steam ve Steam logosu Valve Corporation'ın ticari markalarıdır. Discord, Discord Inc.'in ticari markasıdır. Onmal bu şirketlerle bağlantılı değildir ve adları yalnızca uyumluluğu açıklamak için kullanır.<br>Konuşma tanıma ve çeviri açık kaynak modeller kullanır. Tam liste ve lisanslar açık kaynak bildirimlerindedir."
+  "footer.small": "Steam ve Steam logosu Valve Corporation'ın ticari markalarıdır. Discord, Discord Inc.'in ticari markasıdır. Onmal bu şirketlerle bağlantılı değildir ve adları yalnızca uyumluluğu açıklamak için kullanır.<br>Konuşma tanıma ve çeviri açık kaynak modeller kullanır. Tam liste ve lisanslar açık kaynak bildirimlerindedir.",
+
+"lic.meta.title": "Açık kaynak bildirimleri — Onmal",
+  "lic.meta.desc": "Onmal'ın üzerinde çalıştığı açık kaynak yazılımlar, modeller ve yazı tipleri; her birinin hak sahibi ve lisansı — ve bilerek kullanmadıklarımız.",
+
+  "lic.home": "← Ana sayfa",
+  "lic.kicker": "Yasal bildirim",
+  "lic.h1": "Açık kaynak bildirimleri",
+  "lic.lede": "Onmal aşağıda listelenen açık kaynak yazılım ve modellerin üzerinde çalışır. Her hak sahibini ve her lisansı belirtiyoruz — ayrıca bilerek kullanmadıklarımızı da yazıyoruz.",
+  "lic.updated": "Son güncelleme",
+  "lic.same_in_app": "Aynı bildirimler uygulamanın içinde de yer alır (Bilgi → Açık kaynak bildirimleri); internet bağlantısı olmadan da okunabilir.",
+
+  "lic.attr_h2": "Atıf — Opus-MT",
+  "lic.attr_p1": "Onmal'ın yerel çevirisi, Helsinki Üniversitesi Dil Teknolojisi Araştırma Grubu'nun (Helsinki-NLP) Opus-MT model ağırlıklarını kullanır. Çıkarım için ONNX biçimine dönüştürdük; ağırlıkların kendisi değiştirilmedi.",
+  "lic.attr_p2": "Lisans dil çiftine göre değişir. Aşağıdaki dört çift CC-BY-4.0 kapsamındadır ve atıf gerektirir; diğer çiftler Apache-2.0'dır. 29.07.2026 tarihli kontrole göredir.",
+  "lic.attr_apache": "Apache-2.0 kapsamındaki çiftler: opus-mt-ko-en, opus-mt-ja-en, opus-mt-en-jap, opus-mt-en-zh, opus-mt-en-ru, opus-mt-es-en, opus-mt-en-es, opus-mt-roa-en, opus-mt-fr-en, opus-mt-en-fr, opus-mt-de-en.",
+
+  "lic.th_pair": "Dil çifti",
+  "lic.th_model": "Model",
+  "lic.th_license": "Lisans",
+  "lic.th_component": "Bileşen",
+  "lic.th_holder": "Hak sahibi",
+  "lic.th_use": "Kullanım amacı",
+  "lic.th_font": "Yazı tipi",
+  "lic.th_status": "Durum",
+  "lic.th_set": "Set",
+  "lic.th_item": "Öğe",
+  "lic.th_reason": "Kullanılmama nedeni",
+
+  "lic.pair_enko": "İngilizce → Korece",
+  "lic.pair_zhen": "Çince → İngilizce",
+  "lic.pair_ruen": "Rusça → İngilizce",
+  "lic.pair_ende": "İngilizce → Almanca",
+
+  "lic.sw_h2": "Yazılım",
+  "lic.sw_dotnet": "Çalışma zamanı",
+  "lic.sw_naudio": "Aygıt geri döngüsü ve mikrofon yakalama",
+  "lic.sw_ort": "VAD ve çeviri modeli çıkarımı",
+  "lic.sw_tokenizers": "SentencePiece belirteçleyici",
+  "lic.sw_whispernet": "whisper.cpp bağlayıcıları",
+  "lic.sw_whispercpp": "Konuşma tanıma çıkarım motoru",
+  "lic.sw_steamworks": "Steam entegrasyonu",
+  "lic.sw_xunit": "Test (dağıtıma dahil değil)",
+  "lic.sw_fluent": "Test (dağıtıma dahil değil)",
+  "lic.sw_note": "FluentAssertions 7.0 sürümünden itibaren ticari lisansa geçti. Onmal, Apache-2.0 olan 6.12.2 sürümüne sabitlenmiştir.",
+
+  "lic.model_h2": "Modeller",
+  "lic.model_whisper": "Konuşma tanıma ve dil algılama (ggml dönüşümü)",
+  "lic.model_vad": "Konuşma bölütü algılama",
+  "lic.model_opusmt": "Yerel çeviri — yukarıdaki atfa bakın",
+  "lic.model_note": "Model ağırlıkları uygulamanın içinde gelmez. Ayrıca indirilir ve her dosya SHA-256 ile doğrulanır.",
+
+  "lic.font_h2": "Yazı tipleri",
+  "lic.font_pretendard": "Uygulamaya dahil (Regular · Medium · SemiBold)",
+  "lic.font_jetbrains": "Dahil değil — bu web sayfasında kullanılıyor",
+  "lic.font_noto": "Dahil değil — sistem yazı tipleriyle değiştirilir",
+  "lic.font_gowun": "Dahil değil — bu web sayfasında kullanılıyor",
+  "lic.font_note1": "Uygulamaya dahil edilen Pretendard'ın tam OFL metni uygulamayla birlikte dağıtılır. OFL uyarınca yazı tipi tek başına satılmaz ve Reserved Font Name \"Pretendard\"dır.",
+  "lic.font_note2": "Dahil etmediğimiz yazı tipleri, sistemde hâlihazırda bulunanlarla değiştirilir. Bizim tarafımızdan dağıtılmadıkları için OFL yükümlülüğü doğmaz.",
+
+  "lic.icon_h2": "Simgeler",
+  "lic.icon_lucide": "Kullanımda — ayarlar penceresindeki 17 simge SVG yolu olarak gömülü. Paket yok, simge yazı tipi yok.",
+  "lic.icon_phosphor": "Aday (kullanılmıyor)",
+  "lic.icon_note": "ISC, telif hakkı bildiriminin korunmasını gerektirir. Bu tablo ve uygulama kaynak kodundaki başlık yorumu bu bildirimdir.",
+
+  "lic.excl_h2": "Kullanmamayı seçtiklerimiz",
+  "lic.excl_intro": "Elediklerimizi de kayda geçiriyoruz. Bu, ileride \"neden bunu kullanmamıştık?\" sorusunu yeniden araştırma maliyetini azaltır ve Onmal'ın lisanslara nasıl yaklaştığını gösterir.",
+  "lic.excl_nllb": "Yalnızca ticari olmayan kullanım içindir. Çeviri kalitesinden bağımsız olarak bu kod tabanına girmez.",
+  "lic.excl_parakeet": "Hızlı, ancak bir atıf yükümlülüğü daha ekliyor. v1 yalnızca Whisper (MIT) ile çıkıyor.",
+  "lic.excl_ffmpeg": "Steamworks SDK ile uyumlu olmayabilir. Yeniden örnekleme işlemini kendimiz yazdık.",
+  "lic.excl_apple": "Lisans yalnızca Apple işletim sistemlerinde çalışan yazılımlarla sınırlıdır. Bir Windows uygulamasında kullanılamaz.",
+  "lic.excl_ct2": "Lisansta sorun yok, ancak kararlı bir C API'si bulunmadığından kendi yerel sarmalayıcımızı dağıtmamız gerekirdi. ONNX Runtime ile değiştirildi.",
+
+  "lic.tm_h2": "Ticari markalar",
+  "lic.tm_p": "Steam ve Steam logosu Valve Corporation'ın ticari markalarıdır. Discord, Discord Inc.'in ticari markasıdır. Windows, Microsoft Corporation'ın ticari markasıdır. Onmal bu şirketlerle bağlantılı değildir ve adlarını yalnızca uyumluluğu açıklamak için kullanır.",
+
+  "lic.full_h2": "Lisansların tam metni",
+  "lic.full_p": "Her lisansın tam metnine buradan ulaşabilirsiniz.",
+
+  "lic.f_home": "Ana sayfa",
+  "lic.f_privacy": "Gizlilik politikası",
+  "lic.f_terms": "Hizmet koşulları"
 }

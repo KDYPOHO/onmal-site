@@ -1,4 +1,4 @@
-{
+﻿{
   "meta.title": "Onmal — dine holdkammeraters ord, på dit sprog",
   "meta.desc": "Forstår dine holdkammeraters fremmedsprog, mens du spiller, og viser det som undertekster på dit sprog hen over skærmen. En gratis realtidstolk, der kører på din egen pc.",
 
@@ -133,5 +133,86 @@
   "footer.terms": "Brugsvilkår",
   "footer.licenses": "Open source",
   "footer.contact": "Kontakt · meld fejl",
-  "footer.small": "Steam og Steam-logoet er varemærker tilhørende Valve Corporation. Discord er et varemærke tilhørende Discord Inc. Onmal er ikke tilknyttet disse virksomheder og bruger kun navnene til at beskrive kompatibilitet.<br>Talegenkendelse og oversættelse bruger open source-modeller. Den fulde liste og licenserne findes i open source-meddelelserne."
+  "footer.small": "Steam og Steam-logoet er varemærker tilhørende Valve Corporation. Discord er et varemærke tilhørende Discord Inc. Onmal er ikke tilknyttet disse virksomheder og bruger kun navnene til at beskrive kompatibilitet.<br>Talegenkendelse og oversættelse bruger open source-modeller. Den fulde liste og licenserne findes i open source-meddelelserne.",
+
+"lic.meta.title": "Meddelelser om open source — Onmal",
+  "lic.meta.desc": "Den open source-software, de modeller og de skrifttyper, som Onmal bygger på, med rettighedshavere og licenser — og det, vi bevidst har fravalgt.",
+
+  "lic.home": "← Forside",
+  "lic.kicker": "Juridisk meddelelse",
+  "lic.h1": "Meddelelser om open source",
+  "lic.lede": "Onmal kører på den open source-software og de modeller, der er anført nedenfor. Vi angiver hver rettighedshaver og hver licens — og noterer også, hvad vi bevidst har fravalgt.",
+  "lic.updated": "Senest opdateret",
+  "lic.same_in_app": "De samme meddelelser følger med i appen (Info → Meddelelser om open source) og kan læses uden internetforbindelse.",
+
+  "lic.attr_h2": "Kreditering — Opus-MT",
+  "lic.attr_p1": "Onmals lokale oversættelse bruger modelvægte fra Opus-MT, udviklet af forskningsgruppen for sprogteknologi ved Helsinki Universitet (Helsinki-NLP). Vi har konverteret dem til ONNX-format til inferens; selve vægtene er uændrede.",
+  "lic.attr_p2": "Licensen varierer fra sprogpar til sprogpar. De fire par nedenfor er under CC-BY-4.0 og kræver kreditering; de øvrige par er under Apache-2.0. Kontrolleret 29-07-2026.",
+  "lic.attr_apache": "Par under Apache-2.0: opus-mt-ko-en, opus-mt-ja-en, opus-mt-en-jap, opus-mt-en-zh, opus-mt-en-ru, opus-mt-es-en, opus-mt-en-es, opus-mt-roa-en, opus-mt-fr-en, opus-mt-en-fr, opus-mt-de-en.",
+
+  "lic.th_pair": "Sprogpar",
+  "lic.th_model": "Model",
+  "lic.th_license": "Licens",
+  "lic.th_component": "Komponent",
+  "lic.th_holder": "Rettighedshaver",
+  "lic.th_use": "Bruges til",
+  "lic.th_font": "Skrifttype",
+  "lic.th_status": "Status",
+  "lic.th_set": "Sæt",
+  "lic.th_item": "Element",
+  "lic.th_reason": "Årsag til fravalg",
+
+  "lic.pair_enko": "Engelsk → koreansk",
+  "lic.pair_zhen": "Kinesisk → engelsk",
+  "lic.pair_ruen": "Russisk → engelsk",
+  "lic.pair_ende": "Engelsk → tysk",
+
+  "lic.sw_h2": "Software",
+  "lic.sw_dotnet": "Runtime",
+  "lic.sw_naudio": "Loopback-optagelse fra enhed og mikrofon",
+  "lic.sw_ort": "Inferens for VAD- og oversættelsesmodeller",
+  "lic.sw_tokenizers": "SentencePiece-tokenizer",
+  "lic.sw_whispernet": "Bindinger til whisper.cpp",
+  "lic.sw_whispercpp": "Inferensmotor til talegenkendelse",
+  "lic.sw_steamworks": "Steam-integration",
+  "lic.sw_xunit": "Test (distribueres ikke)",
+  "lic.sw_fluent": "Test (distribueres ikke)",
+  "lic.sw_note": "FluentAssertions skiftede til en kommerciel licens fra og med 7.0. Onmal er låst til 6.12.2, som er Apache-2.0.",
+
+  "lic.model_h2": "Modeller",
+  "lic.model_whisper": "Talegenkendelse og sprogdetektion (ggml-konvertering)",
+  "lic.model_vad": "Detektion af talesegmenter",
+  "lic.model_opusmt": "Lokal oversættelse — se krediteringen ovenfor",
+  "lic.model_note": "Modelvægtene følger ikke med appen. De hentes separat, og hver fil verificeres med SHA-256.",
+
+  "lic.font_h2": "Skrifttyper",
+  "lic.font_pretendard": "Følger med appen (Regular · Medium · SemiBold)",
+  "lic.font_jetbrains": "Følger ikke med — bruges på dette websted",
+  "lic.font_noto": "Følger ikke med — erstattes af systemskrifttyper",
+  "lic.font_gowun": "Følger ikke med — bruges på dette websted",
+  "lic.font_note1": "Den fulde OFL-tekst for den medfølgende Pretendard distribueres sammen med appen. Ifølge OFL sælges skrifttypen aldrig alene, og Reserved Font Name er »Pretendard«.",
+  "lic.font_note2": "Skrifttyper, vi ikke inkluderer, erstattes af dem, der allerede findes på systemet. Da vi ikke distribuerer dem, opstår der ingen OFL-forpligtelser.",
+
+  "lic.icon_h2": "Ikoner",
+  "lic.icon_lucide": "I brug — 17 ikoner i indstillingsvinduet er indlejret som SVG-stier. Ingen pakke, ingen ikonskrifttype.",
+  "lic.icon_phosphor": "Kandidat (ikke i brug)",
+  "lic.icon_note": "ISC kræver, at copyright-meddelelsen bevares. Denne tabel og hovedkommentaren i appens kildekode udgør den meddelelse.",
+
+  "lic.excl_h2": "Det, vi har fravalgt",
+  "lic.excl_intro": "Vi noterer også det, vi har afvist. Det sparer os for spørgsmålet »hvorfor brugte vi ikke det?« senere og viser, hvordan Onmal håndterer licenser.",
+  "lic.excl_nllb": "Kun til ikke-kommerciel brug. Uanset oversættelseskvaliteten kommer den ikke ind i denne kodebase.",
+  "lic.excl_parakeet": "Hurtig, men tilføjer endnu en krediteringsforpligtelse. v1 udkommer med Whisper (MIT) alene.",
+  "lic.excl_ffmpeg": "Kan være uforenelig med Steamworks SDK. Resamplingen har vi selv implementeret.",
+  "lic.excl_apple": "Licensen er begrænset til software, der kører på Apples operativsystemer. Kan ikke bruges i en Windows-app.",
+  "lic.excl_ct2": "Licensen er uproblematisk, men der findes ikke et stabilt C-API, så vi ville skulle distribuere vores egen native wrapper. Erstattet af ONNX Runtime.",
+
+  "lic.tm_h2": "Varemærker",
+  "lic.tm_p": "Steam og Steam-logoet er varemærker tilhørende Valve Corporation. Discord er et varemærke tilhørende Discord Inc. Windows er et varemærke tilhørende Microsoft Corporation. Onmal er ikke tilknyttet disse virksomheder og bruger kun navnene til at beskrive kompatibilitet.",
+
+  "lic.full_h2": "Fulde licenstekster",
+  "lic.full_p": "Den fulde tekst for hver licens findes her.",
+
+  "lic.f_home": "Forside",
+  "lic.f_privacy": "Privatlivspolitik",
+  "lic.f_terms": "Servicevilkår"
 }

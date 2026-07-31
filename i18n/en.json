@@ -1,4 +1,4 @@
-{
+﻿{
   "meta.title": "Onmal — your teammates' words, in your language",
   "meta.desc": "Understands your teammates' foreign language during games and shows it as subtitles over your screen, in your language. A free real-time interpreter that runs on your own PC.",
 
@@ -133,5 +133,86 @@
   "footer.terms": "Terms of use",
   "footer.licenses": "Open-source notices",
   "footer.contact": "Contact · bug reports",
-  "footer.small": "Steam and the Steam logo are trademarks of Valve Corporation. Discord is a trademark of Discord Inc. Onmal is not affiliated with these companies and uses the names only to describe compatibility.<br>Speech recognition and translation use open-source models. The full list and licenses are in the open-source notices."
+  "footer.small": "Steam and the Steam logo are trademarks of Valve Corporation. Discord is a trademark of Discord Inc. Onmal is not affiliated with these companies and uses the names only to describe compatibility.<br>Speech recognition and translation use open-source models. The full list and licenses are in the open-source notices.",
+
+"lic.meta.title": "Open-source notices — Onmal",
+  "lic.meta.desc": "The open-source software, models and fonts Onmal is built on, with each copyright holder and license — and the things we deliberately chose not to use.",
+
+  "lic.home": "← Home",
+  "lic.kicker": "Legal notice",
+  "lic.h1": "Open-source notices",
+  "lic.lede": "Onmal runs on the open-source software and models listed below. We name every copyright holder and license — and we also list what we deliberately chose not to use.",
+  "lic.updated": "Last updated",
+  "lic.same_in_app": "The same notices ship inside the app (Info → Open-source notices), so they can be read without an internet connection.",
+
+  "lic.attr_h2": "Attribution — Opus-MT",
+  "lic.attr_p1": "Onmal's local translation uses Opus-MT model weights from the Language Technology Research Group at the University of Helsinki (Helsinki-NLP). We converted them to ONNX format for inference; the weights themselves are unmodified.",
+  "lic.attr_p2": "Licensing differs per language pair. The four pairs below are CC-BY-4.0 and therefore require attribution; the remaining pairs are Apache-2.0. Verified 2026-07-29.",
+  "lic.attr_apache": "Apache-2.0 pairs: opus-mt-ko-en, opus-mt-ja-en, opus-mt-en-jap, opus-mt-en-zh, opus-mt-en-ru, opus-mt-es-en, opus-mt-en-es, opus-mt-roa-en, opus-mt-fr-en, opus-mt-en-fr, opus-mt-de-en.",
+
+  "lic.th_pair": "Language pair",
+  "lic.th_model": "Model",
+  "lic.th_license": "License",
+  "lic.th_component": "Component",
+  "lic.th_holder": "Copyright holder",
+  "lic.th_use": "Used for",
+  "lic.th_font": "Font",
+  "lic.th_status": "Status",
+  "lic.th_set": "Set",
+  "lic.th_item": "Item",
+  "lic.th_reason": "Why not",
+
+  "lic.pair_enko": "English → Korean",
+  "lic.pair_zhen": "Chinese → English",
+  "lic.pair_ruen": "Russian → English",
+  "lic.pair_ende": "English → German",
+
+  "lic.sw_h2": "Software",
+  "lic.sw_dotnet": "Runtime",
+  "lic.sw_naudio": "Device loopback and microphone capture",
+  "lic.sw_ort": "VAD and translation model inference",
+  "lic.sw_tokenizers": "SentencePiece tokenizer",
+  "lic.sw_whispernet": "whisper.cpp bindings",
+  "lic.sw_whispercpp": "Speech recognition inference engine",
+  "lic.sw_steamworks": "Steam integration",
+  "lic.sw_xunit": "Testing (not shipped)",
+  "lic.sw_fluent": "Testing (not shipped)",
+  "lic.sw_note": "FluentAssertions moved to a commercial license from 7.0 onward. Onmal pins 6.12.2, which is Apache-2.0.",
+
+  "lic.model_h2": "Models",
+  "lic.model_whisper": "Speech recognition and language detection (ggml conversion)",
+  "lic.model_vad": "Speech segment detection",
+  "lic.model_opusmt": "Local translation — see attribution above",
+  "lic.model_note": "Model weights are not bundled with the app. They are downloaded separately, and each file is verified with SHA-256.",
+
+  "lic.font_h2": "Fonts",
+  "lic.font_pretendard": "Bundled with the app (Regular · Medium · SemiBold)",
+  "lic.font_jetbrains": "Not bundled — used on this website",
+  "lic.font_noto": "Not bundled — falls back to system fonts",
+  "lic.font_gowun": "Not bundled — used on this website",
+  "lic.font_note1": "The full OFL text for the bundled Pretendard ships with the app. Per the OFL, the font is never sold on its own, and the Reserved Font Name is \"Pretendard\".",
+  "lic.font_note2": "Fonts we do not bundle fall back to what is already installed on the system. They are not redistributed, so no OFL obligation arises.",
+
+  "lic.icon_h2": "Icons",
+  "lic.icon_lucide": "In use — 17 settings-window icons inlined as SVG paths. No package, no icon font.",
+  "lic.icon_phosphor": "Candidate (unused)",
+  "lic.icon_note": "ISC requires the copyright notice to be preserved. This table and the header comment in the app source are that notice.",
+
+  "lic.excl_h2": "What we chose not to use",
+  "lic.excl_intro": "We record what we rejected too. It saves us from re-litigating \"why didn't we use that?\" later, and it shows how Onmal handles licensing.",
+  "lic.excl_nllb": "Non-commercial only. Regardless of translation quality, it does not go into this codebase.",
+  "lic.excl_parakeet": "Fast, but it adds another attribution obligation. v1 ships with Whisper (MIT) alone.",
+  "lic.excl_ffmpeg": "May not be compatible with the Steamworks SDK. We implemented resampling ourselves.",
+  "lic.excl_apple": "Licensed only for software running on Apple operating systems. It cannot be used in a Windows app.",
+  "lic.excl_ct2": "The license is fine, but there is no stable C API, so we would have to ship our own native wrapper. Replaced by ONNX Runtime.",
+
+  "lic.tm_h2": "Trademarks",
+  "lic.tm_p": "Steam and the Steam logo are trademarks of Valve Corporation. Discord is a trademark of Discord Inc. Windows is a trademark of Microsoft Corporation. Onmal is not affiliated with these companies and uses the names only to describe compatibility.",
+
+  "lic.full_h2": "Full license texts",
+  "lic.full_p": "The complete text of each license is available here.",
+
+  "lic.f_home": "Home",
+  "lic.f_privacy": "Privacy policy",
+  "lic.f_terms": "Terms of service"
 }

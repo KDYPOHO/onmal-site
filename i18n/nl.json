@@ -1,4 +1,4 @@
-{
+﻿{
   "meta.title": "Onmal — de woorden van je team, in jouw taal",
   "meta.desc": "Verstaat de vreemde taal van je teamgenoten tijdens het gamen en toont die als ondertitels in jouw taal over het scherm. Een gratis realtime tolk die op je eigen pc draait.",
 
@@ -133,5 +133,86 @@
   "footer.terms": "Gebruiksvoorwaarden",
   "footer.licenses": "Open source",
   "footer.contact": "Contact · bug melden",
-  "footer.small": "Steam en het Steam-logo zijn handelsmerken van Valve Corporation. Discord is een handelsmerk van Discord Inc. Onmal is niet verbonden aan deze bedrijven en gebruikt de namen alleen om compatibiliteit te beschrijven.<br>Spraakherkenning en vertaling gebruiken opensourcemodellen. De volledige lijst en licenties staan in de opensourcevermeldingen."
+  "footer.small": "Steam en het Steam-logo zijn handelsmerken van Valve Corporation. Discord is een handelsmerk van Discord Inc. Onmal is niet verbonden aan deze bedrijven en gebruikt de namen alleen om compatibiliteit te beschrijven.<br>Spraakherkenning en vertaling gebruiken opensourcemodellen. De volledige lijst en licenties staan in de opensourcevermeldingen.",
+
+"lic.meta.title": "Open-sourcevermeldingen — Onmal",
+  "lic.meta.desc": "De opensourcesoftware, modellen en lettertypen waarop Onmal draait, met rechthebbenden en licenties — en wat we bewust niet hebben gebruikt.",
+
+  "lic.home": "← Home",
+  "lic.kicker": "Juridische kennisgeving",
+  "lic.h1": "Open-sourcevermeldingen",
+  "lic.lede": "Onmal draait op de hieronder vermelde opensourcesoftware en -modellen. We noemen elke rechthebbende en elke licentie — en vermelden ook wat we bewust niet hebben gebruikt.",
+  "lic.updated": "Laatst bijgewerkt",
+  "lic.same_in_app": "Dezelfde vermeldingen zitten in de app zelf (Info → Open-sourcevermeldingen) en zijn ook zonder internetverbinding te lezen.",
+
+  "lic.attr_h2": "Naamsvermelding — Opus-MT",
+  "lic.attr_p1": "De lokale vertaling van Onmal gebruikt de modelgewichten van Opus-MT van de onderzoeksgroep taaltechnologie van de Universiteit van Helsinki (Helsinki-NLP). We hebben ze naar ONNX-formaat omgezet voor inferentie; de gewichten zelf zijn ongewijzigd.",
+  "lic.attr_p2": "De licentie verschilt per taalpaar. De vier paren hieronder vallen onder CC-BY-4.0 en vereisen naamsvermelding; de overige paren vallen onder Apache-2.0. Gecontroleerd op 29-07-2026.",
+  "lic.attr_apache": "Paren onder Apache-2.0: opus-mt-ko-en, opus-mt-ja-en, opus-mt-en-jap, opus-mt-en-zh, opus-mt-en-ru, opus-mt-es-en, opus-mt-en-es, opus-mt-roa-en, opus-mt-fr-en, opus-mt-en-fr, opus-mt-de-en.",
+
+  "lic.th_pair": "Taalpaar",
+  "lic.th_model": "Model",
+  "lic.th_license": "Licentie",
+  "lic.th_component": "Onderdeel",
+  "lic.th_holder": "Rechthebbende",
+  "lic.th_use": "Gebruikt voor",
+  "lic.th_font": "Lettertype",
+  "lic.th_status": "Status",
+  "lic.th_set": "Set",
+  "lic.th_item": "Item",
+  "lic.th_reason": "Reden van afwijzing",
+
+  "lic.pair_enko": "Engels → Koreaans",
+  "lic.pair_zhen": "Chinees → Engels",
+  "lic.pair_ruen": "Russisch → Engels",
+  "lic.pair_ende": "Engels → Duits",
+
+  "lic.sw_h2": "Software",
+  "lic.sw_dotnet": "Runtime",
+  "lic.sw_naudio": "Loopback-opname van apparaat en microfoon",
+  "lic.sw_ort": "Inferentie van VAD- en vertaalmodellen",
+  "lic.sw_tokenizers": "SentencePiece-tokenizer",
+  "lic.sw_whispernet": "whisper.cpp-bindingen",
+  "lic.sw_whispercpp": "Inferentie-engine voor spraakherkenning",
+  "lic.sw_steamworks": "Steam-integratie",
+  "lic.sw_xunit": "Tests (wordt niet meegeleverd)",
+  "lic.sw_fluent": "Tests (wordt niet meegeleverd)",
+  "lic.sw_note": "FluentAssertions is vanaf 7.0 overgestapt op een commerciële licentie. Onmal blijft vastgezet op 6.12.2, dat onder Apache-2.0 valt.",
+
+  "lic.model_h2": "Modellen",
+  "lic.model_whisper": "Spraakherkenning en taaldetectie (ggml-conversie)",
+  "lic.model_vad": "Detectie van spraakfragmenten",
+  "lic.model_opusmt": "Lokale vertaling — zie de naamsvermelding hierboven",
+  "lic.model_note": "De modelgewichten zitten niet in de app. Ze worden apart gedownload en elk bestand wordt met SHA-256 geverifieerd.",
+
+  "lic.font_h2": "Lettertypen",
+  "lic.font_pretendard": "Meegeleverd met de app (Regular · Medium · SemiBold)",
+  "lic.font_jetbrains": "Niet meegeleverd — gebruikt op deze website",
+  "lic.font_noto": "Niet meegeleverd — vervangen door systeemlettertypen",
+  "lic.font_gowun": "Niet meegeleverd — gebruikt op deze website",
+  "lic.font_note1": "De volledige OFL-tekst van het meegeleverde Pretendard wordt met de app verspreid. Volgens de OFL wordt het lettertype nooit afzonderlijk verkocht en is de Reserved Font Name \"Pretendard\".",
+  "lic.font_note2": "Lettertypen die we niet meeleveren, worden vervangen door de lettertypen die al op het systeem staan. Wij verspreiden ze niet, dus ontstaat er geen OFL-verplichting.",
+
+  "lic.icon_h2": "Pictogrammen",
+  "lic.icon_lucide": "In gebruik — 17 pictogrammen van het instellingenvenster zijn als SVG-paden ingesloten. Geen pakket, geen pictogramlettertype.",
+  "lic.icon_phosphor": "Kandidaat (ongebruikt)",
+  "lic.icon_note": "ISC vereist dat de auteursrechtvermelding behouden blijft. Deze tabel en de kopcommentaar in de broncode vormen die vermelding.",
+
+  "lic.excl_h2": "Wat we bewust niet gebruiken",
+  "lic.excl_intro": "We leggen ook vast wat we hebben afgewezen. Dat bespaart ons later de vraag \"waarom hebben we dat eigenlijk niet gebruikt?\" en laat zien hoe Onmal met licenties omgaat.",
+  "lic.excl_nllb": "Alleen voor niet-commercieel gebruik. Ongeacht de vertaalkwaliteit komt het niet in deze codebase.",
+  "lic.excl_parakeet": "Snel, maar het voegt nog een verplichting tot naamsvermelding toe. v1 komt uit met alleen Whisper (MIT).",
+  "lic.excl_ffmpeg": "Mogelijk niet verenigbaar met de Steamworks SDK. Het resamplen hebben we zelf geïmplementeerd.",
+  "lic.excl_apple": "De licentie is beperkt tot software die op besturingssystemen van Apple draait. Niet bruikbaar in een Windows-app.",
+  "lic.excl_ct2": "Met de licentie is niets mis, maar er is geen stabiele C-API, dus we zouden onze eigen native wrapper moeten meeleveren. Vervangen door ONNX Runtime.",
+
+  "lic.tm_h2": "Handelsmerken",
+  "lic.tm_p": "Steam en het Steam-logo zijn handelsmerken van Valve Corporation. Discord is een handelsmerk van Discord Inc. Windows is een handelsmerk van Microsoft Corporation. Onmal is niet verbonden aan deze bedrijven en gebruikt de namen uitsluitend om compatibiliteit te beschrijven.",
+
+  "lic.full_h2": "Volledige licentieteksten",
+  "lic.full_p": "De volledige tekst van elke licentie is hier te vinden.",
+
+  "lic.f_home": "Home",
+  "lic.f_privacy": "Privacybeleid",
+  "lic.f_terms": "Servicevoorwaarden"
 }

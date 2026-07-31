@@ -1,4 +1,4 @@
-{
+﻿{
   "meta.title": "Onmal — kata-kata rakan sepasukan, dalam bahasa anda",
   "meta.desc": "Memahami bahasa asing rakan sepasukan semasa bermain dan memaparkannya sebagai sari kata dalam bahasa anda di atas skrin. Penterjemah masa nyata percuma yang berjalan pada PC anda sendiri.",
 
@@ -133,5 +133,86 @@
   "footer.terms": "Terma penggunaan",
   "footer.licenses": "Sumber terbuka",
   "footer.contact": "Hubungi · lapor pepijat",
-  "footer.small": "Steam dan logo Steam ialah tanda dagangan Valve Corporation. Discord ialah tanda dagangan Discord Inc. Onmal tidak bergabung dengan syarikat-syarikat ini dan menggunakan nama hanya untuk menerangkan keserasian.<br>Pengecaman suara dan terjemahan menggunakan model sumber terbuka. Senarai penuh dan lesen ada dalam notis sumber terbuka."
+  "footer.small": "Steam dan logo Steam ialah tanda dagangan Valve Corporation. Discord ialah tanda dagangan Discord Inc. Onmal tidak bergabung dengan syarikat-syarikat ini dan menggunakan nama hanya untuk menerangkan keserasian.<br>Pengecaman suara dan terjemahan menggunakan model sumber terbuka. Senarai penuh dan lesen ada dalam notis sumber terbuka.",
+
+"lic.meta.title": "Notis sumber terbuka — Onmal",
+  "lic.meta.desc": "Perisian, model dan fon sumber terbuka yang mendasari Onmal, berserta pemegang hak cipta dan lesennya — serta perkara yang sengaja tidak kami gunakan.",
+
+  "lic.home": "← Laman utama",
+  "lic.kicker": "Notis undang-undang",
+  "lic.h1": "Notis sumber terbuka",
+  "lic.lede": "Onmal berjalan di atas perisian dan model sumber terbuka yang disenaraikan di bawah. Kami menyatakan setiap pemegang hak cipta dan setiap lesen — dan turut mencatat apa yang sengaja tidak kami gunakan.",
+  "lic.updated": "Kemas kini terakhir",
+  "lic.same_in_app": "Notis yang sama disertakan di dalam aplikasi (Maklumat → Notis sumber terbuka), jadi ia boleh dibaca tanpa sambungan internet.",
+
+  "lic.attr_h2": "Atribusi — Opus-MT",
+  "lic.attr_p1": "Terjemahan setempat Onmal menggunakan pemberat model Opus-MT daripada kumpulan penyelidikan teknologi bahasa Universiti Helsinki (Helsinki-NLP). Kami menukarnya kepada format ONNX untuk inferens; pemberat itu sendiri tidak diubah.",
+  "lic.attr_p2": "Lesen berbeza mengikut pasangan bahasa. Empat pasangan di bawah berlesen CC-BY-4.0 dan memerlukan atribusi; pasangan lain berlesen Apache-2.0. Disemak pada 29/07/2026.",
+  "lic.attr_apache": "Pasangan berlesen Apache-2.0: opus-mt-ko-en, opus-mt-ja-en, opus-mt-en-jap, opus-mt-en-zh, opus-mt-en-ru, opus-mt-es-en, opus-mt-en-es, opus-mt-roa-en, opus-mt-fr-en, opus-mt-en-fr, opus-mt-de-en.",
+
+  "lic.th_pair": "Pasangan bahasa",
+  "lic.th_model": "Model",
+  "lic.th_license": "Lesen",
+  "lic.th_component": "Komponen",
+  "lic.th_holder": "Pemegang hak cipta",
+  "lic.th_use": "Kegunaan",
+  "lic.th_font": "Fon",
+  "lic.th_status": "Status",
+  "lic.th_set": "Set",
+  "lic.th_item": "Item",
+  "lic.th_reason": "Sebab tidak digunakan",
+
+  "lic.pair_enko": "Inggeris → Korea",
+  "lic.pair_zhen": "Cina → Inggeris",
+  "lic.pair_ruen": "Rusia → Inggeris",
+  "lic.pair_ende": "Inggeris → Jerman",
+
+  "lic.sw_h2": "Perisian",
+  "lic.sw_dotnet": "Masa jalan",
+  "lic.sw_naudio": "Tangkapan gelung balik peranti dan mikrofon",
+  "lic.sw_ort": "Inferens model VAD dan terjemahan",
+  "lic.sw_tokenizers": "Pentoken SentencePiece",
+  "lic.sw_whispernet": "Pengikat whisper.cpp",
+  "lic.sw_whispercpp": "Enjin inferens pengecaman pertuturan",
+  "lic.sw_steamworks": "Integrasi Steam",
+  "lic.sw_xunit": "Ujian (tidak diedarkan)",
+  "lic.sw_fluent": "Ujian (tidak diedarkan)",
+  "lic.sw_note": "FluentAssertions bertukar kepada lesen komersial bermula versi 7.0. Onmal kekal pada versi 6.12.2 yang berlesen Apache-2.0.",
+
+  "lic.model_h2": "Model",
+  "lic.model_whisper": "Pengecaman pertuturan dan pengesanan bahasa (penukaran ggml)",
+  "lic.model_vad": "Pengesanan segmen pertuturan",
+  "lic.model_opusmt": "Terjemahan setempat — lihat atribusi di atas",
+  "lic.model_note": "Pemberat model tidak disertakan dalam aplikasi. Ia dimuat turun secara berasingan dan setiap fail disahkan dengan SHA-256.",
+
+  "lic.font_h2": "Fon",
+  "lic.font_pretendard": "Disertakan dalam aplikasi (Regular · Medium · SemiBold)",
+  "lic.font_jetbrains": "Tidak disertakan — digunakan di laman web ini",
+  "lic.font_noto": "Tidak disertakan — digantikan dengan fon sistem",
+  "lic.font_gowun": "Tidak disertakan — digunakan di laman web ini",
+  "lic.font_note1": "Teks penuh OFL bagi Pretendard yang disertakan diedarkan bersama aplikasi. Menurut OFL, fon tidak pernah dijual secara berasingan dan Reserved Font Name ialah \"Pretendard\".",
+  "lic.font_note2": "Fon yang tidak kami sertakan digantikan dengan fon yang sedia ada dalam sistem. Kerana ia tidak kami edarkan, tiada kewajipan OFL timbul.",
+
+  "lic.icon_h2": "Ikon",
+  "lic.icon_lucide": "Digunakan — 17 ikon tetingkap tetapan dibenamkan sebagai laluan SVG. Tiada pakej, tiada fon ikon.",
+  "lic.icon_phosphor": "Calon (tidak digunakan)",
+  "lic.icon_note": "ISC menghendaki notis hak cipta dikekalkan. Jadual ini dan komen pengepala dalam kod sumber aplikasi ialah notis tersebut.",
+
+  "lic.excl_h2": "Apa yang kami pilih untuk tidak guna",
+  "lic.excl_intro": "Kami turut merekodkan apa yang ditolak. Ia menjimatkan kos menyiasat semula \"kenapa dulu tidak digunakan?\" dan menunjukkan cara Onmal menangani pelesenan.",
+  "lic.excl_nllb": "Untuk kegunaan bukan komersial sahaja. Tanpa mengira kualiti terjemahan, ia tidak dimasukkan ke dalam pangkalan kod ini.",
+  "lic.excl_parakeet": "Pantas, tetapi menambah satu lagi kewajipan atribusi. Versi 1 keluar dengan Whisper (MIT) sahaja.",
+  "lic.excl_ffmpeg": "Mungkin tidak serasi dengan SDK Steamworks. Pensampelan semula kami laksanakan sendiri.",
+  "lic.excl_apple": "Lesennya terhad kepada perisian yang berjalan pada sistem pengendalian Apple. Tidak boleh digunakan dalam aplikasi Windows.",
+  "lic.excl_ct2": "Lesennya tiada masalah, tetapi tiada C API yang stabil sehingga kami terpaksa mengedarkan pembalut natif sendiri. Digantikan dengan ONNX Runtime.",
+
+  "lic.tm_h2": "Tanda dagangan",
+  "lic.tm_p": "Steam dan logo Steam ialah tanda dagangan Valve Corporation. Discord ialah tanda dagangan Discord Inc. Windows ialah tanda dagangan Microsoft Corporation. Onmal tidak bergabung dengan syarikat-syarikat ini dan hanya menggunakan namanya untuk menerangkan keserasian.",
+
+  "lic.full_h2": "Teks penuh lesen",
+  "lic.full_p": "Teks penuh setiap lesen boleh dilihat di sini.",
+
+  "lic.f_home": "Laman utama",
+  "lic.f_privacy": "Dasar privasi",
+  "lic.f_terms": "Terma perkhidmatan"
 }

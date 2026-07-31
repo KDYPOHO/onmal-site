@@ -1,4 +1,4 @@
-{
+﻿{
   "meta.title": "Onmal — tiimikavereidesi sanat omalla kielelläsi",
   "meta.desc": "Ymmärtää tiimikavereidesi vieraan kielen pelin aikana ja näyttää sen tekstityksinä omalla kielelläsi ruudun päällä. Ilmainen reaaliaikainen tulkki, joka toimii omalla tietokoneellasi.",
 
@@ -133,5 +133,86 @@
   "footer.terms": "Käyttöehdot",
   "footer.licenses": "Avoin lähdekoodi",
   "footer.contact": "Yhteys · ilmoita viasta",
-  "footer.small": "Steam ja Steam-logo ovat Valve Corporationin tavaramerkkejä. Discord on Discord Inc:n tavaramerkki. Onmal ei ole sidoksissa näihin yrityksiin ja käyttää nimiä vain yhteensopivuuden kuvaamiseen.<br>Puheentunnistus ja käännös käyttävät avoimen lähdekoodin malleja. Täysi luettelo ja lisenssit ovat avoimen lähdekoodin ilmoituksissa."
+  "footer.small": "Steam ja Steam-logo ovat Valve Corporationin tavaramerkkejä. Discord on Discord Inc:n tavaramerkki. Onmal ei ole sidoksissa näihin yrityksiin ja käyttää nimiä vain yhteensopivuuden kuvaamiseen.<br>Puheentunnistus ja käännös käyttävät avoimen lähdekoodin malleja. Täysi luettelo ja lisenssit ovat avoimen lähdekoodin ilmoituksissa.",
+
+"lic.meta.title": "Avoimen lähdekoodin ilmoitukset — Onmal",
+  "lic.meta.desc": "Avoimen lähdekoodin ohjelmistot, mallit ja fontit, joiden varassa Onmal toimii, sekä niiden oikeudenhaltijat ja lisenssit — ja se, mitä olemme tietoisesti jättäneet käyttämättä.",
+
+  "lic.home": "← Etusivu",
+  "lic.kicker": "Oikeudellinen ilmoitus",
+  "lic.h1": "Avoimen lähdekoodin ilmoitukset",
+  "lic.lede": "Onmal toimii alla lueteltujen avoimen lähdekoodin ohjelmistojen ja mallien varassa. Mainitsemme jokaisen oikeudenhaltijan ja lisenssin — ja kirjaamme myös sen, mitä olemme tietoisesti jättäneet käyttämättä.",
+  "lic.updated": "Viimeksi päivitetty",
+  "lic.same_in_app": "Samat ilmoitukset sisältyvät sovellukseen (Tiedot → Avoimen lähdekoodin ilmoitukset), joten ne voi lukea ilman internetyhteyttä.",
+
+  "lic.attr_h2": "Nimeäminen — Opus-MT",
+  "lic.attr_p1": "Onmalin paikallinen käännös käyttää Helsingin yliopiston kieliteknologian tutkimusryhmän (Helsinki-NLP) Opus-MT-mallien painoja. Muunsimme ne ONNX-muotoon päättelyä varten; painoja itsessään ei ole muutettu.",
+  "lic.attr_p2": "Lisenssi vaihtelee kieliparin mukaan. Alla olevat neljä paria ovat CC-BY-4.0 ja edellyttävät nimeämistä; muut parit ovat Apache-2.0. Tarkistettu 29.7.2026.",
+  "lic.attr_apache": "Apache-2.0-parit: opus-mt-ko-en, opus-mt-ja-en, opus-mt-en-jap, opus-mt-en-zh, opus-mt-en-ru, opus-mt-es-en, opus-mt-en-es, opus-mt-roa-en, opus-mt-fr-en, opus-mt-en-fr, opus-mt-de-en.",
+
+  "lic.th_pair": "Kielipari",
+  "lic.th_model": "Malli",
+  "lic.th_license": "Lisenssi",
+  "lic.th_component": "Komponentti",
+  "lic.th_holder": "Oikeudenhaltija",
+  "lic.th_use": "Käyttötarkoitus",
+  "lic.th_font": "Fontti",
+  "lic.th_status": "Tila",
+  "lic.th_set": "Kokoelma",
+  "lic.th_item": "Kohde",
+  "lic.th_reason": "Miksi ei käytetä",
+
+  "lic.pair_enko": "englanti → korea",
+  "lic.pair_zhen": "kiina → englanti",
+  "lic.pair_ruen": "venäjä → englanti",
+  "lic.pair_ende": "englanti → saksa",
+
+  "lic.sw_h2": "Ohjelmistot",
+  "lic.sw_dotnet": "Suoritusympäristö",
+  "lic.sw_naudio": "Laitteen silmukkatoiston ja mikrofonin kaappaus",
+  "lic.sw_ort": "VAD- ja käännösmallien päättely",
+  "lic.sw_tokenizers": "SentencePiece-tokenisoija",
+  "lic.sw_whispernet": "whisper.cpp-sidokset",
+  "lic.sw_whispercpp": "Puheentunnistuksen päättelymoottori",
+  "lic.sw_steamworks": "Steam-integraatio",
+  "lic.sw_xunit": "Testaus (ei jaella)",
+  "lic.sw_fluent": "Testaus (ei jaella)",
+  "lic.sw_note": "FluentAssertions siirtyi kaupalliseen lisenssiin versiosta 7.0 alkaen. Onmal on lukittu versioon 6.12.2, joka on Apache-2.0.",
+
+  "lic.model_h2": "Mallit",
+  "lic.model_whisper": "Puheentunnistus ja kielen tunnistus (ggml-muunnos)",
+  "lic.model_vad": "Puhejaksojen tunnistus",
+  "lic.model_opusmt": "Paikallinen käännös — katso nimeäminen yllä",
+  "lic.model_note": "Mallien painot eivät sisälly sovellukseen. Ne ladataan erikseen, ja jokainen tiedosto tarkistetaan SHA-256-tiivisteellä.",
+
+  "lic.font_h2": "Fontit",
+  "lic.font_pretendard": "Sisältyy sovellukseen (Regular · Medium · SemiBold)",
+  "lic.font_jetbrains": "Ei sisälly — käytössä tällä sivustolla",
+  "lic.font_noto": "Ei sisälly — korvataan järjestelmän fonteilla",
+  "lic.font_gowun": "Ei sisälly — käytössä tällä sivustolla",
+  "lic.font_note1": "Mukana toimitettavan Pretendardin täysi OFL-teksti jaellaan sovelluksen mukana. OFL:n mukaisesti fonttia ei koskaan myydä erikseen, ja Reserved Font Name on ”Pretendard”.",
+  "lic.font_note2": "Fontit, joita emme sisällytä, korvataan järjestelmässä jo olevilla. Koska emme jaele niitä, OFL-velvoitteita ei synny.",
+
+  "lic.icon_h2": "Kuvakkeet",
+  "lic.icon_lucide": "Käytössä — asetusikkunan 17 kuvaketta on upotettu SVG-poluiksi. Ei pakettia eikä kuvakefonttia.",
+  "lic.icon_phosphor": "Ehdokas (ei käytössä)",
+  "lic.icon_note": "ISC edellyttää tekijänoikeusilmoituksen säilyttämistä. Tämä taulukko ja sovelluksen lähdekoodin alkukommentti ovat kyseinen ilmoitus.",
+
+  "lic.excl_h2": "Mitä jätimme käyttämättä",
+  "lic.excl_intro": "Kirjaamme myös hylätyt vaihtoehdot. Se säästää myöhemmältä kysymykseltä ”miksi tuota ei käytetty?” ja kertoo, miten Onmal suhtautuu lisensseihin.",
+  "lic.excl_nllb": "Vain ei-kaupalliseen käyttöön. Käännöslaadusta riippumatta se ei päädy tähän koodikantaan.",
+  "lic.excl_parakeet": "Nopea, mutta tuo mukanaan vielä yhden nimeämisvelvoitteen. Versio 1 julkaistaan pelkän Whisperin (MIT) kanssa.",
+  "lic.excl_ffmpeg": "Ei välttämättä yhteensopiva Steamworks SDK:n kanssa. Uudelleennäytteistyksen toteutimme itse.",
+  "lic.excl_apple": "Lisenssi rajoittuu ohjelmistoihin, jotka toimivat Applen käyttöjärjestelmissä. Sitä ei voi käyttää Windows-sovelluksessa.",
+  "lic.excl_ct2": "Lisenssi ei ole ongelma, mutta vakaata C-rajapintaa ei ole, joten joutuisimme jakelemaan oman natiivikääreen. Korvattu ONNX Runtimella.",
+
+  "lic.tm_h2": "Tavaramerkit",
+  "lic.tm_p": "Steam ja Steam-logo ovat Valve Corporationin tavaramerkkejä. Discord on Discord Inc:n tavaramerkki. Windows on Microsoft Corporationin tavaramerkki. Onmal ei ole sidoksissa näihin yrityksiin ja käyttää niiden nimiä vain yhteensopivuuden kuvaamiseen.",
+
+  "lic.full_h2": "Lisenssien täydet tekstit",
+  "lic.full_p": "Kunkin lisenssin täysi teksti löytyy täältä.",
+
+  "lic.f_home": "Etusivu",
+  "lic.f_privacy": "Tietosuojakäytäntö",
+  "lic.f_terms": "Käyttöehdot"
 }

@@ -1,4 +1,4 @@
-{
+﻿{
   "meta.title": "Onmal — a csapattársaid szavai a te nyelveden",
   "meta.desc": "Játék közben megérti csapattársaid idegen nyelvét, és a te nyelveden jeleníti meg feliratként a képernyő felett. Ingyenes, valós idejű tolmács, amely a saját gépeden fut.",
 
@@ -133,5 +133,86 @@
   "footer.terms": "Felhasználási feltételek",
   "footer.licenses": "Nyílt forráskód",
   "footer.contact": "Kapcsolat · hibabejelentés",
-  "footer.small": "A Steam és a Steam logó a Valve Corporation védjegye. A Discord a Discord Inc. védjegye. Az Onmal nem áll kapcsolatban ezekkel a cégekkel, a neveket csak a kompatibilitás leírására használja.<br>A beszédfelismerés és a fordítás nyílt forráskódú modelleket használ. A teljes lista és a licencek a nyílt forráskódú közleményekben találhatók."
+  "footer.small": "A Steam és a Steam logó a Valve Corporation védjegye. A Discord a Discord Inc. védjegye. Az Onmal nem áll kapcsolatban ezekkel a cégekkel, a neveket csak a kompatibilitás leírására használja.<br>A beszédfelismerés és a fordítás nyílt forráskódú modelleket használ. A teljes lista és a licencek a nyílt forráskódú közleményekben találhatók.",
+
+"lic.meta.title": "Nyílt forráskódú közlemények — Onmal",
+  "lic.meta.desc": "A nyílt forráskódú szoftverek, modellek és betűtípusok, amelyekre az Onmal épül, a jogtulajdonosokkal és licencekkel együtt — és az is, amit szándékosan nem használtunk.",
+
+  "lic.home": "← Főoldal",
+  "lic.kicker": "Jogi közlemény",
+  "lic.h1": "Nyílt forráskódú közlemények",
+  "lic.lede": "Az Onmal az alább felsorolt nyílt forráskódú szoftverekre és modellekre épül. Megnevezünk minden jogtulajdonost és licencet — és azt is rögzítjük, amit szándékosan nem használtunk.",
+  "lic.updated": "Utolsó frissítés",
+  "lic.same_in_app": "Ugyanezek a közlemények megtalálhatók az alkalmazásban is (Információ → Nyílt forráskódú közlemények), így internetkapcsolat nélkül is olvashatók.",
+
+  "lic.attr_h2": "Forrásmegjelölés — Opus-MT",
+  "lic.attr_p1": "Az Onmal helyi fordítása a Helsinki Egyetem nyelvtechnológiai kutatócsoportjának (Helsinki-NLP) Opus-MT modellsúlyait használja. A következtetéshez ONNX formátumba alakítottuk őket; maguk a súlyok változatlanok.",
+  "lic.attr_p2": "A licenc nyelvpáronként eltér. Az alábbi négy pár CC-BY-4.0 alatt áll, ezért forrásmegjelölést igényel; a többi pár Apache-2.0 alatt áll. Ellenőrizve: 2026. 07. 29.",
+  "lic.attr_apache": "Apache-2.0 alatti párok: opus-mt-ko-en, opus-mt-ja-en, opus-mt-en-jap, opus-mt-en-zh, opus-mt-en-ru, opus-mt-es-en, opus-mt-en-es, opus-mt-roa-en, opus-mt-fr-en, opus-mt-en-fr, opus-mt-de-en.",
+
+  "lic.th_pair": "Nyelvpár",
+  "lic.th_model": "Modell",
+  "lic.th_license": "Licenc",
+  "lic.th_component": "Összetevő",
+  "lic.th_holder": "Jogtulajdonos",
+  "lic.th_use": "Felhasználás",
+  "lic.th_font": "Betűtípus",
+  "lic.th_status": "Állapot",
+  "lic.th_set": "Készlet",
+  "lic.th_item": "Tétel",
+  "lic.th_reason": "A mellőzés oka",
+
+  "lic.pair_enko": "angol → koreai",
+  "lic.pair_zhen": "kínai → angol",
+  "lic.pair_ruen": "orosz → angol",
+  "lic.pair_ende": "angol → német",
+
+  "lic.sw_h2": "Szoftver",
+  "lic.sw_dotnet": "Futtatókörnyezet",
+  "lic.sw_naudio": "Eszköz-visszacsatolás és mikrofonrögzítés",
+  "lic.sw_ort": "VAD- és fordítómodellek következtetése",
+  "lic.sw_tokenizers": "SentencePiece tokenizáló",
+  "lic.sw_whispernet": "whisper.cpp kötések",
+  "lic.sw_whispercpp": "Beszédfelismerési következtetőmotor",
+  "lic.sw_steamworks": "Steam-integráció",
+  "lic.sw_xunit": "Tesztelés (nem kerül terjesztésre)",
+  "lic.sw_fluent": "Tesztelés (nem kerül terjesztésre)",
+  "lic.sw_note": "A FluentAssertions a 7.0-s verziótól kereskedelmi licencre váltott. Az Onmal a 6.12.2-es verziónál marad, amely Apache-2.0 alatt áll.",
+
+  "lic.model_h2": "Modellek",
+  "lic.model_whisper": "Beszédfelismerés és nyelvfelismerés (ggml átalakítás)",
+  "lic.model_vad": "Beszédszakaszok észlelése",
+  "lic.model_opusmt": "Helyi fordítás — lásd a fenti forrásmegjelölést",
+  "lic.model_note": "A modellsúlyok nem részei az alkalmazásnak. Külön töltődnek le, és minden fájlt SHA-256 ellenőrzőösszeggel hitelesítünk.",
+
+  "lic.font_h2": "Betűtípusok",
+  "lic.font_pretendard": "Az alkalmazás része (Regular · Medium · SemiBold)",
+  "lic.font_jetbrains": "Nem része — ezen a weboldalon használjuk",
+  "lic.font_noto": "Nem része — rendszerbetűtípusok helyettesítik",
+  "lic.font_gowun": "Nem része — ezen a weboldalon használjuk",
+  "lic.font_note1": "A mellékelt Pretendard teljes OFL-szövege az alkalmazással együtt kerül terjesztésre. Az OFL szerint a betűtípust soha nem árusítjuk önmagában, a Reserved Font Name pedig „Pretendard”.",
+  "lic.font_note2": "A nem mellékelt betűtípusokat a rendszerben már meglévők helyettesítik. Mivel ezeket nem terjesztjük, OFL-kötelezettség sem keletkezik.",
+
+  "lic.icon_h2": "Ikonok",
+  "lic.icon_lucide": "Használatban — a beállítások ablak 17 ikonja SVG-útvonalként van beágyazva. Nincs csomag és nincs ikonbetűtípus.",
+  "lic.icon_phosphor": "Jelölt (nincs használatban)",
+  "lic.icon_note": "Az ISC megköveteli a szerzői jogi közlemény megőrzését. Ez a táblázat és az alkalmazás forráskódjának fejlécmegjegyzése maga ez a közlemény.",
+
+  "lic.excl_h2": "Amit szándékosan nem használunk",
+  "lic.excl_intro": "A mellőzött lehetőségeket is rögzítjük. Ezzel megspóroljuk a későbbi „miért is nem használtuk?” kérdés utánajárását, és megmutatjuk, hogyan kezeli az Onmal a licenceket.",
+  "lic.excl_nllb": "Kizárólag nem kereskedelmi célra. A fordítási minőségtől függetlenül nem kerül be ebbe a kódbázisba.",
+  "lic.excl_parakeet": "Gyors, de újabb forrásmegjelölési kötelezettséget ró ránk. Az 1-es verzió kizárólag a Whisperrel (MIT) jelenik meg.",
+  "lic.excl_ffmpeg": "Elképzelhető, hogy nem összeegyeztethető a Steamworks SDK-val. Az újramintavételezést magunk valósítottuk meg.",
+  "lic.excl_apple": "A licenc az Apple operációs rendszerein futó szoftverekre korlátozódik. Windows-alkalmazásban nem használható.",
+  "lic.excl_ct2": "A licenccel nincs gond, de nincs stabil C API, így saját natív burkolót kellene terjesztenünk. Az ONNX Runtime váltotta ki.",
+
+  "lic.tm_h2": "Védjegyek",
+  "lic.tm_p": "A Steam és a Steam logó a Valve Corporation védjegyei. A Discord a Discord Inc. védjegye. A Windows a Microsoft Corporation védjegye. Az Onmal nem áll kapcsolatban ezekkel a vállalatokkal, és a neveiket kizárólag a kompatibilitás leírására használja.",
+
+  "lic.full_h2": "A licencek teljes szövege",
+  "lic.full_p": "Az egyes licencek teljes szövege itt érhető el.",
+
+  "lic.f_home": "Főoldal",
+  "lic.f_privacy": "Adatvédelmi tájékoztató",
+  "lic.f_terms": "Szolgáltatási feltételek"
 }

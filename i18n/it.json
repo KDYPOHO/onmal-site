@@ -1,4 +1,4 @@
-{
+﻿{
   "meta.title": "Onmal — le parole dei tuoi compagni, nella tua lingua",
   "meta.desc": "Capisce la lingua straniera dei tuoi compagni durante la partita e la mostra come sottotitoli nella tua lingua sopra lo schermo. Un interprete gratuito in tempo reale che gira sul tuo PC.",
 
@@ -133,5 +133,86 @@
   "footer.terms": "Termini di utilizzo",
   "footer.licenses": "Open source",
   "footer.contact": "Contatti · segnala un bug",
-  "footer.small": "Steam e il logo Steam sono marchi di Valve Corporation. Discord è un marchio di Discord Inc. Onmal non è affiliato a queste aziende e ne usa i nomi solo per descrivere la compatibilità.<br>Il riconoscimento vocale e la traduzione usano modelli open source. L'elenco completo e le licenze sono nelle note open source."
+  "footer.small": "Steam e il logo Steam sono marchi di Valve Corporation. Discord è un marchio di Discord Inc. Onmal non è affiliato a queste aziende e ne usa i nomi solo per descrivere la compatibilità.<br>Il riconoscimento vocale e la traduzione usano modelli open source. L'elenco completo e le licenze sono nelle note open source.",
+
+"lic.meta.title": "Note sull'open source — Onmal",
+  "lic.meta.desc": "Il software, i modelli e i caratteri open source su cui si basa Onmal, con i rispettivi titolari dei diritti e le licenze — e ciò che abbiamo deliberatamente scelto di non usare.",
+
+  "lic.home": "← Home",
+  "lic.kicker": "Note legali",
+  "lic.h1": "Note sull'open source",
+  "lic.lede": "Onmal si basa sul software e sui modelli open source elencati di seguito. Indichiamo ogni titolare dei diritti e ogni licenza — e riportiamo anche ciò che abbiamo deliberatamente scelto di non usare.",
+  "lic.updated": "Ultimo aggiornamento",
+  "lic.same_in_app": "Le stesse note sono incluse nell'applicazione (Informazioni → Note sull'open source) e restano leggibili anche senza connessione a internet.",
+
+  "lic.attr_h2": "Attribuzione — Opus-MT",
+  "lic.attr_p1": "La traduzione locale di Onmal utilizza i pesi dei modelli Opus-MT del gruppo di ricerca in tecnologie linguistiche dell'Università di Helsinki (Helsinki-NLP). Li abbiamo convertiti in formato ONNX per l'inferenza; i pesi in sé non sono stati modificati.",
+  "lic.attr_p2": "La licenza cambia a seconda della coppia linguistica. Le quattro coppie qui sotto sono CC-BY-4.0 e richiedono quindi l'attribuzione; le altre coppie sono Apache-2.0. Verificato il 29/07/2026.",
+  "lic.attr_apache": "Coppie con licenza Apache-2.0: opus-mt-ko-en, opus-mt-ja-en, opus-mt-en-jap, opus-mt-en-zh, opus-mt-en-ru, opus-mt-es-en, opus-mt-en-es, opus-mt-roa-en, opus-mt-fr-en, opus-mt-en-fr, opus-mt-de-en.",
+
+  "lic.th_pair": "Coppia linguistica",
+  "lic.th_model": "Modello",
+  "lic.th_license": "Licenza",
+  "lic.th_component": "Componente",
+  "lic.th_holder": "Titolare dei diritti",
+  "lic.th_use": "Utilizzo",
+  "lic.th_font": "Carattere",
+  "lic.th_status": "Stato",
+  "lic.th_set": "Set",
+  "lic.th_item": "Voce",
+  "lic.th_reason": "Motivo dell'esclusione",
+
+  "lic.pair_enko": "Inglese → coreano",
+  "lic.pair_zhen": "Cinese → inglese",
+  "lic.pair_ruen": "Russo → inglese",
+  "lic.pair_ende": "Inglese → tedesco",
+
+  "lic.sw_h2": "Software",
+  "lic.sw_dotnet": "Runtime",
+  "lic.sw_naudio": "Cattura in loopback del dispositivo e del microfono",
+  "lic.sw_ort": "Inferenza dei modelli VAD e di traduzione",
+  "lic.sw_tokenizers": "Tokenizzatore SentencePiece",
+  "lic.sw_whispernet": "Binding per whisper.cpp",
+  "lic.sw_whispercpp": "Motore di inferenza per il riconoscimento vocale",
+  "lic.sw_steamworks": "Integrazione con Steam",
+  "lic.sw_xunit": "Test (non distribuito)",
+  "lic.sw_fluent": "Test (non distribuito)",
+  "lic.sw_note": "Dalla versione 7.0 FluentAssertions è passata a una licenza commerciale. Onmal resta fissato alla 6.12.2, che è Apache-2.0.",
+
+  "lic.model_h2": "Modelli",
+  "lic.model_whisper": "Riconoscimento vocale e rilevamento della lingua (conversione ggml)",
+  "lic.model_vad": "Rilevamento dei segmenti di parlato",
+  "lic.model_opusmt": "Traduzione locale — vedere l'attribuzione qui sopra",
+  "lic.model_note": "I pesi dei modelli non sono inclusi nell'applicazione. Vengono scaricati separatamente e ogni file è verificato con SHA-256.",
+
+  "lic.font_h2": "Caratteri",
+  "lic.font_pretendard": "Incluso nell'applicazione (Regular · Medium · SemiBold)",
+  "lic.font_jetbrains": "Non incluso — usato in questo sito",
+  "lic.font_noto": "Non incluso — sostituito dai caratteri di sistema",
+  "lic.font_gowun": "Non incluso — usato in questo sito",
+  "lic.font_note1": "Il testo completo della OFL del Pretendard incluso accompagna l'applicazione. Secondo la OFL il carattere non viene mai venduto da solo e il Reserved Font Name è «Pretendard».",
+  "lic.font_note2": "I caratteri che non includiamo vengono sostituiti da quelli già presenti nel sistema. Non essendo ridistribuiti, non sorge alcun obbligo OFL.",
+
+  "lic.icon_h2": "Icone",
+  "lic.icon_lucide": "In uso — 17 icone della finestra delle impostazioni incorporate come tracciati SVG. Nessun pacchetto, nessun font di icone.",
+  "lic.icon_phosphor": "Candidato (non utilizzato)",
+  "lic.icon_note": "La licenza ISC richiede di conservare l'avviso di copyright. Questa tabella e il commento di intestazione nel codice sorgente costituiscono tale avviso.",
+
+  "lic.excl_h2": "Ciò che abbiamo scelto di non usare",
+  "lic.excl_intro": "Registriamo anche ciò che abbiamo scartato. Evita di doversi richiedere in futuro «perché non l'abbiamo usato?» e mostra come Onmal tratta le licenze.",
+  "lic.excl_nllb": "Solo per uso non commerciale. A prescindere dalla qualità della traduzione, non entra in questa base di codice.",
+  "lic.excl_parakeet": "È veloce, ma aggiunge un ulteriore obbligo di attribuzione. La v1 esce con il solo Whisper (MIT).",
+  "lic.excl_ffmpeg": "Potrebbe non essere compatibile con l'SDK Steamworks. Il ricampionamento lo abbiamo implementato noi.",
+  "lic.excl_apple": "La licenza è limitata al software eseguito su sistemi operativi Apple. Non è utilizzabile in un'applicazione Windows.",
+  "lic.excl_ct2": "La licenza non pone problemi, ma manca un'API C stabile e dovremmo distribuire un wrapper nativo nostro. Sostituito da ONNX Runtime.",
+
+  "lic.tm_h2": "Marchi",
+  "lic.tm_p": "Steam e il logo Steam sono marchi di Valve Corporation. Discord è un marchio di Discord Inc. Windows è un marchio di Microsoft Corporation. Onmal non è affiliata a queste aziende e ne usa i nomi solo per descrivere la compatibilità.",
+
+  "lic.full_h2": "Testi completi delle licenze",
+  "lic.full_p": "Il testo integrale di ciascuna licenza è consultabile qui.",
+
+  "lic.f_home": "Home",
+  "lic.f_privacy": "Informativa sulla privacy",
+  "lic.f_terms": "Condizioni di servizio"
 }

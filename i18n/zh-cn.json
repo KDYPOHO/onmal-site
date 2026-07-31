@@ -1,4 +1,4 @@
-{
+﻿{
   "meta.title": "Onmal 온말 — 把队友的话，变成你的语言",
   "meta.desc": "游戏中自动听懂队友的外语，并以你的语言在屏幕上显示字幕。一款在你自己电脑上运行的免费实时翻译助手。",
 
@@ -133,5 +133,86 @@
   "footer.terms": "使用条款",
   "footer.licenses": "开源声明",
   "footer.contact": "联系 · 报告问题",
-  "footer.small": "Steam 及 Steam 标志是 Valve Corporation 的商标。Discord 是 Discord Inc. 的商标。Onmal 与上述公司无从属关系，仅为说明兼容性而使用其名称。<br>语音识别与翻译使用开源模型。完整列表及许可证请见开源声明。"
+  "footer.small": "Steam 及 Steam 标志是 Valve Corporation 的商标。Discord 是 Discord Inc. 的商标。Onmal 与上述公司无从属关系，仅为说明兼容性而使用其名称。<br>语音识别与翻译使用开源模型。完整列表及许可证请见开源声明。",
+
+"lic.meta.title": "开源声明 — 온말 Onmal",
+  "lic.meta.desc": "Onmal 所使用的开源软件、模型和字体，以及各自的著作权人与许可证，还有我们特意选择不使用的项目。",
+
+  "lic.home": "← 首页",
+  "lic.kicker": "法律声明",
+  "lic.h1": "开源声明",
+  "lic.lede": "Onmal 运行在以下开源软件和模型之上。我们列出每一项的著作权人与许可证，也一并记录了我们特意选择不使用的项目。",
+  "lic.updated": "最后更新",
+  "lic.same_in_app": "相同内容也随应用一同提供（信息 → 开源声明），没有网络也能阅读。",
+
+  "lic.attr_h2": "署名 — Opus-MT",
+  "lic.attr_p1": "Onmal 的本地翻译使用赫尔辛基大学语言技术研究组（Helsinki-NLP）的 Opus-MT 模型权重。我们将其转换为 ONNX 格式以便推理，权重本身未作修改。",
+  "lic.attr_p2": "许可证因语言对而异。以下四组为 CC-BY-4.0，必须署名；其余语言对为 Apache-2.0。以 2026-07-29 的核对为准。",
+  "lic.attr_apache": "Apache-2.0 的其余语言对：opus-mt-ko-en、opus-mt-ja-en、opus-mt-en-jap、opus-mt-en-zh、opus-mt-en-ru、opus-mt-es-en、opus-mt-en-es、opus-mt-roa-en、opus-mt-fr-en、opus-mt-en-fr、opus-mt-de-en。",
+
+  "lic.th_pair": "语言对",
+  "lic.th_model": "模型",
+  "lic.th_license": "许可证",
+  "lic.th_component": "组件",
+  "lic.th_holder": "著作权人",
+  "lic.th_use": "用途",
+  "lic.th_font": "字体",
+  "lic.th_status": "状态",
+  "lic.th_set": "图标集",
+  "lic.th_item": "项目",
+  "lic.th_reason": "不采用的原因",
+
+  "lic.pair_enko": "英语 → 韩语",
+  "lic.pair_zhen": "中文 → 英语",
+  "lic.pair_ruen": "俄语 → 英语",
+  "lic.pair_ende": "英语 → 德语",
+
+  "lic.sw_h2": "软件",
+  "lic.sw_dotnet": "运行时",
+  "lic.sw_naudio": "设备环回与麦克风采集",
+  "lic.sw_ort": "VAD 与翻译模型推理",
+  "lic.sw_tokenizers": "SentencePiece 分词器",
+  "lic.sw_whispernet": "whisper.cpp 绑定",
+  "lic.sw_whispercpp": "语音识别推理引擎",
+  "lic.sw_steamworks": "Steam 集成",
+  "lic.sw_xunit": "测试（不随应用分发）",
+  "lic.sw_fluent": "测试（不随应用分发）",
+  "lic.sw_note": "FluentAssertions 自 7.0 起转为商业许可证。Onmal 固定使用 Apache-2.0 的 6.12.2 版本。",
+
+  "lic.model_h2": "模型",
+  "lic.model_whisper": "语音识别与语言检测（ggml 转换版）",
+  "lic.model_vad": "语音片段检测",
+  "lic.model_opusmt": "本地翻译 — 参见上方署名",
+  "lic.model_note": "模型权重不包含在应用中。需另行下载，并使用 SHA-256 校验下载的文件。",
+
+  "lic.font_h2": "字体",
+  "lic.font_pretendard": "随应用一同分发（Regular · Medium · SemiBold）",
+  "lic.font_jetbrains": "未随应用分发 — 用于本网页",
+  "lic.font_noto": "未随应用分发 — 由系统字体替代",
+  "lic.font_gowun": "未随应用分发 — 用于本网页",
+  "lic.font_note1": "随应用分发的 Pretendard 附有 OFL 全文。依据 OFL 条款，字体不会单独出售，Reserved Font Name 为“Pretendard”。",
+  "lic.font_note2": "未随应用分发的字体由系统中已有的字体替代。它们不进入分发包，因此不产生 OFL 义务。",
+
+  "lic.icon_h2": "图标",
+  "lic.icon_lucide": "使用中 — 设置窗口的 17 个图标以 SVG 路径内联。不使用软件包或图标字体。",
+  "lic.icon_phosphor": "备选（未使用）",
+  "lic.icon_note": "ISC 要求保留著作权声明。本表格与应用源码开头的注释即为该声明。",
+
+  "lic.excl_h2": "我们选择不使用的",
+  "lic.excl_intro": "被排除的项目我们也记录下来。这既能省去日后重新追问“当初为什么没用”的成本，也能说明 Onmal 如何对待许可证。",
+  "lic.excl_nllb": "仅限非商业用途。无论翻译质量如何，都不会纳入本代码库。",
+  "lic.excl_parakeet": "速度出色，但会增加署名义务。v1 仅采用 Whisper（MIT）。",
+  "lic.excl_ffmpeg": "可能与 Steamworks SDK 不兼容。重采样由我们自行实现。",
+  "lic.excl_apple": "许可范围仅限于在 Apple 操作系统上运行的软件，无法用于 Windows 应用。",
+  "lic.excl_ct2": "许可证本身没有问题，但缺少稳定的 C API，需要自行分发原生封装层。已改用 ONNX Runtime。",
+
+  "lic.tm_h2": "商标",
+  "lic.tm_p": "Steam 及 Steam 标志是 Valve Corporation 的商标。Discord 是 Discord Inc. 的商标。Windows 是 Microsoft Corporation 的商标。Onmal 与上述公司没有关联，仅为说明兼容性而使用这些名称。",
+
+  "lic.full_h2": "许可证全文",
+  "lic.full_p": "各许可证的完整文本可在以下位置查看。",
+
+  "lic.f_home": "首页",
+  "lic.f_privacy": "隐私政策",
+  "lic.f_terms": "服务条款"
 }

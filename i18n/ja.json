@@ -1,4 +1,4 @@
-{
+﻿{
   "meta.title": "オンマル Onmal — 味方の言葉を、あなたの言葉で",
   "meta.desc": "ゲーム中の味方の外国語を自動で聞き取り、あなたの言語の字幕として画面に表示します。自分のPCで動く無料のリアルタイム通訳。",
 
@@ -133,5 +133,86 @@
   "footer.terms": "利用規約",
   "footer.licenses": "オープンソース表記",
   "footer.contact": "お問い合わせ · バグ報告",
-  "footer.small": "Steam および Steam ロゴは Valve Corporation の商標です。Discord は Discord Inc. の商標です。オンマルはこれらの企業と提携関係になく、互換性の説明のためにのみ名称を使用しています。<br>音声認識と翻訳にオープンソースのモデルを使用しています。全リストとライセンスはオープンソース表記をご覧ください。"
+  "footer.small": "Steam および Steam ロゴは Valve Corporation の商標です。Discord は Discord Inc. の商標です。オンマルはこれらの企業と提携関係になく、互換性の説明のためにのみ名称を使用しています。<br>音声認識と翻訳にオープンソースのモデルを使用しています。全リストとライセンスはオープンソース表記をご覧ください。",
+
+"lic.meta.title": "オープンソースに関する表示 — オンマル Onmal",
+  "lic.meta.desc": "オンマルが使用しているオープンソースソフトウェア・モデル・フォントと、それぞれの著作権者とライセンス。そして意図的に使わなかったもの。",
+
+  "lic.home": "← ホーム",
+  "lic.kicker": "法的表示",
+  "lic.h1": "オープンソースに関する表示",
+  "lic.lede": "オンマルは以下のオープンソースソフトウェアとモデルの上で動作します。それぞれの著作権者とライセンスを明記し、意図的に使わなかったものも併せて記しています。",
+  "lic.updated": "最終更新",
+  "lic.same_in_app": "同じ内容はアプリ内にも収録されています（情報 → オープンソースに関する表示）。インターネットがなくても読めます。",
+
+  "lic.attr_h2": "著作者表示 — Opus-MT",
+  "lic.attr_p1": "オンマルのローカル翻訳は、ヘルシンキ大学 言語技術研究グループ（Helsinki-NLP）の Opus-MT モデルの重みを使用しています。推論のために ONNX 形式へ変換しましたが、重み自体は変更していません。",
+  "lic.attr_p2": "ライセンスは言語ペアごとに異なります。以下の4ペアは CC-BY-4.0 のため著作者表示が必須で、その他のペアは Apache-2.0 です。2026-07-29 時点の確認に基づきます。",
+  "lic.attr_apache": "Apache-2.0 のペア: opus-mt-ko-en, opus-mt-ja-en, opus-mt-en-jap, opus-mt-en-zh, opus-mt-en-ru, opus-mt-es-en, opus-mt-en-es, opus-mt-roa-en, opus-mt-fr-en, opus-mt-en-fr, opus-mt-de-en。",
+
+  "lic.th_pair": "言語ペア",
+  "lic.th_model": "モデル",
+  "lic.th_license": "ライセンス",
+  "lic.th_component": "構成要素",
+  "lic.th_holder": "著作権者",
+  "lic.th_use": "用途",
+  "lic.th_font": "フォント",
+  "lic.th_status": "状態",
+  "lic.th_set": "セット",
+  "lic.th_item": "項目",
+  "lic.th_reason": "不採用の理由",
+
+  "lic.pair_enko": "英語 → 韓国語",
+  "lic.pair_zhen": "中国語 → 英語",
+  "lic.pair_ruen": "ロシア語 → 英語",
+  "lic.pair_ende": "英語 → ドイツ語",
+
+  "lic.sw_h2": "ソフトウェア",
+  "lic.sw_dotnet": "ランタイム",
+  "lic.sw_naudio": "デバイスループバック・マイク入力の取得",
+  "lic.sw_ort": "VAD・翻訳モデルの推論",
+  "lic.sw_tokenizers": "SentencePiece トークナイザー",
+  "lic.sw_whispernet": "whisper.cpp バインディング",
+  "lic.sw_whispercpp": "音声認識の推論エンジン",
+  "lic.sw_steamworks": "Steam 連携",
+  "lic.sw_xunit": "テスト（配布物には含まれません）",
+  "lic.sw_fluent": "テスト（配布物には含まれません）",
+  "lic.sw_note": "FluentAssertions は 7.0 から商用ライセンスに変更されました。オンマルは Apache-2.0 である 6.12.2 に固定して使用しています。",
+
+  "lic.model_h2": "モデル",
+  "lic.model_whisper": "音声認識・言語判定（ggml 変換版）",
+  "lic.model_vad": "発話区間の検出",
+  "lic.model_opusmt": "ローカル翻訳 — 上記の著作者表示を参照",
+  "lic.model_note": "モデルの重みはアプリに含まれていません。別途ダウンロードし、取得したファイルは SHA-256 で検証します。",
+
+  "lic.font_h2": "フォント",
+  "lic.font_pretendard": "アプリに同梱（Regular · Medium · SemiBold）",
+  "lic.font_jetbrains": "非同梱 — このウェブページで使用",
+  "lic.font_noto": "非同梱 — システムフォントで代替",
+  "lic.font_gowun": "非同梱 — このウェブページで使用",
+  "lic.font_note1": "同梱した Pretendard の OFL 全文はアプリの配布物に含まれています。OFL の条件に従い、フォント単体では販売せず、Reserved Font Name は「Pretendard」です。",
+  "lic.font_note2": "同梱していないフォントは、システムに既にあるもので代替されます。配布物に含まれないため OFL の義務も生じません。",
+
+  "lic.icon_h2": "アイコン",
+  "lic.icon_lucide": "使用中 — 設定画面のアイコン17種を SVG パスとしてインライン化。パッケージもアイコンフォントも使いません。",
+  "lic.icon_phosphor": "候補（未使用）",
+  "lic.icon_note": "ISC は著作権表示の保持を求めています。この表とアプリのソース冒頭のコメントがその表示です。",
+
+  "lic.excl_h2": "使わないことにしたもの",
+  "lic.excl_intro": "除外したものも記録しています。後から「なぜ使わなかったのか」を調べ直す手間を減らすためであり、オンマルがライセンスをどう扱うかを示すためでもあります。",
+  "lic.excl_nllb": "非商用限定です。翻訳品質にかかわらず、このコードベースには入れません。",
+  "lic.excl_parakeet": "速度は優れていますが、著作者表示の義務が増えます。v1 は Whisper（MIT）単独で進めます。",
+  "lic.excl_ffmpeg": "Steamworks SDK と互換性がない可能性があります。リサンプリングは自前で実装しました。",
+  "lic.excl_apple": "Apple の OS 上で動作するソフトウェアに用途が限定されます。Windows アプリには使えません。",
+  "lic.excl_ct2": "ライセンス自体に問題はありませんが、安定した C API がなくネイティブラッパーを自前で配布する必要があります。ONNX Runtime で代替しました。",
+
+  "lic.tm_h2": "商標",
+  "lic.tm_p": "Steam および Steam ロゴは Valve Corporation の商標です。Discord は Discord Inc. の商標です。Windows は Microsoft Corporation の商標です。オンマルはこれらの企業と提携関係にはなく、互換性を説明する目的でのみ名称を使用しています。",
+
+  "lic.full_h2": "ライセンス全文",
+  "lic.full_p": "各ライセンスの全文は以下で確認できます。",
+
+  "lic.f_home": "ホーム",
+  "lic.f_privacy": "プライバシーポリシー",
+  "lic.f_terms": "利用規約"
 }

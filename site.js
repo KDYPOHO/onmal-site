@@ -57,6 +57,13 @@
   var descMeta = document.querySelector('meta[name="description"]');
   var originalDesc = descMeta ? descMeta.getAttribute("content") : "";
 
+  /* 제목·설명 키는 페이지마다 달라야 합니다. 모든 페이지가 한 벌의 사전을 공유하므로
+     스코프 없이 "meta.title" 을 쓰면 법적 문서 페이지가 첫 화면의 제목을 가져갑니다.
+     <html data-i18n-scope="lic"> 이면 "lic.meta.title" 을 먼저 찾습니다. */
+  var scope = document.documentElement.getAttribute("data-i18n-scope");
+  var titleKey = scope ? scope + ".meta.title" : "meta.title";
+  var descKey = scope ? scope + ".meta.desc" : "meta.desc";
+
   var dict = null;   // 현재 언어 사전. null 이면 한국어 원문.
 
   function render() {
@@ -69,8 +76,8 @@
         el.textContent = value != null ? value : original[i];
       }
     });
-    document.title = (dict && dict["meta.title"]) || originalTitle;
-    if (descMeta) { descMeta.setAttribute("content", (dict && dict["meta.desc"]) || originalDesc); }
+    document.title = (dict && dict[titleKey]) || originalTitle;
+    if (descMeta) { descMeta.setAttribute("content", (dict && dict[descKey]) || originalDesc); }
   }
 
   function apply(code) {

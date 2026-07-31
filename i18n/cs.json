@@ -1,4 +1,4 @@
-{
+﻿{
   "meta.title": "Onmal — slova spoluhráčů ve vašem jazyce",
   "meta.desc": "Rozumí cizí řeči vašich spoluhráčů během hraní a zobrazuje ji jako titulky ve vašem jazyce přes obrazovku. Bezplatný tlumočník v reálném čase, který běží na vašem vlastním PC.",
 
@@ -133,5 +133,86 @@
   "footer.terms": "Podmínky použití",
   "footer.licenses": "Open source",
   "footer.contact": "Kontakt · nahlásit chybu",
-  "footer.small": "Steam a logo Steam jsou ochranné známky společnosti Valve Corporation. Discord je ochranná známka společnosti Discord Inc. Onmal není s těmito společnostmi spojen a názvy používá pouze k popisu kompatibility.<br>Rozpoznávání řeči a překlad používají open source modely. Úplný seznam a licence najdete v open source informacích."
+  "footer.small": "Steam a logo Steam jsou ochranné známky společnosti Valve Corporation. Discord je ochranná známka společnosti Discord Inc. Onmal není s těmito společnostmi spojen a názvy používá pouze k popisu kompatibility.<br>Rozpoznávání řeči a překlad používají open source modely. Úplný seznam a licence najdete v open source informacích.",
+
+"lic.meta.title": "Informace o otevřeném softwaru — Onmal",
+  "lic.meta.desc": "Otevřený software, modely a písma, na kterých Onmal běží, včetně držitelů práv a licencí — a také to, co jsme záměrně nepoužili.",
+
+  "lic.home": "← Domů",
+  "lic.kicker": "Právní informace",
+  "lic.h1": "Informace o otevřeném softwaru",
+  "lic.lede": "Onmal běží na níže uvedeném otevřeném softwaru a modelech. Uvádíme každého držitele práv a každou licenci — a zaznamenáváme i to, co jsme záměrně nepoužili.",
+  "lic.updated": "Naposledy aktualizováno",
+  "lic.same_in_app": "Stejné informace jsou obsaženy přímo v aplikaci (Informace → Informace o otevřeném softwaru), takže je lze číst i bez připojení k internetu.",
+
+  "lic.attr_h2": "Uvedení autora — Opus-MT",
+  "lic.attr_p1": "Místní překlad v Onmalu využívá váhy modelů Opus-MT od výzkumné skupiny jazykových technologií Helsinské univerzity (Helsinki-NLP). Převedli jsme je do formátu ONNX kvůli inferenci; samotné váhy jsme neupravovali.",
+  "lic.attr_p2": "Licence se liší podle jazykové dvojice. Čtyři dvojice níže spadají pod CC-BY-4.0 a vyžadují uvedení autora; ostatní dvojice spadají pod Apache-2.0. Ověřeno 29. 7. 2026.",
+  "lic.attr_apache": "Dvojice pod licencí Apache-2.0: opus-mt-ko-en, opus-mt-ja-en, opus-mt-en-jap, opus-mt-en-zh, opus-mt-en-ru, opus-mt-es-en, opus-mt-en-es, opus-mt-roa-en, opus-mt-fr-en, opus-mt-en-fr, opus-mt-de-en.",
+
+  "lic.th_pair": "Jazyková dvojice",
+  "lic.th_model": "Model",
+  "lic.th_license": "Licence",
+  "lic.th_component": "Komponenta",
+  "lic.th_holder": "Držitel práv",
+  "lic.th_use": "Účel použití",
+  "lic.th_font": "Písmo",
+  "lic.th_status": "Stav",
+  "lic.th_set": "Sada",
+  "lic.th_item": "Položka",
+  "lic.th_reason": "Důvod vyloučení",
+
+  "lic.pair_enko": "angličtina → korejština",
+  "lic.pair_zhen": "čínština → angličtina",
+  "lic.pair_ruen": "ruština → angličtina",
+  "lic.pair_ende": "angličtina → němčina",
+
+  "lic.sw_h2": "Software",
+  "lic.sw_dotnet": "Běhové prostředí",
+  "lic.sw_naudio": "Zachytávání smyčky zařízení a mikrofonu",
+  "lic.sw_ort": "Inference modelů VAD a překladu",
+  "lic.sw_tokenizers": "Tokenizér SentencePiece",
+  "lic.sw_whispernet": "Vazby na whisper.cpp",
+  "lic.sw_whispercpp": "Inferenční jádro rozpoznávání řeči",
+  "lic.sw_steamworks": "Integrace se Steamem",
+  "lic.sw_xunit": "Testy (nejsou distribuovány)",
+  "lic.sw_fluent": "Testy (nejsou distribuovány)",
+  "lic.sw_note": "Od verze 7.0 přešel FluentAssertions na komerční licenci. Onmal zůstává u verze 6.12.2, která je pod Apache-2.0.",
+
+  "lic.model_h2": "Modely",
+  "lic.model_whisper": "Rozpoznávání řeči a detekce jazyka (převod ggml)",
+  "lic.model_vad": "Detekce úseků řeči",
+  "lic.model_opusmt": "Místní překlad — viz uvedení autora výše",
+  "lic.model_note": "Váhy modelů nejsou součástí aplikace. Stahují se zvlášť a každý soubor se ověřuje pomocí SHA-256.",
+
+  "lic.font_h2": "Písma",
+  "lic.font_pretendard": "Součástí aplikace (Regular · Medium · SemiBold)",
+  "lic.font_jetbrains": "Není součástí — použito na této stránce",
+  "lic.font_noto": "Není součástí — nahrazeno systémovými písmy",
+  "lic.font_gowun": "Není součástí — použito na této stránce",
+  "lic.font_note1": "Úplné znění licence OFL pro přiložené písmo Pretendard je distribuováno spolu s aplikací. Podle OFL se písmo nikdy neprodává samostatně a Reserved Font Name zní „Pretendard“.",
+  "lic.font_note2": "Písma, která nepřikládáme, jsou nahrazena těmi, která už v systému jsou. Protože je nedistribuujeme, žádná povinnost podle OFL nevzniká.",
+
+  "lic.icon_h2": "Ikony",
+  "lic.icon_lucide": "Používá se — 17 ikon okna nastavení je vloženo jako cesty SVG. Bez balíčku a bez ikonového písma.",
+  "lic.icon_phosphor": "Kandidát (nepoužito)",
+  "lic.icon_note": "Licence ISC vyžaduje zachování oznámení o autorských právech. Tato tabulka a úvodní komentář ve zdrojovém kódu aplikace jsou právě tímto oznámením.",
+
+  "lic.excl_h2": "Co jsme se rozhodli nepoužít",
+  "lic.excl_intro": "Zaznamenáváme i to, co jsme odmítli. Ušetří nám to pozdější zjišťování „proč jsme to vlastně nepoužili?“ a ukazuje, jak Onmal přistupuje k licencím.",
+  "lic.excl_nllb": "Pouze pro nekomerční použití. Bez ohledu na kvalitu překladu se do této kódové základny nedostane.",
+  "lic.excl_parakeet": "Je rychlý, ale přidává další povinnost uvádět autora. Verze 1 vychází pouze s Whisperem (MIT).",
+  "lic.excl_ffmpeg": "Nemusí být slučitelný se Steamworks SDK. Převzorkování jsme implementovali sami.",
+  "lic.excl_apple": "Licence je omezena na software běžící na operačních systémech Apple. V aplikaci pro Windows ji použít nelze.",
+  "lic.excl_ct2": "Licence není problém, ale chybí stabilní C API, takže bychom museli distribuovat vlastní nativní obal. Nahrazeno ONNX Runtime.",
+
+  "lic.tm_h2": "Ochranné známky",
+  "lic.tm_p": "Steam a logo Steam jsou ochranné známky společnosti Valve Corporation. Discord je ochranná známka společnosti Discord Inc. Windows je ochranná známka společnosti Microsoft Corporation. Onmal není s těmito společnostmi nijak spojen a jejich názvy používá pouze k popisu kompatibility.",
+
+  "lic.full_h2": "Úplná znění licencí",
+  "lic.full_p": "Úplné znění každé licence najdete zde.",
+
+  "lic.f_home": "Domů",
+  "lic.f_privacy": "Zásady ochrany osobních údajů",
+  "lic.f_terms": "Podmínky služby"
 }

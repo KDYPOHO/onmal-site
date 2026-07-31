@@ -1,4 +1,4 @@
-{
+﻿{
   "meta.title": "Onmal — lagkameratenes ord, på ditt språk",
   "meta.desc": "Forstår lagkameratenes fremmedspråk mens du spiller og viser det som undertekster på ditt språk over skjermen. En gratis sanntidstolk som kjører på din egen PC.",
 
@@ -133,5 +133,86 @@
   "footer.terms": "Bruksvilkår",
   "footer.licenses": "Åpen kildekode",
   "footer.contact": "Kontakt · meld feil",
-  "footer.small": "Steam og Steam-logoen er varemerker for Valve Corporation. Discord er et varemerke for Discord Inc. Onmal er ikke tilknyttet disse selskapene og bruker navnene bare for å beskrive kompatibilitet.<br>Talegjenkjenning og oversettelse bruker åpen kildekode-modeller. Full liste og lisenser finnes i merknadene om åpen kildekode."
+  "footer.small": "Steam og Steam-logoen er varemerker for Valve Corporation. Discord er et varemerke for Discord Inc. Onmal er ikke tilknyttet disse selskapene og bruker navnene bare for å beskrive kompatibilitet.<br>Talegjenkjenning og oversettelse bruker åpen kildekode-modeller. Full liste og lisenser finnes i merknadene om åpen kildekode.",
+
+"lic.meta.title": "Merknader om åpen kildekode — Onmal",
+  "lic.meta.desc": "Programvaren, modellene og skriftene med åpen kildekode som Onmal bygger på, med rettighetshavere og lisenser — og det vi bevisst har valgt bort.",
+
+  "lic.home": "← Hjem",
+  "lic.kicker": "Juridisk merknad",
+  "lic.h1": "Merknader om åpen kildekode",
+  "lic.lede": "Onmal kjører på programvaren og modellene med åpen kildekode som er listet opp nedenfor. Vi oppgir hver rettighetshaver og hver lisens — og noterer også hva vi bevisst har valgt bort.",
+  "lic.updated": "Sist oppdatert",
+  "lic.same_in_app": "De samme merknadene følger med i appen (Informasjon → Merknader om åpen kildekode), og kan leses uten internettforbindelse.",
+
+  "lic.attr_h2": "Navngivelse — Opus-MT",
+  "lic.attr_p1": "Den lokale oversettelsen i Onmal bruker modellvekter fra Opus-MT, utviklet av forskningsgruppen for språkteknologi ved Universitetet i Helsingfors (Helsinki-NLP). Vi konverterte dem til ONNX-format for inferens; selve vektene er uendret.",
+  "lic.attr_p2": "Lisensen varierer mellom språkparene. De fire parene nedenfor er under CC-BY-4.0 og krever navngivelse; de øvrige parene er under Apache-2.0. Kontrollert 29.07.2026.",
+  "lic.attr_apache": "Par under Apache-2.0: opus-mt-ko-en, opus-mt-ja-en, opus-mt-en-jap, opus-mt-en-zh, opus-mt-en-ru, opus-mt-es-en, opus-mt-en-es, opus-mt-roa-en, opus-mt-fr-en, opus-mt-en-fr, opus-mt-de-en.",
+
+  "lic.th_pair": "Språkpar",
+  "lic.th_model": "Modell",
+  "lic.th_license": "Lisens",
+  "lic.th_component": "Komponent",
+  "lic.th_holder": "Rettighetshaver",
+  "lic.th_use": "Brukes til",
+  "lic.th_font": "Skrift",
+  "lic.th_status": "Status",
+  "lic.th_set": "Sett",
+  "lic.th_item": "Element",
+  "lic.th_reason": "Grunn til fravalg",
+
+  "lic.pair_enko": "Engelsk → koreansk",
+  "lic.pair_zhen": "Kinesisk → engelsk",
+  "lic.pair_ruen": "Russisk → engelsk",
+  "lic.pair_ende": "Engelsk → tysk",
+
+  "lic.sw_h2": "Programvare",
+  "lic.sw_dotnet": "Kjøretidsmiljø",
+  "lic.sw_naudio": "Loopback-opptak fra enhet og mikrofon",
+  "lic.sw_ort": "Inferens for VAD- og oversettelsesmodeller",
+  "lic.sw_tokenizers": "SentencePiece-tokenisering",
+  "lic.sw_whispernet": "Bindinger til whisper.cpp",
+  "lic.sw_whispercpp": "Inferensmotor for talegjenkjenning",
+  "lic.sw_steamworks": "Steam-integrasjon",
+  "lic.sw_xunit": "Tester (distribueres ikke)",
+  "lic.sw_fluent": "Tester (distribueres ikke)",
+  "lic.sw_note": "FluentAssertions gikk over til kommersiell lisens fra og med 7.0. Onmal er låst til 6.12.2, som er Apache-2.0.",
+
+  "lic.model_h2": "Modeller",
+  "lic.model_whisper": "Talegjenkjenning og språkgjenkjenning (ggml-konvertering)",
+  "lic.model_vad": "Deteksjon av talesegmenter",
+  "lic.model_opusmt": "Lokal oversettelse — se navngivelsen ovenfor",
+  "lic.model_note": "Modellvektene følger ikke med appen. De lastes ned separat, og hver fil verifiseres med SHA-256.",
+
+  "lic.font_h2": "Skrifter",
+  "lic.font_pretendard": "Følger med appen (Regular · Medium · SemiBold)",
+  "lic.font_jetbrains": "Følger ikke med — brukes på denne nettsiden",
+  "lic.font_noto": "Følger ikke med — erstattes av systemskrifter",
+  "lic.font_gowun": "Følger ikke med — brukes på denne nettsiden",
+  "lic.font_note1": "Den fullstendige OFL-teksten for Pretendard som følger med, distribueres sammen med appen. I henhold til OFL selges skriften aldri alene, og Reserved Font Name er «Pretendard».",
+  "lic.font_note2": "Skrifter vi ikke inkluderer, erstattes av dem som allerede finnes i systemet. Siden vi ikke distribuerer dem, oppstår ingen OFL-forpliktelser.",
+
+  "lic.icon_h2": "Ikoner",
+  "lic.icon_lucide": "I bruk — 17 ikoner i innstillingsvinduet er bygget inn som SVG-baner. Ingen pakke, ingen ikonskrift.",
+  "lic.icon_phosphor": "Kandidat (ikke i bruk)",
+  "lic.icon_note": "ISC krever at opphavsrettsmerknaden beholdes. Denne tabellen og toppkommentaren i appens kildekode utgjør den merknaden.",
+
+  "lic.excl_h2": "Det vi har valgt bort",
+  "lic.excl_intro": "Vi noterer også det vi har forkastet. Det sparer oss for spørsmålet «hvorfor brukte vi ikke det?» senere, og viser hvordan Onmal håndterer lisenser.",
+  "lic.excl_nllb": "Kun til ikke-kommersiell bruk. Uansett oversettelseskvalitet havner den ikke i denne kodebasen.",
+  "lic.excl_parakeet": "Rask, men gir enda en plikt til navngivelse. v1 kommer med Whisper (MIT) alene.",
+  "lic.excl_ffmpeg": "Kan være uforenlig med Steamworks SDK. Resamplingen har vi implementert selv.",
+  "lic.excl_apple": "Lisensen er begrenset til programvare som kjører på Apples operativsystemer. Kan ikke brukes i en Windows-app.",
+  "lic.excl_ct2": "Lisensen er uproblematisk, men det finnes ikke et stabilt C-API, så vi måtte ha distribuert vår egen native innpakning. Erstattet av ONNX Runtime.",
+
+  "lic.tm_h2": "Varemerker",
+  "lic.tm_p": "Steam og Steam-logoen er varemerker for Valve Corporation. Discord er et varemerke for Discord Inc. Windows er et varemerke for Microsoft Corporation. Onmal er ikke tilknyttet disse selskapene og bruker navnene kun for å beskrive kompatibilitet.",
+
+  "lic.full_h2": "Fullstendige lisenstekster",
+  "lic.full_p": "Den fullstendige teksten til hver lisens finnes her.",
+
+  "lic.f_home": "Hjem",
+  "lic.f_privacy": "Personvernerklæring",
+  "lic.f_terms": "Vilkår for bruk"
 }
