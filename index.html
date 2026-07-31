@@ -82,6 +82,8 @@
     border:1px dashed var(--line);color:var(--dim);font-weight:600;font-size:15px;cursor:default}
   .soon i{width:8px;height:8px;border-radius:99px;background:var(--moon);flex-shrink:0}
   .note{margin-top:16px;font-size:13px;color:var(--dim)}
+  .ver{margin-top:10px;font-family:var(--mono);font-size:12.5px;color:var(--dim)}
+  .ver b{color:var(--jade);font-weight:500}
 
   /* ── signature: live subtitle demo. 게임 화면 묘사라 테마와 무관하게 어둡습니다 ── */
   .frame{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#0A0E15;
@@ -113,6 +115,18 @@
     flex-shrink:0;min-width:44px;letter-spacing:.03em}
   .sub .tx{font-size:15.5px;line-height:1.45}
   .sub .tx.src{color:#9AA3B5;font-style:italic}
+
+  /* ── 실제 화면 ── */
+  .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+  .shots figure{margin:0}
+  .shots img{width:100%;height:auto;display:block;border-radius:12px;
+    border:1px solid var(--line);background:var(--night)}
+  /* 테마에 맞는 한 장만 보입니다. 둘 다 받아 두므로 전환이 즉각적입니다. */
+  .shots img.light{display:none}
+  html[data-theme="light"] .shots img.dark{display:none}
+  html[data-theme="light"] .shots img.light{display:block}
+  .shots figcaption{margin-top:12px;font-size:13.5px;color:var(--dim);line-height:1.55}
+  @media (max-width:860px){ .shots{grid-template-columns:1fr;gap:32px} }
 
   /* ── sections ── */
   section{padding:92px 0}
@@ -224,6 +238,12 @@
         <span class="soon"><i></i><span data-i18n="hero.soon">Steam 출시 준비 중</span></span>
         <a class="btn s" href="#how" data-i18n="hero.how">어떻게 동작하나</a>
       </div>
+      <!--
+        판 번호는 여기 <b>한 곳</b>에만 숫자로 둡니다. 번역문에 숫자를 넣으면 판을 올릴
+        때마다 31개 파일을 고쳐야 하고, 반드시 몇 개를 빠뜨립니다.
+      -->
+      <p class="ver"><span data-i18n="hero.version">현재 판</span> <b>0.1.0</b>
+        · <span data-i18n="hero.version_note">뼈대가 도는 단계입니다. 아직 알파 전이라 거친 곳이 있습니다.</span></p>
       <p class="note" data-i18n="hero.note">마이크는 직접 켤 때만 씁니다. 팀원의 소리를 내 컴퓨터 안에서 처리하고, 대화는 어디로도 전송되지 않습니다.</p>
     </div>
 
@@ -267,6 +287,37 @@
         <h3 data-i18n="how.t4">내 언어로 화면 위에</h3>
         <p data-i18n="how.p4">게임을 가리지 않는 자리에, 클릭이 통과하는 자막으로. 조작을 방해하지 않습니다.</p>
       </div>
+    </div>
+  </section>
+
+  <!--
+    실제 화면. 위 히어로의 자막 그림은 <b>설명용 그림</b>이지만 여기 이미지는
+    앱을 띄워 그대로 찍은 것입니다 (tools/verify/verify-settings.ps1).
+    ⚠️ 화면이 바뀌면 이 이미지도 다시 찍어 넣으십시오 — 옛 화면을 보여주는 것은
+       "없는 걸 있다고 하지 않는다"의 반대 방향입니다.
+    다크·라이트 두 벌을 넣고 페이지 테마에 맞는 쪽만 보입니다.
+  -->
+  <section id="shots">
+    <p class="kicker" data-i18n="shots.kicker">실제 화면</p>
+    <h2 data-i18n="shots.h2">설치하면 이렇게 생겼습니다.</h2>
+    <p class="sub-lede" data-i18n="shots.lede">꾸민 그림이 아니라 앱을 띄워 그대로 찍은 화면입니다. 창은 세 개뿐입니다 — 홈에서 고르고, 설정에서 다듬고, 정보에서 확인합니다.</p>
+
+    <div class="shots">
+      <figure>
+        <img src="shots/home-dark.png" class="dark" alt="온말 홈 화면" loading="lazy" width="1180" height="820">
+        <img src="shots/home-light.png" class="light" alt="온말 홈 화면" loading="lazy" width="1180" height="820">
+        <figcaption data-i18n="shots.c1">홈 — 소리 가져올 곳과 내 언어. 정할 것은 이 둘뿐입니다.</figcaption>
+      </figure>
+      <figure>
+        <img src="shots/settings-dark.png" class="dark" alt="온말 설정 화면" loading="lazy" width="1180" height="820">
+        <img src="shots/settings-light.png" class="light" alt="온말 설정 화면" loading="lazy" width="1180" height="820">
+        <figcaption data-i18n="shots.c2">설정 — 자막 크기·위치, 창 색, 앱 언어. 밝게·어둡게 둘 다 있습니다.</figcaption>
+      </figure>
+      <figure>
+        <img src="shots/about-dark.png" class="dark" alt="온말 정보 화면" loading="lazy" width="1180" height="820">
+        <img src="shots/about-light.png" class="light" alt="온말 정보 화면" loading="lazy" width="1180" height="820">
+        <figcaption data-i18n="shots.c3">정보 — 사용 방법과 단축키, 그리고 법적 문서. 인터넷 없이도 읽힙니다.</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -424,8 +475,8 @@
         <span class="go" data-i18n="legal.read">읽기 →</span>
       </a>
       <a href="licenses.html">
-        <h3 data-i18n="legal.t3">오픈소스 고지</h3>
-        <p data-i18n="legal.p3">온말을 만드는 데 쓰인 오픈소스 소프트웨어·모델·글꼴과 각 라이선스.</p>
+        <h3 data-i18n="legal.t3">저작권 및 라이선스</h3>
+        <p data-i18n="legal.p3">온말이 쓰는 소프트웨어·모델·글꼴의 저작권자와 라이선스. 의도적으로 쓰지 않은 것도 적었습니다.</p>
         <span class="go" data-i18n="legal.read">읽기 →</span>
       </a>
     </div>
@@ -438,7 +489,7 @@
       <a href="#how" data-i18n="footer.how">동작 방식</a>
       <a href="privacy.html" data-i18n="footer.privacy">개인정보처리방침</a>
       <a href="terms.html" data-i18n="footer.terms">이용약관</a>
-      <a href="licenses.html" data-i18n="footer.licenses">오픈소스 고지</a>
+      <a href="licenses.html" data-i18n="footer.licenses">저작권·라이선스</a>
       <a href="https://github.com/KDYPOHO/onmal-site">GitHub</a>
       <a href="https://github.com/KDYPOHO/onmal-site/issues" data-i18n="footer.contact">문의 · 버그 신고</a>
       <a href="mailto:todaklife@gmail.com">todaklife@gmail.com</a>
@@ -447,7 +498,7 @@
     <small data-i18n-html="footer.small">
       Steam 및 Steam 로고는 Valve Corporation의 상표입니다. Discord는 Discord Inc.의 상표입니다.
       온말은 해당 기업과 제휴 관계가 없으며, 호환성을 설명하기 위해 명칭을 사용합니다.<br>
-      음성 인식과 번역에 오픈소스 모델을 사용합니다. 전체 목록과 라이선스는 오픈소스 고지 문서에서 확인하실 수 있습니다.
+      음성 인식과 번역에 오픈소스 모델을 사용합니다. 전체 목록과 저작권자는 저작권·라이선스 문서에서 확인하실 수 있습니다.
     </small>
   </div>
 </footer>

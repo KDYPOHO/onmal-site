@@ -5,7 +5,7 @@
 - 홈페이지: https://kdypoho.github.io/onmal-site/
 - 개인정보처리방침: https://kdypoho.github.io/onmal-site/privacy.html
 - 이용약관: https://kdypoho.github.io/onmal-site/terms.html
-- 오픈소스 고지: https://kdypoho.github.io/onmal-site/licenses.html
+- 저작권 및 라이선스: https://kdypoho.github.io/onmal-site/licenses.html
 
 정적 HTML만 있습니다. GitHub Pages 가 `main` 브랜치 루트에서 그대로 배포합니다
 (`.nojekyll` 로 Jekyll 처리를 끕니다).
