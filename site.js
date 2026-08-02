@@ -135,16 +135,69 @@
       });
       if (focus) { btn.focus(); }
     };
+    /* 사람이 탭을 직접 골랐는가. 골랐다면 스크롤이 그 위를 덮어쓰지 않습니다 —
+       덮어쓰면 탭이 <b>눌리지 않는 것처럼</b> 보입니다(눌리자마자 되돌아가므로). */
+    var picked = false;
+
     tabs.forEach(function (btn, i) {
       btn.tabIndex = btn.getAttribute("aria-selected") === "true" ? 0 : -1;
-      btn.addEventListener("click", function () { select(btn, false); });
+      btn.addEventListener("click", function () { picked = true; select(btn, false); });
       btn.addEventListener("keydown", function (e) {
         var step = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
         if (!step) { return; }
         e.preventDefault();
+        picked = true;
         select(tabs[(i + step + tabs.length) % tabs.length], true);
       });
     });
+
+    /* ── 스크롤이 곧 재생 ────────────────────────────────────────────────
+       #shots 가 화면에 붙어 있는 동안, 지나온 만큼에 따라 홈 → 설정 → 정보 로
+       넘깁니다. 영상을 넘기듯이.
+
+       🔴 바꾸는 것은 <b>data-shot 한 곳</b>뿐입니다. 어떤 그림과 어떤 캡션이 보일지는
+          여기서 정하지 않습니다 — CSS 가 정합니다. img.src 를 건드리면 테마 전환과
+          두 곳이 같은 것을 다투게 되고, 라이트에서 다크 화면이 뜨는 식으로 어긋납니다.
+       🔴 붙이는 일은 <b>CSS 가</b> 합니다(motion.css). 여기서는 붙어 있는지 물어만
+          봅니다 — 축소 모션이거나 좁은 화면이면 sticky 가 아니고, 그때는 아무 일도
+          하지 않아 지금까지의 탭 동작이 그대로 남습니다. */
+    var pin = shots.closest ? shots.closest(".pin") : null;
+    var section = document.getElementById("shots");
+
+    if (pin && section && window.requestAnimationFrame) {
+      var queued = false;
+
+      var advance = function () {
+        queued = false;
+        if (getComputedStyle(pin).position !== "sticky") { return; }
+
+        var box = section.getBoundingClientRect();
+        // 이 구간을 얼마나 지나왔는가. 붙어 있는 동안 0 → 1.
+        var travel = box.height - window.innerHeight;
+        if (travel <= 0) { return; }
+        var progress = (0 - box.top) / travel;
+
+        // 구간 밖으로 나가면 사람이 고른 것을 잊습니다 — 다음에 다시 들어오면
+        // 처음부터 재생됩니다.
+        if (progress < 0 || progress > 1) { picked = false; return; }
+        if (picked) { return; }
+
+        var i = Math.min(tabs.length - 1, Math.floor(progress * tabs.length));
+        if (tabs[i] && tabs[i].getAttribute("aria-selected") !== "true") {
+          select(tabs[i], false);
+        }
+      };
+
+      var onScroll = function () {
+        if (queued) { return; }
+        queued = true;
+        window.requestAnimationFrame(advance);
+      };
+
+      window.addEventListener("scroll", onScroll, { passive: true });
+      window.addEventListener("resize", onScroll, { passive: true });
+      advance();
+    }
   }
 
   /* ── 데모 자막 ──────────────────────────────────────────────────────
