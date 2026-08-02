@@ -35,6 +35,16 @@ function Check([string]$phase, [bool]$ok, [string]$message) {
     else { $script:todo += "[$phase] $message" }
 }
 
+# 🔴 주석을 먼저 걷어냅니다. 안 그러면 "여기에는 @keyframes 를 넣지 마십시오" 라고
+#    적어 둔 주석 자체가 규칙으로 읽혀 검사기가 자기 문서를 오탐합니다
+#    (2026-08-02 doc.css 에서 실제로 그랬습니다). 자리를 유지해야 위치 보고가
+#    맞으므로 <b>같은 길이의 공백</b>으로 바꿉니다.
+function Strip-Comments([string]$css) {
+    return [regex]::Replace($css, '(?s)/\*.*?\*/', {
+        param($m) ' ' * $m.Value.Length
+    })
+}
+
 # 애니메이트하면 레이아웃이 다시 도는 속성들. transform/opacity 만 씁니다.
 $layoutProps = @(
     'height','width','top','left','right','bottom','margin','margin-top','margin-left',
@@ -54,11 +64,13 @@ Check 'C1' ($cssFiles.Count -gt 0) "styles/ 에 CSS 가 없습니다 — 아직 
 # ── 1. 레이아웃 속성 트랜지션 — 지금 .sig b 가 height 를 씁니다 ───────────
 # 인라인 <style> 단계에서도 봐야 하므로 HTML 도 함께 훑습니다.
 $sources = @()
-foreach ($f in $cssFiles) { $sources += @{ Name = "styles/$($f.Name)"; Text = [System.IO.File]::ReadAllText($f.FullName, $utf8) } }
+foreach ($f in $cssFiles) {
+    $sources += @{ Name = "styles/$($f.Name)"; Text = Strip-Comments ([System.IO.File]::ReadAllText($f.FullName, $utf8)) }
+}
 foreach ($f in (Get-ChildItem $Root -Filter '*.html')) {
     $t = [System.IO.File]::ReadAllText($f.FullName, $utf8)
     foreach ($m in [regex]::Matches($t, '(?s)<style>(.*?)</style>')) {
-        $sources += @{ Name = $f.Name; Text = $m.Groups[1].Value }
+        $sources += @{ Name = $f.Name; Text = Strip-Comments $m.Groups[1].Value }
     }
 }
 
@@ -77,7 +89,7 @@ foreach ($s in $sources) {
 # ── 2. 🔴 스크롤 구동은 @supports 안에만 ──────────────────────────────────
 $motionPath = Join-Path $stylesDir 'motion.css'
 if (Test-Path $motionPath) {
-    $motion = [System.IO.File]::ReadAllText($motionPath, $utf8)
+    $motion = Strip-Comments ([System.IO.File]::ReadAllText($motionPath, $utf8))
 
     # @supports (animation-timeline: view()) 블록의 범위를 중괄호로 셉니다.
     $inside = New-Object 'System.Collections.Generic.HashSet[int]'
@@ -126,7 +138,7 @@ foreach ($f in (Get-ChildItem $Root -Filter '*.html')) {
 # ── 4. 🚫 법 문서에는 애니메이션을 넣지 않습니다 ──────────────────────────
 $docPath = Join-Path $stylesDir 'doc.css'
 if (Test-Path $docPath) {
-    $doc = [System.IO.File]::ReadAllText($docPath, $utf8)
+    $doc = Strip-Comments ([System.IO.File]::ReadAllText($docPath, $utf8))
     Check 'C1' ($doc -notmatch '@keyframes|animation\s*:') `
         "styles/doc.css 에 애니메이션이 있습니다 — 법 문서는 조용해야 합니다(§2). 의도적으로 0 입니다."
 }

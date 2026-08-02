@@ -1,0 +1,62 @@
+/* 온말 홈페이지 — 네 페이지가 함께 쓰는 것.
+   리셋 · 본문 바탕 · 신호 문법 · nav 부품 · 포커스 · 축소 모션.
+
+   ⚠️ 여기 넣을 수 있는 것은 <b>네 페이지에서 값이 같은 규칙</b>뿐입니다.
+      본문 line-height(첫 화면 1.65 / 문서 1.75), .wrap 너비(1080 / 760 / 860),
+      링크 색(inherit / 아쿠아)은 페이지마다 달라서 home.css·doc.css 에 있습니다.
+      여기로 끌어올리면 그 순간 한쪽이 조용히 바뀝니다. */
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+html{scroll-behavior:smooth}
+
+/* 🔴 앵커로 들어온 사람이 제목을 보게 합니다. 앱 정보 화면의 [로드맵] 버튼이
+   #roadmap 으로 들어오는데, nav 가 sticky 가 되는 날 이 값이 없으면 제목이
+   nav 뒤에 숨습니다. sticky 를 넣게 되면 이 값을 nav 높이로 올리십시오. */
+section[id]{scroll-margin-top:24px}
+
+body{
+  background:var(--ink); color:var(--paper); font-family:var(--body);
+  font-size:16px; -webkit-font-smoothing:antialiased;
+}
+
+::selection{background:var(--jade);color:var(--ink)}
+:focus-visible{outline:2px solid var(--jade);outline-offset:3px;border-radius:4px}
+
+/* ── 신호 문법 — 섹션 머리표 ──────────────────────────────────────────────
+   온말이 하는 일은 하나입니다: 고르지 않은 목소리를 고른 글로 바꾸는 것.
+   앱 아이콘이 이미 그 그림입니다(파형 5개 위, 자막 바 아래).
+
+   <b>마크업이 아니라 ::before</b> 로 그립니다 — 열 군데 넘는 kicker 에 <i> 를
+   손으로 넣으면 하나는 반드시 빠지고, 31개 언어 번역 키와도 무관해야 합니다. */
+.kicker::before,.eyebrow::before{
+  content:"";width:10px;height:12px;flex-shrink:0;margin-bottom:1px;
+  background:
+    linear-gradient(currentColor,currentColor) 0   100%/2px 6px  no-repeat,
+    linear-gradient(currentColor,currentColor) 4px 100%/2px 12px no-repeat,
+    linear-gradient(currentColor,currentColor) 8px 100%/2px 4px  no-repeat}
+
+/* ── nav 부품 ─────────────────────────────────────────────────────────────
+   nav 컨테이너 자체(padding·gap·flex-wrap)는 페이지마다 달라 각자 파일에 있습니다. */
+nav img{width:34px;height:34px;border-radius:9px}
+nav b{font-family:var(--display);font-weight:700;font-size:21px}
+nav .sp{flex:1}
+
+.lsel{font-family:var(--mono);font-size:12.5px;color:var(--dim);background:transparent;
+  border:1px solid var(--line);border-radius:999px;padding:7px 10px;cursor:pointer;max-width:170px}
+.lsel:hover{color:var(--paper);border-color:var(--jade)}
+/* 드롭다운 목록은 OS 가 그립니다 — 어두운 팔레트를 물려주면 글자가 안 보입니다. */
+.lsel option{color:#111;background:#fff}
+
+.tbtn{width:37px;height:37px;border-radius:999px;border:1px solid var(--line);
+  background:transparent;color:var(--dim);cursor:pointer;font-size:15px;line-height:1;
+  transition:.12s ease-out}
+.tbtn:hover{color:var(--paper);border-color:var(--jade)}
+
+/* ── 축소 모션 ────────────────────────────────────────────────────────────
+   ⚠️ 이 규칙은 <b>여기 남습니다</b>. motion.css(C9)는 애니메이션을 넣는 파일이고
+      이것은 끄는 규칙이라, 링크가 실패하거나 파일을 지웠을 때도 살아 있어야 합니다. */
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}

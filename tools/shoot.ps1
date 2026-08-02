@@ -16,6 +16,14 @@
     ⚠️ 결과는 <c>tools/shots/</c> 에 쌓이고 <b>커밋하지 않습니다</b>(.gitignore).
     전체 페이지 PNG 는 한 장에 수 MB 라 공개 저장소에 넣을 것이 아닙니다.
 
+    🔴 <b>index.html 은 바닥 잡음이 있습니다 — 약 100픽셀(0.001%).</b> 아무것도 안
+    바꾸고 두 번 찍어도 그만큼 다릅니다(2026-08-02 실측: 84·86픽셀). 히어로의 데모
+    자막이 JS 타이머로 돌고 '듣는 중' 파형이 애니메이션이라, 잡히는 순간이 매번
+    조금씩 다릅니다. 글자 가장자리에만 나타나고 채널 차이는 50 남짓입니다.
+    <b>수천 픽셀이거나 덩어리로 뭉쳐 있으면 그것은 진짜 변화입니다.</b>
+    문서 세 페이지는 움직이는 것이 없어 픽셀이 완전히 같습니다 — 거기서 1픽셀이라도
+    달라지면 의심하십시오.
+
 .EXAMPLE
     .\tools\shoot.ps1 -Label C0-baseline
     .\tools\shoot.ps1 -Label C1-after -CompareWith C0-baseline
@@ -67,10 +75,11 @@ foreach ($page in $pages) {
         $target = Join-Path $outDir "$name-$($theme.Name).png"
         if (Test-Path $target) { Remove-Item $target }
 
-        # ⚠️ Chrome 은 USB 열거 실패 같은 것을 stderr 로 흘립니다. PowerShell 5.1 에서
-        #    native stderr 를 `2>&1` 로 받으면 ErrorRecord 가 되어 $ErrorActionPreference
-        #    = 'Stop' 아래에서 <b>촬영이 통째로 죽습니다.</b> 그래서 리디렉션하지 않고
-        #    Chrome 쪽에서 로그를 끕니다.
+        # 🔴 Chrome 은 <b>성공 메시지까지</b> stderr 로 보냅니다("N bytes written to file").
+        #    PowerShell 5.1 은 native stderr 를 ErrorRecord 로 감싸므로, 이 스크립트를
+        #    `2>$null` 이나 `2>&1` 을 붙여 부르는 순간 $ErrorActionPreference='Stop' 에
+        #    걸려 촬영이 통째로 죽습니다 — 부르는 쪽이 어떻게 부르든 안 죽게
+        #    Start-Process 로 stderr 를 파일에 따로 받습니다.
         $args = @(
             '--headless=new', '--disable-gpu', '--hide-scrollbars',
             '--log-level=3', '--disable-logging', '--no-first-run',
@@ -83,7 +92,10 @@ foreach ($page in $pages) {
         if ($theme.Flag) { $args += $theme.Flag }
         $args += "$BaseUrl/$($page.File)"
 
-        & $chrome @args | Out-Null
+        $errLog = Join-Path $env:TEMP "onmal-shoot-$PID.log"
+        Start-Process -FilePath $chrome -ArgumentList $args -Wait -NoNewWindow `
+            -RedirectStandardError $errLog -RedirectStandardOutput 'NUL' | Out-Null
+        Remove-Item $errLog -ErrorAction SilentlyContinue
 
         if (Test-Path $target) {
             $shot++

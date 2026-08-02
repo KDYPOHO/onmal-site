@@ -1,0 +1,118 @@
+/* 온말 홈페이지 — 법적 문서 페이지 (개인정보처리방침 · 이용약관 · 저작권 및 라이선스).
+
+   🚫 <b>여기에는 애니메이션이 없습니다. 의도적입니다.</b>
+      법 문서가 마케팅처럼 움직이면 신뢰를 잃습니다. check-motion.ps1 이 이 파일에
+      @keyframes·animation 이 들어오는 것을 막습니다.
+
+   2026-08-02 C1: 세 페이지의 인라인 <style> 을 여기로 모았습니다. 세 페이지는
+   같아 보이지만 값이 조금씩 달랐습니다(본문 너비 · h2 여백 · code 크기 · li 간격 ·
+   표 최소 너비 · 좁은 화면 규칙). 지금 화면을 바꾸지 않기 위해 그 차이를
+   <b>지우지 않고 스코프로 옮겼습니다</b> — 합치는 것은 판단이 필요한 일이라
+   CSS 를 옮기는 조각에서 같이 하지 않습니다.
+
+   스코프는 <html data-i18n-scope> 값입니다. 이 속성은 site.js 가 페이지별 제목을
+   찾는 데 이미 쓰고 있어서 <b>마크업을 건드리지 않고</b> 쓸 수 있습니다 —
+   licenses.html 은 앱의 고지 대조 관문이 보는 파일이라 이게 중요합니다. */
+
+body{line-height:1.75}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+a{color:var(--jade)}
+
+/* ── nav ── */
+nav{display:flex;align-items:center;gap:14px;padding:26px 0;flex-wrap:wrap}
+nav a.home{margin-left:auto;font-family:var(--mono);font-size:12.5px;color:var(--dim);
+  text-decoration:none;border:1px solid var(--line);padding:7px 13px;border-radius:999px}
+nav a.home:hover{color:var(--paper);border-color:var(--jade)}
+.tbtn{margin-left:10px}
+
+/* ── 머리말 ── */
+header{padding:44px 0 10px}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--jade);display:flex;align-items:flex-end;gap:9px}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(30px,4.5vw,44px);
+  line-height:1.25;margin-top:14px}
+.meta{margin-top:14px;font-family:var(--mono);font-size:12.5px;color:var(--dim)}
+.lede{margin-top:18px;color:var(--dim);font-size:17px}
+
+/* 한 줄 요약 상자 — 전문을 안 읽는 사람이 유일하게 읽는 자리입니다. */
+.tldr{margin:36px 0 0;border:1px solid var(--jade);border-radius:14px;padding:22px 24px;
+  background:rgba(63,198,224,.06)}
+.tldr b{color:var(--jade)}
+
+/* ── 본문 ── */
+article{padding:24px 0 80px}
+h2{font-family:var(--display);font-weight:700;font-size:23px;margin:52px 0 16px;line-height:1.35}
+h2 .num{font-family:var(--mono);font-size:12px;color:var(--jade);display:block;
+  letter-spacing:.13em;margin-bottom:6px;font-weight:400}
+h3{font-size:17px;font-weight:600;margin:30px 0 10px}
+p{margin:12px 0}
+p.dim, li.dim{color:var(--dim)}
+ul{margin:12px 0 12px 22px}
+li{margin:7px 0}
+code{font-family:var(--mono);font-size:13.5px;background:var(--night);
+  border:1px solid var(--line);border-radius:6px;padding:2px 7px}
+
+/* 곁가지 — 본문 흐름을 끊지 않고 옆에서 한마디 하는 자리. */
+.callout{border-left:2px solid var(--moon);padding:4px 0 4px 20px;margin:20px 0;color:var(--dim)}
+.note{margin:18px 0;border-left:2px solid var(--line);padding:2px 0 2px 18px;
+  color:var(--dim);font-size:14.5px}
+.important{margin:36px 0 0;border:1px solid var(--moon);border-radius:14px;padding:22px 24px;
+  background:rgba(242,200,121,.06)}
+.important b{color:var(--moon)}
+
+/* 🔴 저작자 표시 상자 — CC-BY 4.0 의 라이선스 의무입니다. 안의 문구는 번역하지
+   않습니다(data-i18n 없음). check-i18n.ps1 이 그 사실을 검사합니다. */
+.attrib{margin:24px 0;border:1px solid var(--moon);border-radius:14px;padding:22px 24px;
+  background:rgba(242,200,121,.06)}
+.attrib .cc{font-weight:700;color:var(--moon);font-size:16.5px;line-height:1.6}
+.attrib a{color:var(--moon)}
+
+/* ── 표 ── */
+table{width:100%;border-collapse:collapse;margin:18px 0;font-size:14.5px}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--jade);border-bottom-color:var(--jade)}
+tbody th{font-weight:500;color:var(--dim);width:26%}
+
+/* ── 바닥 ── */
+footer{padding:40px 0 80px;border-top:1px solid var(--line);color:var(--dim);font-size:13.5px}
+footer a{color:var(--dim)}
+footer a:hover{color:var(--paper)}
+
+/* 좁은 화면에서 표를 세로로 폅니다. 항목·값이 두 줄이 되는 편이 낫습니다.
+   ⚠️ 저작권 문서의 표는 열이 다섯이라 이렇게 펴면 오히려 읽기 나빠집니다 —
+      그쪽은 아래에서 가로 스크롤로 갑니다. */
+@media (max-width:600px){
+  html:not([data-i18n-scope="lic"]) table,
+  html:not([data-i18n-scope="lic"]) thead,
+  html:not([data-i18n-scope="lic"]) tbody,
+  html:not([data-i18n-scope="lic"]) tr{display:block}
+  html:not([data-i18n-scope="lic"]) th,
+  html:not([data-i18n-scope="lic"]) td{display:block;width:100%!important}
+  html:not([data-i18n-scope="lic"]) thead{display:none}
+  html:not([data-i18n-scope="lic"]) td{border-bottom:none}
+  html:not([data-i18n-scope="lic"]) tr{border-bottom:1px solid var(--line);padding:8px 0}
+}
+
+/* ── 저작권 및 라이선스 페이지만 ──────────────────────────────────────────
+   표가 다섯 열이라 본문이 넓고, 코드 조각(패키지 이름)이 줄바꿈되면 안 됩니다. */
+html[data-i18n-scope="lic"] .wrap{max-width:860px}
+html[data-i18n-scope="lic"] nav a.home{margin-left:0}
+html[data-i18n-scope="lic"] .tbtn{margin-left:0}
+html[data-i18n-scope="lic"] h2{margin:56px 0 16px}
+html[data-i18n-scope="lic"] li{margin:6px 0}
+html[data-i18n-scope="lic"] code{font-size:13px;white-space:nowrap}
+
+/* 표는 좁은 화면에서 가로 스크롤. 본문이 밀려나면 안 됩니다. */
+html[data-i18n-scope="lic"] .scroll{overflow-x:auto;margin:18px 0;-webkit-overflow-scrolling:touch}
+html[data-i18n-scope="lic"] table{margin:0;min-width:540px}
+html[data-i18n-scope="lic"] thead th{white-space:nowrap}
+html[data-i18n-scope="lic"] td.lic{font-family:var(--mono);font-size:12.5px;color:var(--dim);white-space:nowrap}
+html[data-i18n-scope="lic"] td.name{font-weight:600}
+html[data-i18n-scope="lic"] tr.bundled td.name{color:var(--jade)}
+html[data-i18n-scope="lic"] .full li{font-family:var(--mono);font-size:13.5px}
+
+@media (max-width:620px){
+  html[data-i18n-scope="lic"] h2{font-size:20px;margin:44px 0 14px}
+  html[data-i18n-scope="lic"] .wrap{padding:0 18px}
+}
