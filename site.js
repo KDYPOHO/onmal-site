@@ -200,6 +200,54 @@
     }
   }
 
+  /* ── 네 단계도 차례로 ──────────────────────────────────────────────────
+     #shots 와 같은 장치입니다. 다른 점은 넘길 그림이 없다는 것 — 대신 지금 몇 번째
+     단계인지를 data-step(1~4)으로 알리고, 어떻게 보일지는 motion.css 가 정합니다.
+
+     🔴 <b>0 은 "재생 전"입니다.</b> 붙어 있지 않거나 구간 밖이면 0 으로 되돌립니다.
+        motion.css 는 0 에서 아무것도 가라앉히지 않으므로, JS 가 없거나 축소 모션이거나
+        좁은 화면이면 네 단계가 처음처럼 <b>한꺼번에 또렷하게</b> 보입니다. */
+  var flow = document.querySelector("#how .flow");
+  var howSec = document.getElementById("how");
+  var howPin = document.querySelector("#how .pin");
+
+  if (flow && howSec && howPin && window.requestAnimationFrame) {
+    var howCount = flow.querySelectorAll(".step").length;
+    var howQueued = false;
+
+    var howRest = function () {
+      if (flow.getAttribute("data-step") !== "0") { flow.setAttribute("data-step", "0"); }
+    };
+
+    var howAdvance = function () {
+      howQueued = false;
+      if (getComputedStyle(howPin).position !== "sticky") { howRest(); return; }
+
+      var box = howSec.getBoundingClientRect();
+      var travel = box.height - window.innerHeight;
+      if (travel <= 0) { howRest(); return; }
+
+      var progress = (0 - box.top) / travel;
+      if (progress < 0 || progress > 1) { howRest(); return; }
+
+      // 1부터 셉니다 — 화면의 01~04 와 같은 번호라야 읽는 사람이 헷갈리지 않습니다.
+      var n = Math.min(howCount, Math.floor(progress * howCount) + 1);
+      if (flow.getAttribute("data-step") !== String(n)) {
+        flow.setAttribute("data-step", String(n));
+      }
+    };
+
+    var howScroll = function () {
+      if (howQueued) { return; }
+      howQueued = true;
+      window.requestAnimationFrame(howAdvance);
+    };
+
+    window.addEventListener("scroll", howScroll, { passive: true });
+    window.addEventListener("resize", howScroll, { passive: true });
+    howAdvance();
+  }
+
   /* ── 데모 자막 ──────────────────────────────────────────────────────
      src(외국어)는 고정, dst(번역)는 지금 보고 있는 언어를 따라갑니다. */
   var DEMO_SRC = [

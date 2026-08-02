@@ -42,11 +42,34 @@
      안 그러면 글자 수가 다른 캡션으로 넘어갈 때 그림이 위아래로 튑니다. */
   #shots .shot-cap { min-height: 3.2em; }
 
+  /* ── 네 단계도 차례로 ─────────────────────────────────────────────────────
+     #shots 와 같은 장치인데 여기는 넘길 그림이 없습니다. 지금 단계만 남기고
+     나머지를 가라앉힙니다 — 계획서 §2 의 "01~04 가 차례로" 그대로입니다.
+
+     🔴 <c>data-step="0"</c> 일 때는 <b>아무것도 가라앉히지 않습니다.</b> 무JS·축소
+        모션·좁은 화면에서 0 에 머물기 때문입니다. 여기서 0 까지 어둡게 하면
+        JS 가 없는 사람은 <b>영원히 흐린 글</b>을 보게 됩니다.
+     ⚠️ 가라앉히는 것은 opacity 뿐입니다. 크기나 위치를 건드리면 매 프레임 레이아웃이
+        다시 돌고, 옆 칸까지 흔들립니다(§2 규칙 3). */
+  #how { padding-bottom: min(150vh, 1200px); }
+  #how .pin { position: sticky; top: 40px; }
+
+  .flow[data-step] .step { transition: opacity .34s var(--ease); }
+  .flow[data-step="1"] .step:not(:nth-child(1)),
+  .flow[data-step="2"] .step:not(:nth-child(2)),
+  .flow[data-step="3"] .step:not(:nth-child(3)),
+  .flow[data-step="4"] .step:not(:nth-child(4)) { opacity: .32; }
+
   /* 좁은 화면에서는 붙이지 않습니다. 세로가 짧아 그림과 캡션이 한 화면에 안 들어오면
-     붙이는 것이 <b>읽기를 방해</b>합니다. */
+     붙이는 것이 <b>읽기를 방해</b>합니다.
+     ⚠️ 가라앉히기도 함께 끕니다 — 2열로 접힌 상태에서 넷 중 셋이 흐리면
+        읽던 자리를 잃습니다. */
   @media (max-width: 880px), (max-height: 720px) {
     #shots { padding-bottom: 0; }
     #shots .pin { position: static; }
+    #how { padding-bottom: 0; }
+    #how .pin { position: static; }
+    .flow[data-step] .step { opacity: 1 !important; }
   }
 
   @supports (animation-timeline: view()) {
@@ -72,16 +95,23 @@
     section > .sub-lede { animation-range: entry 14% entry 54%; }
 
     /* ── 흐름 ─────────────────────────────────────────────────────────────
-       #how 네 단계 · #glossary 둘 · #audio 셋. 왼쪽부터 차례로 들어옵니다 —
-       단계에는 순서가 있으니 한꺼번에 나타나면 순서가 사라집니다. */
-    .flow .step {
+       #glossary 둘 · #audio 셋. 왼쪽부터 차례로 들어옵니다 — 단계에는 순서가
+       있으니 한꺼번에 나타나면 순서가 사라집니다.
+
+       🔴 <c>[data-step]</c> 이 붙은 흐름(#how)은 <b>뺍니다.</b> 그쪽은 스크롤로
+          재생하는 장면이라 등장 연출과 같은 요소를 다투게 됩니다 —
+          <b>실행 중인 애니메이션은 일반 선언을 이깁니다.</b> scene-in 의 to 가
+          opacity:1 이고 fill 이 both 이라, 위의 <c>opacity:.32</c> 가 아무 말 없이
+          무시됐습니다(2026-08-03 실제로 겪음. data-step 은 제대로 오르는데 흐려지지만
+          않아서, 원인이 CSS 인지 JS 인지 한참 갈리지 않았습니다). */
+    .flow:not([data-step]) .step {
       animation: scene-in linear both;
       animation-timeline: view();
     }
-    .flow .step:nth-child(1) { animation-range: entry 6%  entry 42%; }
-    .flow .step:nth-child(2) { animation-range: entry 11% entry 47%; }
-    .flow .step:nth-child(3) { animation-range: entry 16% entry 52%; }
-    .flow .step:nth-child(4) { animation-range: entry 21% entry 57%; }
+    .flow:not([data-step]) .step:nth-child(1) { animation-range: entry 6%  entry 42%; }
+    .flow:not([data-step]) .step:nth-child(2) { animation-range: entry 11% entry 47%; }
+    .flow:not([data-step]) .step:nth-child(3) { animation-range: entry 16% entry 52%; }
+    .flow:not([data-step]) .step:nth-child(4) { animation-range: entry 21% entry 57%; }
 
     /* ── 줄 목록 ──────────────────────────────────────────────────────────
        로드맵 열 줄 · 용어집 팩 다섯 · 단축키 일곱. 위에서 아래로 훑듯이.
