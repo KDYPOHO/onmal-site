@@ -51,7 +51,9 @@ if (-not $chrome) { throw "헤드리스로 쓸 Chrome/Edge 를 찾지 못했습�
 # 페이지마다 창 높이를 따로 둡니다. 내용보다 낮으면 아래가 잘리고, 지나치게 높으면
 # 빈 픽셀만 늘어 비교가 둔해집니다. 값은 2026-08-02 실측 + 여유입니다.
 $pages = @(
-    @{ File = 'index.html';       Height = 8400; Route = '' },
+    # 2026-08-03 C5 로 #glossary·#audio·#hands 가 들어와 10,619px 이 됐습니다.
+    # ⚠️ 실제보다 낮으면 <b>아래가 잘린 채</b> 찍히고 비교는 통과합니다 — 조용합니다.
+    @{ File = 'index.html';       Height = 11200; Route = '' },
     @{ File = 'privacy.html';     Height = 5200; Route = '#/privacy' },
     @{ File = 'terms.html';       Height = 4600; Route = '#/terms' },
     @{ File = 'licenses.html';    Height = 4800; Route = '#/licenses' },
