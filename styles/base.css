@@ -18,6 +18,18 @@ section[id]{scroll-margin-top:24px}
 body{
   background:var(--ink); color:var(--paper); font-family:var(--body);
   font-size:16px; -webkit-font-smoothing:antialiased;
+
+  /* 🔴 <b>한국어는 낱말 안에서 끊으면 안 됩니다.</b> 기본값은 글자 아무 데서나
+     끊으므로 "자막이" 가 <c>자 / 막이</c> 로, "지연이" 가 <c>지 / 연이</c> 로
+     갈라졌습니다 — 제목이 커질수록 더 자주 납니다. 애플 한국어 페이지도 body 에
+     같은 값을 겁니다(apple.com/kr 실측 2026-08-03: body·모든 제목 keep-all).
+     ⚠️ 짝인 <c>overflow-wrap</c> 은 <b>지우지 마십시오.</b> keep-all 만 두면 칸보다
+        긴 덩어리(이메일 주소·긴 영문 낱말)가 <b>칸 밖으로 삐져나갑니다.</b>
+        이 값은 삐져나갈 때만 끊습니다.
+     🚫 CJK 만의 규칙이 아닙니다 — 31개 언어가 이 한 줄을 함께 씁니다. 라틴·키릴은
+        원래 공백에서만 끊으므로 달라지는 것이 없고, 태국어(공백 없음)는
+        line-break 가 따로 봅니다. */
+  word-break:keep-all; overflow-wrap:break-word;
 }
 
 ::selection{background:var(--jade);color:var(--ink)}
