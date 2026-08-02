@@ -347,6 +347,18 @@ foreach ($r in $ROUTES) {
   }
 }
 
+# 장면(편집)과 움직임. 둘 다 <b>첫 화면에만</b> 겁니다 — 법 문서는 조용해야 합니다.
+# home.css <b>뒤</b>에 실려야 같은 명시도에서 이깁니다.
+# ⚠️ motion.css 는 파일 안에서 @media (prefers-reduced-motion: no-preference) 로
+#    스스로를 감싸고 있습니다. 원본에서는 <link media> 가 하던 일인데, 여기서는
+#    인라인이라 그 속성이 사라지기 때문입니다.
+foreach ($f in @('scene.css', 'motion.css')) {
+  $path = Join-Path $SiteRoot "styles\$f"
+  if (-not (Test-Path -LiteralPath $path)) { continue }
+  $scoped = Add-CssScope -Css (Read-TextFile $path) -Prefix '.route.home' -RootSel '.route.home'
+  [void]$cssBlocks.Add("/* ── $f → .route.home 로 스코프 ── */`n$scoped")
+}
+
 # ═══ 4. i18n 압축 임베드 ═══════════════════════════════════════════════════
 # 🔴 ConvertTo-Json 을 쓰지 않습니다. PS 5.1 이 비ASCII 를 \uXXXX 로 이스케이프해
 #    CJK 가 여섯 배로 붑니다. 원본 텍스트를 그대로 이어붙입니다.

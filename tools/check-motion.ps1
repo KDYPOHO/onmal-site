@@ -93,7 +93,19 @@ if (Test-Path $motionPath) {
 
     # @supports (animation-timeline: view()) 블록의 범위를 중괄호로 셉니다.
     $inside = New-Object 'System.Collections.Generic.HashSet[int]'
+
+    # 🔴 <b>울타리 조건문 자체는 검사 대상이 아닙니다.</b>
+    #    `@supports (animation-timeline: view())` 의 괄호 안에도 animation-timeline 이
+    #    있는데, 그 자리는 여는 중괄호 <b>앞</b>이라 아래 범위 계산에 안 잡힙니다.
+    #    빼 두지 않으면 <b>올바르게 쓴 motion.css 가 반드시 실패합니다</b> —
+    #    2026-08-03, motion.css 를 처음 만들면서 드러났습니다(C0 때는 파일이 없어
+    #    이 검사가 한 번도 돌아본 적이 없었습니다).
+    $condition = New-Object 'System.Collections.Generic.HashSet[int]'
+
     foreach ($m in [regex]::Matches($motion, '@supports[^{]*animation-timeline[^{]*\{')) {
+        foreach ($c in [regex]::Matches($m.Value, 'animation-timeline\s*:')) {
+            [void]$condition.Add($m.Index + $c.Index)
+        }
         $depth = 0
         for ($i = $m.Index + $m.Length - 1; $i -lt $motion.Length; $i++) {
             if ($motion[$i] -eq '{') { $depth++ }
@@ -106,6 +118,7 @@ if (Test-Path $motionPath) {
     }
 
     foreach ($m in [regex]::Matches($motion, 'animation-timeline\s*:')) {
+        if ($condition.Contains($m.Index)) { continue }   # 울타리 조건문 자신
         Check 'C9' ($inside.Contains($m.Index)) `
             "🔴 motion.css $($m.Index) 위치의 animation-timeline 이 @supports 밖에 있습니다 — Firefox 에서 모든 애니메이션이 로드 즉시 한꺼번에 재생됩니다(§2 규칙 2)."
     }
