@@ -34,7 +34,10 @@ param(
     [string]$CompareWith = '',
     [string]$Root = (Split-Path -Parent $PSScriptRoot),
     [string]$BaseUrl = 'http://localhost:8765',
-    [int]$Width = 1280
+    [int]$Width = 1280,
+    # 원본 페이지 대신 <b>아티팩트 산출물</b>의 라우트를 찍습니다. 파일 이름은 같게
+    # 두어 -CompareWith 로 원본과 바로 견줄 수 있습니다(A4 이식 충실도 대조).
+    [switch]$Artifact
 )
 
 $ErrorActionPreference = 'Stop'
@@ -48,13 +51,17 @@ if (-not $chrome) { throw "헤드리스로 쓸 Chrome/Edge 를 찾지 못했습�
 # 페이지마다 창 높이를 따로 둡니다. 내용보다 낮으면 아래가 잘리고, 지나치게 높으면
 # 빈 픽셀만 늘어 비교가 둔해집니다. 값은 2026-08-02 실측 + 여유입니다.
 $pages = @(
-    @{ File = 'index.html';       Height = 8400 },
-    @{ File = 'privacy.html';     Height = 5200 },
-    @{ File = 'terms.html';       Height = 4600 },
-    @{ File = 'licenses.html';    Height = 4800 },
-    @{ File = 'privacy.en.html';  Height = 5200 },
-    @{ File = 'terms.en.html';    Height = 4600 }
+    @{ File = 'index.html';       Height = 8400; Route = '' },
+    @{ File = 'privacy.html';     Height = 5200; Route = '#/privacy' },
+    @{ File = 'terms.html';       Height = 4600; Route = '#/terms' },
+    @{ File = 'licenses.html';    Height = 4800; Route = '#/licenses' },
+    # 아직 없는 영어본(C8). 아티팩트에도 대응 라우트가 없습니다.
+    @{ File = 'privacy.en.html';  Height = 5200; Route = $null },
+    @{ File = 'terms.en.html';    Height = 4600; Route = $null }
 )
+
+# 아티팩트는 파일 하나가 곧 네 페이지입니다 — 해시로 라우트를 고릅니다.
+$artifactPage = 'dist/preview.html'
 $themes = @(
     @{ Name = 'light'; Flag = '' },
     @{ Name = 'dark';  Flag = '--force-dark-mode' }
@@ -68,7 +75,14 @@ Write-Host "촬영 → $outDir" -ForegroundColor White
 
 $shot = 0
 foreach ($page in $pages) {
-    if (-not (Test-Path (Join-Path $Root $page.File))) { continue }
+    if ($Artifact) {
+        # 아티팩트에 대응 라우트가 없는 페이지는 건너뜁니다.
+        if (-not $page.Route -and $page.File -ne 'index.html') { continue }
+        if (-not (Test-Path (Join-Path $Root $artifactPage))) {
+            throw "산출물이 없습니다: $artifactPage — 먼저 tools\build-artifact.ps1 을 돌리십시오."
+        }
+    }
+    elseif (-not (Test-Path (Join-Path $Root $page.File))) { continue }
 
     foreach ($theme in $themes) {
         $name = [System.IO.Path]::GetFileNameWithoutExtension($page.File) -replace '\.', '-'
@@ -90,7 +104,8 @@ foreach ($page in $pages) {
             "--screenshot=$target"
         )
         if ($theme.Flag) { $args += $theme.Flag }
-        $args += "$BaseUrl/$($page.File)"
+        if ($Artifact) { $args += "$BaseUrl/$artifactPage$($page.Route)" }
+        else { $args += "$BaseUrl/$($page.File)" }
 
         $errLog = Join-Path $env:TEMP "onmal-shoot-$PID.log"
         Start-Process -FilePath $chrome -ArgumentList $args -Wait -NoNewWindow `
