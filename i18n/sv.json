@@ -197,12 +197,6 @@
   "lic.model_note": "Modellvikterna ingår inte i appen. De laddas ned separat och varje fil verifieras med SHA-256.",
 
   "lic.font_h2": "Typsnitt",
-  "lic.font_pretendard": "Medföljer appen (Regular · Medium · SemiBold)",
-  "lic.font_jetbrains": "Medföljer inte — används på den här webbplatsen",
-  "lic.font_noto": "Medföljer inte — ersätts av systemtypsnitt",
-  "lic.font_gowun": "Medföljer inte — används på den här webbplatsen",
-  "lic.font_note1": "Den fullständiga OFL-texten för det medföljande Pretendard distribueras tillsammans med appen. Enligt OFL säljs typsnittet aldrig separat, och Reserved Font Name är ”Pretendard”.",
-  "lic.font_note2": "Typsnitt som vi inte inkluderar ersätts av dem som redan finns i systemet. Eftersom vi inte distribuerar dem uppstår inga OFL-skyldigheter.",
 
   "lic.icon_h2": "Ikoner",
   "lic.icon_lucide": "Används — 17 ikoner i inställningsfönstret är inbäddade som SVG-banor. Inget paket, inget ikontypsnitt.",

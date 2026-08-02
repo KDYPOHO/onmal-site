@@ -197,12 +197,6 @@
   "lic.model_note": "模型權重不包含在應用程式中。需另行下載，並以 SHA-256 驗證下載的檔案。",
 
   "lic.font_h2": "字型",
-  "lic.font_pretendard": "隨應用程式提供（Regular · Medium · SemiBold）",
-  "lic.font_jetbrains": "未隨應用程式提供 — 用於本網頁",
-  "lic.font_noto": "未隨應用程式提供 — 由系統字型替代",
-  "lic.font_gowun": "未隨應用程式提供 — 用於本網頁",
-  "lic.font_note1": "隨應用程式提供的 Pretendard 附有 OFL 全文。依 OFL 條款，字型不會單獨販售，Reserved Font Name 為「Pretendard」。",
-  "lic.font_note2": "未隨應用程式提供的字型，由系統既有的字型替代。它們不進入散布套件，因此不產生 OFL 義務。",
 
   "lic.icon_h2": "圖示",
   "lic.icon_lucide": "使用中 — 設定視窗的 17 個圖示以 SVG 路徑內嵌。不使用套件或圖示字型。",

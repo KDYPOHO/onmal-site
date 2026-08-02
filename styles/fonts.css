@@ -1,0 +1,70 @@
+/* 온말 홈페이지 — 자체 호스팅 글꼴.
+   🔴 여기서 정한 이름을 tokens.css 의 --display · --body · --mono 가 그대로
+      부릅니다. 이름이 한 글자만 어긋나도 <b>아무 말 없이</b> 시스템 글꼴로
+      떨어집니다 — 화면은 멀쩡해 보이고 줄바꿈만 달라집니다.
+
+   순서는 tokens.css <b>앞</b>입니다. @font-face 는 변수를 쓰지 않아 순서를 안 타고,
+   앞에 두면 글꼴을 그만큼 일찍 받기 시작합니다.
+
+   2026-08-03 A3: Google Fonts 와 jsDelivr 에서 받아 쓰던 것을 여기로 옮겼습니다.
+   근거는 성능이 아니라 <b>일관성</b>입니다 — "IP 를 수집하지 않습니다"를 1면에
+   걸면서 방문자 IP 를 Google·jsDelivr 에 넘기는 것은 모순이었습니다.
+   외부 origin 3 → 0.
+
+   ⚠️ 파일은 <b>이 사이트에 나오는 2,056자로 잘라 둔 것</b>입니다
+      (tools/make-fonts.py). 섹션이나 번역을 더하면 <b>반드시 다시 돌리십시오</b> —
+      새 글자는 경고 없이 시스템 글꼴로 떨어집니다.
+
+   🔴 자른 글꼴을 동봉하므로 OFL 의무가 생깁니다. 전문은 fonts/*-OFL.txt 에
+      함께 커밋했고, licenses.html 04 절이 이 사실을 밝힙니다. */
+
+/* 제목 — 명조. h1 · h2 · nav 로고에 씁니다.
+   ⚠️ <b>700 한 벌뿐입니다.</b> --display 를 부르는 자리가 전부 font-weight:700 이라
+      400 은 한 번도 안 쓰였습니다(2026-08-03 실측). 안 쓰는 굵기를 두면 아티팩트가
+      98 KB 무거워집니다 — data: URI 는 안 쓰더라도 파일 안에 그대로 들어갑니다.
+      400 이 필요해지면 tools/make-fonts.py 의 굵기 목록부터 되살리십시오. */
+@font-face {
+  font-family: "Gowun Batang";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/GowunBatang-700.woff2") format("woff2");
+}
+
+/* 수치·라벨 — 모노. */
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/JetBrainsMono-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/JetBrainsMono-500.woff2") format("woff2");
+}
+
+/* 본문 — 산세. 가변 글꼴 <b>한 벌</b>이 400~700 을 다 냅니다.
+   굵기마다 파일을 두면 같은 글리프를 네 번 나르게 됩니다.
+
+   🔴 <b>이것은 Pretendard 입니다.</b> 이름이 다른 이유는 하나뿐입니다 —
+      Pretendard 는 저작권 줄에 <c>with Reserved Font Name 'Pretendard'</c> 가
+      붙어 있고, OFL §3 은 <b>고친 판(자른 것도 고친 것입니다)이 그 이름을 쓰는
+      것을 금합니다.</b> 그래서 자른 판의 이름만 바꿨습니다. 글꼴 파일 안의
+      저작권(길형진)과 라이선스 문자열은 <b>그대로 둡니다</b> — 바꾼 것은 이름뿐입니다.
+      licenses.html 04 절이 이 사실을 밝힙니다.
+      ⚠️ Gowun Batang 과 JetBrains Mono 는 RFN 이 없어 이름을 그대로 씁니다.
+
+   ⚠️ format 은 <c>woff2</c> 입니다. 가변 글꼴이라고 <c>woff2-variations</c> 를 쓰면
+      그 값을 모르는 브라우저가 <b>src 전체를 건너뜁니다</b> — 글꼴이 아예 안 뜨고,
+      역시 조용합니다. format 은 담는 그릇을 말하는 것이지 가변 여부가 아닙니다. */
+@font-face {
+  font-family: "Onmal Sans";
+  font-style: normal;
+  font-weight: 45 920;
+  font-display: swap;
+  src: url("../fonts/PretendardVariable.woff2") format("woff2");
+}

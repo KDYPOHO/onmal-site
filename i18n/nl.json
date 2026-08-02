@@ -197,12 +197,6 @@
   "lic.model_note": "De modelgewichten zitten niet in de app. Ze worden apart gedownload en elk bestand wordt met SHA-256 geverifieerd.",
 
   "lic.font_h2": "Lettertypen",
-  "lic.font_pretendard": "Meegeleverd met de app (Regular · Medium · SemiBold)",
-  "lic.font_jetbrains": "Niet meegeleverd — gebruikt op deze website",
-  "lic.font_noto": "Niet meegeleverd — vervangen door systeemlettertypen",
-  "lic.font_gowun": "Niet meegeleverd — gebruikt op deze website",
-  "lic.font_note1": "De volledige OFL-tekst van het meegeleverde Pretendard wordt met de app verspreid. Volgens de OFL wordt het lettertype nooit afzonderlijk verkocht en is de Reserved Font Name \"Pretendard\".",
-  "lic.font_note2": "Lettertypen die we niet meeleveren, worden vervangen door de lettertypen die al op het systeem staan. Wij verspreiden ze niet, dus ontstaat er geen OFL-verplichting.",
 
   "lic.icon_h2": "Pictogrammen",
   "lic.icon_lucide": "In gebruik — 17 pictogrammen van het instellingenvenster zijn als SVG-paden ingesloten. Geen pakket, geen pictogramlettertype.",

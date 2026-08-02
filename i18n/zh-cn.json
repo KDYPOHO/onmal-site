@@ -197,12 +197,6 @@
   "lic.model_note": "模型权重不包含在应用中。需另行下载，并使用 SHA-256 校验下载的文件。",
 
   "lic.font_h2": "字体",
-  "lic.font_pretendard": "随应用一同分发（Regular · Medium · SemiBold）",
-  "lic.font_jetbrains": "未随应用分发 — 用于本网页",
-  "lic.font_noto": "未随应用分发 — 由系统字体替代",
-  "lic.font_gowun": "未随应用分发 — 用于本网页",
-  "lic.font_note1": "随应用分发的 Pretendard 附有 OFL 全文。依据 OFL 条款，字体不会单独出售，Reserved Font Name 为“Pretendard”。",
-  "lic.font_note2": "未随应用分发的字体由系统中已有的字体替代。它们不进入分发包，因此不产生 OFL 义务。",
 
   "lic.icon_h2": "图标",
   "lic.icon_lucide": "使用中 — 设置窗口的 17 个图标以 SVG 路径内联。不使用软件包或图标字体。",

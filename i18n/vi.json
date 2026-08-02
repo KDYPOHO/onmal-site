@@ -197,12 +197,6 @@
   "lic.model_note": "Trọng số mô hình không đi kèm ứng dụng. Chúng được tải về riêng và mỗi tệp đều được kiểm tra bằng SHA-256.",
 
   "lic.font_h2": "Phông chữ",
-  "lic.font_pretendard": "Đi kèm ứng dụng (Regular · Medium · SemiBold)",
-  "lic.font_jetbrains": "Không đi kèm — dùng trên trang web này",
-  "lic.font_noto": "Không đi kèm — thay bằng phông hệ thống",
-  "lic.font_gowun": "Không đi kèm — dùng trên trang web này",
-  "lic.font_note1": "Toàn văn giấy phép OFL của phông Pretendard đi kèm được phân phối cùng ứng dụng. Theo OFL, phông chữ không bao giờ được bán riêng và Reserved Font Name là \"Pretendard\".",
-  "lic.font_note2": "Những phông chúng tôi không kèm theo sẽ được thay bằng phông đã có sẵn trên hệ thống. Chúng không được chúng tôi phân phối nên không phát sinh nghĩa vụ OFL.",
 
   "lic.icon_h2": "Biểu tượng",
   "lic.icon_lucide": "Đang dùng — 17 biểu tượng cửa sổ cài đặt được nhúng dưới dạng đường dẫn SVG. Không dùng gói hay phông biểu tượng.",

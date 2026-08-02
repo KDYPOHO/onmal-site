@@ -197,12 +197,6 @@
   "lic.model_note": "Les poids des modèles ne sont pas fournis avec l'application. Ils sont téléchargés séparément et vérifiés par SHA-256.",
 
   "lic.font_h2": "Polices",
-  "lic.font_pretendard": "Fournie avec l'application (Regular · Medium · SemiBold)",
-  "lic.font_jetbrains": "Non fournie — utilisée sur ce site",
-  "lic.font_noto": "Non fournie — remplacée par les polices du système",
-  "lic.font_gowun": "Non fournie — utilisée sur ce site",
-  "lic.font_note1": "Le texte complet de la licence OFL de la police Pretendard fournie accompagne l'application. Conformément à l'OFL, la police n'est jamais vendue seule et le Reserved Font Name est « Pretendard ».",
-  "lic.font_note2": "Les polices que nous ne fournissons pas sont remplacées par celles déjà installées sur le système. Elles ne sont pas redistribuées, aucune obligation OFL ne s'applique donc.",
 
   "lic.icon_h2": "Icônes",
   "lic.icon_lucide": "Utilisé — 17 icônes de la fenêtre de réglages intégrées sous forme de tracés SVG. Ni paquet, ni police d'icônes.",

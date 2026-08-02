@@ -197,12 +197,6 @@
   "lic.model_note": "Ponderile modelelor nu sunt incluse în aplicație. Se descarcă separat, iar fiecare fișier este verificat cu SHA-256.",
 
   "lic.font_h2": "Fonturi",
-  "lic.font_pretendard": "Inclus în aplicație (Regular · Medium · SemiBold)",
-  "lic.font_jetbrains": "Neinclus — folosit pe acest site",
-  "lic.font_noto": "Neinclus — înlocuit de fonturile sistemului",
-  "lic.font_gowun": "Neinclus — folosit pe acest site",
-  "lic.font_note1": "Textul integral al licenței OFL pentru fontul Pretendard inclus este distribuit împreună cu aplicația. Conform OFL, fontul nu este vândut niciodată separat, iar Reserved Font Name este „Pretendard”.",
-  "lic.font_note2": "Fonturile pe care nu le includem sunt înlocuite cu cele deja instalate în sistem. Deoarece nu le distribuim, nu apare nicio obligație conform OFL.",
 
   "lic.icon_h2": "Pictograme",
   "lic.icon_lucide": "În uz — cele 17 pictograme ale ferestrei de setări sunt încorporate ca trasee SVG. Fără pachet și fără font de pictograme.",

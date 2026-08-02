@@ -197,12 +197,6 @@
   "lic.model_note": "Os pesos dos modelos não vêm no aplicativo. Eles são baixados separadamente e cada arquivo é verificado com SHA-256.",
 
   "lic.font_h2": "Fontes",
-  "lic.font_pretendard": "Incluída no aplicativo (Regular · Medium · SemiBold)",
-  "lic.font_jetbrains": "Não incluída — usada neste site",
-  "lic.font_noto": "Não incluída — substituída por fontes do sistema",
-  "lic.font_gowun": "Não incluída — usada neste site",
-  "lic.font_note1": "O texto completo da OFL da Pretendard incluída acompanha o aplicativo. Conforme a OFL, a fonte nunca é vendida separadamente e o Reserved Font Name é \"Pretendard\".",
-  "lic.font_note2": "As fontes que não incluímos são substituídas pelas já instaladas no sistema. Elas não são redistribuídas, portanto nenhuma obrigação da OFL se aplica.",
 
   "lic.icon_h2": "Ícones",
   "lic.icon_lucide": "Em uso — 17 ícones da janela de configurações embutidos como traçados SVG. Sem pacote e sem fonte de ícones.",

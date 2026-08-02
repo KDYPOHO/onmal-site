@@ -197,12 +197,6 @@
   "lic.model_note": "モデルの重みはアプリに含まれていません。別途ダウンロードし、取得したファイルは SHA-256 で検証します。",
 
   "lic.font_h2": "フォント",
-  "lic.font_pretendard": "アプリに同梱（Regular · Medium · SemiBold）",
-  "lic.font_jetbrains": "非同梱 — このウェブページで使用",
-  "lic.font_noto": "非同梱 — システムフォントで代替",
-  "lic.font_gowun": "非同梱 — このウェブページで使用",
-  "lic.font_note1": "同梱した Pretendard の OFL 全文はアプリの配布物に含まれています。OFL の条件に従い、フォント単体では販売せず、Reserved Font Name は「Pretendard」です。",
-  "lic.font_note2": "同梱していないフォントは、システムに既にあるもので代替されます。配布物に含まれないため OFL の義務も生じません。",
 
   "lic.icon_h2": "アイコン",
   "lic.icon_lucide": "使用中 — 設定画面のアイコン17種を SVG パスとしてインライン化。パッケージもアイコンフォントも使いません。",

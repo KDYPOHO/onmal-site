@@ -13,8 +13,13 @@
   --jade:#3FC6E0; --moon:#F2C879; --paper:#E9EEF2; --dim:#8FA6B2; --coral:#F07862;
   --card-bg:linear-gradient(170deg,rgba(30,42,69,.42),transparent);
 
+  /* 2026-08-03 A3: 셋 다 fonts/ 에서 직접 냅니다(styles/fonts.css). 외부 origin 0.
+     "Onmal Sans" 는 <b>Pretendard 를 자른 판</b>입니다 — Reserved Font Name 때문에
+     이름만 바꿨습니다(fonts.css 의 설명 참조). 뒤의 Pretendard 둘은 그 글꼴을 이미
+     설치해 둔 사람을 위한 자리이고, 자른 판에 없는 글자(한자·가나·태국어 등)는
+     여기를 지나 시스템 글꼴로 갑니다. */
   --display:"Gowun Batang", serif;
-  --body:"Pretendard Variable", Pretendard, system-ui, sans-serif;
+  --body:"Onmal Sans", "Pretendard Variable", Pretendard, system-ui, sans-serif;
   --mono:"JetBrains Mono", ui-monospace, monospace;
 
   --ease:cubic-bezier(.32,.72,0,1);

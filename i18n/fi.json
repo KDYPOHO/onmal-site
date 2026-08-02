@@ -197,12 +197,6 @@
   "lic.model_note": "Mallien painot eivät sisälly sovellukseen. Ne ladataan erikseen, ja jokainen tiedosto tarkistetaan SHA-256-tiivisteellä.",
 
   "lic.font_h2": "Fontit",
-  "lic.font_pretendard": "Sisältyy sovellukseen (Regular · Medium · SemiBold)",
-  "lic.font_jetbrains": "Ei sisälly — käytössä tällä sivustolla",
-  "lic.font_noto": "Ei sisälly — korvataan järjestelmän fonteilla",
-  "lic.font_gowun": "Ei sisälly — käytössä tällä sivustolla",
-  "lic.font_note1": "Mukana toimitettavan Pretendardin täysi OFL-teksti jaellaan sovelluksen mukana. OFL:n mukaisesti fonttia ei koskaan myydä erikseen, ja Reserved Font Name on ”Pretendard”.",
-  "lic.font_note2": "Fontit, joita emme sisällytä, korvataan järjestelmässä jo olevilla. Koska emme jaele niitä, OFL-velvoitteita ei synny.",
 
   "lic.icon_h2": "Kuvakkeet",
   "lic.icon_lucide": "Käytössä — asetusikkunan 17 kuvaketta on upotettu SVG-poluiksi. Ei pakettia eikä kuvakefonttia.",

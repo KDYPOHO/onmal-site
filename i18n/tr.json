@@ -197,12 +197,6 @@
   "lic.model_note": "Model ağırlıkları uygulamanın içinde gelmez. Ayrıca indirilir ve her dosya SHA-256 ile doğrulanır.",
 
   "lic.font_h2": "Yazı tipleri",
-  "lic.font_pretendard": "Uygulamaya dahil (Regular · Medium · SemiBold)",
-  "lic.font_jetbrains": "Dahil değil — bu web sayfasında kullanılıyor",
-  "lic.font_noto": "Dahil değil — sistem yazı tipleriyle değiştirilir",
-  "lic.font_gowun": "Dahil değil — bu web sayfasında kullanılıyor",
-  "lic.font_note1": "Uygulamaya dahil edilen Pretendard'ın tam OFL metni uygulamayla birlikte dağıtılır. OFL uyarınca yazı tipi tek başına satılmaz ve Reserved Font Name \"Pretendard\"dır.",
-  "lic.font_note2": "Dahil etmediğimiz yazı tipleri, sistemde hâlihazırda bulunanlarla değiştirilir. Bizim tarafımızdan dağıtılmadıkları için OFL yükümlülüğü doğmaz.",
 
   "lic.icon_h2": "Simgeler",
   "lic.icon_lucide": "Kullanımda — ayarlar penceresindeki 17 simge SVG yolu olarak gömülü. Paket yok, simge yazı tipi yok.",

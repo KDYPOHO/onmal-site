@@ -197,12 +197,6 @@
   "lic.model_note": "Pemberat model tidak disertakan dalam aplikasi. Ia dimuat turun secara berasingan dan setiap fail disahkan dengan SHA-256.",
 
   "lic.font_h2": "Fon",
-  "lic.font_pretendard": "Disertakan dalam aplikasi (Regular · Medium · SemiBold)",
-  "lic.font_jetbrains": "Tidak disertakan — digunakan di laman web ini",
-  "lic.font_noto": "Tidak disertakan — digantikan dengan fon sistem",
-  "lic.font_gowun": "Tidak disertakan — digunakan di laman web ini",
-  "lic.font_note1": "Teks penuh OFL bagi Pretendard yang disertakan diedarkan bersama aplikasi. Menurut OFL, fon tidak pernah dijual secara berasingan dan Reserved Font Name ialah \"Pretendard\".",
-  "lic.font_note2": "Fon yang tidak kami sertakan digantikan dengan fon yang sedia ada dalam sistem. Kerana ia tidak kami edarkan, tiada kewajipan OFL timbul.",
 
   "lic.icon_h2": "Ikon",
   "lic.icon_lucide": "Digunakan — 17 ikon tetingkap tetapan dibenamkan sebagai laluan SVG. Tiada pakej, tiada fon ikon.",

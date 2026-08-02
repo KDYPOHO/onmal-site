@@ -197,12 +197,6 @@
   "lic.model_note": "I pesi dei modelli non sono inclusi nell'applicazione. Vengono scaricati separatamente e ogni file è verificato con SHA-256.",
 
   "lic.font_h2": "Caratteri",
-  "lic.font_pretendard": "Incluso nell'applicazione (Regular · Medium · SemiBold)",
-  "lic.font_jetbrains": "Non incluso — usato in questo sito",
-  "lic.font_noto": "Non incluso — sostituito dai caratteri di sistema",
-  "lic.font_gowun": "Non incluso — usato in questo sito",
-  "lic.font_note1": "Il testo completo della OFL del Pretendard incluso accompagna l'applicazione. Secondo la OFL il carattere non viene mai venduto da solo e il Reserved Font Name è «Pretendard».",
-  "lic.font_note2": "I caratteri che non includiamo vengono sostituiti da quelli già presenti nel sistema. Non essendo ridistribuiti, non sorge alcun obbligo OFL.",
 
   "lic.icon_h2": "Icone",
   "lic.icon_lucide": "In uso — 17 icone della finestra delle impostazioni incorporate come tracciati SVG. Nessun pacchetto, nessun font di icone.",

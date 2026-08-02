@@ -197,12 +197,6 @@
   "lic.model_note": "Model weights are not bundled with the app. They are downloaded separately, and each file is verified with SHA-256.",
 
   "lic.font_h2": "Fonts",
-  "lic.font_pretendard": "Bundled with the app (Regular · Medium · SemiBold)",
-  "lic.font_jetbrains": "Not bundled — used on this website",
-  "lic.font_noto": "Not bundled — falls back to system fonts",
-  "lic.font_gowun": "Not bundled — used on this website",
-  "lic.font_note1": "The full OFL text for the bundled Pretendard ships with the app. Per the OFL, the font is never sold on its own, and the Reserved Font Name is \"Pretendard\".",
-  "lic.font_note2": "Fonts we do not bundle fall back to what is already installed on the system. They are not redistributed, so no OFL obligation arises.",
 
   "lic.icon_h2": "Icons",
   "lic.icon_lucide": "In use — 17 settings-window icons inlined as SVG paths. No package, no icon font.",

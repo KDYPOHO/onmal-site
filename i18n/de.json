@@ -197,12 +197,6 @@
   "lic.model_note": "Die Modellgewichte sind nicht in der App enthalten. Sie werden separat heruntergeladen und per SHA-256 geprüft.",
 
   "lic.font_h2": "Schriften",
-  "lic.font_pretendard": "In der App enthalten (Regular · Medium · SemiBold)",
-  "lic.font_jetbrains": "Nicht enthalten — auf dieser Website verwendet",
-  "lic.font_noto": "Nicht enthalten — wird durch Systemschriften ersetzt",
-  "lic.font_gowun": "Nicht enthalten — auf dieser Website verwendet",
-  "lic.font_note1": "Der vollständige OFL-Text für das mitgelieferte Pretendard liegt der App bei. Gemäß OFL wird die Schrift nicht einzeln verkauft, und der Reserved Font Name lautet „Pretendard“.",
-  "lic.font_note2": "Nicht mitgelieferte Schriften werden durch bereits im System vorhandene ersetzt. Sie werden nicht von uns verbreitet, daher entstehen keine OFL-Pflichten.",
 
   "lic.icon_h2": "Symbole",
   "lic.icon_lucide": "In Verwendung — 17 Symbole des Einstellungsfensters sind als SVG-Pfade eingebettet. Kein Paket, keine Symbolschrift.",

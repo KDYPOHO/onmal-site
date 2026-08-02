@@ -197,12 +197,6 @@
   "lic.model_note": "Váhy modelů nejsou součástí aplikace. Stahují se zvlášť a každý soubor se ověřuje pomocí SHA-256.",
 
   "lic.font_h2": "Písma",
-  "lic.font_pretendard": "Součástí aplikace (Regular · Medium · SemiBold)",
-  "lic.font_jetbrains": "Není součástí — použito na této stránce",
-  "lic.font_noto": "Není součástí — nahrazeno systémovými písmy",
-  "lic.font_gowun": "Není součástí — použito na této stránce",
-  "lic.font_note1": "Úplné znění licence OFL pro přiložené písmo Pretendard je distribuováno spolu s aplikací. Podle OFL se písmo nikdy neprodává samostatně a Reserved Font Name zní „Pretendard“.",
-  "lic.font_note2": "Písma, která nepřikládáme, jsou nahrazena těmi, která už v systému jsou. Protože je nedistribuujeme, žádná povinnost podle OFL nevzniká.",
 
   "lic.icon_h2": "Ikony",
   "lic.icon_lucide": "Používá se — 17 ikon okna nastavení je vloženo jako cesty SVG. Bez balíčku a bez ikonového písma.",

@@ -197,12 +197,6 @@
   "lic.model_note": "Bobot model tidak disertakan dalam aplikasi. Bobot diunduh secara terpisah dan setiap berkas diverifikasi dengan SHA-256.",
 
   "lic.font_h2": "Fon",
-  "lic.font_pretendard": "Disertakan dalam aplikasi (Regular · Medium · SemiBold)",
-  "lic.font_jetbrains": "Tidak disertakan — dipakai di halaman web ini",
-  "lic.font_noto": "Tidak disertakan — digantikan fon sistem",
-  "lic.font_gowun": "Tidak disertakan — dipakai di halaman web ini",
-  "lic.font_note1": "Teks lengkap OFL untuk Pretendard yang disertakan ikut didistribusikan bersama aplikasi. Sesuai OFL, fon tidak pernah dijual terpisah, dan Reserved Font Name-nya adalah \"Pretendard\".",
-  "lic.font_note2": "Fon yang tidak kami sertakan digantikan oleh fon yang sudah terpasang di sistem. Karena tidak kami distribusikan, tidak timbul kewajiban OFL.",
 
   "lic.icon_h2": "Ikon",
   "lic.icon_lucide": "Digunakan — 17 ikon jendela pengaturan disematkan sebagai jalur SVG. Tanpa paket, tanpa fon ikon.",

@@ -197,12 +197,6 @@
   "lic.model_note": "Wagi modeli nie są dołączone do aplikacji. Pobiera się je osobno, a każdy plik jest weryfikowany sumą SHA-256.",
 
   "lic.font_h2": "Kroje pisma",
-  "lic.font_pretendard": "Dołączony do aplikacji (Regular · Medium · SemiBold)",
-  "lic.font_jetbrains": "Niedołączony — używany na tej stronie",
-  "lic.font_noto": "Niedołączony — zastępowany krojami systemowymi",
-  "lic.font_gowun": "Niedołączony — używany na tej stronie",
-  "lic.font_note1": "Pełny tekst licencji OFL dołączonego kroju Pretendard jest dystrybuowany razem z aplikacją. Zgodnie z OFL krój nigdy nie jest sprzedawany osobno, a Reserved Font Name to „Pretendard”.",
-  "lic.font_note2": "Kroje, których nie dołączamy, są zastępowane tymi już zainstalowanymi w systemie. Nie są przez nas rozpowszechniane, więc nie powstaje żaden obowiązek wynikający z OFL.",
 
   "lic.icon_h2": "Ikony",
   "lic.icon_lucide": "W użyciu — 17 ikon okna ustawień osadzonych jako ścieżki SVG. Bez pakietu i bez czcionki ikon.",

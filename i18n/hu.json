@@ -197,12 +197,6 @@
   "lic.model_note": "A modellsúlyok nem részei az alkalmazásnak. Külön töltődnek le, és minden fájlt SHA-256 ellenőrzőösszeggel hitelesítünk.",
 
   "lic.font_h2": "Betűtípusok",
-  "lic.font_pretendard": "Az alkalmazás része (Regular · Medium · SemiBold)",
-  "lic.font_jetbrains": "Nem része — ezen a weboldalon használjuk",
-  "lic.font_noto": "Nem része — rendszerbetűtípusok helyettesítik",
-  "lic.font_gowun": "Nem része — ezen a weboldalon használjuk",
-  "lic.font_note1": "A mellékelt Pretendard teljes OFL-szövege az alkalmazással együtt kerül terjesztésre. Az OFL szerint a betűtípust soha nem árusítjuk önmagában, a Reserved Font Name pedig „Pretendard”.",
-  "lic.font_note2": "A nem mellékelt betűtípusokat a rendszerben már meglévők helyettesítik. Mivel ezeket nem terjesztjük, OFL-kötelezettség sem keletkezik.",
 
   "lic.icon_h2": "Ikonok",
   "lic.icon_lucide": "Használatban — a beállítások ablak 17 ikonja SVG-útvonalként van beágyazva. Nincs csomag és nincs ikonbetűtípus.",
