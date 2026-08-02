@@ -77,9 +77,11 @@
 @media (min-width: 1240px) {
   .reel .shot-view { margin-inline: -72px; }
 }
-/* 띠 안에서는 위아래 여백을 띠가 맡습니다 — 섹션이 각자 또 벌리면 띠만 길어집니다. */
-.reel #glossary { padding-top: 132px; }
-.reel #shots    { padding: 124px 0 132px; }
+/* 띠 안에서는 위아래 여백을 띠가 맡습니다 — 섹션이 각자 또 벌리면 띠만 길어집니다.
+   ⚠️ 띠 안 순서는 #shots → #glossary 입니다. 첫 장면이 위를, 마지막 장면이 아래를
+      맡습니다 — 순서를 바꾸면 여기도 함께 옮기십시오. */
+.reel #shots    { padding-top: 132px; }
+.reel #glossary { padding: 124px 0 132px; }
 
 /* ── 크기 ─────────────────────────────────────────────────────────────────
    장면 하나에 생각 하나. 제목이 본문 크기에 가까우면 <b>전부 같은 목소리</b>가
@@ -92,6 +94,12 @@
       한글·가나·한자는 좁히면 <b>글자가 서로 붙습니다.</b> 언어별로 풀어 주는
       :lang() 규칙이 이 저장소에는 <b>아직 없습니다</b>(계획서 §6 의 접근성 항목,
       C7 예정). 그것이 들어오기 전에는 걸면 안 됩니다. */
+/* 제목이 커지면 마지막 줄에 글자 한둘만 남는 일이 잦아집니다("…올라옵 / 니다.").
+   balance 는 줄 길이를 고르게 나눠 그 꼴을 없앱니다. 본문에는 걸지 않습니다 —
+   긴 글에서는 브라우저가 줄 수를 제한해 두었고 효과도 없습니다. */
+.hero h1,
+section > h2 { text-wrap: balance; }
+
 .reel h2 { font-size: clamp(34px, 5.4vw, 60px); line-height: 1.16; }
 #how h2,
 #audio h2,
@@ -135,8 +143,8 @@
   .hero     { gap: 36px; padding: 28px 0 4px; }
   .hero .lede { font-size: 17.5px; }
   .reel     { margin-block: 44px; }
-  .reel #glossary { padding-top: 76px; }
-  .reel #shots    { padding: 72px 0 76px; }
+  .reel #shots    { padding-top: 76px; }
+  .reel #glossary { padding: 72px 0 76px; }
   #how      { padding-top: 40px; }
   #glossary { padding-top: 92px; }
   #shots    { padding-top: 84px; }
