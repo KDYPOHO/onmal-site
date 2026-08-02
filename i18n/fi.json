@@ -1,4 +1,4 @@
-﻿{
+{
   "meta.title": "Onmal — tiimikavereidesi sanat omalla kielelläsi",
   "meta.desc": "Ymmärtää tiimikavereidesi vieraan kielen pelin aikana ja näyttää sen tekstityksinä omalla kielelläsi ruudun päällä. Ilmainen reaaliaikainen tulkki, joka toimii omalla tietokoneellasi.",
 
@@ -87,8 +87,8 @@
   "spec.disk_rec": "5 Gt (lisäkieliparit, tarkemmat mallit)",
   "spec.delay": "Tekstityksen viive",
   "spec.delay_min": "Noin 1,2–1,5 s (CPU)",
-  "spec.delay_rec": "Alle ~1 s (0,7 s mitattu GPU:lla)",
-  "spec.note": "Viiveet mitattiin NVIDIA RTX 4060:lla. AMD:n ja Intelin GPU:t käyttävät samaa Vulkan-polkua, mutta niitä ei ole vielä mitattu — se on suunniteltu alfa- ja betavaiheisiin. Tarkkuus valitaan automaattisesti GPU-muistin mukaan, ja sen voi vaihtaa asetuksista milloin vain.",
+  "spec.delay_rec": "Noin 0,7 s (GPU)",
+  "spec.note": "Luvut ovat erikseen mitattujen vaiheiden summa (puheen tunnistus, tekstitys, käännös) NVIDIA RTX 4060:lla. Koko matkaa — siitä hetkestä kun joukkuetoveri puhuu siihen kun teksti on ruudulla — ei ole vielä mitattu yhtenä lukuna, eikä myöskään pelin ollessa käynnissä. Molemmat on suunniteltu alfa- ja betavaiheisiin. AMD:n ja Intelin GPU:t käyttävät samaa Vulkan-polkua, mutta niitä ei ole mitattu. Tarkkuus valitaan automaattisesti GPU-muistin mukaan, ja sen voi vaihtaa asetuksista milloin vain.",
 
   "lang.kicker": "Kielet",
   "lang.h2": "Kaikilla Steamin tukemilla kielillä,<br>kaikkien Steamin käyttäjien kanssa.",
@@ -225,5 +225,6 @@
 
   "lic.f_home": "Etusivu",
   "lic.f_privacy": "Tietosuojakäytäntö",
-  "lic.f_terms": "Käyttöehdot"
+  "lic.f_terms": "Käyttöehdot",
+  "a11y.skip": "Siirry sisältöön"
 }

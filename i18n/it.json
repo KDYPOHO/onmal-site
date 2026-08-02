@@ -1,4 +1,4 @@
-﻿{
+{
   "meta.title": "Onmal — le parole dei tuoi compagni, nella tua lingua",
   "meta.desc": "Capisce la lingua straniera dei tuoi compagni durante la partita e la mostra come sottotitoli nella tua lingua sopra lo schermo. Un interprete gratuito in tempo reale che gira sul tuo PC.",
 
@@ -87,8 +87,8 @@
   "spec.disk_rec": "5 GB (coppie di lingue extra, modelli più accurati)",
   "spec.delay": "Ritardo dei sottotitoli",
   "spec.delay_min": "Circa 1,2–1,5 s (CPU)",
-  "spec.delay_rec": "Meno di ~1 s (0,7 s misurato su GPU)",
-  "spec.note": "I ritardi sono stati misurati su una NVIDIA RTX 4060. Le GPU AMD e Intel usano lo stesso percorso Vulkan ma non sono ancora state misurate: è previsto per le fasi alfa e beta. La precisione viene scelta automaticamente in base alla memoria della GPU e si può cambiare in qualsiasi momento nelle impostazioni.",
+  "spec.delay_rec": "Circa 0,7 s (GPU)",
+  "spec.note": "Questi numeri sono la somma di fasi misurate separatamente (rilevamento del parlato, riconoscimento, traduzione) su una NVIDIA RTX 4060. L'intero percorso — dal momento in cui un compagno parla a quando il testo compare a schermo — non è ancora stato misurato come numero unico, né con un gioco in esecuzione. Entrambe le misure sono previste per le fasi alfa e beta. Le GPU AMD e Intel usano lo stesso percorso Vulkan ma non sono state misurate. La precisione viene scelta automaticamente in base alla memoria della GPU e si può cambiare in qualsiasi momento nelle impostazioni.",
 
   "lang.kicker": "Lingue",
   "lang.h2": "In tutte le lingue supportate da Steam,<br>con tutte le persone su Steam.",
@@ -225,5 +225,6 @@
 
   "lic.f_home": "Home",
   "lic.f_privacy": "Informativa sulla privacy",
-  "lic.f_terms": "Condizioni di servizio"
+  "lic.f_terms": "Condizioni di servizio",
+  "a11y.skip": "Vai al contenuto"
 }

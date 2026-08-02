@@ -1,4 +1,4 @@
-﻿{
+{
   "meta.title": "Onmal — las palabras de tu equipo, en tu idioma",
   "meta.desc": "Entiende el idioma extranjero de tus compañeros durante la partida y lo muestra como subtítulos en tu idioma sobre la pantalla. Un intérprete gratuito en tiempo real que funciona en tu propio PC.",
 
@@ -87,8 +87,8 @@
   "spec.disk_rec": "5 GB (pares de idiomas extra, modelos de mayor precisión)",
   "spec.delay": "Retardo de subtítulos",
   "spec.delay_min": "Aprox. 1,2–1,5 s (CPU)",
-  "spec.delay_rec": "Menos de ~1 s (0,7 s medidos en GPU)",
-  "spec.note": "Los retardos se midieron en una NVIDIA RTX 4060. Las GPU de AMD e Intel usan la misma ruta Vulkan pero aún no se han medido; está previsto verificarlo en las fases alfa y beta. La precisión se elige automáticamente según la memoria de tu GPU y puede cambiarse en Ajustes en cualquier momento.",
+  "spec.delay_rec": "Unos 0,7 s (GPU)",
+  "spec.note": "Estas cifras son la suma de etapas medidas por separado (detección de voz, reconocimiento, traducción) en una NVIDIA RTX 4060. El recorrido completo —desde que un compañero habla hasta que el texto aparece en pantalla— aún no se ha medido como un único número, ni tampoco con un juego en marcha. Ambas cosas están previstas para las fases alfa y beta. Las GPU de AMD e Intel usan la misma ruta Vulkan pero no se han medido. La precisión se elige automáticamente según la memoria de tu GPU y puede cambiarse en Ajustes en cualquier momento.",
 
   "lang.kicker": "Idiomas",
   "lang.h2": "En todos los idiomas que admite Steam,<br>con toda la gente de Steam.",
@@ -225,5 +225,6 @@
 
   "lic.f_home": "Inicio",
   "lic.f_privacy": "Política de privacidad",
-  "lic.f_terms": "Términos del servicio"
+  "lic.f_terms": "Términos del servicio",
+  "a11y.skip": "Saltar al contenido"
 }

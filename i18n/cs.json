@@ -1,4 +1,4 @@
-﻿{
+{
   "meta.title": "Onmal — slova spoluhráčů ve vašem jazyce",
   "meta.desc": "Rozumí cizí řeči vašich spoluhráčů během hraní a zobrazuje ji jako titulky ve vašem jazyce přes obrazovku. Bezplatný tlumočník v reálném čase, který běží na vašem vlastním PC.",
 
@@ -87,8 +87,8 @@
   "spec.disk_rec": "5 GB (další jazykové páry, přesnější modely)",
   "spec.delay": "Zpoždění titulků",
   "spec.delay_min": "Přibližně 1,2–1,5 s (CPU)",
-  "spec.delay_rec": "Pod ~1 s (0,7 s naměřeno na GPU)",
-  "spec.note": "Zpoždění byla naměřena na NVIDIA RTX 4060. GPU AMD a Intel používají stejnou cestu Vulkan, ale zatím nebyly změřeny — plánujeme to v alfě a betě. Přesnost se volí automaticky podle paměti GPU a kdykoli ji lze změnit v nastavení.",
+  "spec.delay_rec": "Přibližně 0,7 s (GPU)",
+  "spec.note": "Tato čísla jsou součtem samostatně změřených fází (detekce řeči, rozpoznání, překlad) na NVIDIA RTX 4060. Celá cesta — od okamžiku, kdy spoluhráč promluví, po chvíli, kdy je text na obrazovce — zatím nebyla změřena jako jedno číslo, stejně jako běh se spuštěnou hrou. Obojí plánujeme v alfě a betě. GPU AMD a Intel používají stejnou cestu Vulkan, ale změřeny nebyly. Přesnost se volí automaticky podle paměti GPU a kdykoli ji lze změnit v nastavení.",
 
   "lang.kicker": "Jazyky",
   "lang.h2": "Ve všech jazycích, které Steam podporuje,<br>se všemi na Steamu.",
@@ -225,5 +225,6 @@
 
   "lic.f_home": "Domů",
   "lic.f_privacy": "Zásady ochrany osobních údajů",
-  "lic.f_terms": "Podmínky služby"
+  "lic.f_terms": "Podmínky služby",
+  "a11y.skip": "Přejít na obsah"
 }

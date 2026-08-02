@@ -1,4 +1,4 @@
-﻿{
+{
   "meta.title": "Onmal — kata-kata rakan sepasukan, dalam bahasa anda",
   "meta.desc": "Memahami bahasa asing rakan sepasukan semasa bermain dan memaparkannya sebagai sari kata dalam bahasa anda di atas skrin. Penterjemah masa nyata percuma yang berjalan pada PC anda sendiri.",
 
@@ -87,8 +87,8 @@
   "spec.disk_rec": "5 GB (pasangan bahasa tambahan, model lebih tepat)",
   "spec.delay": "Lengah sari kata",
   "spec.delay_min": "Kira-kira 1.2–1.5 s (CPU)",
-  "spec.delay_rec": "Bawah ~1 s (0.7 s diukur pada GPU)",
-  "spec.note": "Lengah diukur pada NVIDIA RTX 4060. GPU AMD dan Intel menggunakan laluan Vulkan yang sama tetapi belum diukur — dirancang untuk disahkan pada peringkat alfa dan beta. Ketepatan dipilih secara automatik mengikut memori GPU dan boleh diubah pada bila-bila masa dalam tetapan.",
+  "spec.delay_rec": "Kira-kira 0.7 s (GPU)",
+  "spec.note": "Angka ini ialah jumlah peringkat yang diukur berasingan (pengesanan pertuturan, pengecaman, terjemahan) pada NVIDIA RTX 4060. Keseluruhan laluan — dari saat rakan sepasukan bercakap sehingga teks muncul pada skrin — belum diukur sebagai satu angka, begitu juga semasa permainan berjalan. Kedua-duanya dirancang untuk peringkat alfa dan beta. GPU AMD dan Intel menggunakan laluan Vulkan yang sama tetapi belum diukur. Ketepatan dipilih secara automatik mengikut memori GPU dan boleh diubah pada bila-bila masa dalam tetapan.",
 
   "lang.kicker": "Bahasa",
   "lang.h2": "Dalam semua bahasa yang disokong Steam,<br>bersama semua orang di Steam.",
@@ -225,5 +225,6 @@
 
   "lic.f_home": "Laman utama",
   "lic.f_privacy": "Dasar privasi",
-  "lic.f_terms": "Terma perkhidmatan"
+  "lic.f_terms": "Terma perkhidmatan",
+  "a11y.skip": "Langkau ke kandungan"
 }

@@ -1,4 +1,4 @@
-﻿{
+{
   "meta.title": "Onmal — de woorden van je team, in jouw taal",
   "meta.desc": "Verstaat de vreemde taal van je teamgenoten tijdens het gamen en toont die als ondertitels in jouw taal over het scherm. Een gratis realtime tolk die op je eigen pc draait.",
 
@@ -87,8 +87,8 @@
   "spec.disk_rec": "5 GB (extra taalparen, nauwkeurigere modellen)",
   "spec.delay": "Ondertitelvertraging",
   "spec.delay_min": "Ongeveer 1,2–1,5 s (CPU)",
-  "spec.delay_rec": "Onder ~1 s (0,7 s gemeten op GPU)",
-  "spec.note": "De vertragingen zijn gemeten op een NVIDIA RTX 4060. AMD- en Intel-GPU's gebruiken hetzelfde Vulkan-pad maar zijn nog niet gemeten — dat staat gepland voor de alfa- en bètafase. De nauwkeurigheid wordt automatisch gekozen op basis van je GPU-geheugen en is altijd aan te passen in de instellingen.",
+  "spec.delay_rec": "Ongeveer 0,7 s (GPU)",
+  "spec.note": "Deze cijfers zijn de som van afzonderlijk gemeten stappen (spraakdetectie, herkenning, vertaling) op een NVIDIA RTX 4060. Het hele traject — van het moment dat een teamgenoot spreekt tot de tekst op het scherm staat — is nog niet als één getal gemeten, en evenmin met een draaiend spel. Beide metingen staan gepland voor de alfa- en bètafase. AMD- en Intel-GPU's gebruiken hetzelfde Vulkan-pad maar zijn niet gemeten. De nauwkeurigheid wordt automatisch gekozen op basis van je GPU-geheugen en is altijd aan te passen in de instellingen.",
 
   "lang.kicker": "Talen",
   "lang.h2": "In elke taal die Steam ondersteunt,<br>met iedereen op Steam.",
@@ -225,5 +225,6 @@
 
   "lic.f_home": "Home",
   "lic.f_privacy": "Privacybeleid",
-  "lic.f_terms": "Servicevoorwaarden"
+  "lic.f_terms": "Servicevoorwaarden",
+  "a11y.skip": "Naar inhoud springen"
 }

@@ -1,4 +1,4 @@
-﻿{
+{
   "meta.title": "Onmal — cuvintele coechipierilor tăi, în limba ta",
   "meta.desc": "Înțelege limba străină a coechipierilor tăi în timpul jocului și o afișează ca subtitrări în limba ta, peste ecran. Un interpret gratuit în timp real care rulează pe propriul tău PC.",
 
@@ -87,8 +87,8 @@
   "spec.disk_rec": "5 GB (perechi de limbi suplimentare, modele mai precise)",
   "spec.delay": "Întârzierea subtitrării",
   "spec.delay_min": "Circa 1,2–1,5 s (CPU)",
-  "spec.delay_rec": "Sub ~1 s (0,7 s măsurat pe GPU)",
-  "spec.note": "Întârzierile au fost măsurate pe un NVIDIA RTX 4060. GPU-urile AMD și Intel folosesc aceeași cale Vulkan, dar nu au fost încă măsurate — e planificat pentru fazele alfa și beta. Precizia se alege automat după memoria GPU-ului și poate fi schimbată oricând din setări.",
+  "spec.delay_rec": "Aproximativ 0,7 s (GPU)",
+  "spec.note": "Aceste cifre sunt suma etapelor măsurate separat (detectarea vorbirii, recunoașterea, traducerea) pe un NVIDIA RTX 4060. Întregul traseu — din clipa în care un coechipier vorbește până când textul apare pe ecran — nu a fost încă măsurat ca un singur număr, nici cu un joc pornit. Ambele măsurători sunt planificate pentru fazele alfa și beta. GPU-urile AMD și Intel folosesc aceeași cale Vulkan, dar nu au fost măsurate. Precizia se alege automat după memoria GPU-ului și poate fi schimbată oricând din setări.",
 
   "lang.kicker": "Limbi",
   "lang.h2": "În toate limbile pe care le acceptă Steam,<br>cu toată lumea de pe Steam.",
@@ -225,5 +225,6 @@
 
   "lic.f_home": "Pagina principală",
   "lic.f_privacy": "Politica de confidențialitate",
-  "lic.f_terms": "Termenii serviciului"
+  "lic.f_terms": "Termenii serviciului",
+  "a11y.skip": "Sari la conținut"
 }

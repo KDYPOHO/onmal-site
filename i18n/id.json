@@ -1,4 +1,4 @@
-﻿{
+{
   "meta.title": "Onmal — ucapan rekan satu tim, dalam bahasamu",
   "meta.desc": "Memahami bahasa asing rekan satu timmu selama bermain dan menampilkannya sebagai subtitle dalam bahasamu di atas layar. Penerjemah real-time gratis yang berjalan di PC-mu sendiri.",
 
@@ -87,8 +87,8 @@
   "spec.disk_rec": "5 GB (pasangan bahasa tambahan, model lebih akurat)",
   "spec.delay": "Jeda subtitle",
   "spec.delay_min": "Sekitar 1,2–1,5 dtk (CPU)",
-  "spec.delay_rec": "Di bawah ~1 dtk (terukur 0,7 dtk di GPU)",
-  "spec.note": "Jeda diukur pada NVIDIA RTX 4060. GPU AMD dan Intel memakai jalur Vulkan yang sama tapi belum diukur — direncanakan diverifikasi pada tahap alfa dan beta. Akurasi dipilih otomatis sesuai memori GPU dan bisa diubah kapan saja di pengaturan.",
+  "spec.delay_rec": "Sekitar 0,7 dtk (GPU)",
+  "spec.note": "Angka ini adalah jumlah dari tahap-tahap yang diukur terpisah (deteksi bicara, pengenalan, terjemahan) pada NVIDIA RTX 4060. Seluruh jalur — dari saat rekan tim berbicara sampai teks muncul di layar — belum diukur sebagai satu angka, begitu pula saat game berjalan. Keduanya direncanakan pada tahap alfa dan beta. GPU AMD dan Intel memakai jalur Vulkan yang sama tapi belum diukur. Akurasi dipilih otomatis sesuai memori GPU dan bisa diubah kapan saja di pengaturan.",
 
   "lang.kicker": "Bahasa",
   "lang.h2": "Dalam semua bahasa yang didukung Steam,<br>bersama semua orang di Steam.",
@@ -225,5 +225,6 @@
 
   "lic.f_home": "Beranda",
   "lic.f_privacy": "Kebijakan privasi",
-  "lic.f_terms": "Ketentuan layanan"
+  "lic.f_terms": "Ketentuan layanan",
+  "a11y.skip": "Lewati ke konten"
 }

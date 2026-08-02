@@ -1,4 +1,4 @@
-﻿{
+{
   "meta.title": "Onmal — takım arkadaşlarının sözleri, senin dilinde",
   "meta.desc": "Oyun sırasında takım arkadaşlarının yabancı dilini anlar ve ekranın üzerinde kendi dilinde altyazı olarak gösterir. Kendi bilgisayarında çalışan ücretsiz gerçek zamanlı çevirmen.",
 
@@ -87,8 +87,8 @@
   "spec.disk_rec": "5 GB (ek dil çiftleri, daha isabetli modeller)",
   "spec.delay": "Altyazı gecikmesi",
   "spec.delay_min": "Yaklaşık 1,2–1,5 sn (CPU)",
-  "spec.delay_rec": "~1 sn altı (GPU'da ölçülen 0,7 sn)",
-  "spec.note": "Gecikmeler NVIDIA RTX 4060 üzerinde ölçüldü. AMD ve Intel GPU'lar aynı Vulkan yolunu kullanır ama henüz ölçülmedi — alfa ve beta aşamalarında doğrulanacak. Doğruluk, GPU belleğine göre otomatik seçilir ve ayarlardan istediğin zaman değiştirilebilir.",
+  "spec.delay_rec": "Yaklaşık 0,7 sn (GPU)",
+  "spec.note": "Bu sayılar, NVIDIA RTX 4060 üzerinde ayrı ayrı ölçülen aşamaların (konuşma algılama, tanıma, çeviri) toplamıdır. Bir takım arkadaşının konuştuğu andan metnin ekranda göründüğü ana kadar geçen yolun tamamı henüz tek bir sayı olarak ölçülmedi; oyun çalışırken de ölçülmedi. İkisi de alfa ve beta aşamalarında ölçülüp paylaşılacak. AMD ve Intel GPU'lar aynı Vulkan yolunu kullanır ama ölçülmedi. Doğruluk, GPU belleğine göre otomatik seçilir ve ayarlardan istediğin zaman değiştirilebilir.",
 
   "lang.kicker": "Diller",
   "lang.h2": "Steam'in desteklediği her dilde,<br>Steam'deki herkesle.",
@@ -225,5 +225,6 @@
 
   "lic.f_home": "Ana sayfa",
   "lic.f_privacy": "Gizlilik politikası",
-  "lic.f_terms": "Hizmet koşulları"
+  "lic.f_terms": "Hizmet koşulları",
+  "a11y.skip": "İçeriğe geç"
 }

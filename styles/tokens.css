@@ -18,11 +18,48 @@
   --mono:"JetBrains Mono", ui-monospace, monospace;
 
   --ease:cubic-bezier(.32,.72,0,1);
+
+  /* 스크롤 막대·기본 폼 컨트롤을 OS 가 어느 쪽으로 그릴지. 아래에서 테마마다 덮습니다. */
+  color-scheme:dark;
+
+  /* 🔴 "지금 라이트인가"를 <b>여기 한 곳</b>에서만 정합니다.
+     테마를 아는 방법이 둘(속성 · 미디어 쿼리)이라, 화면 곳곳에서 각자 판정하면
+     반드시 한 군데가 빠집니다 — 실제로 그랬습니다: JS 를 끄고 라이트를 쓰면
+     실제 화면 자리에 <b>다크 스크린샷</b>이 떴습니다. 셀렉터로 갈래를 나누는 대신
+     값을 물려줍니다.  0 = 다크 · 1 = 라이트 */
+  --shot-dark:1;
+  --shot-light:0;
+  --frame-shadow:0 24px 70px rgba(0,0,0,.55);
 }
 
-/* 라이트 팔레트. 옥빛은 흰 배경에서 대비가 무너지므로 짙은 계열로 바꿉니다. */
+/* ── 라이트 팔레트 ────────────────────────────────────────────────────────
+   🔴 <b>같은 값을 두 번 씁니다. 일부러입니다.</b>
+      ① <c>html[data-theme="light"]</c> — JS 가 정한 테마(토글·localStorage)
+      ② <c>@media (prefers-color-scheme: light)</c> — <b>JS 가 없을 때</b>
+
+   그전에는 ①만 있고 <html> 에 <c>data-theme="dark"</c> 가 <b>박혀</b> 있었습니다.
+   그래서 JS 를 끄면 라이트를 쓰는 사람도 예외 없이 어두운 화면을 봤습니다.
+   ①과 ②를 하나로 합칠 방법은 CSS 에 없습니다(미디어 쿼리는 선택자 목록에
+   못 들어갑니다). 값이 갈라지지 않게 <b>고칠 때 반드시 두 곳을 함께</b> 보십시오.
+
+   ⚠️ 아쿠아는 <c>#0C7A96</c> 이었습니다 — 배경 #F1F4F5 에서 <b>4.48:1</b> 로
+      WCAG AA(4.5:1)에 <b>못 미쳤습니다.</b> <c>#0A6E88</c> 은 5.28:1(바탕) ·
+      5.83:1(흰 카드)입니다. 색상은 그대로 두고 명도만 내렸습니다. */
 html[data-theme="light"]{
   --ink:#F1F4F5; --night:#FFFFFF; --indigo:#E3ECEF; --line:#D3DCE0;
-  --jade:#0C7A96; --moon:#8A6A1B; --paper:#1A2026; --dim:#42505C; --coral:#B84B3B;
+  --jade:#0A6E88; --moon:#8A6A1B; --paper:#1A2026; --dim:#42505C; --coral:#B84B3B;
   --card-bg:#FFFFFF;
+  color-scheme:light;
+  --shot-dark:0;
+  --shot-light:1;
+  --frame-shadow:0 18px 50px rgba(70,60,35,.22);
+}
+
+@media (prefers-color-scheme: light){
+  html:not([data-theme="dark"]){
+    --ink:#F1F4F5; --night:#FFFFFF; --indigo:#E3ECEF; --line:#D3DCE0;
+    --jade:#0A6E88; --moon:#8A6A1B; --paper:#1A2026; --dim:#42505C; --coral:#B84B3B;
+    --card-bg:#FFFFFF;
+    color-scheme:light;
+  }
 }

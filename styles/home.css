@@ -3,12 +3,11 @@
    2026-08-02 C1: index.html 의 인라인 <style> 을 그대로 옮겼습니다. 값은 하나도
    바꾸지 않았습니다 — 고치는 것은 C2 입니다. */
 
-body{
-  line-height:1.65;
-  background-image:radial-gradient(1100px 620px at 76% -8%, #14323E 0%, transparent 62%);
-  background-repeat:no-repeat;
-}
-html[data-theme="light"] body{background-image:none}
+/* 🚫 배경의 라디얼 블롭을 걷어냈습니다 (2026-08-02, C2). 어느 SaaS 랜딩에나 있는
+   장치라 온말이 온말로 안 보이게 만듭니다. 배경은 잉크빛 한 판이고, 깊이는
+   신호 문법과 카드 층으로 냅니다. — 덤으로 무JS 라이트에서 어두운 얼룩이
+   남던 문제도 함께 사라집니다(그 규칙은 data-theme 이 있을 때만 꺼졌습니다). */
+body{line-height:1.65}
 
 .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
 a{color:inherit}
@@ -73,8 +72,7 @@ h1 em{font-style:normal;color:var(--jade)}
 
 /* ── 자막 데모 — 게임 화면 묘사라 테마와 무관하게 어둡습니다 ── */
 .frame{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#0A0E15;
-  box-shadow:0 24px 70px rgba(0,0,0,.55)}
-html[data-theme="light"] .frame{box-shadow:0 18px 50px rgba(70,60,35,.22)}
+  box-shadow:var(--frame-shadow)}
 .frame .bar{display:flex;align-items:center;gap:7px;padding:11px 14px;
   border-bottom:1px solid #2A4552;background:rgba(27,48,60,.45)}
 .dot{width:9px;height:9px;border-radius:99px;background:#2A4552}
@@ -138,13 +136,16 @@ html[data-theme="light"] .frame{box-shadow:0 18px 50px rgba(70,60,35,.22)}
   border-radius:14px;overflow:hidden;background:var(--night);aspect-ratio:1180/820}
 .shot-view img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;
   opacity:0;transition:opacity .22s var(--ease)}
-/* 지금 고른 화면 <b>과</b> 지금 테마, 둘 다 맞는 한 장만 드러납니다 */
-html:not([data-theme="light"]) .shots[data-shot="home"]     img[data-k="home-dark"],
-html:not([data-theme="light"]) .shots[data-shot="settings"] img[data-k="settings-dark"],
-html:not([data-theme="light"]) .shots[data-shot="about"]    img[data-k="about-dark"],
-html[data-theme="light"] .shots[data-shot="home"]     img[data-k="home-light"],
-html[data-theme="light"] .shots[data-shot="settings"] img[data-k="settings-light"],
-html[data-theme="light"] .shots[data-shot="about"]    img[data-k="about-light"]{opacity:1}
+/* 지금 고른 화면 <b>과</b> 지금 테마, 둘 다 맞는 한 장만 드러납니다.
+   🔴 테마 판정은 <b>셀렉터가 아니라 토큰</b>입니다(--shot-dark/--shot-light).
+      셀렉터로 나누면 "속성이 없는" 무JS 상태를 한쪽이 가져가 버려, 라이트를 쓰는
+      사람이 다크 스크린샷을 보게 됩니다 — 2026-08-02 이전이 그랬습니다. */
+.shots[data-shot="home"]     img[data-k="home-dark"],
+.shots[data-shot="settings"] img[data-k="settings-dark"],
+.shots[data-shot="about"]    img[data-k="about-dark"]{opacity:var(--shot-dark)}
+.shots[data-shot="home"]     img[data-k="home-light"],
+.shots[data-shot="settings"] img[data-k="settings-light"],
+.shots[data-shot="about"]    img[data-k="about-light"]{opacity:var(--shot-light)}
 
 .shot-cap{margin-top:16px;font-size:14.5px;color:var(--dim);line-height:1.6;max-width:66ch}
 .shot-cap span{display:none}

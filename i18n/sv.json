@@ -1,4 +1,4 @@
-﻿{
+{
   "meta.title": "Onmal — dina lagkamraters ord, på ditt språk",
   "meta.desc": "Förstår dina lagkamraters främmande språk under spel och visar det som undertexter på ditt språk över skärmen. En gratis realtidstolk som körs på din egen dator.",
 
@@ -87,8 +87,8 @@
   "spec.disk_rec": "5 GB (extra språkpar, noggrannare modeller)",
   "spec.delay": "Undertextfördröjning",
   "spec.delay_min": "Cirka 1,2–1,5 s (CPU)",
-  "spec.delay_rec": "Under ~1 s (0,7 s uppmätt på GPU)",
-  "spec.note": "Fördröjningarna mättes på en NVIDIA RTX 4060. AMD- och Intel-GPU:er använder samma Vulkan-väg men har inte mätts ännu — det planeras till alfa- och betafasen. Noggrannheten väljs automatiskt efter GPU-minnet och kan ändras när som helst i inställningarna.",
+  "spec.delay_rec": "Cirka 0,7 s (GPU)",
+  "spec.note": "Siffrorna är summan av steg som mätts var för sig (talupptäckt, igenkänning, översättning) på en NVIDIA RTX 4060. Hela vägen — från att en lagkamrat säger något till att texten står på skärmen — har ännu inte mätts som ett enda tal, och inte heller med ett spel igång. Båda mätningarna är planerade till alfa- och betafasen. AMD- och Intel-GPU:er använder samma Vulkan-väg men har inte mätts. Noggrannheten väljs automatiskt efter GPU-minnet och kan ändras när som helst i inställningarna.",
 
   "lang.kicker": "Språk",
   "lang.h2": "På alla språk Steam stödjer,<br>med alla på Steam.",
@@ -225,5 +225,6 @@
 
   "lic.f_home": "Startsida",
   "lic.f_privacy": "Integritetspolicy",
-  "lic.f_terms": "Användarvillkor"
+  "lic.f_terms": "Användarvillkor",
+  "a11y.skip": "Hoppa till innehåll"
 }

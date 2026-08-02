@@ -1,4 +1,4 @@
-﻿{
+{
   "meta.title": "Onmal — a csapattársaid szavai a te nyelveden",
   "meta.desc": "Játék közben megérti csapattársaid idegen nyelvét, és a te nyelveden jeleníti meg feliratként a képernyő felett. Ingyenes, valós idejű tolmács, amely a saját gépeden fut.",
 
@@ -87,8 +87,8 @@
   "spec.disk_rec": "5 GB (további nyelvpárok, pontosabb modellek)",
   "spec.delay": "Felirat késése",
   "spec.delay_min": "Kb. 1,2–1,5 mp (CPU)",
-  "spec.delay_rec": "Kb. 1 mp alatt (GPU-n mérve 0,7 mp)",
-  "spec.note": "A késéseket NVIDIA RTX 4060-on mértük. Az AMD és Intel GPU-k ugyanazt a Vulkan-utat használják, de még nem mértük őket — ez az alfa és béta szakasz terve. A pontosság automatikusan a GPU-memóriához igazodik, és bármikor átállítható a beállításokban.",
+  "spec.delay_rec": "Kb. 0,7 mp (GPU)",
+  "spec.note": "Ezek a számok külön-külön mért szakaszok (beszédfelismerés-indítás, felismerés, fordítás) összege NVIDIA RTX 4060-on. A teljes utat — attól a pillanattól, hogy a csapattárs megszólal, addig, amíg a szöveg a képernyőn megjelenik — még nem mértük egyetlen számként, és futó játék mellett sem mértünk. Mindkettő az alfa és béta szakasz terve. Az AMD és Intel GPU-k ugyanazt a Vulkan-utat használják, de nem mértük őket. A pontosság automatikusan a GPU-memóriához igazodik, és bármikor átállítható a beállításokban.",
 
   "lang.kicker": "Nyelvek",
   "lang.h2": "A Steam összes nyelvén,<br>a Steam összes játékosával.",
@@ -225,5 +225,6 @@
 
   "lic.f_home": "Főoldal",
   "lic.f_privacy": "Adatvédelmi tájékoztató",
-  "lic.f_terms": "Szolgáltatási feltételek"
+  "lic.f_terms": "Szolgáltatási feltételek",
+  "a11y.skip": "Ugrás a tartalomra"
 }

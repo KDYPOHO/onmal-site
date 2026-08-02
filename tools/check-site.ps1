@@ -30,10 +30,20 @@ $utf8 = New-Object System.Text.UTF8Encoding($false)
 $fail = @()
 $todo = @()
 
+# 🔴 주석을 먼저 걷어냅니다. 안 그러면 "예전에는 여기 X 라고 적혀 있었습니다"라는
+#    <b>고쳤다는 기록</b>이 X 로 읽혀, 고칠수록 검사가 빨개집니다 — 2026-08-02 에
+#    실제로 그랬습니다(check-motion 은 CSS 주석에서 같은 일을 겪었습니다).
+#    자리를 유지해야 다른 검사의 위치·개수가 어긋나지 않으므로 같은 길이의 공백으로.
+function Strip-Comments([string]$html) {
+    return [regex]::Replace($html, '(?s)<!--.*?-->', {
+        param($m) ' ' * $m.Value.Length
+    })
+}
+
 function Read-Page([string]$name) {
     $p = Join-Path $Root $name
     if (-not (Test-Path $p)) { return $null }
-    return [System.IO.File]::ReadAllText($p, $utf8)
+    return Strip-Comments ([System.IO.File]::ReadAllText($p, $utf8))
 }
 
 # 검사 하나. $phase 가 이미 끝난 단계면 실패, 아직이면 할 일로 적습니다.

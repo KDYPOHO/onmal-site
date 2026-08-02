@@ -1,4 +1,4 @@
-﻿{
+{
   "meta.title": "Onmal 온말 — 把队友的话，变成你的语言",
   "meta.desc": "游戏中自动听懂队友的外语，并以你的语言在屏幕上显示字幕。一款在你自己电脑上运行的免费实时翻译助手。",
 
@@ -87,8 +87,8 @@
   "spec.disk_rec": "5 GB（额外语言对、更高精度模型）",
   "spec.delay": "字幕延迟",
   "spec.delay_min": "约1.2~1.5秒 (CPU)",
-  "spec.delay_rec": "约 1 秒以内（GPU 实测 0.7 秒）",
-  "spec.note": "延迟数据在 NVIDIA RTX 4060 上实测。AMD 和 Intel 显卡使用相同的 Vulkan 路径，但尚未实测，计划在 Alpha/Beta 阶段验证。精度默认根据显存自动选择，可随时在设置中修改。",
+  "spec.delay_rec": "约 0.7 秒（GPU）",
+  "spec.note": "该数字是各阶段单独测得数值（语音检测、识别、翻译）的相加结果，测试环境为 NVIDIA RTX 4060。从队友开口到字幕出现在屏幕上的全程尚未作为一个整体测量，也尚未在运行游戏的情况下测量，两者都计划在 Alpha/Beta 阶段测量并公开。AMD 和 Intel 显卡使用相同的 Vulkan 路径，但尚未测量。精度默认根据显存自动选择，可随时在设置中修改。",
 
   "lang.kicker": "语言",
   "lang.h2": "Steam 支持的每一种语言，<br>连接 Steam 上的每一个人。",
@@ -225,5 +225,6 @@
 
   "lic.f_home": "首页",
   "lic.f_privacy": "隐私政策",
-  "lic.f_terms": "服务条款"
+  "lic.f_terms": "服务条款",
+  "a11y.skip": "跳到正文"
 }

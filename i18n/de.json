@@ -1,4 +1,4 @@
-﻿{
+{
   "meta.title": "Onmal — die Worte deines Teams, in deiner Sprache",
   "meta.desc": "Versteht die Fremdsprache deiner Mitspieler während des Spiels und zeigt sie als Untertitel in deiner Sprache über dem Bildschirm. Ein kostenloser Echtzeit-Dolmetscher, der auf deinem eigenen PC läuft.",
 
@@ -87,8 +87,8 @@
   "spec.disk_rec": "5 GB (zusätzliche Sprachpaare, genauere Modelle)",
   "spec.delay": "Untertitel-Verzögerung",
   "spec.delay_min": "Etwa 1,2–1,5 s (CPU)",
-  "spec.delay_rec": "Unter ~1 s (0,7 s auf GPU gemessen)",
-  "spec.note": "Die Verzögerungen wurden auf einer NVIDIA RTX 4060 gemessen. AMD- und Intel-GPUs nutzen denselben Vulkan-Pfad, wurden aber noch nicht vermessen — das ist für Alpha und Beta geplant. Die Genauigkeit wird automatisch passend zum GPU-Speicher gewählt und lässt sich jederzeit in den Einstellungen ändern.",
+  "spec.delay_rec": "Etwa 0,7 s (GPU)",
+  "spec.note": "Diese Zahlen sind die Summe einzeln gemessener Stufen (Spracherkennungs-Trigger, Erkennung, Übersetzung) auf einer NVIDIA RTX 4060. Der gesamte Weg — vom Moment, in dem ein Mitspieler spricht, bis der Text auf dem Bildschirm steht — wurde noch nicht als eine Zahl gemessen, ebenso wenig mit laufendem Spiel. Beides ist für Alpha und Beta geplant. AMD- und Intel-GPUs nutzen denselben Vulkan-Pfad, wurden aber nicht vermessen. Die Genauigkeit wird automatisch passend zum GPU-Speicher gewählt und lässt sich jederzeit in den Einstellungen ändern.",
 
   "lang.kicker": "Sprachen",
   "lang.h2": "In jeder Sprache, die Steam unterstützt,<br>mit allen auf Steam.",
@@ -225,5 +225,6 @@
 
   "lic.f_home": "Startseite",
   "lic.f_privacy": "Datenschutzerklärung",
-  "lic.f_terms": "Nutzungsbedingungen"
+  "lic.f_terms": "Nutzungsbedingungen",
+  "a11y.skip": "Zum Inhalt springen"
 }

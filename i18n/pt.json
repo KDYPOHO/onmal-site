@@ -1,4 +1,4 @@
-﻿{
+{
   "meta.title": "Onmal — as palavras da tua equipa, no teu idioma",
   "meta.desc": "Compreende o idioma estrangeiro dos teus colegas durante o jogo e mostra legendas no teu idioma sobre o ecrã. Um intérprete gratuito em tempo real que corre no teu próprio PC.",
 
@@ -87,8 +87,8 @@
   "spec.disk_rec": "5 GB (pares de idiomas extra, modelos de maior precisão)",
   "spec.delay": "Atraso das legendas",
   "spec.delay_min": "Cerca de 1,2–1,5 s (CPU)",
-  "spec.delay_rec": "Menos de ~1 s (0,7 s medido em GPU)",
-  "spec.note": "Os atrasos foram medidos numa NVIDIA RTX 4060. As GPU AMD e Intel usam o mesmo caminho Vulkan mas ainda não foram medidas — está previsto verificá-lo nas fases alfa e beta. A precisão é escolhida automaticamente conforme a memória da GPU e pode ser alterada nas Definições em qualquer altura.",
+  "spec.delay_rec": "Cerca de 0,7 s (GPU)",
+  "spec.note": "Estes números são a soma de etapas medidas separadamente (deteção de fala, reconhecimento, tradução) numa NVIDIA RTX 4060. O percurso completo — desde o momento em que um colega fala até o texto aparecer no ecrã — ainda não foi medido como um número único, nem com um jogo em execução. Ambas as medições estão previstas para as fases alfa e beta. As GPU AMD e Intel usam o mesmo caminho Vulkan mas não foram medidas. A precisão é escolhida automaticamente conforme a memória da GPU e pode ser alterada nas Definições em qualquer altura.",
 
   "lang.kicker": "Idiomas",
   "lang.h2": "Em todos os idiomas da Steam,<br>com toda a gente da Steam.",
@@ -225,5 +225,6 @@
 
   "lic.f_home": "Início",
   "lic.f_privacy": "Política de privacidade",
-  "lic.f_terms": "Termos de utilização"
+  "lic.f_terms": "Termos de utilização",
+  "a11y.skip": "Saltar para o conteúdo"
 }

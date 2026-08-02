@@ -1,4 +1,4 @@
-﻿{
+{
   "meta.title": "Onmal — słowa drużyny w twoim języku",
   "meta.desc": "Rozumie obcy język twoich towarzyszy podczas gry i wyświetla napisy w twoim języku na ekranie. Darmowy tłumacz czasu rzeczywistego działający na twoim własnym PC.",
 
@@ -87,8 +87,8 @@
   "spec.disk_rec": "5 GB (dodatkowe pary językowe, dokładniejsze modele)",
   "spec.delay": "Opóźnienie napisów",
   "spec.delay_min": "Około 1,2–1,5 s (CPU)",
-  "spec.delay_rec": "Poniżej ~1 s (0,7 s zmierzone na GPU)",
-  "spec.note": "Opóźnienia zmierzono na NVIDIA RTX 4060. Karty AMD i Intel używają tej samej ścieżki Vulkan, ale nie były jeszcze mierzone — to plan na fazy alfa i beta. Dokładność jest dobierana automatycznie do pamięci GPU i można ją w każdej chwili zmienić w ustawieniach.",
+  "spec.delay_rec": "Około 0,7 s (GPU)",
+  "spec.note": "Te liczby to suma etapów mierzonych osobno (wykrywanie mowy, rozpoznawanie, tłumaczenie) na NVIDIA RTX 4060. Całej drogi — od chwili, gdy kolega z drużyny się odezwie, do pojawienia się tekstu na ekranie — nie zmierzono jeszcze jako jednej liczby, podobnie jak działania przy uruchomionej grze. Oba pomiary planujemy na fazy alfa i beta. Karty AMD i Intel używają tej samej ścieżki Vulkan, ale nie były mierzone. Dokładność jest dobierana automatycznie do pamięci GPU i można ją w każdej chwili zmienić w ustawieniach.",
 
   "lang.kicker": "Języki",
   "lang.h2": "We wszystkich językach Steam,<br>ze wszystkimi na Steam.",
@@ -225,5 +225,6 @@
 
   "lic.f_home": "Strona główna",
   "lic.f_privacy": "Polityka prywatności",
-  "lic.f_terms": "Warunki korzystania"
+  "lic.f_terms": "Warunki korzystania",
+  "a11y.skip": "Przejdź do treści"
 }
