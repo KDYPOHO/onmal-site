@@ -41,7 +41,7 @@
       <h1 data-i18n-html="hero.h1">팀원의 말을<br><em>내 말로</em> 듣습니다.</h1>
       <p class="lede" data-i18n="hero.lede">게임 중에 외국인 팀원이 뭐라고 하는지 몰라 콜을 놓치는 일. 온말이 대신 듣고, 화면 위에 번역 자막으로 띄웁니다.</p>
       <div class="cta">
-        <span class="soon"><i></i><span data-i18n="hero.soon">Steam 출시 준비 중</span></span>
+        <span class="soon"><i></i><span data-i18n="hero.soon">Steam 앞서 해보기 · 출시 예정</span></span>
         <a class="btn s" href="#how" data-i18n="hero.how">어떻게 동작하나</a>
       </div>
       <!--
@@ -281,6 +281,17 @@
       </div>
     </div>
 
+    <!--
+      읽어주기. 스팀 상점 문구의 「읽어주기」 항목과 같은 사실입니다
+      (docs/13 §2 — 원하면 자막을 소리로도 읽어 줍니다 · Windows 음성 사용).
+      🔴 "팀원 목소리 그대로 듣기"(audio.p3)와 <b>다른 기능</b>입니다 — 그쪽은 원래
+         소리를 흘려보내는 것이고, 이쪽은 옮긴 자막을 <b>합성 음성으로</b> 읽습니다.
+         한 문단으로 합치지 마십시오.
+      ⚠️ 그 언어의 Windows 음성이 없으면 아무 소리도 나지 않습니다(실측 2/31) —
+         "읽어 줍니다"만 적고 끝내면 그 PC 에서는 고장으로 읽힙니다.
+    -->
+    <p class="note" data-i18n-html="audio.tts">자막을 <b>소리로 읽어주게</b> 할 수도 있습니다. 화면을 볼 틈이 없을 때 쓰라고 둔 것이고, Windows 에 설치된 음성을 그대로 씁니다 — 그 언어의 음성이 없는 컴퓨터에서는 소리가 나지 않습니다. 기본은 꺼져 있습니다.</p>
+
     <p class="note" data-i18n-html="audio.novc"><b>가상 케이블을 설치하라고 하지 않습니다.</b> 이미 컴퓨터에 있는 재생 장치 중에서만 고릅니다. 소리 장치를 새로 깔면 되돌리기가 번거롭고, 잘못 건드리면 게임 소리가 통째로 사라집니다.</p>
 
     <p class="note" data-i18n-html="audio.limit">게임 자체 보이스챗은 게임 소리와 <b>같은 앱에서 나옵니다.</b> 그쪽을 고르면 총성·발소리도 함께 들어와 알아듣기가 나빠집니다. Discord처럼 따로 도는 앱이 가장 깨끗합니다. 어느 쪽이 되는지는 [소리 오나 확인]으로 직접 보십시오 — 게임마다 다릅니다.</p>
@@ -334,7 +345,7 @@
       </div>
       <div class="card">
         <h3 data-i18n="care.t3">대화가 밖으로 나가지 않습니다</h3>
-        <p data-i18n="care.p3">음성은 메모리에서 처리하고 버립니다. 기본 설정에서는 녹음도, 업로드도, 계정도 없습니다.</p>
+        <p data-i18n="care.p3">음성은 메모리에서 처리하고 곧바로 버립니다. 자막 기록은 기본으로 꺼져 있고, 켜도 이 컴퓨터에만 남습니다. 기본 설정에서는 녹음도, 업로드도, 계정도 없습니다.</p>
       </div>
     </div>
   </section>
@@ -361,6 +372,21 @@
         <h3 data-i18n="limits.t4">게임을 건드리지 않습니다</h3>
         <p data-i18n="limits.p4">게임 프로세스에 어떤 코드도 주입하지 않습니다. 안티치트에 걸릴 만한 동작을 하지 않는다는 뜻이고, 대신 위의 창 모드 제약이 생깁니다.</p>
       </div>
+      <!--
+        아래 둘은 스팀 상점 「온말이 하지 않는 일」(docs/13 §2)과 같은 사실입니다.
+        🔴 <b>글자 번역을 기대하고 설치하는 사람</b>이 이 시장 악평의 최다 원인입니다
+           (docs/08 §2 — 기대 불일치). 상점에도 이 자리에도 먼저 적습니다.
+        ⚠️ "아직 안 됩니다"로 바꾸지 마십시오 — 계획에 없는 일입니다. 온말이 다루는
+           것은 소리뿐이고, 화면을 읽으려면 게임 화면을 들여다보는 코드가 필요합니다.
+      -->
+      <div class="limit">
+        <h3 data-i18n="limits.t5">화면의 글자는 번역하지 않습니다</h3>
+        <p data-i18n="limits.p5">온말이 다루는 것은 소리뿐입니다. 게임 UI나 채팅창에 적힌 글자를 읽어 옮기는 기능은 없고, 넣을 계획도 없습니다.</p>
+      </div>
+      <div class="limit">
+        <h3 data-i18n="limits.t6">게임 창에 대신 입력하지 않습니다</h3>
+        <p data-i18n="limits.p6">Alt+M으로 옮긴 내 말은 클립보드까지만 갑니다. 채팅창에 붙여넣는 것은 이용자 본인입니다 — 온말이 게임에 키 입력을 만들어 넣는 일은 없습니다.</p>
+      </div>
     </div>
   </section>
 
@@ -375,9 +401,9 @@
         <tr><th data-i18n="spec.os">운영체제</th><td>Windows 10 64-bit (21H2)</td><td>Windows 11</td></tr>
         <tr><th data-i18n="spec.cpu">프로세서</th><td data-i18n="spec.cpu_min">4코어 · AVX2 (인텔 6세대 / 라이젠 1세대 이상)</td><td data-i18n="spec.cpu_rec">6코어 이상 (인텔 i5-10400 / 라이젠 5 3600 급)</td></tr>
         <tr><th data-i18n="spec.ram">메모리</th><td>8 GB</td><td>16 GB</td></tr>
-        <tr><th data-i18n="spec.gfx">그래픽</th><td data-i18n="spec.gfx_min">없어도 됩니다 — CPU 모드로 동작 (자막이 조금 늦어집니다)</td><td data-i18n="spec.gfx_rec">Vulkan 1.2 GPU — GeForce GTX 1650 이상 · Radeon RX 6600 이상 · Intel Arc A580 이상, 게임 실행 후 VRAM 1 GB 여유</td></tr>
-        <tr><th data-i18n="spec.disk">저장 공간</th><td>2 GB</td><td data-i18n="spec.disk_rec">5 GB (추가 언어쌍·높은 정확도 모델)</td></tr>
-        <tr><th data-i18n="spec.delay">자막 지연</th><td data-i18n="spec.delay_min">약 1.2~1.5초 (CPU)</td><td data-i18n="spec.delay_rec">약 0.7초 (GPU)</td></tr>
+        <tr><th data-i18n="spec.gfx">그래픽</th><td data-i18n="spec.gfx_min">DirectX 11 (자막을 그리는 데만 씁니다) — 인식·번역은 GPU 없이도 동작</td><td data-i18n="spec.gfx_rec">Vulkan 지원 전용 GPU · VRAM 6 GB 이상</td></tr>
+        <tr><th data-i18n="spec.disk">저장 공간</th><td>3 GB</td><td>3 GB</td></tr>
+        <tr><th data-i18n="spec.delay">자막 지연</th><td data-i18n="spec.delay_min">약 2~3초 (CPU)</td><td data-i18n="spec.delay_rec">약 1초 (GPU)</td></tr>
       </tbody>
     </table>
     <!--
@@ -386,14 +412,47 @@
          적혀 있었는데, 0.7초는 단계별로 잰 값을 <b>더한 것</b>이지 종단 실측이
          아닙니다. 31개 언어로 배포돼 있던 문구입니다.
       ⚠️ 숫자를 고칠 때 이 문단도 함께 보십시오 — 숫자만 바꾸면 다시 거짓이 됩니다.
+
+      🔴 <b>표의 값은 스팀 상점 페이지와 같아야 합니다</b> (2026-08-06).
+         정본은 앱 저장소 `docs/01_프로젝트_계획서.md` §5 이고, 그것이 그대로
+         Steamworks 의 시스템 요구 사양에 들어가 있습니다. 한쪽만 고치면 같은 앱이
+         두 곳에서 다른 사양을 말하게 됩니다 — 상점은 심사를 거친 문서입니다.
+         단계 합산 실측치는 GPU 0.734초 · CPU 1.441초이고, 표에는 여유를 둔
+         약 1초 / 약 2~3초를 적습니다(상점과 동일). 낮춰 적지 마십시오.
     -->
-    <p class="spec-note" data-i18n="spec.note">이 숫자는 단계별로 따로 잰 값(발화 감지 · 인식 · 번역)을 더한 것이고, NVIDIA RTX 4060 기준입니다. 팀원이 말한 순간부터 화면에 글자가 뜰 때까지를 통째로 잰 값은 아직 없고, 게임을 돌리면서 잰 값도 아직 없습니다 — 둘 다 알파·베타에서 재어 공개합니다. AMD·인텔 GPU도 같은 Vulkan 경로를 쓰지만 재보지 않았습니다. 정확도는 이 컴퓨터의 GPU 메모리에 맞춰 자동으로 골라지고, 설정에서 언제든 바꿀 수 있습니다.</p>
+    <p class="spec-note" data-i18n="spec.note">표의 지연은 단계별로 따로 잰 값(발화 감지 · 인식 · 번역)에 여유를 둔 것이고, NVIDIA RTX 4060 기준입니다. 팀원이 말한 순간부터 화면에 글자가 뜰 때까지를 통째로 잰 값은 아직 없고, 게임을 돌리면서 잰 값도 아직 없습니다 — 둘 다 알파·베타에서 재어 공개합니다. AMD·인텔 GPU도 같은 Vulkan 경로를 쓰지만 재보지 않았습니다. 인식·번역 기본 모델은 스팀 설치에 들어 있어 인터넷 없이도 동작하고, 정확도는 이 컴퓨터의 GPU 메모리에 맞춰 자동으로 골라집니다. 이 표는 스팀 상점 페이지의 시스템 요구 사양과 같은 값입니다.</p>
   </section>
 
-  <section>
+  <!--
+    언어. 🔴 <b>세 가지를 갈라 적습니다 — 번역 · 알아듣기 · 화면.</b>
+    2026-08-06 이전에는 "스팀 지원 31개 언어"만 크게 적혀 있어서, 읽는 사람이
+    <b>31개 언어로 번역된다</b>고 읽을 수밖에 없었습니다. 실제로 번역이 실측을
+    통과한 언어쌍은 <b>한국어 ↔ 영어 하나</b>입니다(스팀 상점 문구 docs/13 §2
+    「언어」 절과 같은 사실). 31개는 <b>화면 글자</b>의 수입니다.
+    ⚠️ 이 세 줄을 하나로 합치지 마십시오 — 합치는 순간 다시 같은 오해가 됩니다.
+    ⚠️ 언어쌍을 더하면 여기와 스팀 상점 「언어」 절을 <b>함께</b> 고치십시오.
+       실측을 통과한 것만 적습니다 (절대 금지 §5).
+  -->
+  <section id="lang">
     <p class="kicker" data-i18n="lang.kicker">언어</p>
     <h2 data-i18n-html="lang.h2">스팀이 지원하는 모든 언어로,<br>스팀에 모인 모든 사람과.</h2>
-    <p class="sub-lede" data-i18n="lang.lede">인터페이스와 이 홈페이지는 스팀 전체 지원 언어 31개로 제공합니다. 음성 인식은 그보다 훨씬 넓은 범위를 다룹니다.</p>
+    <p class="sub-lede" data-i18n="lang.lede">다만 셋을 갈라 적습니다 — 옮기는 언어, 알아듣는 언어, 화면에 적히는 언어는 서로 범위가 다릅니다.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h3 data-i18n="lang.t1">옮기기 — 한국어 ↔ 영어</h3>
+        <p data-i18n="lang.p1">실제로 재보고 통과한 언어쌍은 지금 이 하나입니다. 두 방향 모두 번역 모델이 스팀 설치에 함께 들어 있어 따로 받지 않아도 됩니다. 다른 언어쌍은 업데이트로 더하되, 재보고 통과한 것만 "지원"이라고 적습니다.</p>
+      </div>
+      <div class="card">
+        <h3 data-i18n="lang.t2">알아듣기 — 훨씬 넓게</h3>
+        <p data-i18n="lang.p2">음성 인식이 알아듣는 범위는 번역보다 훨씬 넓습니다. 옮길 언어쌍이 아직 없더라도 알아들은 말은 원문 그대로 자막에 뜹니다 — 아무것도 안 나오는 것보다는 낫습니다.</p>
+      </div>
+      <div class="card">
+        <h3 data-i18n="lang.t3">화면 — 31개 언어</h3>
+        <p data-i18n="lang.p3">앱 창과 이 홈페이지의 글자입니다. 스팀 전체 지원 언어 31개로 제공하며, 그중 29개는 AI 번역본이라 앱 안에 검수 전이라고 적어 두었습니다.</p>
+      </div>
+    </div>
+
     <div class="langs">
       <span class="chip">ko 한국어</span><span class="chip">en English</span><span class="chip">ja 日本語</span>
       <span class="chip">zh-CN 简体中文</span><span class="chip">zh-TW 繁體中文</span><span class="chip">ru Русский</span>
@@ -407,6 +466,24 @@
       <span class="chip">hu Magyar</span><span class="chip">ro Română</span><span class="chip">el Ελληνικά</span>
       <span class="chip">bg Български</span>
     </div>
+  </section>
+
+  <!--
+    만든 사람. 스팀 상점 문구의 「만든 사람 / Who Makes This」 절과 같은 내용입니다
+    (docs/13 §2·§3 — 2026-08-05 사용자 지시로 신설된 절).
+    🔴 <b>무료·무제한 약속은 "본체"로 한정합니다.</b> 지금은 수익화 자체가 잠겨
+       있지만(앱 저장소 docs/04 §1), 먼 훗날 신분 제약이 풀려 DLC 가 생겨도 이
+       문장이 거짓이 되지 않아야 합니다 — 상점 문구가 그렇게 적혀 있고 여기도 같은
+       표현을 씁니다. "영원히 전부 무료"로 바꾸지 마십시오.
+    ⚠️ 값을 올려 적지 마십시오 — "팀", "우리"가 아니라 <b>한 사람</b>입니다.
+       속도를 약속하지 않는 것이 이 절의 요점입니다.
+  -->
+  <section id="maker">
+    <p class="kicker" data-i18n="maker.kicker">만든 사람</p>
+    <h2 data-i18n="maker.h2">한 사람이 만듭니다.</h2>
+    <p class="sub-lede" data-i18n="maker.lede">온말은 개인 개발자 한 명이 만드는 무료 도구입니다. 회사도, 투자도, 서버 비용도 없습니다 — 그래서 무료·무제한이 지속됩니다.</p>
+    <p class="note" data-i18n-html="maker.p1">서버가 없으니 다달이 나가는 돈이 없고, 그래서 <b>본체에 가격이나 사용량 제한을 붙일 이유가 없습니다.</b> 붙일 계획도 없습니다.</p>
+    <p class="note" data-i18n-html="maker.p2">대신 속도는 한 사람의 속도입니다. 업데이트와 문의 답변은 꾸준히 하되 빠르지는 않습니다. 버그 신고와 제안은 언제나 환영합니다 — 아래 <b>문의 · 버그 신고</b>로 보내 주십시오.</p>
   </section>
 
   <section id="roadmap">
@@ -426,6 +503,15 @@
       <div><span class="when">0.9</span><span class="what" data-i18n="road.r9">출시 후보 — 기능 동결, 버그만 수정</span></div>
       <div><span class="when">1.0</span><span class="what" data-i18n="road.r10">정식 출시 — 보이스 앱처럼 늘 켜두는 편안함, 계속 무료</span><span class="who" data-i18n="road.launch">목표</span></div>
     </div>
+
+    <!--
+      🔴 출시 방식은 2026-08-05 사용자 확정입니다 — <b>앞서 해보기(Early Access) ·
+         출시일 미정</b>. 스팀 상점에도 「앞서 해보는 소프트웨어 — 완성되지 않았으며」
+         배너가 실제로 걸려 있고, 고객에게는 날짜 없이 「출시 예정」으로 보입니다.
+      ⚠️ 여기에 날짜를 적지 마십시오. Steamworks 의 희망 출시일은 자리표시자이고,
+         날짜를 앞당기려면 <b>이전 지정일의 2주 전</b>에 갱신해야 합니다(docs/14 §3).
+    -->
+    <p class="note" data-i18n-html="road.ea">스팀에는 <b>앞서 해보기(Early Access)</b>로 올립니다. 완성되지 않은 채로 내놓고 쓰는 사람과 함께 다듬는 방식이고, <b>출시일은 정해 두지 않았습니다</b> — 위 기준을 채우면 그때 올립니다.</p>
   </section>
 
   <section id="faq">
@@ -434,7 +520,7 @@
     <div class="faq">
       <div class="qa">
         <h3 data-i18n="faq.q1">정말 무료인가요?</h3>
-        <p data-i18n="faq.a1">네. 본체는 지금도, 정식 출시 후에도 무료입니다. 계정도, 결제도, 광고도 없습니다.</p>
+        <p data-i18n="faq.a1">네. 본체는 지금도, 정식 출시 후에도 무료입니다. 사용량 제한도, 구독도, 계정도, 광고도 없습니다.</p>
       </div>
       <div class="qa">
         <h3 data-i18n="faq.q2">게임에서 밴 당하지 않나요?</h3>
@@ -445,8 +531,16 @@
         <p data-i18n="faq.a3">특정 게임 전용이 아닙니다. 게임을 '테두리 없는 창 모드'로 실행할 수 있으면 자막을 띄울 수 있습니다. 소리는 게임 내 보이스챗이든 Discord든, 팀보이스가 나오는 앱을 고르면 됩니다.</p>
       </div>
       <div class="qa">
+        <!--
+          🔴 2026-08-06 정정. 그전에는 "처음에 인식 모델을 받을 때만 필요합니다"
+             였는데, 2026-08-04 부터 스팀 뎁포가 VAD·Whisper·한국어↔영어 번역
+             모델을 담습니다(실측 설치 0.93 GB) — 기본 구성은 <b>처음부터</b>
+             인터넷 없이 돕니다. 스팀 상점 사양표의 「추가 사항」과 같은 사실입니다.
+          ⚠️ 스팀 밖 배포는 없습니다. 이 답이 "설치 직후 인터넷 필요"로 돌아가려면
+             뎁포 구성이 바뀌어야 하고, 그때는 상점 사양표도 함께 바뀝니다.
+        -->
         <h3 data-i18n="faq.q4">인터넷이 필요한가요?</h3>
-        <p data-i18n="faq.a4">처음에 인식 모델을 받을 때만 필요합니다. 그 뒤로는 인식과 번역 모두 내 PC에서 처리되므로 인터넷 없이도 동작합니다.</p>
+        <p data-i18n="faq.a4">아니요. 인식·번역 기본 모델이 스팀 설치에 들어 있어 처음부터 인터넷 없이 동작합니다. 더 정확한 인식 모델을 직접 골랐을 때만 그 파일을 받아 옵니다.</p>
       </div>
       <div class="qa">
         <h3 data-i18n="faq.q5">내 목소리도 번역되나요?</h3>
@@ -495,7 +589,8 @@
       <a href="https://github.com/KDYPOHO/onmal-site/issues" data-i18n="footer.contact">문의 · 버그 신고</a>
       <a href="mailto:todaklife@gmail.com">todaklife@gmail.com</a>
     </div>
-    <div>온말 · Onmal</div>
+    <!-- 스팀 상점의 개발사·배급사 표시 이름과 같아야 합니다 (docs/13 §8). -->
+    <div>온말 · Onmal · 토닥 Todak</div>
     <small data-i18n-html="footer.small">
       Steam 및 Steam 로고는 Valve Corporation의 상표입니다. Discord는 Discord Inc.의 상표입니다.
       온말은 해당 기업과 제휴 관계가 없으며, 호환성을 설명하기 위해 명칭을 사용합니다.<br>
