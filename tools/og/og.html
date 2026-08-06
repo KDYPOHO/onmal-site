@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<title>og</title>
+<!--
+  공유 카드(og.png) 의 원본입니다. 브라우저가 볼 페이지가 아니라 `shoot-og.ps1` 이
+  1200×630 으로 찍는 판입니다.
+
+  🔴 색과 서체를 여기서 다시 적지 않고 사이트의 tokens.css 를 그대로 씁니다.
+     og 이미지는 한 번 만들면 아무도 다시 안 보는데, 팔레트를 바꾸면 이것만 옛 색으로
+     남습니다 — 실제로 그런 일이 흔합니다.
+
+  🔴 글꼴은 여기서만 Google Fonts 를 씁니다. 이 판은 <b>배포되지 않고</b> 개발자 PC 에서
+     한 번 렌더될 뿐이라, "방문자 IP 를 남에게 넘기지 않는다"는 원칙과 무관합니다.
+-->
+<link rel="stylesheet" href="../../styles/tokens.css">
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1200px;height:630px;overflow:hidden}
+  body{
+    background:var(--ink);color:var(--paper);font-family:var(--body);
+    display:grid;grid-template-columns:1fr auto;align-items:center;
+    gap:56px;padding:72px 76px;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .mark{display:flex;align-items:center;gap:14px;margin-bottom:34px}
+  .mark img{width:44px;height:44px;border-radius:12px}
+  .mark b{font-family:var(--display);font-weight:700;font-size:27px;letter-spacing:.02em}
+  .mark span{font-family:var(--mono);font-size:15px;color:var(--dim);letter-spacing:.06em;
+    margin-inline-start:4px}
+
+  h1{font-family:var(--display);font-weight:700;font-size:66px;line-height:1.18;
+    letter-spacing:-.015em}
+  h1 em{font-style:normal;color:var(--jade)}
+
+  .lede{margin-top:26px;color:var(--dim);font-size:23px;line-height:1.5;max-width:30ch}
+
+  .foot{margin-top:40px;display:flex;align-items:center;gap:16px;
+    font-family:var(--mono);font-size:16px;color:var(--dim);letter-spacing:.04em}
+  .foot i{width:5px;height:5px;border-radius:99px;background:var(--dim);flex-shrink:0}
+
+  /* ── 신호 문법 — 파형이 자막이 됩니다 (docs/05 §3) ──────────────────────
+     사이트에서 쓰는 것과 같은 격자: 바 2px · 간격 2px · 피치 4px.
+     공유 카드는 작게 보이므로 <b>같은 문법을 크게</b> 그립니다(폭 6px · 간격 6px). */
+  .signal{display:flex;flex-direction:column;gap:30px;align-items:flex-start}
+  .row{display:flex;align-items:flex-end;gap:6px;height:120px}
+  .row b{width:6px;border-radius:3px;background:var(--jade)}
+  .row.done b{background:var(--paper)}
+  .arrow{font-family:var(--mono);font-size:15px;color:var(--dim);letter-spacing:.14em}
+</style>
+</head>
+<body>
+  <div>
+    <div class="mark">
+      <img src="../../onmal_128.png" alt="">
+      <b>온말</b><span>ONMAL</span>
+    </div>
+    <h1>팀원의 말을<br><em>내 말로</em> 듣습니다.</h1>
+    <p class="lede">게임 중 팀원의 외국어를 실시간 자막으로. 내 컴퓨터 안에서만 처리합니다.</p>
+    <p class="foot">Windows<i></i>Steam<i></i>무료<i></i>31개 언어</p>
+  </div>
+
+  <div class="signal" aria-hidden="true">
+    <!-- 아직 내 말이 아닌 것 -->
+    <div class="row">
+      <b style="height:44px"></b><b style="height:92px"></b><b style="height:120px"></b>
+      <b style="height:70px"></b><b style="height:26px"></b>
+    </div>
+    <div class="arrow">↓</div>
+    <!-- 내 말이 된 것 -->
+    <div class="row done" style="height:12px">
+      <b style="height:6px"></b><b style="height:6px"></b><b style="height:6px"></b>
+      <b style="height:6px"></b><b style="height:6px"></b>
+    </div>
+  </div>
+</body>
+</html>
