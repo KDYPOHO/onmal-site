@@ -140,7 +140,7 @@
   "spec.ram": "内存",
   "spec.gfx": "显卡",
   "spec.gfx_min": "DirectX 11（只用来画字幕）—— 识别和翻译没有 GPU 也能跑",
-  "spec.gfx_rec": "支持 Vulkan 的独立显卡 · 显存 6 GB 以上",
+  "spec.gfx_rec": "支持 Vulkan 的独立显卡 · 显存 8 GB 以上",
   "spec.disk": "存储空间",
   "spec.delay": "字幕延迟",
   "spec.delay_min": "约 2~3 秒（CPU）",

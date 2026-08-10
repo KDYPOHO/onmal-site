@@ -140,7 +140,7 @@
   "spec.ram": "Minne",
   "spec.gfx": "Skjermkort",
   "spec.gfx_min": "DirectX 11 (bare for å tegne undertekstene) — gjenkjenning og oversettelse går også uten GPU",
-  "spec.gfx_rec": "Dedikert skjermkort med Vulkan-støtte · 6 GB VRAM eller mer",
+  "spec.gfx_rec": "Dedikert skjermkort med Vulkan-støtte · 8 GB VRAM eller mer",
   "spec.disk": "Lagring",
   "spec.delay": "Undertekstforsinkelse",
   "spec.delay_min": "omtrent 2–3 s (CPU)",

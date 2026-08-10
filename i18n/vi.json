@@ -140,7 +140,7 @@
   "spec.ram": "Bộ nhớ",
   "spec.gfx": "Card đồ họa",
   "spec.gfx_min": "DirectX 11 (chỉ để vẽ phụ đề) — nhận dạng và dịch chạy được không cần GPU",
-  "spec.gfx_rec": "GPU rời hỗ trợ Vulkan · VRAM 6 GB trở lên",
+  "spec.gfx_rec": "GPU rời hỗ trợ Vulkan · VRAM 8 GB trở lên",
   "spec.disk": "Lưu trữ",
   "spec.delay": "Độ trễ phụ đề",
   "spec.delay_min": "khoảng 2–3 giây (CPU)",

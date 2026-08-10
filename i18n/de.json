@@ -140,7 +140,7 @@
   "spec.ram": "Arbeitsspeicher",
   "spec.gfx": "Grafik",
   "spec.gfx_min": "DirectX 11 (nur zum Zeichnen der Untertitel) — Erkennung und Übersetzung laufen auch ohne GPU",
-  "spec.gfx_rec": "Dedizierte GPU mit Vulkan-Unterstützung · ab 6 GB VRAM",
+  "spec.gfx_rec": "Dedizierte GPU mit Vulkan-Unterstützung · ab 8 GB VRAM",
   "spec.disk": "Speicherplatz",
   "spec.delay": "Untertitel-Verzögerung",
   "spec.delay_min": "etwa 2–3 s (CPU)",

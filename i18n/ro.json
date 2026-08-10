@@ -140,7 +140,7 @@
   "spec.ram": "Memorie",
   "spec.gfx": "Placă video",
   "spec.gfx_min": "DirectX 11 (doar pentru desenarea subtitrărilor) — recunoașterea și traducerea merg și fără GPU",
-  "spec.gfx_rec": "GPU dedicat cu suport Vulkan · 6 GB VRAM sau mai mult",
+  "spec.gfx_rec": "GPU dedicat cu suport Vulkan · 8 GB VRAM sau mai mult",
   "spec.disk": "Stocare",
   "spec.delay": "Întârzierea subtitrării",
   "spec.delay_min": "circa 2–3 s (CPU)",

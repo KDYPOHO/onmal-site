@@ -140,7 +140,7 @@
   "spec.ram": "Memori",
   "spec.gfx": "Kartu grafis",
   "spec.gfx_min": "DirectX 11 (hanya untuk menggambar teksnya) — pengenalan dan terjemahan jalan tanpa GPU",
-  "spec.gfx_rec": "GPU khusus dengan dukungan Vulkan · VRAM 6 GB atau lebih",
+  "spec.gfx_rec": "GPU khusus dengan dukungan Vulkan · VRAM 8 GB atau lebih",
   "spec.disk": "Penyimpanan",
   "spec.delay": "Jeda subtitle",
   "spec.delay_min": "sekitar 2–3 detik (CPU)",

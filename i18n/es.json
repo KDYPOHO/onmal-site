@@ -140,7 +140,7 @@
   "spec.ram": "Memoria",
   "spec.gfx": "Gráficos",
   "spec.gfx_min": "DirectX 11 (solo para dibujar los subtítulos) — el reconocimiento y la traducción funcionan sin GPU",
-  "spec.gfx_rec": "GPU dedicada compatible con Vulkan · 6 GB de VRAM o más",
+  "spec.gfx_rec": "GPU dedicada compatible con Vulkan · 8 GB de VRAM o más",
   "spec.disk": "Almacenamiento",
   "spec.delay": "Retardo de subtítulos",
   "spec.delay_min": "unos 2–3 s (CPU)",

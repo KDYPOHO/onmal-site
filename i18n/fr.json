@@ -140,7 +140,7 @@
   "spec.ram": "Mémoire",
   "spec.gfx": "Carte graphique",
   "spec.gfx_min": "DirectX 11 (uniquement pour dessiner les sous-titres) — la reconnaissance et la traduction fonctionnent sans GPU",
-  "spec.gfx_rec": "GPU dédié compatible Vulkan · 6 Go de VRAM ou plus",
+  "spec.gfx_rec": "GPU dédié compatible Vulkan · 8 Go de VRAM ou plus",
   "spec.disk": "Stockage",
   "spec.delay": "Délai des sous-titres",
   "spec.delay_min": "environ 2–3 s (CPU)",

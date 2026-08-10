@@ -140,7 +140,7 @@
   "spec.ram": "Memória",
   "spec.gfx": "Placa de vídeo",
   "spec.gfx_min": "DirectX 11 (só para desenhar as legendas) — reconhecimento e tradução funcionam sem GPU",
-  "spec.gfx_rec": "GPU dedicada com suporte a Vulkan · 6 GB de VRAM ou mais",
+  "spec.gfx_rec": "GPU dedicada com suporte a Vulkan · 8 GB de VRAM ou mais",
   "spec.disk": "Armazenamento",
   "spec.delay": "Atraso das legendas",
   "spec.delay_min": "cerca de 2–3 s (CPU)",

@@ -140,7 +140,7 @@
   "spec.ram": "Pamięć",
   "spec.gfx": "Karta graficzna",
   "spec.gfx_min": "DirectX 11 (tylko do rysowania napisów) — rozpoznawanie i tłumaczenie działają też bez GPU",
-  "spec.gfx_rec": "Dedykowana karta graficzna z obsługą Vulkan · 6 GB VRAM lub więcej",
+  "spec.gfx_rec": "Dedykowana karta graficzna z obsługą Vulkan · 8 GB VRAM lub więcej",
   "spec.disk": "Dysk",
   "spec.delay": "Opóźnienie napisów",
   "spec.delay_min": "około 2–3 s (CPU)",

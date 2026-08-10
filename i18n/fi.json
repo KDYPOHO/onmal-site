@@ -140,7 +140,7 @@
   "spec.ram": "Muisti",
   "spec.gfx": "Näytönohjain",
   "spec.gfx_min": "DirectX 11 (vain tekstitysten piirtämiseen) — tunnistus ja kääntäminen toimivat ilman näytönohjainta",
-  "spec.gfx_rec": "Erillinen näytönohjain, jossa Vulkan-tuki · 6 Gt VRAM tai enemmän",
+  "spec.gfx_rec": "Erillinen näytönohjain, jossa Vulkan-tuki · 8 Gt VRAM tai enemmän",
   "spec.disk": "Tallennustila",
   "spec.delay": "Tekstityksen viive",
   "spec.delay_min": "noin 2–3 s (suoritin)",

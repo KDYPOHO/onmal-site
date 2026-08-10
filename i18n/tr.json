@@ -140,7 +140,7 @@
   "spec.ram": "Bellek",
   "spec.gfx": "Ekran kartı",
   "spec.gfx_min": "DirectX 11 (yalnızca altyazıyı çizmek için) — tanıma ve çeviri GPU olmadan da çalışır",
-  "spec.gfx_rec": "Vulkan destekli ayrı ekran kartı · 6 GB VRAM ve üzeri",
+  "spec.gfx_rec": "Vulkan destekli ayrı ekran kartı · 8 GB VRAM ve üzeri",
   "spec.disk": "Depolama",
   "spec.delay": "Altyazı gecikmesi",
   "spec.delay_min": "yaklaşık 2–3 sn (CPU)",

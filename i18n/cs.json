@@ -140,7 +140,7 @@
   "spec.ram": "Paměť",
   "spec.gfx": "Grafika",
   "spec.gfx_min": "DirectX 11 (jen pro vykreslení titulků) — rozpoznávání i překlad běží i bez GPU",
-  "spec.gfx_rec": "Samostatná GPU s podporou Vulkanu · 6 GB VRAM a více",
+  "spec.gfx_rec": "Samostatná GPU s podporou Vulkanu · 8 GB VRAM a více",
   "spec.disk": "Úložiště",
   "spec.delay": "Zpoždění titulků",
   "spec.delay_min": "asi 2–3 s (CPU)",

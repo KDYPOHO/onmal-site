@@ -140,7 +140,7 @@
   "spec.ram": "Memori",
   "spec.gfx": "Kad grafik",
   "spec.gfx_min": "DirectX 11 (hanya untuk melukis sari kata) — pengecaman dan terjemahan berjalan tanpa GPU",
-  "spec.gfx_rec": "GPU khusus dengan sokongan Vulkan · VRAM 6 GB atau lebih",
+  "spec.gfx_rec": "GPU khusus dengan sokongan Vulkan · VRAM 8 GB atau lebih",
   "spec.disk": "Storan",
   "spec.delay": "Lengah sari kata",
   "spec.delay_min": "kira-kira 2–3 saat (CPU)",

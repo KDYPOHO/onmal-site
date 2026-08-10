@@ -140,7 +140,7 @@
   "spec.ram": "Memória",
   "spec.gfx": "Videokártya",
   "spec.gfx_min": "DirectX 11 (csak a feliratok kirajzolásához) — a felismerés és a fordítás GPU nélkül is fut",
-  "spec.gfx_rec": "Vulkan-támogatású dedikált GPU · 6 GB VRAM vagy több",
+  "spec.gfx_rec": "Vulkan-támogatású dedikált GPU · 8 GB VRAM vagy több",
   "spec.disk": "Tárhely",
   "spec.delay": "Felirat késése",
   "spec.delay_min": "kb. 2–3 mp (CPU)",

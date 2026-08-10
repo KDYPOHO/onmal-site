@@ -140,7 +140,7 @@
   "spec.ram": "หน่วยความจำ",
   "spec.gfx": "กราฟิกการ์ด",
   "spec.gfx_min": "DirectX 11 (ใช้แค่วาดคำบรรยาย) — การรู้จำและการแปลทำงานได้แม้ไม่มี GPU",
-  "spec.gfx_rec": "การ์ดจอแยกที่รองรับ Vulkan · VRAM 6 GB ขึ้นไป",
+  "spec.gfx_rec": "การ์ดจอแยกที่รองรับ Vulkan · VRAM 8 GB ขึ้นไป",
   "spec.disk": "พื้นที่จัดเก็บ",
   "spec.delay": "ดีเลย์ซับไตเติล",
   "spec.delay_min": "ประมาณ 2–3 วินาที (CPU)",

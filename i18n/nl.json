@@ -140,7 +140,7 @@
   "spec.ram": "Geheugen",
   "spec.gfx": "Videokaart",
   "spec.gfx_min": "DirectX 11 (alleen om de ondertitels te tekenen) — herkenning en vertaling werken ook zonder GPU",
-  "spec.gfx_rec": "Aparte GPU met Vulkan-ondersteuning · 6 GB VRAM of meer",
+  "spec.gfx_rec": "Aparte GPU met Vulkan-ondersteuning · 8 GB VRAM of meer",
   "spec.disk": "Opslag",
   "spec.delay": "Ondertitelvertraging",
   "spec.delay_min": "ongeveer 2–3 s (CPU)",

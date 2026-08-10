@@ -140,7 +140,7 @@
   "spec.ram": "メモリ",
   "spec.gfx": "グラフィック",
   "spec.gfx_min": "DirectX 11（字幕を描くためだけ）— 認識と翻訳はGPUなしでも動きます",
-  "spec.gfx_rec": "Vulkan 対応の専用GPU · VRAM 6 GB 以上",
+  "spec.gfx_rec": "Vulkan 対応の専用GPU · VRAM 8 GB 以上",
   "spec.disk": "ストレージ",
   "spec.delay": "字幕の遅延",
   "spec.delay_min": "約2〜3秒（CPU）",
