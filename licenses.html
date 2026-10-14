@@ -31,9 +31,11 @@
     <p class="kicker" data-i18n="lic.kicker">법적 고지</p>
     <h1 data-i18n="lic.h1">저작권 및 라이선스</h1>
     <p class="lede" data-i18n="lic.lede">온말은 아래 소프트웨어와 모델 위에서 동작합니다. 각 저작권자와 라이선스를 밝히고, 의도적으로 쓰지 않은 것도 함께 적었습니다.</p>
-    <p class="meta"><span data-i18n="lic.updated">최종 갱신</span> 2026-07-31</p>
+    <p class="meta"><span data-i18n="lic.updated">최종 갱신</span> 2026-10-14</p>
     <p class="meta" style="margin-top:6px">이 문서는 한국어가 정본입니다 · The Korean text is authoritative</p>
     <p class="meta" style="margin-top:6px" data-i18n="lic.same_in_app">같은 내용이 앱 안에도 들어 있습니다 (정보 → 저작권 및 라이선스). 인터넷이 없어도 읽을 수 있습니다.</p>
+    <p class="note" id="release-scope"><span lang="ko">0.2.2 기본 빌드는 한영 ONNX 번역의 비교 기준입니다. 개발 중인 0.3.0 후보는 무료 Steam 얼리 액세스 알파로 공개할 계획이며 정식 1.0이 아닙니다. 아직 앱을 출시하지 않았고 음성·게임 성능·최소 사양·Steam 새 설치 검증과 Valve 승인이 남아 있습니다. 모델 팩 공개는 앱 출시나 품질 검증 완료를 뜻하지 않습니다.</span><br>
+      <span lang="en">The 0.2.2 baseline uses Korean–English ONNX translation. The 0.3.0 candidate is being developed for a free public Steam Early Access alpha, not a final 1.0 release. The app has not been released; audio, game performance, minimum hardware, fresh Steam installation checks and Valve approval remain pending. Publishing a model pack does not mean the app is released or translation quality is validated.</span></p>
   </header>
 
   <article>
@@ -45,7 +47,8 @@
       <p style="margin-top:8px"><a href="https://creativecommons.org/licenses/by/4.0/">creativecommons.org/licenses/by/4.0</a></p>
     </div>
 
-    <p data-i18n="lic.attr_p1">온말의 로컬 번역은 헬싱키 대학교 언어기술 연구 그룹(Helsinki-NLP)의 Opus-MT 모델 가중치를 사용합니다. 추론을 위해 ONNX 형식으로 변환했으며, 가중치 자체는 수정하지 않았습니다.</p>
+    <p><span lang="ko">기본 한영 로컬 번역은 헬싱키 대학교 언어기술 연구 그룹(Helsinki-NLP)의 Opus-MT 모델을 ONNX 형식으로 변환해 사용합니다. 아래는 언어쌍별 원저작물의 고지이며 모두 현재 기본 배포물에 동봉됐다는 뜻은 아닙니다. 선택 설치하는 0.3 다국어 M2M100 팩은 별도 MIT 모델입니다.</span><br>
+      <span lang="en">The default Korean–English local translator uses Helsinki-NLP Opus-MT models converted to ONNX. The notices below describe the original language-pair models; they do not mean every listed pair is bundled in the baseline. The optional 0.3 multilingual pack uses the separate MIT-licensed M2M100 model.</span></p>
     <p class="dim" data-i18n="lic.attr_p2">라이선스가 언어쌍마다 다릅니다. 아래 네 쌍은 CC-BY-4.0이라 저작자 표시가 의무이고, 나머지 쌍은 Apache-2.0입니다. 2026-07-29 확인 기준입니다.</p>
 
     <div class="scroll">
@@ -77,7 +80,7 @@
           <th data-i18n="lic.th_use">용도</th>
         </tr></thead>
         <tbody>
-          <tr><td class="name"><a href="https://github.com/dotnet/runtime">.NET</a></td><td>.NET Foundation and Contributors</td><td class="lic">MIT</td><td data-i18n="lic.sw_dotnet">런타임</td></tr>
+          <tr><td class="name"><a href="https://github.com/dotnet/runtime">.NET 10 LTS</a></td><td>.NET Foundation and Contributors</td><td class="lic">MIT</td><td><span lang="ko">현재 빌드 후보의 self-contained 런타임 10.0.13 · SDK 10.0.402</span><br><span lang="en">Current build candidate: self-contained runtime 10.0.13 · SDK 10.0.402</span></td></tr>
           <tr><td class="name"><a href="https://github.com/naudio/NAudio">NAudio</a></td><td>Mark Heath &amp; Contributors</td><td class="lic">MIT</td><td data-i18n="lic.sw_naudio">장치 루프백·마이크 캡처</td></tr>
           <tr><td class="name"><a href="https://github.com/microsoft/onnxruntime">ONNX Runtime</a></td><td>Microsoft Corporation</td><td class="lic">MIT</td><td data-i18n="lic.sw_ort">VAD·번역 모델 추론</td></tr>
           <tr><td class="name"><a href="https://github.com/dotnet/machinelearning">Microsoft.ML.Tokenizers</a></td><td>.NET Foundation</td><td class="lic">MIT</td><td data-i18n="lic.sw_tokenizers">SentencePiece 토크나이저</td></tr>
@@ -91,6 +94,33 @@
     </div>
 
     <p class="note" data-i18n="lic.sw_note">FluentAssertions는 7.0부터 상용 라이선스로 바뀌었습니다. 온말은 Apache-2.0인 6.12.2에 고정해 씁니다.</p>
+
+    <!-- These deployment facts are bilingual and intentionally have no i18n attributes. -->
+    <h3><span lang="ko">개발 중인 0.3 네이티브 번역 구성</span> · <span lang="en">Native translation components in the 0.3 candidate</span></h3>
+    <div class="scroll" id="native-components">
+      <table>
+        <thead><tr><th>구성요소 · Component</th><th>저작권자 · Copyright holder</th><th>라이선스 · License</th><th>용도 · Use</th></tr></thead>
+        <tbody>
+          <tr><td class="name"><a href="https://github.com/OpenNMT/CTranslate2/blob/v4.8.3/LICENSE">CTranslate2 4.8.3</a></td><td>SYSTRAN; The OpenNMT Authors</td><td class="lic">MIT</td><td>M2M100 CPU 추론 · CPU inference</td></tr>
+          <tr><td class="name"><a href="https://github.com/google/sentencepiece/blob/v0.2.1/LICENSE">SentencePiece 0.2.1</a></td><td>Google Inc.</td><td class="lic">Apache-2.0</td><td>토크나이저 · Tokenizer</td></tr>
+          <tr><td class="name"><a href="https://github.com/BYVoid/OpenCC/blob/ver.1.2.0/LICENSE">OpenCC 1.2.0</a></td><td>Carbo Kuo and contributors</td><td class="lic">Apache-2.0</td><td>중국어 간체·번체 변환 · Simplified/Traditional Chinese conversion</td></tr>
+          <tr><td class="name"><a href="https://github.com/nlohmann/json/blob/v3.11.2/LICENSE.MIT">JSON for Modern C++ 3.11.2</a></td><td>Niels Lohmann</td><td class="lic">MIT</td><td>프로토콜·모델 설정 · Protocol and model configuration</td></tr>
+          <tr><td class="name"><a href="https://github.com/Tencent/rapidjson/blob/v1.1.0/license.txt">RapidJSON 1.1.0</a></td><td>THL A29 Limited; Milo Yip; Alexander Chemeris</td><td class="lic">MIT; msinttypes BSD-3-Clause</td><td>OpenCC 설정 · OpenCC configuration. JSON_checker 미동봉 · not included</td></tr>
+          <tr><td>ruy</td><td>Google LLC and contributors</td><td class="lic">Apache-2.0</td><td>ruy-Apache-2.0.txt</td></tr>
+          <tr><td>cpu_features</td><td>Google LLC; The Android Open Source Project and others</td><td class="lic">Apache-2.0; Android BSD notices</td><td>cpu-features-Apache-2.0.txt</td></tr>
+          <tr><td>cpuinfo</td><td>Google LLC; Facebook Inc.; Georgia Institute of Technology; Marat Dukhan</td><td class="lic">BSD-2-Clause</td><td>cpuinfo.txt</td></tr>
+          <tr><td>spdlog</td><td>Gabi Melman</td><td class="lic">MIT</td><td>spdlog-MIT.txt</td></tr>
+          <tr><td>Darts-clone</td><td>Susumu Yata</td><td class="lic">BSD-3-Clause</td><td>darts-clone.txt</td></tr>
+          <tr><td>Abseil</td><td>Google Inc.</td><td class="lic">Apache-2.0</td><td>absl-Apache-2.0.txt</td></tr>
+          <tr><td>Protocol Buffers lite</td><td>Google Inc.</td><td class="lic">BSD-3-Clause</td><td>protobuf-lite.txt</td></tr>
+          <tr><td>marisa-trie</td><td>Susumu Yata</td><td class="lic">BSD-2-Clause 선택 · selected</td><td>marisa.txt</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note"><span lang="ko">0.3 후보는 위 구성요소의 전문·저작권 고지를 네이티브 runtime의 licenses 폴더에 동봉합니다. marisa의 BSD-2-Clause/LGPL 이중 라이선스 중 BSD 조건을 선택했습니다. OpenCC s2t/t2s 설정은 동봉 텍스트 사전을 읽도록 형식·경로만 변경했고 사전 내용은 수정하지 않았습니다. 번역 worker는 별도 C++ 프로세스이며 Python 런타임을 동봉하지 않습니다.</span><br>
+      <span lang="en">The 0.3 candidate includes full license texts and copyright notices in the native runtime's licenses directory. marisa is used under the BSD-2-Clause option of its BSD/LGPL dual license. The OpenCC s2t/t2s configurations change only the format and paths used to read bundled text dictionaries; dictionary contents are unmodified. Translation runs in a separate C++ worker, with no bundled Python runtime.</span></p>
+    <p class="note"><span lang="ko">.NET 10 LTS 후보의 Microsoft.Extensions.Hosting, DependencyInjection.Abstractions, Logging.Abstractions, Options, Http 10.0.13은 .NET Foundation and Contributors의 MIT 라이선스입니다. Windows API 키 보호에 사용하는 System.Security.Cryptography.ProtectedData는 동봉 WindowsDesktop 런타임에서 제공합니다.</span><br>
+      <span lang="en">The .NET 10 LTS candidate uses Microsoft.Extensions.Hosting, DependencyInjection.Abstractions, Logging.Abstractions, Options and Http 10.0.13 under the .NET Foundation and Contributors' MIT license. System.Security.Cryptography.ProtectedData for Windows API-key protection is supplied by the bundled WindowsDesktop runtime.</span></p>
 
     <h2><span class="num">03</span><span data-i18n="lic.model_h2">모델</span></h2>
 
@@ -106,11 +136,16 @@
           <tr><td class="name"><a href="https://github.com/openai/whisper">Whisper</a></td><td>OpenAI</td><td class="lic">MIT</td><td data-i18n="lic.model_whisper">음성 인식·언어 감지 (ggml 변환본)</td></tr>
           <tr><td class="name"><a href="https://github.com/snakers4/silero-vad">Silero VAD</a></td><td>Silero Team</td><td class="lic">MIT</td><td data-i18n="lic.model_vad">발화 구간 감지</td></tr>
           <tr><td class="name"><a href="https://github.com/Helsinki-NLP/Opus-MT">Opus-MT</a></td><td>Helsinki-NLP</td><td class="lic">CC-BY-4.0 / Apache-2.0</td><td data-i18n="lic.model_opusmt">로컬 번역 — 위 저작자 표시 참조</td></tr>
+          <tr><td class="name"><a href="https://huggingface.co/facebook/m2m100_418M/tree/55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636">M2M100 418M</a></td><td>Facebook, Inc. and its affiliates</td><td class="lic">MIT</td><td>0.3 선택 설치 다국어 팩 · Optional multilingual pack for 0.3</td></tr>
         </tbody>
       </table>
     </div>
 
-    <p class="note" data-i18n="lic.model_note">모델 가중치는 앱에 들어 있지 않습니다. 따로 내려받으며, 받은 파일은 SHA-256으로 검증합니다.</p>
+    <p class="note" id="model-distribution"><span lang="ko">기본 Steam 배포에는 Whisper·Silero VAD·한영 Marian ONNX에 필요한 기본 모델 파일이 동봉됩니다. 0.3 선택 M2M100·Noto 팩은 사용자가 명시적으로 설치를 선택할 때 별도 다운로드하며 ZIP과 파일별 SHA-256을 확인합니다. 코드 저장소에 모델 가중치를 포함하지 않는다는 사실과 앱 배포물에 기본 모델을 동봉한다는 사실은 다릅니다.</span><br>
+      <span lang="en">The baseline Steam distribution bundles the model files needed for Whisper, Silero VAD and Korean–English Marian ONNX. The optional M2M100/Noto pack for 0.3 is downloaded separately only when the user chooses to install it, with archive and per-file SHA-256 verification. Model weights being absent from the code repository does not mean baseline models are absent from the app distribution.</span></p>
+    <p class="note" id="optional-model-pack"><span lang="ko"><a href="https://github.com/KDYPOHO/onmal-models/releases/tag/m2m100-418m-int8-1.0.0">실험적 M2M100·Noto 팩 1.0.0</a>은 공개된 모델 자산입니다. M2M100 원본 revision은 55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636이며 CTranslate2 INT8 형식으로 변환했습니다. 원본 MIT 전문과 출처를 포함합니다. 다운로드는 477,535,844 bytes, 설치 파일은 518,690,560 bytes이며 임시 설치 여유 공간이 추가로 필요합니다. 품질은 미검증이며 언어 목록에 있다고 음성 인식·번역 품질이 검증됐다는 뜻은 아닙니다.</span><br>
+      <span lang="en">The linked experimental M2M100/Noto pack 1.0.0 is a published model asset. M2M100 revision 55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636 was converted to CTranslate2 INT8. Original MIT text and source provenance are included. Download size is 477,535,844 bytes; installed files total 518,690,560 bytes, with additional temporary installation space required. Quality remains unverified, and a language appearing in the selection list is not proof of validated speech recognition or translation quality.</span><br>
+      ZIP SHA-256: <code style="overflow-wrap:anywhere">d20724adde0110ca151a41bf73904271da4dd9a2e3dca11fd648d29e0cb01a38</code></p>
 
     <h2><span class="num">04</span><span data-i18n="lic.font_h2">글꼴</span></h2>
 
@@ -133,7 +168,7 @@
           <tr class="bundled"><td class="name"><a href="https://github.com/orioncactus/pretendard">Pretendard</a></td><td>길형진 (Kil Hyung-jin)</td><td class="lic">SIL OFL 1.1</td><td>앱에 동봉 (OTF Regular · Medium · SemiBold) · 이 홈페이지에 동봉 (자른 가변 woff2)<br>Bundled in the app and on this site</td></tr>
           <tr class="bundled"><td class="name"><a href="https://github.com/JetBrains/JetBrainsMono">JetBrains Mono</a></td><td>JetBrains s.r.o.</td><td class="lic">SIL OFL 1.1</td><td>이 홈페이지에 동봉 (자른 woff2 400 · 500)<br>Bundled on this site</td></tr>
           <tr class="bundled"><td class="name"><a href="https://fonts.google.com/specimen/Gowun+Batang">Gowun Batang</a></td><td>Yanghee Ryu, Yang Jang</td><td class="lic">SIL OFL 1.1</td><td>이 홈페이지에 동봉 (자른 woff2 700)<br>Bundled on this site</td></tr>
-          <tr><td class="name"><a href="https://github.com/notofonts">Noto Sans Arabic / Thai</a></td><td>Google LLC</td><td class="lic">SIL OFL 1.1</td><td>미동봉 — 시스템 글꼴로 대체<br>Not bundled — falls back to system fonts</td></tr>
+          <tr><td class="name"><a href="https://github.com/notofonts">Noto Sans / Noto Naskh Arabic / Noto Sans CJK</a></td><td>The Noto Project Authors and original copyright holders</td><td class="lic">SIL OFL 1.1</td><td><span lang="ko">0.2.2 기본 앱 미동봉 · 0.3 선택 팩에 수정하지 않은 TTF 21개와 CJK TTC 1개 동봉</span><br><span lang="en">Not bundled in the 0.2.2 baseline app; 21 unmodified TTF files and one CJK TTC are included in the optional 0.3 pack</span></td></tr>
         </tbody>
       </table>
     </div>
@@ -155,6 +190,8 @@
 
     <p class="note">동봉하지 않은 글꼴은 시스템에 이미 있는 것으로 대체됩니다. 배포물에 들어가지 않으므로 OFL 의무도 생기지 않습니다.<br>
       Fonts that are not bundled are substituted from the system and carry no OFL obligation here.</p>
+    <p class="note"><span lang="ko">선택 팩의 Noto 파일은 Noto Fonts revision ffebf8c1ee449e544955a7e813c54f9b73848eac와 Noto CJK revision f8d157532fbfaeda587e826d4cd5b21a49186f7c에서 가져왔습니다. 팩의 fonts 폴더에는 LICENSE-Noto.txt, LICENSE-Noto-CJK.txt와 font-provenance.json을 포함하며 글꼴을 단독으로 판매하지 않습니다. 다양한 문자 표시를 위한 폴백이며 모든 글리프·RTL·조합 표시의 실제 화면 검증을 완료했다는 뜻은 아닙니다.</span><br>
+      <span lang="en">The optional pack uses Noto Fonts revision ffebf8c1ee449e544955a7e813c54f9b73848eac and Noto CJK revision f8d157532fbfaeda587e826d4cd5b21a49186f7c. Its fonts directory includes LICENSE-Noto.txt, LICENSE-Noto-CJK.txt and font-provenance.json; fonts are not sold on their own. They provide multilingual fallback, without claiming that every glyph, RTL or combining sequence has passed actual screen validation.</span></p>
 
     <h2><span class="num">05</span><span data-i18n="lic.icon_h2">아이콘</span></h2>
 
@@ -190,11 +227,13 @@
           <tr><td class="name">NLLB-200</td><td class="lic">CC-BY-NC-4.0</td><td data-i18n="lic.excl_nllb">비상업 전용입니다. 번역 품질과 무관하게 코드베이스에 넣지 않습니다.</td></tr>
           <tr><td class="name">Parakeet TDT / Canary</td><td class="lic">CC-BY-4.0</td><td data-i18n="lic.excl_parakeet">속도는 우수하지만 저작자 표시 의무가 늘어납니다. v1은 Whisper(MIT) 단독으로 갑니다.</td></tr>
           <tr><td class="name">FFmpeg</td><td class="lic">LGPL / GPL</td><td data-i18n="lic.excl_ffmpeg">스팀 SDK와 호환되지 않을 수 있습니다. 리샘플링은 직접 구현했습니다.</td></tr>
-          <tr><td class="name">SF Pro / SF Symbols</td><td class="lic">Apple</td><td data-i18n="lic.excl_apple">애플 OS에서 실행되는 소프트웨어로 용도가 한정됩니다. Windows 앱에는 쓸 수 없습니다.</td></tr>
-          <tr><td class="name">CTranslate2</td><td class="lic">MIT</td><td data-i18n="lic.excl_ct2">라이선스는 문제없지만 안정적인 C API가 없어 네이티브 래퍼를 직접 배포해야 합니다. ONNX Runtime으로 대체했습니다.</td></tr>
+          <tr><td class="name">SF Pro / SF Symbols</td><td class="lic">Apple</td><td><span lang="ko">Apple 글꼴·심볼 파일은 Windows 배포물에 동봉하지 않습니다. macOS 앱은 macOS가 제공하는 시스템 글꼴·심볼을 해당 OS에서 사용하며 별도 파일로 재배포하지 않습니다.</span><br><span lang="en">Apple font and symbol files are not bundled in the Windows distribution. The macOS app uses system-provided fonts and symbols on macOS without redistributing their files.</span></td></tr>
         </tbody>
       </table>
     </div>
+
+    <p class="note"><span lang="ko">CTranslate2는 0.2.2 기본 번역에서 사용하지 않았으며 ONNX Runtime을 사용했습니다. 개발 중인 0.3 선택 M2M100 경로는 직접 배포하는 C++ worker와 CTranslate2를 사용합니다. 기존 한영 ONNX 경로는 유지합니다.</span><br>
+      <span lang="en">CTranslate2 was not used for baseline 0.2.2 translation, which uses ONNX Runtime. The optional M2M100 path in the 0.3 candidate uses CTranslate2 through a bundled C++ worker. The existing Korean–English ONNX path is retained.</span></p>
 
     <h2><span class="num">07</span><span data-i18n="lic.tm_h2">상표</span></h2>
 
@@ -224,3 +263,4 @@
 <script src="site.js"></script>
 </body>
 </html>
+
