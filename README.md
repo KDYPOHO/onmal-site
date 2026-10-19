@@ -1,3 +1,18 @@
+# 온말 Onmal — 공식 홈페이지
+
+Public homepage: https://kdypoho.github.io/onmal-site/
+
+The current Korean/English homepage was exported from the completed AI Studio project and adapted for static GitHub Pages on 2026-10-19. Only built HTML, CSS, JavaScript and website license notices are added to the published root. No API keys, backend, authentication or billing are required.
+
+The original ZIP is 1,434,050 bytes; SHA-256 `29d380110450c286c0a2b0841e2fc8168ca6b60675b5abf509271d796068def8`. Build: Node.js 24 LTS, Vite 8.3.4, base `/onmal-site/`. Type checking, 12 existing tests and the production build passed. Responsive and keyboard checks cover language selection, tablet navigation, gallery and modal focus.
+
+The homepage says the formal release date is to be announced and Steam Playtest sign-ups are open, with installation/play awaiting Steam approval and activation. This website publication does not release the application or activate its Playtest.
+
+Existing legal/license pages and their assets are retained unchanged. The previous website remains available in Git history at `3ce6b1f8628dd106e91cd3b2d32abcdc63ca0502` and branch `backup/pre-aistudio-20261019` for rollback.
+
+<details>
+<summary>Preserved legacy site tooling and license maintenance instructions</summary>
+
 # 온말(Onmal) 홈페이지
 
 게임 중 팀보이스를 실시간 번역 자막으로 보여주는 Windows 앱 **온말**의 공식 홈페이지입니다.
@@ -40,3 +55,5 @@
 > 🔴 **`licenses.html` 을 고쳤다면 앱 저장소의 `tools/build/verify.ps1` 을 함께 돌리십시오.**
 > 앱의 `THIRD_PARTY_NOTICES.md` 와 이 파일이 어긋나면 라이선스 위반이고,
 > 그 검사는 앱 쪽에만 있습니다.
+
+</details>
