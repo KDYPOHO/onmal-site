@@ -6,9 +6,10 @@ import { useDialogFocus } from '../utils/focusTrap';
 interface VideoSectionProps {
   currentLanguage: SupportedLanguage;
   videoSrc?: string | null;
+  posterSrc?: string;
 }
 
-export function VideoSection({ currentLanguage, videoSrc = null }: VideoSectionProps) {
+export function VideoSection({ currentLanguage, videoSrc = null, posterSrc }: VideoSectionProps) {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const dialogRef = useRef<HTMLDivElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
@@ -38,24 +39,50 @@ export function VideoSection({ currentLanguage, videoSrc = null }: VideoSectionP
         </div>
 
         {videoSrc ? (
-          /* Active Video Trigger State (enabled when a valid 16:9 1920x1080 videoSrc is supplied) */
+          /* Open the player manually; mounting it does not start playback. */
           <div className="rounded-2xl overflow-hidden border border-white/15 bg-[#12151E]">
-            <div className="aspect-[16/9] w-full flex flex-col items-center justify-center p-8 text-center">
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mb-6">
-                {t.modalTitle}
-              </h2>
+            <div className="relative aspect-[16/9] w-full flex items-center justify-center p-6 sm:p-8 text-center bg-black">
+              {posterSrc && (
+                <img
+                  src={posterSrc}
+                  alt=""
+                  width={1920}
+                  height={1080}
+                  loading="lazy"
+                  className="absolute inset-0 w-full h-full object-contain"
+                />
+              )}
+              <div aria-hidden="true" className="absolute inset-0 bg-black/40" />
               <button
                 type="button"
                 onClick={(e) => {
                   e.currentTarget.focus();
                   setIsDialogOpen(true);
                 }}
-                className="inline-flex items-center gap-3 px-6 py-4 rounded-xl bg-[#F0B189] hover:bg-[#F5C09E] text-[#141218] font-bold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400"
+                className="relative inline-flex items-center gap-3 px-6 py-4 rounded-xl bg-[#F0B189] hover:bg-[#F5C09E] text-[#141218] font-bold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400"
                 aria-label={t.playAria}
+                aria-describedby="promo-video-description"
               >
                 <Play className="w-4 h-4 fill-current" />
                 <span>{t.playAria}</span>
               </button>
+            </div>
+            <div className="p-6 sm:p-8">
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mb-3">
+                {t.title}
+              </h2>
+              <p id="promo-video-description" className="text-sm sm:text-base text-slate-300 leading-relaxed">
+                {t.desc}
+              </p>
+              <p className="mt-3 text-sm text-slate-400">{t.audioNotice}</p>
+              <a
+                href={videoSrc}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-block text-sm text-teal-300 underline underline-offset-4 hover:text-teal-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 rounded"
+              >
+                {t.directLink}
+              </a>
             </div>
           </div>
         ) : (
@@ -83,12 +110,13 @@ export function VideoSection({ currentLanguage, videoSrc = null }: VideoSectionP
             role="dialog"
             aria-modal="true"
             aria-label={t.modalTitle}
+            aria-describedby="promo-video-dialog-description"
             onClick={handleClose}
           >
             <div
               ref={dialogRef}
               tabIndex={-1}
-              className="relative w-full max-w-5xl bg-[#0E1320] rounded-2xl overflow-hidden border border-white/20 focus:outline-none"
+              className="relative w-full max-w-5xl max-h-[calc(100dvh-2rem)] bg-[#0E1320] rounded-2xl overflow-y-auto border border-white/20 focus:outline-none"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="flex items-center justify-between px-5 py-3.5 border-b border-white/10 bg-[#0B0E17]">
@@ -110,8 +138,22 @@ export function VideoSection({ currentLanguage, videoSrc = null }: VideoSectionP
                   width={1920}
                   height={1080}
                   controls
+                  playsInline
+                  preload="metadata"
+                  poster={posterSrc}
+                  aria-label={t.modalTitle}
+                  aria-describedby="promo-video-dialog-description"
                   className="w-full h-full object-contain"
-                />
+                >
+                  <a href={videoSrc}>{t.directLink}</a>
+                </video>
+              </div>
+              <div className="px-5 py-4 text-sm text-slate-300 leading-relaxed">
+                <p id="promo-video-dialog-description">{t.desc}</p>
+                <p className="mt-2 text-slate-400">{t.audioNotice}</p>
+                <a href={videoSrc} target="_blank" rel="noopener noreferrer" className="mt-3 inline-block text-teal-300 underline underline-offset-4 hover:text-teal-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 rounded">
+                  {t.directLink}
+                </a>
               </div>
             </div>
           </div>

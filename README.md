@@ -12,6 +12,8 @@ The existing validation report records **875 Portable + 123 Python = 998 passing
 
 This update refreshes product and usage guidance, adds Korean/English FAQ content, and distinguishes the current build from older screenshots. Privacy and terms pages correct product facts without extending legal rights or liability clauses; their existing effective dates are not changed and legal review is not claimed. License text is preserved. Existing application source and Steam settings are outside this website repository and were not changed.
 
+The video section presents the supplied 10-second promotional concept with simulated UI, rather than footage of the running application or actual gameplay. Korean and English captions retain the development/testing status and incomplete real Windows validation. The responsive player opens manually, uses native controls and inline playback, and includes the original audio without autoplay. A poster and a direct video link are provided. The media files are retained under `website/public/media/` and copied by Vite into `dist/media/`; the original attachment remains preserved separately.
+
 ## Website source and validation
 
 The reviewed source retained from the previous publication is now preserved in [`website/`](website/) with its existing dependency lockfile. This is homepage React source, separate from the Onmal Windows/macOS application. No dependencies were added or downloaded for this update; the existing local Node.js 24 runtime and installed packages were reused.
@@ -24,7 +26,7 @@ npm test
 npm run build
 ```
 
-Publish the generated `website/dist/index.html` as root `index.html` and its hashed assets into root `assets/`, retaining the policy pages and legacy assets. Push only this website repository to `main`; the existing Pages configuration publishes it. Do not use the legacy PowerShell checkers as validation of the current React homepage: they target the pre-2026-10-19 HTML layout.
+Publish the generated `website/dist/index.html` as root `index.html`, its hashed assets into root `assets/`, and `website/dist/media/` into root `media/`, retaining the policy pages and legacy assets. Push only this website repository to `main`; the existing Pages configuration publishes it. Do not use the legacy PowerShell checkers as validation of the current React homepage: they target the pre-2026-10-19 HTML layout.
 
 The original export ZIP was 1,434,050 bytes, SHA-256 `29d380110450c286c0a2b0841e2fc8168ca6b60675b5abf509271d796068def8`. The pre-export website remains in Git history at `3ce6b1f8628dd106e91cd3b2d32abcdc63ca0502` and branch `backup/pre-aistudio-20261019` for rollback.
 

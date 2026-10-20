@@ -62,7 +62,11 @@ export default function App() {
 
         <FaqSection currentLanguage={currentLanguage} />
 
-        <VideoSection currentLanguage={currentLanguage} videoSrc={null} />
+        <VideoSection
+          currentLanguage={currentLanguage}
+          videoSrc="./media/onmal-promo-concept.mp4"
+          posterSrc="./media/onmal-promo-concept-poster.jpg"
+        />
       </main>
 
       {/* Site Footer */}
