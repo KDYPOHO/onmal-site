@@ -68,5 +68,6 @@ export const SCREENSHOTS: ScreenshotItem[] = [
 export const LINKS = {
   steam: 'https://store.steampowered.com/app/5060050/',
   discord: 'https://discord.gg/W6rv7ABFpy',
+  x: 'https://x.com/Onmal05',
   email: 'mailto:todaklife@gmail.com',
 };

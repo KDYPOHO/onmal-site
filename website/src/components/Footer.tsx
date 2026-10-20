@@ -77,6 +77,17 @@ export function Footer({ currentLanguage, onOpenLanguageModal }: FooterProps) {
                 </li>
                 <li>
                   <a
+                    href={LINKS.x}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400"
+                  >
+                    <span>{t.xLink}</span>
+                    <ArrowUpRight aria-hidden="true" className="w-3.5 h-3.5 text-slate-500" />
+                  </a>
+                </li>
+                <li>
+                  <a
                     href={LINKS.email}
                     className="inline-flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors"
                   >
