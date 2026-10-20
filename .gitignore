@@ -13,3 +13,7 @@ tools/.fontsrc/
 # 이미지·i18n 을 통째로 품어 한 파일이 1 MB 에 가깝습니다. 원본은 여기 이미 있고,
 # 산출물을 커밋하면 조각마다 같은 내용이 두 벌씩 쌓입니다.
 dist/
+
+# Reproducible homepage source and local build outputs
+website/node_modules
+website/dist/

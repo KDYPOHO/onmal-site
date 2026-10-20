@@ -2,13 +2,31 @@
 
 Public homepage: https://kdypoho.github.io/onmal-site/
 
-The current Korean/English homepage was exported from the completed AI Studio project and adapted for static GitHub Pages on 2026-10-19. Only built HTML, CSS, JavaScript and website license notices are added to the published root. No API keys, backend, authentication or billing are required.
+The Korean/English homepage keeps the existing design and Steam screenshots. It is published with the existing free GitHub Pages deployment from the `main` branch root (`.nojekyll`); no API keys, server, login, payment, or subscription is needed.
 
-The original ZIP is 1,434,050 bytes; SHA-256 `29d380110450c286c0a2b0841e2fc8168ca6b60675b5abf509271d796068def8`. Build: Node.js 24 LTS, Vite 8.3.4, base `/onmal-site/`. Type checking, 12 existing tests and the production build passed. Responsive and keyboard checks cover language selection, tablet navigation, gallery and modal focus.
+## Current status — 2026-10-20
 
-The homepage says the formal release date is to be announced and Steam Playtest sign-ups are open, with installation/play awaiting Steam approval and activation. This website publication does not release the application or activate its Playtest.
+Windows **0.3.2** is a verification candidate. Local upload receipts confirm Playtest build **26067017** (01:12 UTC) and main-app build **26067660** (01:47 UTC), both stored inactive at upload. Formal release is on hold. A separate Steam task reconfirmed at **17:22 KST / 08:22 UTC** that Playtest store assets are approved, the build submitted on October 15 remains in the review queue, and Playtest is inactive. Uploads and store approval do not establish build approval or playable availability.
 
-Existing legal/license pages and their assets are retained unchanged. The previous website remains available in Git history at `3ce6b1f8628dd106e91cd3b2d32abcdc63ca0502` and branch `backup/pre-aistudio-20261019` for rollback.
+The existing validation report records **875 Portable + 123 Python = 998 passing checks** and successful Windows cross-builds with zero warnings/errors. These checks were not rerun for this website edit. Actual Windows installation, speech/translation quality, and gaming performance remain unvalidated. No Mac download, speed/accuracy/FPS, or anti-cheat guarantee is offered.
+
+This update refreshes product and usage guidance, adds Korean/English FAQ content, and distinguishes the current build from older screenshots. Privacy and terms pages correct product facts without extending legal rights or liability clauses; their existing effective dates are not changed and legal review is not claimed. License text is preserved. Existing application source and Steam settings are outside this website repository and were not changed.
+
+## Website source and validation
+
+The reviewed source retained from the previous publication is now preserved in [`website/`](website/) with its existing dependency lockfile. This is homepage React source, separate from the Onmal Windows/macOS application. No dependencies were added or downloaded for this update; the existing local Node.js 24 runtime and installed packages were reused.
+
+```sh
+cd website
+npm ci                 # only when dependencies are not already installed
+npm run lint
+npm test
+npm run build
+```
+
+Publish the generated `website/dist/index.html` as root `index.html` and its hashed assets into root `assets/`, retaining the policy pages and legacy assets. Push only this website repository to `main`; the existing Pages configuration publishes it. Do not use the legacy PowerShell checkers as validation of the current React homepage: they target the pre-2026-10-19 HTML layout.
+
+The original export ZIP was 1,434,050 bytes, SHA-256 `29d380110450c286c0a2b0841e2fc8168ca6b60675b5abf509271d796068def8`. The pre-export website remains in Git history at `3ce6b1f8628dd106e91cd3b2d32abcdc63ca0502` and branch `backup/pre-aistudio-20261019` for rollback.
 
 <details>
 <summary>Preserved legacy site tooling and license maintenance instructions</summary>
