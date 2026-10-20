@@ -1,31 +1,42 @@
 <!DOCTYPE html>
-<html lang="ko" data-i18n-scope="terms">
+<html lang="ko" translate="no" data-document-page="terms" data-i18n-scope="terms">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google" content="notranslate">
 <title>이용약관 — 온말 Onmal</title>
 <meta name="description" content="온말의 이용 조건과 제한. 참여 중인 대화에서만 사용하십시오.">
 <link rel="icon" href="onmal_64.png">
-<script>(function(){try{var t=localStorage.getItem('onmal-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+<script>(function(){try{var t=localStorage.getItem('onmal-theme')||'dark';document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
 <link rel="preload" href="fonts/GowunBatang-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles/fonts.css?v=7">
 <link rel="stylesheet" href="styles/tokens.css?v=7">
 <link rel="stylesheet" href="styles/base.css?v=7">
-<link rel="stylesheet" href="styles/doc.css?v=7">
+<link rel="stylesheet" href="styles/doc.css?v=8">
 </head>
 <body>
 <a class="skip" href="#main" data-i18n="a11y.skip">본문으로 건너뛰기</a>
 
 <div class="wrap">
-  <nav>
-    <img src="onmal_128.png" alt="">
-    <b>온말</b>
-    <a class="home" href="index.html">← 홈페이지</a>
-    <button id="themeBtn" class="tbtn" aria-label="Theme">◐</button>
+  <nav class="document-nav" aria-label="문서 탐색" data-document-navigation>
+    <a class="document-brand" href="index.html"><img src="onmal_128.png" width="32" height="32" alt=""><span>온말 Onmal</span></a>
+    <div class="document-actions">
+      <a class="home" href="index.html" data-document-label="home">← 홈페이지</a>
+      <label class="document-language"><span data-document-label="language">언어</span><select id="documentLanguage" aria-label="문서 표시 언어"><option value="ko">한국어</option><option value="en">English</option></select></label>
+      <button id="themeBtn" class="tbtn" type="button" aria-label="화면 테마 변경">◐</button>
+    </div>
+  </nav>
+  <nav class="document-tabs" aria-label="정책 및 고지 문서" data-document-navigation>
+    <a href="privacy.html" data-document-label="privacy">개인정보 처리방침</a>
+    <a href="terms.html" data-document-label="terms" aria-current="page">이용약관</a>
+    <a href="licenses.html" data-document-label="licenses">오픈소스 라이선스</a>
+    <a href="website-third-party-notices.html" data-document-label="notices">웹사이트 라이선스 고지</a>
   </nav>
 
-  <header id="main">
+  <main id="main" lang="ko" tabindex="-1">
+  <p class="document-language-note" data-document-language-note>문서 본문은 한국어로 제공되며 한국어가 정본입니다.</p>
+  <header>
     <p class="kicker">법적 고지</p>
     <h1>이용약관</h1>
     <p class="meta">기존 문서 표시: 최종 갱신 2026-08-06 · 적용 버전 0.1.0</p>
@@ -174,11 +185,12 @@
     <p>이메일 — <a href="mailto:todaklife@gmail.com">todaklife@gmail.com</a><br>
       GitHub Issues — <a href="https://github.com/KDYPOHO/onmal-site/issues">github.com/KDYPOHO/onmal-site/issues</a></p>
   </article>
+  </main>
 
-  <footer>
+  <footer lang="ko">
     <p><a href="index.html">홈페이지</a> · <a href="privacy.html">개인정보처리방침</a> · <a href="licenses.html">저작권·라이선스</a></p>
   </footer>
 </div>
-<script src="site.js"></script>
+<script src="document.js?v=1"></script>
 </body>
 </html>

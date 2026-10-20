@@ -101,7 +101,8 @@ html[data-i18n-scope="lic"] nav a.home{margin-left:0}
 html[data-i18n-scope="lic"] .tbtn{margin-left:0}
 html[data-i18n-scope="lic"] h2{margin:56px 0 16px}
 html[data-i18n-scope="lic"] li{margin:6px 0}
-html[data-i18n-scope="lic"] code{font-size:13px;white-space:nowrap}
+html[data-i18n-scope="lic"] code{font-size:13px;white-space:normal;overflow-wrap:anywhere}
+html[data-i18n-scope="lic"] table code{white-space:nowrap}
 
 /* 표는 좁은 화면에서 가로 스크롤. 본문이 밀려나면 안 됩니다. */
 html[data-i18n-scope="lic"] .scroll{overflow-x:auto;margin:18px 0;-webkit-overflow-scrolling:touch}
@@ -115,4 +116,39 @@ html[data-i18n-scope="lic"] .full li{font-family:var(--mono);font-size:13.5px}
 @media (max-width:620px){
   html[data-i18n-scope="lic"] h2{font-size:20px;margin:44px 0 14px}
   html[data-i18n-scope="lic"] .wrap{padding:0 18px}
+}
+
+/* Shared document chrome. Legal content stays in the original article. */
+html[data-document-page]{--display:var(--body)}
+html[data-document-page] .wrap{max-width:960px;padding-inline:24px}
+html[data-document-page] body{font-size:16px;line-height:1.85}
+html[data-document-page] header{padding-top:28px}
+html[data-document-page] h1{font-size:clamp(28px,4vw,40px);letter-spacing:-.035em}
+html[data-document-page] main{min-width:0}
+.document-nav{justify-content:space-between;gap:20px;padding:24px 0}
+.document-brand{display:inline-flex;align-items:center;gap:10px;color:var(--paper);font-weight:700;text-decoration:none}
+.document-brand img{flex:none;width:32px;height:32px}
+.document-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.document-actions a.home{margin:0;font-family:var(--body);font-size:13px;min-height:44px;display:inline-flex;align-items:center}
+.document-actions .tbtn{margin:0;width:44px;height:44px;cursor:pointer}
+.document-language{display:inline-flex;align-items:center;gap:8px;color:var(--dim);font-size:13px}
+.document-language select{min-height:44px;max-width:132px;border:1px solid var(--line);border-radius:10px;background:var(--night);color:var(--paper);font:inherit;padding:8px 10px;cursor:pointer}
+.document-tabs{display:flex;flex-wrap:wrap;gap:8px;padding:0 0 24px;border-bottom:1px solid var(--line)}
+.document-tabs a{display:inline-flex;align-items:center;min-height:44px;border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:13px;color:var(--dim);text-decoration:none}
+.document-tabs a:hover,.document-tabs a[aria-current="page"]{border-color:var(--jade);color:var(--jade);background:color-mix(in srgb,var(--jade) 7%,transparent)}
+.document-language-note{margin:24px 0 0;padding:12px 16px;border:1px solid var(--line);border-radius:10px;color:var(--dim);font-size:14px}
+.document-notice-index{display:flex;gap:8px 18px;flex-wrap:wrap;margin:24px 0}
+.document-notice-index a{padding-block:6px}
+.document-notice-text{white-space:pre-wrap;overflow-wrap:anywhere;word-break:normal;font-family:var(--mono);font-size:13px;line-height:1.8;padding:20px;border:1px solid var(--line);border-radius:12px;background:var(--night)}
+.document-raw-link{display:inline-flex;align-items:center;min-height:44px;padding-block:6px}
+@media (max-width:600px){
+  html[data-document-page] .wrap{padding-inline:18px}
+  .document-nav{align-items:flex-start;gap:16px}
+  .document-actions{width:100%;justify-content:space-between;gap:8px}
+  .document-language>span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+  .document-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .document-tabs a{font-size:12px;justify-content:center;text-align:center;padding:8px}
+  .document-notice-text{padding:16px;font-size:12px}
+  html[data-document-page] code{overflow-wrap:anywhere}
+  html[data-document-page] .tldr,html[data-document-page] .important,html[data-document-page] .attrib{padding:18px}
 }

@@ -98,10 +98,10 @@ export function Footer({ currentLanguage, onOpenLanguageModal }: FooterProps) {
                   ['privacy.html', currentLanguage === 'ko' ? '개인정보 처리방침' : 'Privacy Policy'],
                   ['terms.html', currentLanguage === 'ko' ? '이용약관' : 'Terms of Use'],
                   ['licenses.html', currentLanguage === 'ko' ? '오픈소스 라이선스' : 'Open-source Licenses'],
-                  ['website-third-party-notices.txt', currentLanguage === 'ko' ? '웹사이트 라이선스 고지' : 'Website License Notices'],
+                  ['website-third-party-notices.html', currentLanguage === 'ko' ? '웹사이트 라이선스 고지' : 'Website License Notices'],
                 ].map(([href, label]) => (
                   <li key={href}>
-                    <a href={href} className="text-slate-300 hover:text-white transition-colors">
+                    <a href={`${href}?lang=${currentLanguage}`} className="text-slate-300 hover:text-white transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400">
                       {label}
                     </a>
                   </li>
