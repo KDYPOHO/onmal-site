@@ -94,6 +94,17 @@ export function Footer({ currentLanguage, onOpenLanguageModal }: FooterProps) {
                     <span>{t.emailLink}</span>
                   </a>
                 </li>
+                <li>
+                  <a
+                    href={LINKS.developerProfile}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400"
+                  >
+                    <span>{t.developerProfileLink}</span>
+                    <ArrowUpRight aria-hidden="true" className="w-3.5 h-3.5 text-slate-500" />
+                  </a>
+                </li>
                 {[
                   ['privacy.html', currentLanguage === 'ko' ? '개인정보 처리방침' : 'Privacy Policy'],
                   ['terms.html', currentLanguage === 'ko' ? '이용약관' : 'Terms of Use'],

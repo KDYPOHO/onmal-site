@@ -69,5 +69,6 @@ export const LINKS = {
   steam: 'https://store.steampowered.com/app/5060050/',
   discord: 'https://discord.gg/W6rv7ABFpy',
   x: 'https://x.com/Onmal05',
+  developerProfile: 'https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bjky&pkid=1&os=33590239&qvt=0&query=%EA%B0%95%EB%8F%99%EC%97%BD',
   email: 'mailto:todaklife@gmail.com',
 };
