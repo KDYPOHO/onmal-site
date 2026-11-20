@@ -1,87 +1,54 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { SupportedLanguage, translations } from './utils/i18n';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
-import { ProductExplanation } from './components/ProductExplanation';
+import { Features } from './components/Features';
 import { HowItWorks } from './components/HowItWorks';
-import { ScreenshotGallery } from './components/ScreenshotGallery';
-import { DevelopmentSection } from './components/DevelopmentSection';
-import { FaqSection } from './components/FaqSection';
-import { VideoSection } from './components/VideoSection';
+import { Gallery } from './components/Gallery';
+import { NameBand } from './components/NameBand';
+import { Development } from './components/Development';
+import { Faq } from './components/Faq';
+import { Video } from './components/Video';
 import { Footer } from './components/Footer';
-import { LanguageModal } from './components/LanguageModal';
+
+function initialLanguage(): SupportedLanguage {
+  try {
+    const fromUrl = new URLSearchParams(window.location.search).get('lang');
+    if (fromUrl === 'en' || fromUrl === 'ko') return fromUrl;
+    const saved = localStorage.getItem('onmal-lang');
+    if (saved === 'en' || saved === 'ko') return saved;
+  } catch {
+    /* Storage can be unavailable in private browsing. */
+  }
+  return 'ko';
+}
 
 export default function App() {
-  const [currentLanguage, setCurrentLanguage] = useState<SupportedLanguage>(() => {
-    try {
-      return localStorage.getItem('onmal-lang') === 'en' ? 'en' : 'ko';
-    } catch {
-      return 'ko';
-    }
-  });
-  const [isLanguageModalOpen, setIsLanguageModalOpen] = useState(false);
-  const [activeScreenshotId, setActiveScreenshotId] = useState<number | null>(null);
+  const [lang, setLang] = useState<SupportedLanguage>(initialLanguage);
+  const [activeShot, setActiveShot] = useState<number | null>(null);
 
-  // Sync document title and html lang attribute whenever language changes
   useEffect(() => {
-    document.title = translations[currentLanguage].siteTitle;
-    document.documentElement.lang = currentLanguage;
-    // Share the existing language preference with the preserved legal pages.
-    try { localStorage.setItem('onmal-lang', currentLanguage); } catch { /* Storage can be unavailable in private browsing. */ }
-  }, [currentLanguage]);
+    document.title = translations[lang].siteTitle;
+    document.documentElement.lang = lang;
+    // Shared with the preserved legal pages.
+    try { localStorage.setItem('onmal-lang', lang); } catch { /* ignore */ }
+  }, [lang]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#0B0F19] text-[#F1F5F9] font-sans selection:bg-teal-500/30 selection:text-white">
-      {/* Top Header */}
-      <Header
-        currentLanguage={currentLanguage}
-        onOpenLanguageModal={() => setIsLanguageModalOpen(true)}
-      />
-
-      {/* Main Content Area */}
-      <main className="flex-1">
-        <Hero
-          currentLanguage={currentLanguage}
-          onOpenScreenshot={(id) => setActiveScreenshotId(id)}
-        />
-
-        <ProductExplanation currentLanguage={currentLanguage} />
-
-        <HowItWorks
-          currentLanguage={currentLanguage}
-          onOpenScreenshot={(id) => setActiveScreenshotId(id)}
-        />
-
-        <ScreenshotGallery
-          currentLanguage={currentLanguage}
-          activeScreenshotId={activeScreenshotId}
-          onSelectScreenshot={(id) => setActiveScreenshotId(id)}
-        />
-
-        <DevelopmentSection currentLanguage={currentLanguage} />
-
-        <FaqSection currentLanguage={currentLanguage} />
-
-        <VideoSection
-          currentLanguage={currentLanguage}
-          videoSrc="./media/onmal-promo-concept.mp4"
-          posterSrc="./media/onmal-promo-concept-poster.jpg"
-        />
+    <>
+      <a className="skip-link" href="#main">{translations[lang].nav.skip}</a>
+      <Header lang={lang} onChangeLanguage={setLang} />
+      <main id="main" tabIndex={-1}>
+        <Hero lang={lang} onOpenScreenshot={setActiveShot} />
+        <Features lang={lang} />
+        <HowItWorks lang={lang} onOpenScreenshot={setActiveShot} />
+        <Gallery lang={lang} activeId={activeShot} onSelect={setActiveShot} />
+        <NameBand lang={lang} />
+        <Development lang={lang} />
+        <Faq lang={lang} />
+        <Video lang={lang} />
       </main>
-
-      {/* Site Footer */}
-      <Footer
-        currentLanguage={currentLanguage}
-        onOpenLanguageModal={() => setIsLanguageModalOpen(true)}
-      />
-
-      {/* Accessible Searchable Language Modal */}
-      <LanguageModal
-        isOpen={isLanguageModalOpen}
-        onClose={() => setIsLanguageModalOpen(false)}
-        currentLanguage={currentLanguage}
-        onSelectLanguage={(lang) => setCurrentLanguage(lang)}
-      />
-    </div>
+      <Footer lang={lang} />
+    </>
   );
 }
