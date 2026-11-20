@@ -60,7 +60,7 @@ export const translations = {
       supporting: '팀원의 음성과 스토리 대사를 번역 자막으로 읽도록 돕는 Windows 앱.',
       ctaSteam: 'Steam에서 Playtest 참여',
       ctaDiscord: 'Discord 커뮤니티',
-      unreleasedNotice: 'Steam Playtest 참여 가능 · 기본 빌드 0.0.8 · 0.1.0 Windows 확인 중 · 정식 출시 미정 (2026-11-20 확인)',
+      unreleasedNotice: 'Steam Playtest 참여 가능 · 현재 기본 빌드 0.0.8 · 0.1.0은 Playtest에 올라갈 예정 · 정식 출시 미정 (2026-11-20 확인)',
       heroImageCaption: '온말 공식 앱 화면 (Windows 0.1.0 실기 화면) — 번역할 소리와 언어를 고르고 시작하는 통역 화면',
       inspectFullSize: '원본 비율 크게 보기',
       themeSwitchDark: '다크 테마 화면',
@@ -181,13 +181,13 @@ export const translations = {
         },
         {
           label: '다음 판 0.1.0',
-          value: '왼쪽 메뉴 화면 · AI 자막 안내 · 기능 정리',
-          detail: '왼쪽 메뉴(통역·친구·통역 준비·설정·안내)와 넓은 창에서 자막 옆에 조작부를 두는 새 화면, AI가 만든 자막이라는 안내, 음성방 참가자 목록, 지금 쓸 수 있는 자막 언어만 보여주기가 들어갑니다. 검증이 덜 된 개인 API 번역과 읽어주기는 뺐습니다. 통과하면 Playtest 테스트 브랜치에 먼저 올립니다.',
+          value: 'Playtest에 올라갈 예정 · 아직 받을 수 없음',
+          detail: '켜 두기 모드(앱을 열면 방을 만들거나 시작을 누르지 않아도 저장한 게임·Discord 소리를 자동으로 번역, 기본 꺼짐), 10초 넘게 늦은 팀 음성 자막은 건너뛰고 알려주기, 투명한 로고 시작 화면, 왼쪽 메뉴와 넓은 창 배치, AI가 만든 자막이라는 안내, 지금 쓸 수 있는 자막 언어만 보여주기, 선택 기능인 Steam 음성방과 참가자 목록이 들어갑니다. 검증이 덜 된 개인 API 번역과 읽어주기는 뺐습니다. Playtest 테스트 브랜치에 먼저 올린 뒤 기본 빌드로 바꿉니다.',
         },
         {
           label: 'Windows 실기 확인 (2026-11-20)',
           value: '빌드·화면·소리 장치 확인 · 일부 문제 남음',
-          detail: '실제 Windows 11 PC에서 앱 빌드, 동의 테스트 56개, 단위 테스트 대부분, 소리 장치 테스트 26개가 통과했습니다. 최소 창 크기에서 자막 영역이 가려지는 문제와 일부 화면 확인이 남아 있고, 실제 음성 인식·번역 품질은 아직 시험하지 않았습니다.',
+          detail: '실제 Windows 11 PC에서 앱 빌드, 동의 테스트 56개, 단위 테스트 대부분, 소리 장치 테스트 26개가 통과했습니다. 첫 확인에서 찾은 작은 창의 자막 영역 문제 등은 고친 뒤 두 번째 확인을 했습니다. 실제 음성 인식·번역 품질과 게임 동시 실행 성능은 아직 시험하지 않았습니다.',
         },
         {
           label: '공개 상태',
@@ -196,8 +196,8 @@ export const translations = {
         },
         {
           label: '앞으로 계획',
-          value: '디스코드처럼 방·참가자·자막을 한 화면에',
-          detail: '방 목록, 참가자, 화자별 자막을 한 화면에서 보는 음성방 화면과 오래 켜 둘 때 쌓이는 지연 줄이기를 준비하고 있습니다. 일정은 정하지 않았고, 상표나 디자인을 베끼지 않는 온말만의 화면으로 만듭니다.',
+          value: '실제 음성 품질 확인 · 음성방 다듬기',
+          detail: '0.1.0을 Playtest에 올린 뒤 실제 게임에서 인식·번역 품질과 지연을 확인하고, 방·참가자·자막을 한 화면에서 보는 음성방을 다듬을 계획입니다. 일정은 정하지 않았습니다.',
         },
         {
           label: '개발 속도 안내',
@@ -216,6 +216,7 @@ export const translations = {
         { question: '업데이트가 왜 느린가요?', answer: '온말은 개발자 한 명이 공무와 병행하며 만드는 개인 프로젝트라 개발과 업데이트에 시간이 오래 걸립니다. 서두르기보다 실제 Windows에서 확인한 뒤 조금씩 내놓겠습니다. 문의 답변도 늦어질 수 있으니 양해 부탁드립니다.' },
         { question: 'Mac에서도 다운로드할 수 있나요?', answer: '현재 공개 검증 대상은 Windows 11 64비트입니다. macOS는 개발 환경이며 Mac 다운로드는 제공하지 않습니다.' },
         { question: '무료인가요? 인터넷이나 개인 API가 꼭 필요한가요?', answer: '온말은 무료·비수익으로 준비 중이며 결제·구독·광고가 없습니다. 기본 한영 모델은 동봉되며 내 PC에서 처리합니다. Steam 설치·업데이트와 선택 모델 다운로드에는 인터넷이 필요할 수 있습니다. 개인 API 번역은 0.1.0부터 제공하지 않습니다(현재 Playtest 0.0.8에는 선택 기능으로 남아 있습니다).' },
+        { question: '매번 시작 버튼을 눌러야 하나요?', answer: '0.1.0부터는 설정에서 켜 두기 모드를 켜면, 앱을 열었을 때 저장해 둔 게임이나 Discord의 소리가 나는 즉시 자동으로 번역을 시작합니다. 기본값은 꺼짐이며, 첫 실행 동의를 마친 뒤에만 동작합니다. 0.1.0은 아직 Playtest에 올라가기 전입니다.' },
         { question: '자막은 사람이 만드나요?', answer: '아니요. 자막은 내 PC에 설치된 AI 음성 인식·기계 번역 모델이 자동으로 만들며, 사람이 확인하거나 고친 내용이 아닙니다. 틀릴 수 있으니 중요한 내용은 직접 확인해 주세요. 앱의 첫 실행 안내와 자막 화면에도 이 사실을 표시합니다.' },
         { question: '팀원 음성만 골라 번역하나요?', answer: '앱별 캡처와 언어 선택을 사용할 수 있지만 한 프로세스에 섞인 팀원 음성·게임 효과음·배경음을 자동으로 분리하지는 않습니다. 실제 입력 소스와 듣는 언어를 확인해야 합니다.' },
         { question: '자막이 없거나 번역이 이상하면 어떻게 하나요?', answer: '소리가 재생되는 출력 장치, 선택한 캡처 소스, 듣는 언어와 모델 준비 상태를 순서대로 확인하세요. 오류가 이어지면 버전·증상·설정 등 필요한 정보만 Discord나 이메일로 보내주세요. API 키나 개인 음성·대화 내용은 공개하지 마세요.' },
@@ -284,7 +285,7 @@ export const translations = {
       ctaSteam: 'Join the Playtest on Steam',
       ctaDiscord: 'Discord Community',
       unreleasedNotice:
-        'Steam Playtest open · Default build 0.0.8 · 0.1.0 in Windows testing · Full release TBD (checked 2026-11-20)',
+        'Steam Playtest open · Current default build 0.0.8 · 0.1.0 coming to Playtest · Full release TBD (checked 2026-11-20)',
       heroImageCaption:
         'Official Onmal app screen (real Windows 0.1.0 capture) — interpret screen for choosing the sound and languages, then starting',
       inspectFullSize: 'View original aspect ratio',
@@ -407,13 +408,13 @@ export const translations = {
         },
         {
           label: 'Next version 0.1.0',
-          value: 'Left-menu layout · AI caption notice · Trimmed features',
-          detail: 'Adds a left menu (Interpret, Friends, Preparation, Settings, Info), controls beside the captions in wide windows, a notice that captions are AI-generated, a participant list in voice rooms, and only subtitle languages that work right now. Personal API translation and read-aloud are removed until verified. If it passes, it goes to the Playtest test branch first.',
+          value: 'Coming to Playtest · Not available yet',
+          detail: 'Adds keep-on mode (when the app opens it translates the saved game or Discord sound automatically, with no room or Start press; off by default), skipping team-voice captions that are more than 10 seconds late and saying so, a transparent logo splash, a left menu with a wide-window layout, a notice that captions are AI-generated, only subtitle languages that work right now, and optional Steam voice rooms with a participant list. Personal API translation and read-aloud are removed until verified. It goes to the Playtest test branch first, then becomes the default build.',
         },
         {
           label: 'Real Windows check (2026-11-20)',
           value: 'Build, screens & audio devices checked · Some issues remain',
-          detail: 'On a real Windows 11 PC the app built, 56 consent tests, most unit tests and 26 audio-device tests passed. The subtitle area hides at the minimum window size and some screens are still unchecked; real speech recognition and translation quality have not been tested yet.',
+          detail: 'On a real Windows 11 PC the app built, 56 consent tests, most unit tests and 26 audio-device tests passed. Issues found in the first pass, such as the subtitle area in small windows, were fixed and checked in a second pass. Real speech recognition and translation quality and in-game performance have not been tested yet.',
         },
         {
           label: 'Availability',
@@ -422,8 +423,8 @@ export const translations = {
         },
         {
           label: 'Plans',
-          value: 'Rooms, participants and captions on one screen',
-          detail: 'A voice-room screen that shows rooms, participants and per-speaker captions together, and reducing delay that builds up over long sessions, are in preparation. No dates are set, and the screen is Onmal’s own design rather than a copy of any other app.',
+          value: 'Real audio checks · Polishing voice rooms',
+          detail: 'After 0.1.0 reaches the Playtest, the plan is to check recognition and translation quality and delay in real games, and to polish voice rooms that show rooms, participants and captions on one screen. No dates are set.',
         },
         {
           label: 'Development pace',
@@ -442,6 +443,7 @@ export const translations = {
         { question: 'Why are updates slow?', answer: 'Onmal is a personal project made by one developer alongside public-service duties, so development and updates take a long time. Rather than rushing, each version is checked on real Windows PCs before release. Replies may also be slow; thank you for understanding.' },
         { question: 'Is there a Mac download?', answer: 'Windows 11 64-bit is the current target for public validation. macOS is a development environment, and no Mac download is offered.' },
         { question: 'Is it free? Do I need internet or a personal API?', answer: 'Onmal is being prepared as a free, non-commercial app with no payments, subscriptions or ads. The basic Korean-English models are bundled and run on your PC. Steam installation, updates, and optional model downloads may need internet. Personal API translation is not offered from 0.1.0 (it remains an optional feature in the current Playtest 0.0.8).' },
+        { question: 'Do I have to press Start every time?', answer: 'From 0.1.0, turn on keep-on mode in Settings and Onmal starts translating as soon as the saved game or Discord makes sound when the app opens. It is off by default and works only after first-run consent. 0.1.0 has not reached the Playtest yet.' },
         { question: 'Are the subtitles made by people?', answer: 'No. Subtitles are generated automatically by AI speech-recognition and machine-translation models installed on your PC, and no person reviews or edits them. They can be wrong, so check anything important yourself. The app’s first-run guide and subtitle screen show this too.' },
         { question: 'Does it isolate only my teammates’ voices?', answer: 'App capture and language selection are available, but voices, effects, and background audio mixed within one process are not automatically separated. Check the actual input source and spoken language.' },
         { question: 'What if subtitles are missing or translation looks wrong?', answer: 'Check the playback device, selected capture source, spoken language, and model readiness in that order. If the issue continues, share only necessary details such as version, symptoms, and settings via Discord or email. Do not post API keys, private audio, or conversation content.' },

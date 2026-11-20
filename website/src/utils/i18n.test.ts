@@ -89,6 +89,6 @@ test('English and Korean expose the same content structure including FAQ and nav
     return typeof value;
   }
   assert.deepEqual(shape(translations.ko), shape(translations.en));
-  assert.equal(translations.ko.faq.items.length, 8);
-  assert.equal(translations.en.faq.items.length, 8);
+  assert.equal(translations.ko.faq.items.length, 9);
+  assert.equal(translations.en.faq.items.length, 9);
 });
