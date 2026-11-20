@@ -12,7 +12,28 @@ export interface ScreenshotItem {
 export const APP_ICON_URL =
   'https://avatars.fastly.steamstatic.com/d400f0f805a3c684da34b0c242fdaba682751507_full.jpg?original=1';
 
-const SHOT_BASE = `${import.meta.env?.BASE_URL ?? "/onmal-site/"}shots/0.1.0/`;
+const BASE = import.meta.env?.BASE_URL ?? '/onmal-site/';
+const SHOT_BASE = `${BASE}shots/0.1.0/`;
+
+/** The app's real logo mark (from the Windows app icon), cut out on a transparent background. */
+export const BRAND = {
+  mark96: `${BASE}brand/onmal-mark-96.png`,
+  mark192: `${BASE}brand/onmal-mark-192.png`,
+};
+
+export const MEDIA = {
+  video: `${BASE}media/onmal-promo-concept.mp4`,
+  poster: `${BASE}media/onmal-promo-concept-poster.jpg`,
+};
+
+/** Pixel sizes of the screenshots, so the browser can reserve space before they load. */
+export const SHOT_SIZES: Record<number, { width: number; height: number }> = {
+  1: { width: 1400, height: 900 },
+  2: { width: 560, height: 620 },
+  3: { width: 620, height: 660 },
+  4: { width: 1400, height: 900 },
+  5: { width: 560, height: 620 },
+};
 
 export const SCREENSHOTS: ScreenshotItem[] = [
   {

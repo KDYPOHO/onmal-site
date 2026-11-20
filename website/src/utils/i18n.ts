@@ -53,6 +53,9 @@ export const translations = {
       selectLanguage: '사이트 언어 선택',
       openMenu: '메뉴 열기',
       closeMenu: '메뉴 닫기',
+      skip: '본문으로 건너뛰기',
+      langGroup: '사이트 언어',
+      primary: '주요 메뉴',
     },
     hero: {
       statusBadge: 'Windows 11 64비트 전용 · 개발·테스트 중',
@@ -65,6 +68,9 @@ export const translations = {
       inspectFullSize: '원본 비율 크게 보기',
       themeSwitchDark: '다크 테마 화면',
       themeSwitchIvory: '라이트 테마 화면',
+      heardLabel: '들린 말',
+      captionLabel: '내 자막',
+      statusListLabel: '현재 상태',
     },
     features: {
       kicker: 'PRODUCT OVERVIEW · 핵심 기능',
@@ -202,11 +208,20 @@ export const translations = {
         {
           label: '개발 속도 안내',
           value: '1인 개발 · 여가 시간에 만드는 무료 앱',
-          detail: '온말은 개발자 한 명이 여가 시간에 만들고 운영하는 무료 개인 프로젝트입니다. 그래서 개발과 업데이트, 문의 답변에 시간이 오래 걸릴 수 있습니다. 공공기관의 공식 사업은 아닙니다. 너그럽게 기다려 주셔서 감사합니다.',
+          detail: '온말은 개발자 한 명이 여가 시간에 만들고 운영하는 무료 개인 프로젝트입니다. 그래서 개발과 업데이트, 문의 답변에 시간이 오래 걸릴 수 있습니다. 어떤 회사나 기관과도 관계없습니다. 너그럽게 기다려 주셔서 감사합니다.',
         },
       ],
       ctaSteamFollow: 'Steam에서 Playtest 참여',
       ctaDiscordJoin: 'Discord 도움말·문의',
+      statusLabel: '지금 상태',
+      specsLabel: '세부 현황',
+    },
+    nameBand: {
+      title: '이름의 뜻',
+      onGloss: '모든, 온전한. 온나라의 ‘온’',
+      malGloss: '사람이 하는 말',
+      sentence: '온 나라의 말이\n한데 모인다.',
+      romanNote: '영어 등 다른 언어에서는 로마자로 Onmal이라고 씁니다.',
     },
     faq: {
       kicker: 'FAQ · 사용 전 확인',
@@ -247,6 +262,8 @@ export const translations = {
       emailLink: '이메일 문의 (todaklife@gmail.com)',
       changeLang: '언어 변경',
       copyright: '© 2026 토닥 Todak. All rights reserved.',
+      legalHeading: '정책과 라이선스',
+      backToTop: '맨 위로',
     },
     langModal: {
       title: '사이트 언어 선택',
@@ -277,10 +294,13 @@ export const translations = {
       selectLanguage: 'Select site language',
       openMenu: 'Open navigation menu',
       closeMenu: 'Close navigation menu',
+      skip: 'Skip to content',
+      langGroup: 'Site language',
+      primary: 'Main menu',
     },
     hero: {
       statusBadge: 'Windows 11 64-bit Only · In Development & Testing',
-      headline: 'Game Conversations,\nin Your Language Subtitles.',
+      headline: 'Game conversations,\nsubtitled in your language.',
       supporting:
         'A Windows app that helps you read teammates’ voice chat and story dialogue as translated subtitles.',
       ctaSteam: 'Join the Playtest on Steam',
@@ -292,6 +312,9 @@ export const translations = {
       inspectFullSize: 'View original aspect ratio',
       themeSwitchDark: 'Dark Surface View',
       themeSwitchIvory: 'Light Surface View',
+      heardLabel: 'Heard',
+      captionLabel: 'Your subtitle',
+      statusListLabel: 'Current status',
     },
     features: {
       kicker: 'PRODUCT OVERVIEW · CAPABILITIES',
@@ -430,11 +453,20 @@ export const translations = {
         {
           label: 'Development pace',
           value: 'Solo developer · A free app made in spare time',
-          detail: 'Onmal is a free personal project built and maintained by one developer in their spare time, so development, updates, and replies can take a long time. This is not an official public-sector initiative. Thank you for your patience.',
+          detail: 'Onmal is a free personal project built and maintained by one developer in their spare time, so development, updates, and replies can take a long time. It is not affiliated with any company or organization. Thank you for your patience.',
         },
       ],
       ctaSteamFollow: 'Join the Playtest on Steam',
       ctaDiscordJoin: 'Discord help & questions',
+      statusLabel: 'Status now',
+      specsLabel: 'Details',
+    },
+    nameBand: {
+      title: 'What the name means',
+      onGloss: '“All, whole”, as in 온나라, every nation',
+      malGloss: '“Words, speech”',
+      sentence: 'The words of every nation,\ncoming together.',
+      romanNote: 'Written Onmal in English and other languages.',
     },
     faq: {
       kicker: 'FAQ · BEFORE YOU START',
@@ -476,6 +508,8 @@ export const translations = {
       emailLink: 'Email Contact (todaklife@gmail.com)',
       changeLang: 'Language',
       copyright: '© 2026 토닥 Todak. All rights reserved.',
+      legalHeading: 'Policies & licenses',
+      backToTop: 'Back to top',
     },
     langModal: {
       title: 'Select Site Language',

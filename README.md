@@ -2,7 +2,7 @@
 
 Public homepage: https://kdypoho.github.io/onmal-site/
 
-The Korean/English homepage keeps the existing design; its screenshots are real Windows 0.1.0 captures (2026-11-20) stored in `website/public/shots/0.1.0/`. It is published with the existing free GitHub Pages deployment from the `main` branch root (`.nojekyll`); no API keys, server, login, payment, or subscription is needed.
+The Korean/English homepage was redesigned on 2026-11-20 around the app's own logo idea, "voice becomes a subtitle": the first screen shows the tagline heard in one language and then appearing as a subtitle in the other. Colours come from the logo (ink navy, aqua, coral), fonts are self-hosted subsets (Pretendard, Gowun Batang; no Google Fonts or jsDelivr requests), and the page has no external requests except the outbound links. Its screenshots are real Windows 0.1.0 captures (2026-11-20) stored in `website/public/shots/0.1.0/`. It is published with the existing free GitHub Pages deployment from the `main` branch root (`.nojekyll`); no API keys, server, login, payment, or subscription is needed.
 
 ## Current status — 2026-11-20
 
@@ -20,6 +20,17 @@ The video section presents the supplied 10-second promotional concept with simul
 
 </details>
 
+## Changing the release status later
+
+0.1.0 became the Playtest default build on 2026-11-21 (Build 26823802). For the next release, all status wording lives in `website/src/utils/i18n.ts` (both `ko` and `en`). Update these keys together, then re-run `python tools/make-home-fonts.py …` if new characters appear (`npm test` fails when a character is missing from the font subset):
+
+- `hero.unreleasedNotice`, `hero.statusBadge`
+- `development.versionStatus`, `development.playtestStatus`, `development.leadParagraph`
+- `development.specs` items "현재 Playtest 빌드 / Current Playtest build" and "다음 판 0.1.0 / Next version 0.1.0"
+- FAQ answers that say 0.1.0 is not on the Playtest yet (items 1, 5, 6)
+- `howItWorks.staticNotice`, `gallery.subtitle`, `footer.statusSummary`
+- `src/utils/i18n.test.ts` expectations for the build number
+
 ## Website source and validation
 
 The reviewed source retained from the previous publication is now preserved in [`website/`](website/) with its existing dependency lockfile. This is homepage React source, separate from the Onmal Windows/macOS application. No dependencies were added or downloaded for this update; the existing local Node.js 24 runtime and installed packages were reused.
@@ -32,7 +43,7 @@ npm test
 npm run build
 ```
 
-Publish the generated `website/dist/index.html` as root `index.html`, its hashed assets into root `assets/`, and `website/dist/media/` into root `media/`, retaining the policy pages and legacy assets. Push only this website repository to `main`; the existing Pages configuration publishes it. Do not use the legacy PowerShell checkers as validation of the current React homepage: they target the pre-2026-10-19 HTML layout.
+Publish the generated `website/dist/index.html` as root `index.html`, its hashed assets into root `assets/`, and `website/dist/media/`, `brand/`, `fonts/` and `shots/` into the same root folders, retaining the policy pages and legacy assets. Push only this website repository to `main`; the existing Pages configuration publishes it. Do not use the legacy PowerShell checkers as validation of the current React homepage: they target the pre-2026-10-19 HTML layout.
 
 The original export ZIP was 1,434,050 bytes, SHA-256 `29d380110450c286c0a2b0841e2fc8168ca6b60675b5abf509271d796068def8`. The pre-export website remains in Git history at `3ce6b1f8628dd106e91cd3b2d32abcdc63ca0502` and branch `backup/pre-aistudio-20261019` for rollback.
 
