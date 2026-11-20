@@ -51,6 +51,8 @@ test('both languages state the current Playtest build and keep 0.1.0 as in prepa
   assert.match(translations.en.development.playtestStatus, /Playtest open/);
   assert.match(translations.ko.development.specs[3].value, /미완료/);
   assert.match(translations.en.development.specs[3].value, /Real Windows/);
+  assert.match(JSON.stringify(translations.ko.development), /공무/);
+  assert.match(JSON.stringify(translations.en.development), /public-service/);
 });
 
 test('Screenshot metadata and captions do not assert 0.3.1 version on images', () => {
@@ -85,6 +87,6 @@ test('English and Korean expose the same content structure including FAQ and nav
     return typeof value;
   }
   assert.deepEqual(shape(translations.ko), shape(translations.en));
-  assert.equal(translations.ko.faq.items.length, 6);
-  assert.equal(translations.en.faq.items.length, 6);
+  assert.equal(translations.ko.faq.items.length, 7);
+  assert.equal(translations.en.faq.items.length, 7);
 });

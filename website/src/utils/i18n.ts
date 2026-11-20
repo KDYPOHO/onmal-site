@@ -189,6 +189,11 @@ export const translations = {
           value: 'Playtest 공개 · 본편 미출시',
           detail: 'Playtest는 Steam 상점 페이지의 Playtest 참여 버튼으로 받을 수 있습니다. 본편 출시일은 정하지 않았습니다. 이후 변경은 Steam과 공식 안내에서 확인하세요.',
         },
+        {
+          label: '개발 속도 안내',
+          value: '1인 개발 · 공무와 병행',
+          detail: '온말은 개발자 한 명이 만들고 운영하는 개인 프로젝트입니다. 개발자가 실제로 공무를 맡고 있어 개발과 업데이트, 문의 답변에 시간이 오래 걸릴 수 있습니다. 공공기관의 공식 사업은 아닙니다. 너그럽게 기다려 주셔서 감사합니다.',
+        },
       ],
       ctaSteamFollow: 'Steam에서 Playtest 참여',
       ctaDiscordJoin: 'Discord 도움말·문의',
@@ -198,6 +203,7 @@ export const translations = {
       title: '자주 묻는 질문',
       items: [
         { question: '지금 설치하거나 Playtest에 참여할 수 있나요?', answer: '네. Steam 상점 페이지에서 Playtest 참여를 누르면 Steam 라이브러리에 추가되고 설치할 수 있습니다(Windows 11 64비트, 약 4.4GB). 현재 기본 빌드는 0.0.8이며 0.1.0은 준비 중입니다. 테스트 빌드라 오류가 있을 수 있고, 본편 정식 출시일은 아직 정하지 않았습니다.' },
+        { question: '업데이트가 왜 느린가요?', answer: '온말은 개발자 한 명이 공무와 병행하며 만드는 개인 프로젝트라 개발과 업데이트에 시간이 오래 걸립니다. 서두르기보다 실제 Windows에서 확인한 뒤 조금씩 내놓겠습니다. 문의 답변도 늦어질 수 있으니 양해 부탁드립니다.' },
         { question: 'Mac에서도 다운로드할 수 있나요?', answer: '현재 공개 검증 대상은 Windows 11 64비트입니다. macOS는 개발 환경이며 Mac 다운로드는 제공하지 않습니다.' },
         { question: '무료인가요? 인터넷이나 개인 API가 꼭 필요한가요?', answer: '온말은 무료·비수익으로 준비 중이며 결제·구독을 제공하지 않습니다. 기본 한영 모델은 동봉되며 로컬에서 처리합니다. Steam 설치·업데이트와 선택 모델 다운로드에는 인터넷이 필요할 수 있습니다. 개인 API는 선택 사항이고 텍스트 전송과 제공사 이용 요금이 발생할 수 있습니다.' },
         { question: '팀원 음성만 골라 번역하나요?', answer: '앱별 캡처와 언어 선택을 사용할 수 있지만 한 프로세스에 섞인 팀원 음성·게임 효과음·배경음을 자동으로 분리하지는 않습니다. 실제 입력 소스와 듣는 언어를 확인해야 합니다.' },
@@ -398,6 +404,11 @@ export const translations = {
           value: 'Playtest open · Main app unreleased',
           detail: 'Get the Playtest with the Join the Playtest button on the Steam store page. No main release date is set. Check Steam and official announcements for later changes.',
         },
+        {
+          label: 'Development pace',
+          value: 'Solo developer · Alongside public-service duties',
+          detail: 'Onmal is a personal project built and maintained by one developer. The developer also has real public-service responsibilities, so development, updates, and replies can take a long time. This is not an official public-sector initiative. Thank you for your patience.',
+        },
       ],
       ctaSteamFollow: 'Join the Playtest on Steam',
       ctaDiscordJoin: 'Discord help & questions',
@@ -407,6 +418,7 @@ export const translations = {
       title: 'Frequently Asked Questions',
       items: [
         { question: 'Can I install Onmal or join the Playtest now?', answer: 'Yes. Press Join the Playtest on the Steam store page to add it to your Steam library and install it (Windows 11 64-bit, about 4.4 GB). The current default build is 0.0.8, and 0.1.0 is in preparation. It is a test build, so expect bugs; no full release date is set yet.' },
+        { question: 'Why are updates slow?', answer: 'Onmal is a personal project made by one developer alongside public-service duties, so development and updates take a long time. Rather than rushing, each version is checked on real Windows PCs before release. Replies may also be slow; thank you for understanding.' },
         { question: 'Is there a Mac download?', answer: 'Windows 11 64-bit is the current target for public validation. macOS is a development environment, and no Mac download is offered.' },
         { question: 'Is it free? Do I need internet or a personal API?', answer: 'Onmal is being prepared as a free, non-commercial app with no payments or subscriptions. The basic Korean-English models are bundled and run locally. Steam installation, updates, and optional model downloads may need internet. A personal API is optional and may send text to a provider and incur provider usage fees.' },
         { question: 'Does it isolate only my teammates’ voices?', answer: 'App capture and language selection are available, but voices, effects, and background audio mixed within one process are not automatically separated. Check the actual input source and spoken language.' },
