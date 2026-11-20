@@ -69,6 +69,8 @@ test('Screenshot metadata and captions do not assert 0.3.1 version on images', (
   assert.ok(!en.howItWorks.staticNotice.includes('0.3.1'));
 
   for (const shot of SCREENSHOTS) {
+    assert.ok(shot.url.includes('shots/0.1.0/'));
+    assert.ok(shot.titleKo.includes('0.1.0') && shot.titleEn.includes('0.1.0'));
     assert.ok(!shot.titleKo.includes('0.3.1'));
     assert.ok(!shot.descKo.includes('0.3.1'));
     assert.ok(!shot.altKo.includes('0.3.1'));

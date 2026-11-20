@@ -2,11 +2,11 @@
 
 Public homepage: https://kdypoho.github.io/onmal-site/
 
-The Korean/English homepage keeps the existing design and Steam screenshots. It is published with the existing free GitHub Pages deployment from the `main` branch root (`.nojekyll`); no API keys, server, login, payment, or subscription is needed.
+The Korean/English homepage keeps the existing design; its screenshots are real Windows 0.1.0 captures (2026-11-20) stored in `website/public/shots/0.1.0/`. It is published with the existing free GitHub Pages deployment from the `main` branch root (`.nojekyll`); no API keys, server, login, payment, or subscription is needed.
 
 ## Current status — 2026-11-20
 
-The Steam Playtest (app 5456700) is open: anyone can join from the store page of the main app 5060050. Its default branch runs **0.0.8 Build 26239789**; `test-0-0-1` keeps 0.0.7 Build 26218610. The main app is unreleased and no release date is set. The next version, **0.1.0**, is being checked on a real Windows PC; after it passes it goes to the test branch first. The homepage text was updated on 2026-11-20 to match this (status was read from Steamworks and the public store page that day). Screenshots are still the earlier Steam gallery images and will be replaced with Windows 0.1.0 captures after the real-device check.
+The Steam Playtest (app 5456700) is open: anyone can join from the store page of the main app 5060050. Its default branch runs **0.0.8 Build 26239789**; `test-0-0-1` keeps 0.0.7 Build 26218610. The main app is unreleased and no release date is set. The next version, **0.1.0**, is being checked on a real Windows PC; after it passes it goes to the test branch first. The homepage text was updated on 2026-11-20 to match this (status was read from Steamworks and the public store page that day). Screenshots were replaced the same day with 0.1.0 captures from the real Windows check (the test PC had no recognition models installed, so the main screen shows a model notice).
 
 <details><summary>Previous status — 2026-10-20</summary>
 
