@@ -213,6 +213,7 @@ export const translations = {
       title: '자주 묻는 질문',
       items: [
         { question: '지금 설치하거나 Playtest에 참여할 수 있나요?', answer: '네. Steam 상점 페이지에서 Playtest 참여를 누르면 Steam 라이브러리에 추가되고 설치할 수 있습니다(Windows 11 64비트, 약 4.4GB). 현재 기본 빌드는 0.0.8이며 0.1.0은 준비 중입니다. 테스트 빌드라 오류가 있을 수 있고, 본편 정식 출시일은 아직 정하지 않았습니다.' },
+        { question: '‘온말’은 무슨 뜻인가요?', answer: '‘온’은 온나라처럼 ‘모든, 온전한’을, ‘말’은 사람의 말을 뜻합니다. 온말은 온 나라의 말들이 한데 모인다는 뜻을 담은 이름입니다. 영어 등 다른 언어에서는 로마자로 Onmal이라고 씁니다.' },
         { question: '업데이트가 왜 느린가요?', answer: '온말은 개발자 한 명이 여가 시간에 만드는 무료 개인 프로젝트라 개발과 업데이트에 시간이 오래 걸립니다. 서두르기보다 실제 Windows에서 확인한 뒤 조금씩 내놓겠습니다. 문의 답변도 늦어질 수 있으니 양해 부탁드립니다.' },
         { question: 'Mac에서도 다운로드할 수 있나요?', answer: '현재 공개 검증 대상은 Windows 11 64비트입니다. macOS는 개발 환경이며 Mac 다운로드는 제공하지 않습니다.' },
         { question: '무료인가요? 인터넷이나 개인 API가 꼭 필요한가요?', answer: '온말은 무료·비수익으로 준비 중이며 결제·구독·광고가 없습니다. 기본 한영 모델은 동봉되며 내 PC에서 처리합니다. Steam 설치·업데이트와 선택 모델 다운로드에는 인터넷이 필요할 수 있습니다. 개인 API 번역은 0.1.0부터 제공하지 않습니다(현재 Playtest 0.0.8에는 선택 기능으로 남아 있습니다).' },
@@ -440,6 +441,7 @@ export const translations = {
       title: 'Frequently Asked Questions',
       items: [
         { question: 'Can I install Onmal or join the Playtest now?', answer: 'Yes. Press Join the Playtest on the Steam store page to add it to your Steam library and install it (Windows 11 64-bit, about 4.4 GB). The current default build is 0.0.8, and 0.1.0 is in preparation. It is a test build, so expect bugs; no full release date is set yet.' },
+        { question: 'What does “Onmal” mean?', answer: 'In Korean, 온 (on) means “all” or “whole”, as in 온나라 (“every nation”), and 말 (mal) means “words” or “speech”. Onmal is the words of every nation coming together.' },
         { question: 'Why are updates slow?', answer: 'Onmal is a free personal project made by one developer in their spare time, so development and updates take a long time. Rather than rushing, each version is checked on real Windows PCs before release. Replies may also be slow; thank you for understanding.' },
         { question: 'Is there a Mac download?', answer: 'Windows 11 64-bit is the current target for public validation. macOS is a development environment, and no Mac download is offered.' },
         { question: 'Is it free? Do I need internet or a personal API?', answer: 'Onmal is being prepared as a free, non-commercial app with no payments, subscriptions or ads. The basic Korean-English models are bundled and run on your PC. Steam installation, updates, and optional model downloads may need internet. Personal API translation is not offered from 0.1.0 (it remains an optional feature in the current Playtest 0.0.8).' },
