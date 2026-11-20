@@ -36,19 +36,19 @@ test('filterLanguages returns empty list for unsupported languages', () => {
   assert.equal(filterLanguages('French').length, 0);
 });
 
-test('both languages distinguish uploads and automated checks from public availability', () => {
+test('both languages state the current Playtest build and keep 0.1.0 as in preparation', () => {
   for (const language of ['ko', 'en'] as const) {
     const content = JSON.stringify(translations[language]);
     const status = JSON.stringify(translations[language].development);
-    assert.ok(status.includes('0.3.2'));
-    assert.ok(status.includes('26067017') && status.includes('26067660'));
-    assert.ok(status.includes('998') && status.includes('875') && status.includes('123'));
-    assert.ok(status.includes('2026-10-20') && status.includes('17:22 KST'));
-    assert.ok(!content.includes('0.3.1'));
+    assert.ok(status.includes('0.0.8') && status.includes('26239789'));
+    assert.ok(status.includes('0.1.0'));
+    assert.ok(status.includes('2,606'));
+    assert.ok(content.includes('2026-11-20'));
+    assert.ok(!content.includes('0.3.1') && !content.includes('0.3.2'));
     assert.ok(!/sign-ups open|applicants are added automatically|참여 신청 접수 중|신청자는 자동/.test(content));
   }
-  assert.match(translations.ko.development.playtestStatus, /미활성.*심사 대기/);
-  assert.match(translations.en.development.playtestStatus, /inactive.*pending/);
+  assert.match(translations.ko.development.playtestStatus, /Playtest 참여 가능/);
+  assert.match(translations.en.development.playtestStatus, /Playtest open/);
   assert.match(translations.ko.development.specs[3].value, /미완료/);
   assert.match(translations.en.development.specs[3].value, /Real Windows/);
 });

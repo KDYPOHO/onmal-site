@@ -4,7 +4,11 @@ Public homepage: https://kdypoho.github.io/onmal-site/
 
 The Korean/English homepage keeps the existing design and Steam screenshots. It is published with the existing free GitHub Pages deployment from the `main` branch root (`.nojekyll`); no API keys, server, login, payment, or subscription is needed.
 
-## Current status — 2026-10-20
+## Current status — 2026-11-20
+
+The Steam Playtest (app 5456700) is open: anyone can join from the store page of the main app 5060050. Its default branch runs **0.0.8 Build 26239789**; `test-0-0-1` keeps 0.0.7 Build 26218610. The main app is unreleased and no release date is set. The next version, **0.1.0**, is being checked on a real Windows PC; after it passes it goes to the test branch first. The homepage text was updated on 2026-11-20 to match this (status was read from Steamworks and the public store page that day). Screenshots are still the earlier Steam gallery images and will be replaced with Windows 0.1.0 captures after the real-device check.
+
+<details><summary>Previous status — 2026-10-20</summary>
 
 Windows **0.3.2** is a verification candidate. Local upload receipts confirm Playtest build **26067017** (01:12 UTC) and main-app build **26067660** (01:47 UTC), both stored inactive at upload. Formal release is on hold. A separate Steam task reconfirmed at **17:22 KST / 08:22 UTC** that Playtest store assets are approved, the build submitted on October 15 remains in the review queue, and Playtest is inactive. Uploads and store approval do not establish build approval or playable availability.
 
@@ -13,6 +17,8 @@ The existing validation report records **875 Portable + 123 Python = 998 passing
 This update refreshes product and usage guidance, adds Korean/English FAQ content, and distinguishes the current build from older screenshots. Privacy and terms pages correct product facts without extending legal rights or liability clauses; their existing effective dates are not changed and legal review is not claimed. License text is preserved. Existing application source and Steam settings are outside this website repository and were not changed.
 
 The video section presents the supplied 10-second promotional concept with simulated UI, rather than footage of the running application or actual gameplay. Korean and English captions retain the development/testing status and incomplete real Windows validation. The responsive player opens manually, uses native controls and inline playback, and includes the original audio without autoplay. A poster and a direct video link are provided. The media files are retained under `website/public/media/` and copied by Vite into `dist/media/`; the original attachment remains preserved separately.
+
+</details>
 
 ## Website source and validation
 

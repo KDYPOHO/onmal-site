@@ -58,9 +58,9 @@ export const translations = {
       statusBadge: 'Windows 11 64비트 전용 · 개발·테스트 중',
       headline: '게임 대화를,\n내 언어 자막으로.',
       supporting: '팀원의 음성과 스토리 대사를 번역 자막으로 읽도록 돕는 Windows 앱.',
-      ctaSteam: 'Steam에서 소식 받기',
+      ctaSteam: 'Steam에서 Playtest 참여',
       ctaDiscord: 'Discord 커뮤니티',
-      unreleasedNotice: 'Windows 0.3.2 검증 후보 · 정식 출시 보류 · Playtest 미활성 (2026-10-20 확인)',
+      unreleasedNotice: 'Steam Playtest 참여 가능 · 기본 빌드 0.0.8 · 0.1.0 Windows 확인 중 · 정식 출시 미정 (2026-11-20 확인)',
       heroImageCaption: '온말 공식 앱 화면 (Steam 공식 스크린샷) — 소리 가져올 곳과 언어를 고르고 시작하는 기본 인터페이스',
       inspectFullSize: '원본 비율 크게 보기',
       themeSwitchDark: '다크 테마 화면',
@@ -110,7 +110,7 @@ export const translations = {
       kicker: 'HOW IT WORKS · 작동 흐름',
       title: '듣는 소리 선택 → 언어 선택 → 시작',
       subtitle:
-        '테스트가 활성화되고 설치가 제공된 뒤 사용할 기본 흐름입니다. 먼저 소리 출력과 언어·모델 준비 상태를 확인하세요.',
+        'Steam Playtest에 참여해 설치한 뒤 사용하는 기본 흐름입니다. 먼저 소리 출력과 언어·모델 준비 상태를 확인하세요.',
       flowSummary: '듣는 소리 선택 → 언어 선택 → 시작',
       steps: [
         {
@@ -136,13 +136,13 @@ export const translations = {
         },
       ],
       viewCapture: '공식 앱 화면 크게 보기',
-      staticNotice: '화면은 기존 Steam 등록 스크린샷입니다. 0.3.2에서는 UI와 작은 화면 대응을 정리해 배치·문구가 다를 수 있습니다. 실제 Windows 음성·통역 검증은 미완료입니다.',
+      staticNotice: '화면은 이전 버전의 Steam 등록 스크린샷이라 현재 Playtest·0.1.0과 배치·문구가 다를 수 있습니다. 0.1.0 Windows 화면은 실기 확인 뒤 교체합니다.',
     },
     gallery: {
       kicker: 'SCREENSHOT GALLERY · Steam 공식 스크린샷',
       title: '온말 공식 앱 화면',
       subtitle:
-        '기존 Steam 등록 스크린샷을 원본 비율로 보존했습니다. 최신 0.3.2 화면이나 실제 음성·성능 검증 결과를 뜻하지 않습니다.',
+        '이전 버전의 Steam 등록 스크린샷을 원본 비율로 보존했습니다. 현재 Playtest·0.1.0 화면이나 실제 음성·성능 검증 결과를 뜻하지 않으며, 0.1.0 Windows 화면은 확인 뒤 교체합니다.',
       openLightbox: '원본 비율로 확대',
       closeLightbox: '닫기 (Esc)',
       prev: '이전 스크린샷',
@@ -153,11 +153,11 @@ export const translations = {
     development: {
       kicker: 'DEVELOPMENT STATUS · 개발 현황',
       title: '현재 개발 및 검증 상태 안내',
-      versionStatus: '온말 0.3.2 Windows 검증 후보',
-      releaseDateStatus: '정식 출시 보류 · 일정 미정',
-      playtestStatus: 'Playtest 미활성 · 빌드 심사 대기',
+      versionStatus: 'Playtest 0.0.8 공개 중 · 0.1.0 준비 중',
+      releaseDateStatus: '정식 출시 미정 · 앞서 해보기 예정',
+      playtestStatus: 'Steam Playtest 참여 가능',
       leadParagraph:
-        '무료·비수익 운영을 목표로 준비 중입니다. 2026-10-20 17:22 KST 재확인 결과 Playtest 상점 자산은 승인됐지만, 10월 15일 제출한 빌드는 검토 대기열에 있으며 테스트는 아직 활성화되지 않았습니다.',
+        '무료·비수익 운영을 목표로 준비 중입니다. 2026-11-20 확인 기준 Steam 상점 페이지에서 Playtest에 참여할 수 있으며, 기본 빌드는 0.0.8입니다. 다음 판 0.1.0은 실제 Windows PC에서 확인 중이고, 통과하면 테스트 브랜치에 먼저 올린 뒤 기본 빌드로 바꿉니다.',
       specs: [
         {
           label: '공개 대상',
@@ -165,14 +165,14 @@ export const translations = {
           detail: 'macOS는 개발 환경입니다. Mac 다운로드는 제공하지 않으며 Windows와 같은 검증 상태로 안내하지 않습니다.',
         },
         {
-          label: '0.3.2 업로드 기록',
-          value: 'Playtest 26067017 · 본편 26067660',
-          detail: '2026-10-20 업로드 완료 기록이 있으며 둘 다 업로드 당시 비활성 보관 상태였습니다. 업로드 완료는 공개나 설치 가능을 뜻하지 않습니다.',
+          label: '현재 Playtest 빌드',
+          value: '기본 0.0.8 (Build 26239789)',
+          detail: 'Steam Playtest 기본 브랜치의 빌드입니다. 테스트 브랜치(test-0-0-1)는 0.0.7을 유지합니다. 본편은 아직 출시되지 않았습니다.',
         },
         {
-          label: '자동 검사 보고',
-          value: '998개 통과 · Windows 교차 빌드 통과',
-          detail: '875개 Portable 검사와 123개 Python 검사 합계입니다. 교차 빌드는 경고·오류 0개로 보고됐으며 실제 Windows 실행 결과와 구분합니다.',
+          label: '자동 검사 보고 (0.0.8)',
+          value: '회귀 검사 2,606개 통과',
+          detail: 'Steam 상점에 공개한 0.0.8 자동 검사 결과입니다. 실제 Windows 실행·음성·성능 결과와 구분합니다.',
         },
         {
           label: '남은 검증',
@@ -180,24 +180,24 @@ export const translations = {
           detail: '실제 기기와 클린 Steam 설치, 음성 인식·통역 품질, 게임 성능 영향을 확인해야 합니다. 속도·정확도·안티치트 호환을 보장하지 않습니다.',
         },
         {
-          label: '0.3.2 변경 사항',
-          value: 'UI·작은 화면·도움말·오디오 오류 정리',
-          detail: 'UI와 작은 화면 대응, 홈페이지·Discord 도움말 링크, 음성 형식 변환과 무음 처리 오류 수정을 포함합니다. 실기 품질 검증은 별도입니다.',
+          label: '다음 판 0.1.0',
+          value: 'Windows 실기 확인 중',
+          detail: '실제 Windows PC에서 빌드와 화면을 확인하고 있습니다. 통과하면 Playtest 테스트 브랜치에 먼저 올리고, 확인 뒤 기본 빌드로 바꿉니다. 바뀐 내용은 배포할 때 Steam 공지로 안내합니다.',
         },
         {
-          label: '심사와 공개',
-          value: '상점 자산 승인 · 빌드 승인 미확인',
-          detail: 'Playtest는 2026-10-20 17:22 KST 기준 미활성·빌드 검토 대기입니다. 본편도 정식 출시를 보류하고 있습니다. 이후 변경은 Steam과 공식 안내에서 확인하세요.',
+          label: '공개 상태',
+          value: 'Playtest 공개 · 본편 미출시',
+          detail: 'Playtest는 Steam 상점 페이지의 Playtest 참여 버튼으로 받을 수 있습니다. 본편 출시일은 정하지 않았습니다. 이후 변경은 Steam과 공식 안내에서 확인하세요.',
         },
       ],
-      ctaSteamFollow: 'Steam에서 소식 확인',
+      ctaSteamFollow: 'Steam에서 Playtest 참여',
       ctaDiscordJoin: 'Discord 도움말·문의',
     },
     faq: {
       kicker: 'FAQ · 사용 전 확인',
       title: '자주 묻는 질문',
       items: [
-        { question: '지금 설치하거나 Playtest에 참여할 수 있나요?', answer: '2026-10-20 17:22 KST 확인 기준 Playtest는 아직 활성화되지 않았고 빌드는 검토 대기열에 있습니다. 본편 정식 출시도 보류 중입니다. 이 홈페이지는 다운로드나 참여 가능을 안내하지 않으며, 추후 상태는 Steam과 공식 공지를 확인해 주세요.' },
+        { question: '지금 설치하거나 Playtest에 참여할 수 있나요?', answer: '네. Steam 상점 페이지에서 Playtest 참여를 누르면 Steam 라이브러리에 추가되고 설치할 수 있습니다(Windows 11 64비트, 약 4.4GB). 현재 기본 빌드는 0.0.8이며 0.1.0은 준비 중입니다. 테스트 빌드라 오류가 있을 수 있고, 본편 정식 출시일은 아직 정하지 않았습니다.' },
         { question: 'Mac에서도 다운로드할 수 있나요?', answer: '현재 공개 검증 대상은 Windows 11 64비트입니다. macOS는 개발 환경이며 Mac 다운로드는 제공하지 않습니다.' },
         { question: '무료인가요? 인터넷이나 개인 API가 꼭 필요한가요?', answer: '온말은 무료·비수익으로 준비 중이며 결제·구독을 제공하지 않습니다. 기본 한영 모델은 동봉되며 로컬에서 처리합니다. Steam 설치·업데이트와 선택 모델 다운로드에는 인터넷이 필요할 수 있습니다. 개인 API는 선택 사항이고 텍스트 전송과 제공사 이용 요금이 발생할 수 있습니다.' },
         { question: '팀원 음성만 골라 번역하나요?', answer: '앱별 캡처와 언어 선택을 사용할 수 있지만 한 프로세스에 섞인 팀원 음성·게임 효과음·배경음을 자동으로 분리하지는 않습니다. 실제 입력 소스와 듣는 언어를 확인해야 합니다.' },
@@ -217,7 +217,7 @@ export const translations = {
     },
     footer: {
       team: '토닥 Todak',
-      statusSummary: 'Windows 11 64비트 · 온말 0.3.2 검증 후보 · 무료·비수익 · 정식 출시 보류',
+      statusSummary: 'Windows 11 64비트 · Steam Playtest 0.0.8 공개 · 0.1.0 준비 중 · 무료·비수익',
       description:
         '팀원의 음성과 스토리 대사를 번역 자막으로 읽도록 돕는 Windows 전용 게임 대화 번역 앱 온말(Onmal)의 공식 웹사이트입니다.',
       linksHeading: '공식 링크 및 문의',
@@ -264,10 +264,10 @@ export const translations = {
       headline: 'Game Conversations,\nin Your Language Subtitles.',
       supporting:
         'A Windows app that helps you read teammates’ voice chat and story dialogue as translated subtitles.',
-      ctaSteam: 'Follow on Steam',
+      ctaSteam: 'Join the Playtest on Steam',
       ctaDiscord: 'Discord Community',
       unreleasedNotice:
-        'Windows 0.3.2 verification candidate · Release on hold · Playtest inactive (checked 2026-10-20)',
+        'Steam Playtest open · Default build 0.0.8 · 0.1.0 in Windows testing · Full release TBD (checked 2026-11-20)',
       heroImageCaption:
         'Official Onmal app screen (Official Steam screenshot) — main interface for selecting audio source, languages, and starting subtitles',
       inspectFullSize: 'View original aspect ratio',
@@ -318,7 +318,7 @@ export const translations = {
       kicker: 'HOW IT WORKS · WORKFLOW',
       title: 'Select Audio Source → Choose Language → Start',
       subtitle:
-        'This is the intended workflow once testing is activated and installation is available. Check audio output, languages, and model readiness first.',
+        'The basic workflow after you join the Steam Playtest and install Onmal. Check audio output, languages, and model readiness first.',
       flowSummary: 'Select Audio Source → Choose Language → Start',
       steps: [
         {
@@ -345,13 +345,13 @@ export const translations = {
       ],
       viewCapture: 'View official app screen',
       staticNotice:
-        'These are existing Steam screenshots. Layout and wording may differ in 0.3.2 after UI and small-screen changes. Real Windows audio and translation validation remains incomplete.',
+        'These are Steam screenshots from an earlier version, so layout and wording may differ from the current Playtest and 0.1.0. Windows 0.1.0 screens will replace them after real-device checks.',
     },
     gallery: {
       kicker: 'SCREENSHOT GALLERY · OFFICIAL STEAM SCREENSHOTS',
       title: 'Official Onmal App Screens',
       subtitle:
-        'Existing official Steam screenshots preserved in their original aspect ratio. They do not establish the latest 0.3.2 layout or real audio and performance results.',
+        'Official Steam screenshots from an earlier version, preserved in their original aspect ratio. They do not show the current Playtest or 0.1.0 layout or real audio and performance results; Windows 0.1.0 screens will replace them after checks.',
       openLightbox: 'Inspect full size',
       closeLightbox: 'Close (Esc)',
       prev: 'Previous screenshot',
@@ -362,11 +362,11 @@ export const translations = {
     development: {
       kicker: 'DEVELOPMENT STATUS · CURRENT PROGRESS',
       title: 'Transparent Development & Verification Status',
-      versionStatus: 'Onmal 0.3.2 Windows verification candidate',
-      releaseDateStatus: 'Release on hold · Date TBD',
-      playtestStatus: 'Playtest inactive · Build review pending',
+      versionStatus: 'Playtest 0.0.8 live · 0.1.0 in preparation',
+      releaseDateStatus: 'Full release TBD · Early Access planned',
+      playtestStatus: 'Steam Playtest open to join',
       leadParagraph:
-        'Onmal is being prepared as a free, non-commercial app. A check on 2026-10-20 at 17:22 KST confirmed approved Playtest store assets, but the build submitted on October 15 remains in the review queue and testing is still inactive.',
+        'Onmal is being prepared as a free, non-commercial app. As of 2026-11-20 you can join the Playtest from the Steam store page; its default build is 0.0.8. The next version, 0.1.0, is being checked on a real Windows PC. If it passes, it goes to a test branch first and then becomes the default build.',
       specs: [
         {
           label: 'Target platform',
@@ -374,14 +374,14 @@ export const translations = {
           detail: 'macOS is a development environment. No Mac download is offered, and it does not share the Windows verification status.',
         },
         {
-          label: '0.3.2 upload record',
-          value: 'Playtest 26067017 · Main app 26067660',
-          detail: 'Upload records dated 2026-10-20 confirm both builds were stored inactive at upload. Upload completion does not establish public or installable availability.',
+          label: 'Current Playtest build',
+          value: 'Default 0.0.8 (Build 26239789)',
+          detail: 'The build on the Steam Playtest default branch. The test branch (test-0-0-1) keeps 0.0.7. The main app has not been released.',
         },
         {
-          label: 'Automated checks reported',
-          value: '998 passed · Windows cross-build passed',
-          detail: 'The total is 875 Portable checks plus 123 Python checks. The cross-build reported zero warnings and errors; this is separate from running on Windows hardware.',
+          label: 'Automated checks reported (0.0.8)',
+          value: '2,606 regression checks passed',
+          detail: 'The automated results published on the Steam store for 0.0.8. They are separate from real Windows runtime, audio, and performance results.',
         },
         {
           label: 'Validation still needed',
@@ -389,24 +389,24 @@ export const translations = {
           detail: 'Physical hardware, a clean Steam installation, speech and translation quality, and game performance impact still need validation. Speed, accuracy, and anti-cheat compatibility are not guaranteed.',
         },
         {
-          label: 'Changes in 0.3.2',
-          value: 'UI, smaller screens, help & audio fixes',
-          detail: 'Includes UI cleanup, small-screen adjustments, website and Discord help links, audio format conversion fixes, and silence handling fixes. Real-device quality testing remains separate.',
+          label: 'Next version 0.1.0',
+          value: 'Real Windows checks in progress',
+          detail: 'The build and screens are being checked on a real Windows PC. If they pass, 0.1.0 goes to the Playtest test branch first and becomes the default after checks. Changes will be announced on Steam at release.',
         },
         {
-          label: 'Review & availability',
-          value: 'Store assets approved · Build approval unconfirmed',
-          detail: 'As of 2026-10-20 17:22 KST, Playtest is inactive and its build remains queued for review. The main release is also on hold. Check Steam and official announcements for later changes.',
+          label: 'Availability',
+          value: 'Playtest open · Main app unreleased',
+          detail: 'Get the Playtest with the Join the Playtest button on the Steam store page. No main release date is set. Check Steam and official announcements for later changes.',
         },
       ],
-      ctaSteamFollow: 'Check Steam updates',
+      ctaSteamFollow: 'Join the Playtest on Steam',
       ctaDiscordJoin: 'Discord help & questions',
     },
     faq: {
       kicker: 'FAQ · BEFORE YOU START',
       title: 'Frequently Asked Questions',
       items: [
-        { question: 'Can I install Onmal or join the Playtest now?', answer: 'The check at 2026-10-20 17:22 KST found Playtest still inactive with its build in the review queue. The main release is also on hold. This website does not announce download or participation availability. Check Steam and official announcements for later changes.' },
+        { question: 'Can I install Onmal or join the Playtest now?', answer: 'Yes. Press Join the Playtest on the Steam store page to add it to your Steam library and install it (Windows 11 64-bit, about 4.4 GB). The current default build is 0.0.8, and 0.1.0 is in preparation. It is a test build, so expect bugs; no full release date is set yet.' },
         { question: 'Is there a Mac download?', answer: 'Windows 11 64-bit is the current target for public validation. macOS is a development environment, and no Mac download is offered.' },
         { question: 'Is it free? Do I need internet or a personal API?', answer: 'Onmal is being prepared as a free, non-commercial app with no payments or subscriptions. The basic Korean-English models are bundled and run locally. Steam installation, updates, and optional model downloads may need internet. A personal API is optional and may send text to a provider and incur provider usage fees.' },
         { question: 'Does it isolate only my teammates’ voices?', answer: 'App capture and language selection are available, but voices, effects, and background audio mixed within one process are not automatically separated. Check the actual input source and spoken language.' },
@@ -427,7 +427,7 @@ export const translations = {
     footer: {
       team: '토닥 Todak',
       statusSummary:
-        'Windows 11 64-bit · Onmal 0.3.2 verification candidate · Free and non-commercial · Release on hold',
+        'Windows 11 64-bit · Steam Playtest 0.0.8 live · 0.1.0 in preparation · Free and non-commercial',
       description:
         'Official website for Onmal (온말), a Windows-only gaming conversation translation app by Todak (토닥).',
       linksHeading: 'Official Channels & Contact',
