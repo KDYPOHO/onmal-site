@@ -89,6 +89,11 @@ test('English and Korean expose the same content structure including FAQ and nav
     return typeof value;
   }
   assert.deepEqual(shape(translations.ko), shape(translations.en));
-  assert.equal(translations.ko.faq.items.length, 9);
-  assert.equal(translations.en.faq.items.length, 9);
+  assert.equal(translations.ko.faq.items.length, 10);
+  assert.equal(translations.en.faq.items.length, 10);
+});
+
+test('FAQ explains the meaning of the name Onmal in both languages', () => {
+  assert.match(translations.ko.faq.items.map((i) => i.answer).join(' '), /온나라/);
+  assert.match(translations.en.faq.items.map((i) => i.answer).join(' '), /words of every nation/);
 });
