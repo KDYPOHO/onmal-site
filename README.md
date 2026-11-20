@@ -20,9 +20,9 @@ The video section presents the supplied 10-second promotional concept with simul
 
 </details>
 
-## When 0.1.0 reaches the Playtest
+## Changing the release status later
 
-All status wording lives in `website/src/utils/i18n.ts` (both `ko` and `en`). Update these keys together, then re-run `python tools/make-home-fonts.py …` if new characters appear (`npm test` fails when a character is missing from the font subset):
+0.1.0 became the Playtest default build on 2026-11-21 (Build 26823802). For the next release, all status wording lives in `website/src/utils/i18n.ts` (both `ko` and `en`). Update these keys together, then re-run `python tools/make-home-fonts.py …` if new characters appear (`npm test` fails when a character is missing from the font subset):
 
 - `hero.unreleasedNotice`, `hero.statusBadge`
 - `development.versionStatus`, `development.playtestStatus`, `development.leadParagraph`
