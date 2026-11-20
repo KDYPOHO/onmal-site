@@ -92,16 +92,16 @@ export const translations = {
         },
         {
           num: '04',
-          title: '텍스트 번역 (내 말 전하기)',
-          meta: '양방향 의사소통 보조 · 텍스트 대조',
-          desc: '듣는 음성 자막뿐 아니라 내 말 전하기 메뉴를 통해 팀원에게 전달할 문장이나 텍스트 대사를 번역해 확인할 수 있습니다.',
+          title: 'Steam 친구·음성방 (선택)',
+          meta: '방 자막 옆 참가자 목록 · 마이크는 직접 켜기',
+          desc: 'Steam 친구와 비공개 음성방을 열어 방 자막을 볼 수 있습니다. 0.1.0에서는 방 자막 옆에 참가자 목록이 보입니다. 마이크는 동의한 뒤 직접 켤 때만 송신되며, 두 PC 사이 실제 통화는 아직 검증 중입니다.',
         },
       ],
       localProcessingLabel: '데이터 및 번역 처리 구조',
       localProcessingExact:
-        '기본 한영 번역은 내 PC에서 처리합니다. 개인 API 번역은 선택 사항이며 인터넷과 별도 이용 요금이 필요할 수 있습니다.',
+        '자막은 내 PC에 설치된 AI 음성 인식·번역 모델이 자동으로 만들며 틀릴 수 있습니다. 음성과 자막은 외부 AI 서비스로 보내지 않습니다.',
       localProcessingSub:
-        '기본 한영 모델은 패키지에 포함됩니다. 개인 API를 연결하면 번역할 텍스트가 선택한 제공사로 전송되므로 대상과 이용 조건을 먼저 확인하세요.',
+        '기본 한영 모델은 패키지에 포함됩니다. 0.1.0부터 개인 API 번역과 읽어주기(음성 합성)는 검증이 끝날 때까지 제공하지 않습니다. 모델 내려받기와 Steam 통신에는 인터넷이 필요할 수 있습니다.',
       scopeLabel: '지원 범위 안내',
       scopeText:
         '온말은 모든 게임에서의 완벽한 동작, 100% 번역 정확도, 지연 없는 실시간 처리(Zero Latency), 특정 FPS 보장이나 검증 완료된 하드웨어 성능을 약속하지 않습니다. 실제 환경에서 하나씩 검증하며 다듬고 있는 보조 도구입니다.',
@@ -181,13 +181,23 @@ export const translations = {
         },
         {
           label: '다음 판 0.1.0',
-          value: 'Windows 실기 확인 중',
-          detail: '실제 Windows PC에서 빌드와 화면을 확인하고 있습니다. 통과하면 Playtest 테스트 브랜치에 먼저 올리고, 확인 뒤 기본 빌드로 바꿉니다. 바뀐 내용은 배포할 때 Steam 공지로 안내합니다.',
+          value: '왼쪽 메뉴 화면 · AI 자막 안내 · 기능 정리',
+          detail: '왼쪽 메뉴(통역·친구·통역 준비·설정·안내)와 넓은 창에서 자막 옆에 조작부를 두는 새 화면, AI가 만든 자막이라는 안내, 음성방 참가자 목록, 지금 쓸 수 있는 자막 언어만 보여주기가 들어갑니다. 검증이 덜 된 개인 API 번역과 읽어주기는 뺐습니다. 통과하면 Playtest 테스트 브랜치에 먼저 올립니다.',
+        },
+        {
+          label: 'Windows 실기 확인 (2026-11-20)',
+          value: '빌드·화면·소리 장치 확인 · 일부 문제 남음',
+          detail: '실제 Windows 11 PC에서 앱 빌드, 동의 테스트 56개, 단위 테스트 대부분, 소리 장치 테스트 26개가 통과했습니다. 최소 창 크기에서 자막 영역이 가려지는 문제와 일부 화면 확인이 남아 있고, 실제 음성 인식·번역 품질은 아직 시험하지 않았습니다.',
         },
         {
           label: '공개 상태',
           value: 'Playtest 공개 · 본편 미출시',
           detail: 'Playtest는 Steam 상점 페이지의 Playtest 참여 버튼으로 받을 수 있습니다. 본편 출시일은 정하지 않았습니다. 이후 변경은 Steam과 공식 안내에서 확인하세요.',
+        },
+        {
+          label: '앞으로 계획',
+          value: '디스코드처럼 방·참가자·자막을 한 화면에',
+          detail: '방 목록, 참가자, 화자별 자막을 한 화면에서 보는 음성방 화면과 오래 켜 둘 때 쌓이는 지연 줄이기를 준비하고 있습니다. 일정은 정하지 않았고, 상표나 디자인을 베끼지 않는 온말만의 화면으로 만듭니다.',
         },
         {
           label: '개발 속도 안내',
@@ -205,7 +215,8 @@ export const translations = {
         { question: '지금 설치하거나 Playtest에 참여할 수 있나요?', answer: '네. Steam 상점 페이지에서 Playtest 참여를 누르면 Steam 라이브러리에 추가되고 설치할 수 있습니다(Windows 11 64비트, 약 4.4GB). 현재 기본 빌드는 0.0.8이며 0.1.0은 준비 중입니다. 테스트 빌드라 오류가 있을 수 있고, 본편 정식 출시일은 아직 정하지 않았습니다.' },
         { question: '업데이트가 왜 느린가요?', answer: '온말은 개발자 한 명이 공무와 병행하며 만드는 개인 프로젝트라 개발과 업데이트에 시간이 오래 걸립니다. 서두르기보다 실제 Windows에서 확인한 뒤 조금씩 내놓겠습니다. 문의 답변도 늦어질 수 있으니 양해 부탁드립니다.' },
         { question: 'Mac에서도 다운로드할 수 있나요?', answer: '현재 공개 검증 대상은 Windows 11 64비트입니다. macOS는 개발 환경이며 Mac 다운로드는 제공하지 않습니다.' },
-        { question: '무료인가요? 인터넷이나 개인 API가 꼭 필요한가요?', answer: '온말은 무료·비수익으로 준비 중이며 결제·구독을 제공하지 않습니다. 기본 한영 모델은 동봉되며 로컬에서 처리합니다. Steam 설치·업데이트와 선택 모델 다운로드에는 인터넷이 필요할 수 있습니다. 개인 API는 선택 사항이고 텍스트 전송과 제공사 이용 요금이 발생할 수 있습니다.' },
+        { question: '무료인가요? 인터넷이나 개인 API가 꼭 필요한가요?', answer: '온말은 무료·비수익으로 준비 중이며 결제·구독·광고가 없습니다. 기본 한영 모델은 동봉되며 내 PC에서 처리합니다. Steam 설치·업데이트와 선택 모델 다운로드에는 인터넷이 필요할 수 있습니다. 개인 API 번역은 0.1.0부터 제공하지 않습니다(현재 Playtest 0.0.8에는 선택 기능으로 남아 있습니다).' },
+        { question: '자막은 사람이 만드나요?', answer: '아니요. 자막은 내 PC에 설치된 AI 음성 인식·기계 번역 모델이 자동으로 만들며, 사람이 확인하거나 고친 내용이 아닙니다. 틀릴 수 있으니 중요한 내용은 직접 확인해 주세요. 앱의 첫 실행 안내와 자막 화면에도 이 사실을 표시합니다.' },
         { question: '팀원 음성만 골라 번역하나요?', answer: '앱별 캡처와 언어 선택을 사용할 수 있지만 한 프로세스에 섞인 팀원 음성·게임 효과음·배경음을 자동으로 분리하지는 않습니다. 실제 입력 소스와 듣는 언어를 확인해야 합니다.' },
         { question: '자막이 없거나 번역이 이상하면 어떻게 하나요?', answer: '소리가 재생되는 출력 장치, 선택한 캡처 소스, 듣는 언어와 모델 준비 상태를 순서대로 확인하세요. 오류가 이어지면 버전·증상·설정 등 필요한 정보만 Discord나 이메일로 보내주세요. API 키나 개인 음성·대화 내용은 공개하지 마세요.' },
         { question: '게임 성능이나 안티치트 호환은 검증됐나요?', answer: '실제 Windows 게임 환경의 음성·통역과 성능 검증은 미완료입니다. 자동 검사와 교차 빌드 통과가 실기 품질을 보장하지 않습니다. 게임별 정책과 호환성을 확인해야 하며 특정 속도·정확도·FPS·안티치트 안전을 보장하지 않습니다.' },
@@ -306,16 +317,16 @@ export const translations = {
         },
         {
           num: '04',
-          title: 'Text Translation (Say Something to Your Team)',
-          meta: 'Two-way communication aid · Text lookup',
-          desc: 'Alongside live audio subtitles, use the built-in text translation panel to translate messages or dialogue lines directly.',
+          title: 'Steam Friends & Voice Rooms (Optional)',
+          meta: 'Participant list beside room captions · Mic only when you turn it on',
+          desc: 'Open a private voice room with Steam friends and read the room captions. In 0.1.0 a participant list appears beside them. Your mic transmits only after you consent and turn it on yourself; real calls between two PCs are still being verified.',
         },
       ],
       localProcessingLabel: 'Translation Processing Architecture',
       localProcessingExact:
-        'Default Korean-English translation is processed on your PC. Personal API translation is optional and may require an internet connection and separate usage fees.',
+        'Subtitles are generated automatically by AI speech-recognition and translation models installed on your PC, and they can be wrong. Audio and subtitles are not sent to external AI services.',
       localProcessingSub:
-        'The basic Korean↔English models are bundled. If you connect a personal API, translation text is sent to your chosen provider; review the destination and its terms first.',
+        'The basic Korean↔English models are bundled. From 0.1.0, personal API translation and read-aloud (speech synthesis) are not offered until they are verified. Model downloads and Steam communication may need internet.',
       scopeLabel: 'Honest Scope & Limitations',
       scopeText:
         'Onmal does not promise universal support across all games, 100% translation accuracy, zero latency, guaranteed FPS figures, or verified hardware performance benchmarks. It is an assistive tool currently under active verification.',
@@ -396,13 +407,23 @@ export const translations = {
         },
         {
           label: 'Next version 0.1.0',
-          value: 'Real Windows checks in progress',
-          detail: 'The build and screens are being checked on a real Windows PC. If they pass, 0.1.0 goes to the Playtest test branch first and becomes the default after checks. Changes will be announced on Steam at release.',
+          value: 'Left-menu layout · AI caption notice · Trimmed features',
+          detail: 'Adds a left menu (Interpret, Friends, Preparation, Settings, Info), controls beside the captions in wide windows, a notice that captions are AI-generated, a participant list in voice rooms, and only subtitle languages that work right now. Personal API translation and read-aloud are removed until verified. If it passes, it goes to the Playtest test branch first.',
+        },
+        {
+          label: 'Real Windows check (2026-11-20)',
+          value: 'Build, screens & audio devices checked · Some issues remain',
+          detail: 'On a real Windows 11 PC the app built, 56 consent tests, most unit tests and 26 audio-device tests passed. The subtitle area hides at the minimum window size and some screens are still unchecked; real speech recognition and translation quality have not been tested yet.',
         },
         {
           label: 'Availability',
           value: 'Playtest open · Main app unreleased',
           detail: 'Get the Playtest with the Join the Playtest button on the Steam store page. No main release date is set. Check Steam and official announcements for later changes.',
+        },
+        {
+          label: 'Plans',
+          value: 'Rooms, participants and captions on one screen',
+          detail: 'A voice-room screen that shows rooms, participants and per-speaker captions together, and reducing delay that builds up over long sessions, are in preparation. No dates are set, and the screen is Onmal’s own design rather than a copy of any other app.',
         },
         {
           label: 'Development pace',
@@ -420,7 +441,8 @@ export const translations = {
         { question: 'Can I install Onmal or join the Playtest now?', answer: 'Yes. Press Join the Playtest on the Steam store page to add it to your Steam library and install it (Windows 11 64-bit, about 4.4 GB). The current default build is 0.0.8, and 0.1.0 is in preparation. It is a test build, so expect bugs; no full release date is set yet.' },
         { question: 'Why are updates slow?', answer: 'Onmal is a personal project made by one developer alongside public-service duties, so development and updates take a long time. Rather than rushing, each version is checked on real Windows PCs before release. Replies may also be slow; thank you for understanding.' },
         { question: 'Is there a Mac download?', answer: 'Windows 11 64-bit is the current target for public validation. macOS is a development environment, and no Mac download is offered.' },
-        { question: 'Is it free? Do I need internet or a personal API?', answer: 'Onmal is being prepared as a free, non-commercial app with no payments or subscriptions. The basic Korean-English models are bundled and run locally. Steam installation, updates, and optional model downloads may need internet. A personal API is optional and may send text to a provider and incur provider usage fees.' },
+        { question: 'Is it free? Do I need internet or a personal API?', answer: 'Onmal is being prepared as a free, non-commercial app with no payments, subscriptions or ads. The basic Korean-English models are bundled and run on your PC. Steam installation, updates, and optional model downloads may need internet. Personal API translation is not offered from 0.1.0 (it remains an optional feature in the current Playtest 0.0.8).' },
+        { question: 'Are the subtitles made by people?', answer: 'No. Subtitles are generated automatically by AI speech-recognition and machine-translation models installed on your PC, and no person reviews or edits them. They can be wrong, so check anything important yourself. The app’s first-run guide and subtitle screen show this too.' },
         { question: 'Does it isolate only my teammates’ voices?', answer: 'App capture and language selection are available, but voices, effects, and background audio mixed within one process are not automatically separated. Check the actual input source and spoken language.' },
         { question: 'What if subtitles are missing or translation looks wrong?', answer: 'Check the playback device, selected capture source, spoken language, and model readiness in that order. If the issue continues, share only necessary details such as version, symptoms, and settings via Discord or email. Do not post API keys, private audio, or conversation content.' },
         { question: 'Are gaming performance and anti-cheat compatibility verified?', answer: 'Real Windows gaming tests for audio, translation, and performance are incomplete. Automated checks and cross-build success do not establish real-device quality. Game policies and compatibility need checking; no speed, accuracy, FPS, or anti-cheat safety guarantee is offered.' },
