@@ -142,13 +142,13 @@ export const translations = {
         },
       ],
       viewCapture: '공식 앱 화면 크게 보기',
-      staticNotice: '화면은 @@SHOTDATE@@ 실제 Windows PC에서 찍은 0.2.0 화면입니다. 실제 음성·통역 품질 검증은 별도입니다.',
+      staticNotice: '화면은 2026-11-20 실제 Windows PC에서 찍은 0.1.0 화면입니다. 현재 Steam Playtest 기본 빌드는 0.2.0이며, 0.2.0 화면으로 곧 바꿉니다. 실제 음성·통역 품질 검증은 별도입니다.',
     },
     gallery: {
       kicker: 'SCREENSHOT GALLERY · Windows 0.2.0 실기 화면',
       title: '온말 공식 앱 화면',
       subtitle:
-        '@@SHOTDATE@@ 실제 Windows PC에서 찍은 0.2.0 화면을 원본 비율로 보여드립니다. 화면이 실제 음성·성능 검증 결과를 뜻하지는 않습니다.',
+        '2026-11-20 실제 Windows PC에서 찍은 0.1.0 화면을 원본 비율로 보여드립니다. 지금 Steam Playtest 판은 0.2.0이라 화면 디자인이 조금 다르며, 0.2.0 화면으로 곧 바꿉니다. 화면이 실제 음성·성능 검증 결과를 뜻하지는 않습니다.',
       openLightbox: '원본 비율로 확대',
       closeLightbox: '닫기 (Esc)',
       prev: '이전 스크린샷',
@@ -398,13 +398,13 @@ export const translations = {
       ],
       viewCapture: 'View official app screen',
       staticNotice:
-        'These are 0.2.0 screens captured on a real Windows PC on @@SHOTDATE@@. Real audio and translation quality are validated separately.',
+        'These are 0.1.0 screens captured on a real Windows PC on 2026-11-20. The current Steam Playtest default build is 0.2.0, and these will soon be replaced with 0.2.0 screens. Real audio and translation quality are validated separately.',
     },
     gallery: {
       kicker: 'SCREENSHOT GALLERY · REAL WINDOWS 0.2.0 SCREENS',
       title: 'Official Onmal App Screens',
       subtitle:
-        '0.2.0 screens captured on a real Windows PC on @@SHOTDATE@@, shown in their original aspect ratio. The screens do not establish real audio or performance results.',
+        '0.1.0 screens captured on a real Windows PC on 2026-11-20, shown in their original aspect ratio. The Steam Playtest now has 0.2.0, which looks a little different; these will be replaced with 0.2.0 screens soon. The screens do not establish real audio or performance results.',
       openLightbox: 'Inspect full size',
       closeLightbox: 'Close (Esc)',
       prev: 'Previous screenshot',
