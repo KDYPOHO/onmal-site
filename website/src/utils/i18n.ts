@@ -63,8 +63,8 @@ export const translations = {
       supporting: '팀원의 음성과 스토리 대사를 내 PC의 AI가 번역 자막으로 만들어, 읽을 수 있게 돕는 Windows 앱.',
       ctaSteam: 'Steam에서 Playtest 참여',
       ctaDiscord: 'Discord 커뮤니티',
-      unreleasedNotice: 'Steam Playtest 참여 가능 · 현재 기본 빌드 0.1.1 · 정식 출시 미정 (@@DATE@@ 확인)',
-      heroImageCaption: '온말 공식 앱 화면 (Windows 0.1.1 실기 화면) — 번역할 소리와 언어를 고르고 시작하는 통역 화면',
+      unreleasedNotice: 'Steam Playtest 참여 가능 · 현재 기본 빌드 0.1.1 · 정식 출시 미정 (2026-11-21 확인)',
+      heroImageCaption: '온말 공식 앱 화면 (Windows 0.1.0 실기 화면) — 번역할 소리와 언어를 고르고 시작하는 통역 화면',
       inspectFullSize: '원본 비율 크게 보기',
       themeSwitchDark: '다크 테마 화면',
       themeSwitchIvory: '라이트 테마 화면',
@@ -142,13 +142,13 @@ export const translations = {
         },
       ],
       viewCapture: '공식 앱 화면 크게 보기',
-      staticNotice: '화면은 @@SHOTDATE@@ 실제 Windows PC에서 찍은 0.1.1 화면입니다. 현재 Steam Playtest 기본 빌드도 0.1.1입니다. 실제 음성·통역 품질 검증은 별도입니다.',
+      staticNotice: '화면은 2026-11-20 실제 Windows PC에서 찍은 0.1.0 화면입니다. 현재 Steam Playtest 기본 빌드는 0.1.1이며, 0.1.1의 새 유리 화면은 곧 이 사진으로 바꿉니다. 실제 음성·통역 품질 검증은 별도입니다.',
     },
     gallery: {
-      kicker: 'SCREENSHOT GALLERY · Windows 0.1.1 실기 화면',
+      kicker: 'SCREENSHOT GALLERY · Windows 0.1.0 실기 화면',
       title: '온말 공식 앱 화면',
       subtitle:
-        '@@SHOTDATE@@ 실제 Windows PC에서 찍은 0.1.1 화면을 원본 비율로 보여드립니다. Steam Playtest에서 받을 수 있는 판과 같은 0.1.1이며, 화면이 실제 음성·성능 검증 결과를 뜻하지는 않습니다.',
+        '2026-11-20 실제 Windows PC에서 찍은 0.1.0 화면을 원본 비율로 보여드립니다. 지금 Steam Playtest 판은 0.1.1이라 화면 디자인이 조금 다르며, 0.1.1 화면으로 곧 바꿉니다. 화면이 실제 음성·성능 검증 결과를 뜻하지는 않습니다.',
       openLightbox: '원본 비율로 확대',
       closeLightbox: '닫기 (Esc)',
       prev: '이전 스크린샷',
@@ -163,7 +163,7 @@ export const translations = {
       releaseDateStatus: '정식 출시 미정 · 앞서 해보기 예정',
       playtestStatus: 'Steam Playtest 참여 가능',
       leadParagraph:
-        '무료·비수익 운영을 목표로 준비 중입니다. 2026-11-20 확인 기준 Steam 상점 페이지에서 Playtest에 참여할 수 있으며, @@DATE@@부터 기본 빌드는 0.1.1입니다. 실제 게임에서의 음성·통역 품질은 아직 확인 중입니다.',
+        '무료·비수익 운영을 목표로 준비 중입니다. 2026-11-20 확인 기준 Steam 상점 페이지에서 Playtest에 참여할 수 있으며, 2026-11-21부터 기본 빌드는 0.1.1입니다. 실제 게임에서의 음성·통역 품질은 아직 확인 중입니다.',
       specs: [
         {
           label: '공개 대상',
@@ -172,13 +172,13 @@ export const translations = {
         },
         {
           label: 'PC 사양 (0.1.1 실측 기준)',
-          value: '@@SPEC_KO_VALUE@@',
-          detail: '@@SPEC_KO_DETAIL@@',
+          value: '최소: 4코어 CPU(AVX2), RAM 8GB · 권장: 6코어, RAM 16GB, VRAM 8GB GPU',
+          detail: '앱의 품질 단계 기준입니다. 최소는 GPU 없이 CPU로 돌아가고 번역이 문장당 약 2초 걸릴 수 있습니다. 권장·최고는 Vulkan GPU를 쓰며, 2026-11-21 한 대의 PC(RTX 4060 8GB)에서 그래픽 메모리 약 2.2~2.5GB, 시스템 메모리 약 2.8~3.6GB를 썼습니다. 게임과 함께 쓰면 게임 요구량에 VRAM 약 2.5GB, RAM 약 4GB를 더해 주세요. 설치 크기는 약 3.0GB입니다.',
         },
         {
           label: '현재 Playtest 빌드',
-          value: '기본 0.1.1 (Build @@BUILD@@)',
-          detail: '@@DATE@@부터 Steam Playtest 기본 브랜치의 빌드입니다. 이전 기본 빌드는 0.1.0(Build 26823802)이었습니다. 본편은 아직 출시되지 않았습니다.',
+          value: '기본 0.1.1 (Build 26828868)',
+          detail: '2026-11-21부터 Steam Playtest 기본 브랜치의 빌드입니다. 이전 기본 빌드는 0.1.0(Build 26823802)이었습니다. 본편은 아직 출시되지 않았습니다.',
         },
         {
           label: '자동 검사 보고 (0.0.8)',
@@ -193,7 +193,7 @@ export const translations = {
         {
           label: '0.1.1에서 달라진 점',
           value: 'Playtest에서 받을 수 있음',
-          detail: '유리처럼 맑은 새 화면, 새 번역 모델 Hy-MT2(한국어→영어와 여러 언어), 자주 쓰는 순서로 정리한 설정, 좁은 창에서도 깨지지 않는 음성방과 말하는 사람 표시가 들어갑니다. 읽어주기, 마이크로 번역 보내기, 개인 클라우드 번역 키, 옛 시작 영상, 단축키 4개는 뺐습니다(남은 단축키: 시작/정지 Alt+Shift+P, 자막 켜기/끄기 Alt+O, 자막 고정 Alt+L). 쓰지 않는 큰 모델을 정리했고, 개인정보 처리방침에 법이 정한 항목을 더했습니다. Steam이 자동으로 업데이트합니다(약 @@UPDATESIZE@@).',
+          detail: '유리처럼 맑은 새 화면, 새 번역 모델 Hy-MT2(한국어→영어와 여러 언어), 자주 쓰는 순서로 정리한 설정, 좁은 창에서도 깨지지 않는 음성방과 말하는 사람 표시가 들어갑니다. 읽어주기, 마이크로 번역 보내기, 개인 클라우드 번역 키, 옛 시작 영상, 단축키 4개는 뺐습니다(남은 단축키: 시작/정지 Alt+Shift+P, 자막 켜기/끄기 Alt+O, 자막 고정 Alt+L). 쓰지 않는 큰 모델을 정리했고, 개인정보 처리방침에 법이 정한 항목을 더했습니다. Steam이 자동으로 업데이트합니다.',
         },
         {
           label: 'Windows 실기 확인 (2026-11-20)',
@@ -232,7 +232,7 @@ export const translations = {
       kicker: 'FAQ · 사용 전 확인',
       title: '자주 묻는 질문',
       items: [
-        { question: '지금 설치하거나 Playtest에 참여할 수 있나요?', answer: '네. Steam 상점 페이지에서 Playtest 참여를 누르면 Steam 라이브러리에 추가되고 설치할 수 있습니다(Windows 11 64비트, 약 @@INSTALLSIZE@@). 현재 기본 빌드는 0.1.1입니다. 테스트 빌드라 오류가 있을 수 있고, 본편 정식 출시일은 아직 정하지 않았습니다.' },
+        { question: '지금 설치하거나 Playtest에 참여할 수 있나요?', answer: '네. Steam 상점 페이지에서 Playtest 참여를 누르면 Steam 라이브러리에 추가되고 설치할 수 있습니다(Windows 11 64비트, 약 3.0GB). 현재 기본 빌드는 0.1.1입니다. 테스트 빌드라 오류가 있을 수 있고, 본편 정식 출시일은 아직 정하지 않았습니다.' },
         { question: '‘온말’은 무슨 뜻인가요?', answer: '‘온’은 온나라처럼 ‘모든, 온전한’을, ‘말’은 사람의 말을 뜻합니다. 온말은 온 나라의 말들이 한데 모인다는 뜻을 담은 이름입니다. 영어 등 다른 언어에서는 로마자로 Onmal이라고 씁니다.' },
         { question: '업데이트가 왜 느린가요?', answer: '온말은 개발자 한 명이 여가 시간에 만드는 무료 개인 프로젝트라 개발과 업데이트에 시간이 오래 걸립니다. 서두르기보다 실제 Windows에서 확인한 뒤 조금씩 내놓겠습니다. 문의 답변도 늦어질 수 있으니 양해 부탁드립니다.' },
         { question: 'Mac에서도 다운로드할 수 있나요?', answer: '아니요. 온말은 Windows 11 64비트 전용이며 Mac 판은 제공하지 않습니다.' },
@@ -317,9 +317,9 @@ export const translations = {
       ctaSteam: 'Join the Playtest on Steam',
       ctaDiscord: 'Discord Community',
       unreleasedNotice:
-        'Steam Playtest open · Current default build 0.1.1 · Full release TBD (checked @@DATE@@)',
+        'Steam Playtest open · Current default build 0.1.1 · Full release TBD (checked 2026-11-21)',
       heroImageCaption:
-        'Official Onmal app screen (real Windows 0.1.1 capture) — interpret screen for choosing the sound and languages, then starting',
+        'Official Onmal app screen (real Windows 0.1.0 capture) — interpret screen for choosing the sound and languages, then starting',
       inspectFullSize: 'View original aspect ratio',
       themeSwitchDark: 'Dark Surface View',
       themeSwitchIvory: 'Light Surface View',
@@ -398,13 +398,13 @@ export const translations = {
       ],
       viewCapture: 'View official app screen',
       staticNotice:
-        'These are 0.1.1 screens captured on a real Windows PC on @@SHOTDATE@@. The current Steam Playtest default build is also 0.1.1. Real audio and translation quality are validated separately.',
+        'These are 0.1.0 screens captured on a real Windows PC on 2026-11-20. The current Steam Playtest default build is 0.1.1, and these will soon be replaced with its new glass look. Real audio and translation quality are validated separately.',
     },
     gallery: {
-      kicker: 'SCREENSHOT GALLERY · REAL WINDOWS 0.1.1 SCREENS',
+      kicker: 'SCREENSHOT GALLERY · REAL WINDOWS 0.1.0 SCREENS',
       title: 'Official Onmal App Screens',
       subtitle:
-        '0.1.1 screens captured on a real Windows PC on @@SHOTDATE@@, shown in their original aspect ratio. This is the same 0.1.1 you can get in the Steam Playtest, and the screens do not establish real audio or performance results.',
+        '0.1.0 screens captured on a real Windows PC on 2026-11-20, shown in their original aspect ratio. The Steam Playtest now has 0.1.1, which looks a little different; these will be replaced with 0.1.1 screens soon. The screens do not establish real audio or performance results.',
       openLightbox: 'Inspect full size',
       closeLightbox: 'Close (Esc)',
       prev: 'Previous screenshot',
@@ -419,7 +419,7 @@ export const translations = {
       releaseDateStatus: 'Full release TBD · Early Access planned',
       playtestStatus: 'Steam Playtest open to join',
       leadParagraph:
-        'Onmal is being prepared as a free, non-commercial app. As of 2026-11-20 you can join the Playtest from the Steam store page; since @@DATE@@ its default build is 0.1.1. Real in-game audio and translation quality are still being checked.',
+        'Onmal is being prepared as a free, non-commercial app. As of 2026-11-20 you can join the Playtest from the Steam store page; since 2026-11-21 its default build is 0.1.1. Real in-game audio and translation quality are still being checked.',
       specs: [
         {
           label: 'Target platform',
@@ -428,13 +428,13 @@ export const translations = {
         },
         {
           label: 'PC requirements (measured on 0.1.1)',
-          value: '@@SPEC_EN_VALUE@@',
-          detail: '@@SPEC_EN_DETAIL@@',
+          value: 'Minimum: 4-core CPU (AVX2), 8 GB RAM · Recommended: 6 cores, 16 GB RAM, GPU with 8 GB VRAM',
+          detail: 'Based on the app quality tiers. Minimum runs on the CPU without a GPU, and translation can take about 2 seconds per sentence. Recommended and Best use a Vulkan GPU; measured on one PC (RTX 4060 8 GB) on 2026-11-21, the app used about 2.2–2.5 GB of graphics memory and 2.8–3.6 GB of system memory. With a game, add about 2.5 GB VRAM and 4 GB RAM to the game requirements. The install is about 3.0 GB.',
         },
         {
           label: 'Current Playtest build',
-          value: 'Default 0.1.1 (Build @@BUILD@@)',
-          detail: 'The build on the Steam Playtest default branch since @@DATE@@. The previous default was 0.1.0 (Build 26823802). The main app has not been released.',
+          value: 'Default 0.1.1 (Build 26828868)',
+          detail: 'The build on the Steam Playtest default branch since 2026-11-21. The previous default was 0.1.0 (Build 26823802). The main app has not been released.',
         },
         {
           label: 'Automated checks reported (0.0.8)',
@@ -449,7 +449,7 @@ export const translations = {
         {
           label: 'What changed in 0.1.1',
           value: 'Available in the Playtest',
-          detail: 'A clearer glass-like look, the new Hy-MT2 translation model (Korean→English and many languages), settings ordered by how often you use them, and a voice room that fits narrow windows and shows who is speaking. Read-aloud, sending translations through the mic, personal cloud translation keys, the old startup video and four hotkeys were removed (remaining: Start/Stop Alt+Shift+P, Show/Hide subtitles Alt+O, Pin subtitle Alt+L). Large unused models were dropped, and the privacy policy now lists the items Korean law requires. Steam updates it automatically (about @@UPDATESIZE@@).',
+          detail: 'A clearer glass-like look, the new Hy-MT2 translation model (Korean→English and many languages), settings ordered by how often you use them, and a voice room that fits narrow windows and shows who is speaking. Read-aloud, sending translations through the mic, personal cloud translation keys, the old startup video and four hotkeys were removed (remaining: Start/Stop Alt+Shift+P, Show/Hide subtitles Alt+O, Pin subtitle Alt+L). Large unused models were dropped, and the privacy policy now lists the items Korean law requires. Steam updates it automatically.',
         },
         {
           label: 'Real Windows check (2026-11-20)',
@@ -488,7 +488,7 @@ export const translations = {
       kicker: 'FAQ · BEFORE YOU START',
       title: 'Frequently Asked Questions',
       items: [
-        { question: 'Can I install Onmal or join the Playtest now?', answer: 'Yes. Press Join the Playtest on the Steam store page to add it to your Steam library and install it (Windows 11 64-bit, about @@INSTALLSIZE@@). The current default build is 0.1.1. It is a test build, so expect bugs; no full release date is set yet.' },
+        { question: 'Can I install Onmal or join the Playtest now?', answer: 'Yes. Press Join the Playtest on the Steam store page to add it to your Steam library and install it (Windows 11 64-bit, about 3.0GB). The current default build is 0.1.1. It is a test build, so expect bugs; no full release date is set yet.' },
         { question: 'What does “Onmal” mean?', answer: 'In Korean, 온 (on) means “all” or “whole”, as in 온나라 (“every nation”), and 말 (mal) means “words” or “speech”. Onmal is the words of every nation coming together.' },
         { question: 'Why are updates slow?', answer: 'Onmal is a free personal project made by one developer in their spare time, so development and updates take a long time. Rather than rushing, each version is checked on real Windows PCs before release. Replies may also be slow; thank you for understanding.' },
         { question: 'Is there a Mac download?', answer: 'No. Onmal is Windows 11 64-bit only, and no Mac version is offered.' },
