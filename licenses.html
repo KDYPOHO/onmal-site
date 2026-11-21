@@ -43,14 +43,14 @@
     <p class="meta"><span data-i18n="lic.updated">최종 갱신</span> 2026-11-21</p>
     <p class="meta" style="margin-top:6px">이 문서는 한국어가 정본입니다 · The Korean text is authoritative</p>
     <p class="meta" style="margin-top:6px" data-i18n="lic.same_in_app">같은 내용이 앱 안에도 들어 있습니다 (정보 → 저작권 및 라이선스). 인터넷이 없어도 읽을 수 있습니다.</p>
-    <p class="note" id="release-scope"><span lang="ko">지금 Steam Playtest 기본 빌드는 무료·비수익 Windows 0.1.0(Build 26823802, 2026-11-21부터)입니다. 아래 "이번 배포에 들어 있는 것"이 실제 0.1.0 배포물의 기준이며, 그 아래 표에는 선택 설치하거나 다른 운영체제·이전 시험판에서만 쓰는 구성요소의 고지도 함께 남겨 둡니다. 앱 안의 동봉 고지(THIRD_PARTY_NOTICES.md)와 같은 내용입니다.</span><br>
-      <span lang="en">The current Steam Playtest default build is free, non-commercial Windows 0.1.0 (Build 26823802, since 2026-11-21). "What this release ships" below is the reference for the actual 0.1.0 distribution; the later tables also keep notices for components used only when installed optionally, on other operating systems or in earlier test builds. This matches the notice bundled in the app (THIRD_PARTY_NOTICES.md).</span></p>
+    <p class="note" id="release-scope"><span lang="ko">지금 Steam Playtest 기본 빌드는 무료·비수익 Windows 0.1.1입니다. 아래 "이번 배포에 들어 있는 것"이 실제 0.1.1 배포물의 기준이며, 그 아래 표에는 선택 설치하거나 다른 운영체제·이전 시험판에서만 쓰는 구성요소의 고지도 함께 남겨 둡니다. 앱 안의 동봉 고지(THIRD_PARTY_NOTICES.md)와 같은 내용입니다.</span><br>
+      <span lang="en">The current Steam Playtest default build is free, non-commercial Windows 0.1.1. "What this release ships" below is the reference for the actual 0.1.1 distribution; the later tables also keep notices for components used only when installed optionally, on other operating systems or in earlier test builds. This matches the notice bundled in the app (THIRD_PARTY_NOTICES.md).</span></p>
   </header>
 
   <article>
 
     <h2><span class="num">00</span><span>이번 배포에 들어 있는 것 · What this release ships</span></h2>
-    <p class="dim">Steam Playtest Windows 0.1.0의 앱 디포와 모델 디포 기준입니다(2026-11-20 확인). · Based on the Windows 0.1.0 app and model depots.</p>
+    <p class="dim">Steam Playtest Windows 0.1.1의 앱 디포와 모델 디포 기준입니다(2026-11-21 확인). · Based on the Windows 0.1.1 app and model depots.</p>
     <div class="scroll" role="region" tabindex="0" aria-label="표 1 · 가로로 스크롤할 수 있습니다">
       <table>
         <thead><tr><th>모델 · Model</th><th>저작권자 · Copyright</th><th>라이선스 · License</th><th>용도 · Use</th></tr></thead>
@@ -61,13 +61,14 @@
           <tr class="bundled"><td class="name">Whisper large-v3 (ggml)</td><td>OpenAI</td><td class="lic">MIT</td><td>직접 고르는 음성 인식 모델 · Selectable recognition model</td></tr>
           <tr class="bundled"><td class="name">Opus-MT <code>opus-mt-ko-en</code> (ONNX)</td><td>Helsinki-NLP</td><td class="lic">Apache-2.0</td><td>한국어 → 영어 · Korean → English</td></tr>
           <tr class="bundled"><td class="name">Opus-MT <code>opus-mt-tc-big-en-ko</code> (ONNX)</td><td>Helsinki-NLP</td><td class="lic">CC-BY-4.0</td><td>영어 → 한국어 (저작자 표시는 01장) · English → Korean (attribution in section 01)</td></tr>
+          <tr class="bundled"><td class="name">Hy-MT2-1.8B Q4_K_M (GGUF)</td><td>Tencent</td><td class="lic">Apache-2.0</td><td>PC 안에서 하는 다국어 번역 · On-device multilingual translation</td></tr>
         </tbody>
       </table>
     </div>
-    <p>소프트웨어: .NET 10 런타임(self-contained), Whisper.net·whisper.cpp, ONNX Runtime, Microsoft.ML.Tokenizers, NAudio, Steamworks.NET, Microsoft.Extensions 구성요소, Lucide 아이콘, Pretendard 글꼴(각 저작권자·라이선스는 02·04·05장). Valve의 <code>steam_api64.dll</code>은 Steamworks SDK 재배포 파일로 Valve의 Steamworks SDK 접근 계약에 따라 함께 배포합니다.<br>
-      <span lang="en">Software: .NET 10 runtime (self-contained), Whisper.net/whisper.cpp, ONNX Runtime, Microsoft.ML.Tokenizers, NAudio, Steamworks.NET, Microsoft.Extensions components, Lucide icons and the Pretendard font (see sections 02, 04 and 05). Valve's <code>steam_api64.dll</code> is a Steamworks SDK redistributable shipped under Valve's Steamworks SDK Access Agreement.</span></p>
-    <p class="dim">그 밖의 모델·구성요소(Whisper small, 다른 Opus-MT 언어쌍, M2M100·Noto 팩, CTranslate2 네이티브 번역 구성, Supertonic 음성, macOS 구성요소)는 0.1.0 Windows 배포물에 들어 있지 않습니다. 0.1.0에는 읽어주기(음성 합성)가 없습니다.<br>
-      <span lang="en">Other models and components (Whisper small, other Opus-MT pairs, the M2M100/Noto pack, the CTranslate2 native translator, Supertonic voices, macOS components) are not in the 0.1.0 Windows distribution. 0.1.0 has no read-aloud (speech synthesis).</span></p>
+    <p>소프트웨어: .NET 10 런타임(self-contained), Whisper.net·whisper.cpp, ONNX Runtime, Microsoft.ML.Tokenizers, NAudio, Steamworks.NET, Microsoft.Extensions 구성요소, llama.cpp <code>llama-server</code>(b12359)와 함께 빌드된 구성요소, Lucide 아이콘, Pretendard 글꼴(각 저작권자·라이선스는 02·04·05장). Valve의 <code>steam_api64.dll</code>은 Steamworks SDK 재배포 파일로 Valve의 Steamworks SDK 접근 계약에 따라 함께 배포합니다.<br>
+      <span lang="en">Software: .NET 10 runtime (self-contained), Whisper.net/whisper.cpp, ONNX Runtime, Microsoft.ML.Tokenizers, NAudio, Steamworks.NET, Microsoft.Extensions components, llama.cpp <code>llama-server</code> (b12359) and the components built into it, Lucide icons and the Pretendard font (see sections 02, 04 and 05). Valve's <code>steam_api64.dll</code> is a Steamworks SDK redistributable shipped under Valve's Steamworks SDK Access Agreement.</span></p>
+    <p class="dim">그 밖의 모델·구성요소(Whisper small, 다른 Opus-MT 언어쌍, M2M100·Noto 팩, CTranslate2 네이티브 번역 구성, Supertonic 음성, macOS 구성요소)는 0.1.1 Windows 배포물에 들어 있지 않습니다. 0.1.1부터 M2M100 선택 팩은 받을 수 없고 다국어 번역은 Hy-MT2가 맡습니다. 읽어주기(음성 합성)는 없습니다.<br>
+      <span lang="en">Other models and components (Whisper small, other Opus-MT pairs, the M2M100/Noto pack, the CTranslate2 native translator, Supertonic voices, macOS components) are not in the 0.1.1 Windows distribution. 0.1.1 removed the optional M2M100 pack download; Hy-MT2 handles multilingual translation. There is no read-aloud (speech synthesis).</span></p>
 
     <h2><span class="num">01</span><span data-i18n="lic.attr_h2">저작자 표시 — Opus-MT</span></h2>
 
@@ -125,6 +126,23 @@
     <p class="note" data-i18n="lic.sw_note">FluentAssertions는 7.0부터 상용 라이선스로 바뀌었습니다. 온말은 Apache-2.0인 6.12.2에 고정해 씁니다.</p>
 
     <!-- These deployment facts are bilingual and intentionally have no i18n attributes. -->
+    <h3><span lang="ko">Hy-MT2 번역 실행기 (0.1.1부터)</span> · <span lang="en">Hy-MT2 translation runtime (since 0.1.1)</span></h3>
+    <div class="scroll" id="llm-components">
+      <table>
+        <thead><tr><th>구성요소 · Component</th><th>저작권자 · Copyright holder</th><th>라이선스 · License</th><th>용도 · Use</th></tr></thead>
+        <tbody>
+          <tr><td class="name"><a href="https://github.com/ggml-org/llama.cpp/releases/tag/b12359">llama.cpp b12359 (llama-server, ggml)</a></td><td>The ggml authors</td><td class="lic">MIT</td><td>Hy-MT2 실행 · Runs Hy-MT2</td></tr>
+          <tr><td>BoringSSL</td><td>Google Inc. and others</td><td class="lic">Apache-2.0</td><td>llama-server 구성요소 · Built into llama-server</td></tr>
+          <tr><td>cpp-httplib</td><td>Yuji Hirose</td><td class="lic">MIT</td><td>llama-server 구성요소 · Built into llama-server</td></tr>
+          <tr><td>nlohmann/json</td><td>Niels Lohmann</td><td class="lic">MIT</td><td>llama-server 구성요소 · Built into llama-server</td></tr>
+          <tr><td>LLVM OpenMP</td><td>LLVM Project contributors</td><td class="lic">Apache-2.0 with LLVM exception</td><td>llama-server 구성요소 · Built into llama-server</td></tr>
+          <tr><td>sha256 · xxhash · rotate-bits</td><td>각 저작권자 · Respective authors</td><td class="lic">각 전문 · See texts</td><td>llama-server 구성요소 · Built into llama-server</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note"><span lang="ko">전문은 앱의 <code>native/llm/licenses/</code>에 함께 들어 있습니다. 번역 서버는 이 PC의 127.0.0.1에서만 열리고 밖으로 아무것도 보내지 않습니다.</span><br>
+      <span lang="en">Full texts ship in the app's <code>native/llm/licenses/</code>. The translation server listens only on this PC's 127.0.0.1 and sends nothing out.</span></p>
+
     <h3><span lang="ko">개발 중인 0.3 네이티브 번역 구성</span> · <span lang="en">Native translation components in the 0.3 candidate</span></h3>
     <div class="scroll" id="native-components">
       <table>
@@ -165,15 +183,16 @@
           <tr><td class="name"><a href="https://github.com/openai/whisper">Whisper</a></td><td>OpenAI</td><td class="lic">MIT</td><td data-i18n="lic.model_whisper">음성 인식·언어 감지 (ggml 변환본)</td></tr>
           <tr><td class="name"><a href="https://github.com/snakers4/silero-vad">Silero VAD</a></td><td>Silero Team</td><td class="lic">MIT</td><td data-i18n="lic.model_vad">발화 구간 감지</td></tr>
           <tr><td class="name"><a href="https://github.com/Helsinki-NLP/Opus-MT">Opus-MT</a></td><td>Helsinki-NLP</td><td class="lic">CC-BY-4.0 / Apache-2.0</td><td data-i18n="lic.model_opusmt">로컬 번역 — 위 저작자 표시 참조</td></tr>
-          <tr><td class="name"><a href="https://huggingface.co/facebook/m2m100_418M/tree/55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636">M2M100 418M</a></td><td>Facebook, Inc. and its affiliates</td><td class="lic">MIT</td><td>0.3 선택 설치 다국어 팩 · Optional multilingual pack for 0.3</td></tr>
+          <tr><td class="name"><a href="https://huggingface.co/tencent/Hy-MT2-1.8B-GGUF/tree/a0c709d9fac510f2c807aa3af52872340dc37a4a">Hy-MT2-1.8B (GGUF Q4_K_M)</a></td><td>Tencent</td><td class="lic">Apache-2.0</td><td>PC 안 다국어 번역 (0.1.1부터 동봉) · On-device multilingual translation (bundled since 0.1.1)</td></tr>
+          <tr><td class="name"><a href="https://huggingface.co/facebook/m2m100_418M/tree/55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636">M2M100 418M</a></td><td>Facebook, Inc. and its affiliates</td><td class="lic">MIT</td><td>이전 시험판의 선택 다국어 팩 (0.1.1에서 제거) · Optional multilingual pack of earlier test builds (removed in 0.1.1)</td></tr>
         </tbody>
       </table>
     </div>
 
-    <p class="note" id="model-distribution"><span lang="ko">기본 Steam 배포에는 Whisper·Silero VAD·한영 Marian ONNX에 필요한 기본 모델 파일이 동봉됩니다. 0.3 선택 M2M100·Noto 팩은 사용자가 명시적으로 설치를 선택할 때 별도 다운로드하며 ZIP과 파일별 SHA-256을 확인합니다. 코드 저장소에 모델 가중치를 포함하지 않는다는 사실과 앱 배포물에 기본 모델을 동봉한다는 사실은 다릅니다.</span><br>
-      <span lang="en">The baseline Steam distribution bundles the model files needed for Whisper, Silero VAD and Korean–English Marian ONNX. The optional M2M100/Noto pack for 0.3 is downloaded separately only when the user chooses to install it, with archive and per-file SHA-256 verification. Model weights being absent from the code repository does not mean baseline models are absent from the app distribution.</span></p>
-    <p class="note" id="optional-model-pack"><span lang="ko"><a href="https://github.com/KDYPOHO/onmal-models/releases/tag/m2m100-418m-int8-1.0.0">실험적 M2M100·Noto 팩 1.0.0</a>은 공개된 모델 자산입니다. M2M100 원본 revision은 55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636이며 CTranslate2 INT8 형식으로 변환했습니다. 원본 MIT 전문과 출처를 포함합니다. 다운로드는 477,535,844 bytes, 설치 파일은 518,690,560 bytes이며 임시 설치 여유 공간이 추가로 필요합니다. 품질은 미검증이며 언어 목록에 있다고 음성 인식·번역 품질이 검증됐다는 뜻은 아닙니다.</span><br>
-      <span lang="en">The linked experimental M2M100/Noto pack 1.0.0 is a published model asset. M2M100 revision 55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636 was converted to CTranslate2 INT8. Original MIT text and source provenance are included. Download size is 477,535,844 bytes; installed files total 518,690,560 bytes, with additional temporary installation space required. Quality remains unverified, and a language appearing in the selection list is not proof of validated speech recognition or translation quality.</span><br>
+    <p class="note" id="model-distribution"><span lang="ko">기본 Steam 배포에는 Whisper·Silero VAD·한영 Marian ONNX·Hy-MT2에 필요한 모델 파일이 동봉됩니다. 0.1.1부터 앱은 M2M100·Noto 팩을 내려받지 않습니다. 코드 저장소에 모델 가중치를 포함하지 않는다는 사실과 앱 배포물에 기본 모델을 동봉한다는 사실은 다릅니다.</span><br>
+      <span lang="en">The baseline Steam distribution bundles the model files needed for Whisper, Silero VAD, Korean–English Marian ONNX and Hy-MT2. From 0.1.1 the app no longer downloads the M2M100/Noto pack. Model weights being absent from the code repository does not mean baseline models are absent from the app distribution.</span></p>
+    <p class="note" id="optional-model-pack"><span lang="ko">0.1.1부터 앱은 이 팩을 쓰지 않습니다. <a href="https://github.com/KDYPOHO/onmal-models/releases/tag/m2m100-418m-int8-1.0.0">실험적 M2M100·Noto 팩 1.0.0</a>은 공개된 모델 자산입니다. M2M100 원본 revision은 55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636이며 CTranslate2 INT8 형식으로 변환했습니다. 원본 MIT 전문과 출처를 포함합니다. 다운로드는 477,535,844 bytes, 설치 파일은 518,690,560 bytes이며 임시 설치 여유 공간이 추가로 필요합니다. 품질은 미검증이며 언어 목록에 있다고 음성 인식·번역 품질이 검증됐다는 뜻은 아닙니다.</span><br>
+      <span lang="en">From 0.1.1 the app no longer uses this pack. The linked experimental M2M100/Noto pack 1.0.0 is a published model asset. M2M100 revision 55c2e61bbf05dfb8d7abccdc3fae6fc8512fd636 was converted to CTranslate2 INT8. Original MIT text and source provenance are included. Download size is 477,535,844 bytes; installed files total 518,690,560 bytes, with additional temporary installation space required. Quality remains unverified, and a language appearing in the selection list is not proof of validated speech recognition or translation quality.</span><br>
       ZIP SHA-256: <code style="overflow-wrap:anywhere">d20724adde0110ca151a41bf73904271da4dd9a2e3dca11fd648d29e0cb01a38</code></p>
 
     <h2><span class="num">04</span><span data-i18n="lic.font_h2">글꼴</span></h2>
@@ -197,7 +216,7 @@
           <tr class="bundled"><td class="name"><a href="https://github.com/orioncactus/pretendard">Pretendard</a></td><td>길형진 (Kil Hyung-jin)</td><td class="lic">SIL OFL 1.1</td><td>앱에 동봉 (OTF Regular · Medium · SemiBold) · 이 홈페이지에 동봉 (자른 가변 woff2)<br>Bundled in the app and on this site</td></tr>
           <tr class="bundled"><td class="name"><a href="https://github.com/JetBrains/JetBrainsMono">JetBrains Mono</a></td><td>JetBrains s.r.o.</td><td class="lic">SIL OFL 1.1</td><td>이 홈페이지에 동봉 (자른 woff2 400 · 500)<br>Bundled on this site</td></tr>
           <tr class="bundled"><td class="name"><a href="https://fonts.google.com/specimen/Gowun+Batang">Gowun Batang</a></td><td>Yanghee Ryu, Yang Jang</td><td class="lic">SIL OFL 1.1</td><td>이 홈페이지에 동봉 (자른 woff2 700)<br>Bundled on this site</td></tr>
-          <tr><td class="name"><a href="https://github.com/notofonts">Noto Sans / Noto Naskh Arabic / Noto Sans CJK</a></td><td>The Noto Project Authors and original copyright holders</td><td class="lic">SIL OFL 1.1</td><td><span lang="ko">0.2.2 기본 앱 미동봉 · 0.3 선택 팩에 수정하지 않은 TTF 21개와 CJK TTC 1개 동봉</span><br><span lang="en">Not bundled in the 0.2.2 baseline app; 21 unmodified TTF files and one CJK TTC are included in the optional 0.3 pack</span></td></tr>
+          <tr><td class="name"><a href="https://github.com/notofonts">Noto Sans / Noto Naskh Arabic / Noto Sans CJK</a></td><td>The Noto Project Authors and original copyright holders</td><td class="lic">SIL OFL 1.1</td><td><span lang="ko">앱 미동봉 · 이전 시험판의 선택 팩에 수정하지 않은 TTF 21개와 CJK TTC 1개 동봉 (0.1.1에서 팩 제거)</span><br><span lang="en">Not bundled in the app; 21 unmodified TTF files and one CJK TTC were included in the optional pack of earlier test builds (pack removed in 0.1.1)</span></td></tr>
         </tbody>
       </table>
     </div>
