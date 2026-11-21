@@ -49,8 +49,8 @@ test('both languages state the current Playtest build and keep 0.1.0 as in prepa
   }
   assert.match(translations.ko.development.playtestStatus, /Playtest 참여 가능/);
   assert.match(translations.en.development.playtestStatus, /Playtest open/);
-  assert.match(translations.ko.development.specs[3].value, /미완료/);
-  assert.match(translations.en.development.specs[3].value, /Real Windows/);
+  assert.match(translations.ko.development.specs[4].value, /미완료/);
+  assert.match(translations.en.development.specs[4].value, /Real Windows/);
   assert.match(JSON.stringify(translations.ko.development), /여가 시간/);
   assert.match(JSON.stringify(translations.en.development), /spare time/);
 });

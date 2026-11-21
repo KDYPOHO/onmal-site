@@ -171,6 +171,11 @@ export const translations = {
           detail: '온말은 Windows 전용입니다. 0.1.1에서 Mac 앱 코드를 정리했고 Mac 판은 제공하지 않습니다.',
         },
         {
+          label: 'PC 사양 (0.1.1 실측 기준)',
+          value: '@@SPEC_KO_VALUE@@',
+          detail: '@@SPEC_KO_DETAIL@@',
+        },
+        {
           label: '현재 Playtest 빌드',
           value: '기본 0.1.1 (Build @@BUILD@@)',
           detail: '@@DATE@@부터 Steam Playtest 기본 브랜치의 빌드입니다. 이전 기본 빌드는 0.1.0(Build 26823802)이었습니다. 본편은 아직 출시되지 않았습니다.',
@@ -420,6 +425,11 @@ export const translations = {
           label: 'Target platform',
           value: 'Windows 11 64-bit first',
           detail: 'Onmal is Windows only. The Mac app code was removed in 0.1.1, and no Mac version is offered.',
+        },
+        {
+          label: 'PC requirements (measured on 0.1.1)',
+          value: '@@SPEC_EN_VALUE@@',
+          detail: '@@SPEC_EN_DETAIL@@',
         },
         {
           label: 'Current Playtest build',
