@@ -8,7 +8,7 @@ export function Development({ lang }: { lang: SupportedLanguage }) {
   // The last spec is the developer's note about pace; it is shown as a signed note.
   const specs = t.specs.slice(0, -1);
   const note = t.specs[t.specs.length - 1];
-  const nextIndex = specs.findIndex((spec) => spec.label.includes('0.1.0') && !spec.label.includes('Windows'));
+  const nextIndex = specs.findIndex((spec) => spec.label.includes('0.1.1') && !spec.label.includes('Windows'));
 
   return (
     <section className="section" id="development" aria-labelledby="dev-title">

@@ -40,7 +40,7 @@ test('both languages state the current Playtest build and keep 0.1.0 as in prepa
   for (const language of ['ko', 'en'] as const) {
     const content = JSON.stringify(translations[language]);
     const status = JSON.stringify(translations[language].development);
-    assert.ok(status.includes('0.1.0') && status.includes('26823802'));
+    assert.ok(status.includes('0.1.1') && status.includes('26823802'));
     assert.ok(status.includes('0.1.0'));
     assert.ok(status.includes('2,606'));
     assert.ok(content.includes('2026-11-20'));
