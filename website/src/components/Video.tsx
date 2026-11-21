@@ -18,6 +18,10 @@ export function Video({ lang }: { lang: SupportedLanguage }) {
           <h2 id="video-title">{t.title}</h2>
           <p>{t.desc}</p>
           <p className="notice">{t.audioNotice}</p>
+          <details className="video-transcript">
+            <summary>{t.transcriptLabel}</summary>
+            <p>{t.transcript}</p>
+          </details>
         </div>
       </div>
       <Viewer open={open} title={t.modalTitle} closeLabel={t.closeModal} onClose={() => setOpen(false)}>
@@ -25,6 +29,10 @@ export function Video({ lang }: { lang: SupportedLanguage }) {
           <video controls playsInline preload="metadata" poster={MEDIA.poster}>
             <source src={MEDIA.video} type="video/mp4" />
           </video>
+          <details className="video-transcript">
+            <summary>{t.transcriptLabel}</summary>
+            <p>{t.transcript}</p>
+          </details>
           <p><a href={MEDIA.video} target="_blank" rel="noopener noreferrer">{t.directLink}</a></p>
         </div>
       </Viewer>

@@ -46,10 +46,18 @@ export function Footer({ lang }: { lang: SupportedLanguage }) {
             <h2>{t.legalHeading}</h2>
             <ul className="footer-links">
               {legal.map(([href, label]) => (
-                <li key={href}><a href={`${href}?lang=${lang}`}>{label}</a></li>
+                <li key={href}>
+                  <a href={`${href}?lang=${lang}`} className={href === 'privacy.html' ? 'footer-privacy' : undefined}>
+                    {href === 'privacy.html' ? <strong>{label}</strong> : label}
+                  </a>
+                </li>
               ))}
             </ul>
           </div>
+        </div>
+        <div className="footer-legal-notes">
+          <p>{t.aiNotice}</p>
+          <p>{t.operator}</p>
         </div>
         <div className="footer-bottom">
           <span>{t.copyright}</span>

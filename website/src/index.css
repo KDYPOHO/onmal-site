@@ -538,7 +538,11 @@ dialog.viewer::backdrop { background: rgb(2 9 14 / 0.86); backdrop-filter: blur(
 .footer-links a { display: inline-flex; align-items: center; gap: 6px; padding: 6px 0; color: var(--mist); text-decoration: none; font-size: 0.95rem; }
 .footer-links a:hover { color: var(--text); text-decoration: underline; text-underline-offset: 4px; }
 .footer-links svg { width: 14px; height: 14px; opacity: 0.7; }
-.footer-bottom { margin-top: 48px; padding-top: 22px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; color: var(--mist); font-size: 0.875rem; }
+.footer-links a.footer-privacy { color: var(--text); }
+.footer-links a.footer-privacy strong { font-weight: 700; }
+.footer-legal-notes { margin-top: 36px; display: grid; gap: 6px; color: var(--mist); font-size: 0.875rem; line-height: 1.6; }
+.footer-legal-notes p { margin: 0; }
+.footer-bottom { margin-top: 20px; padding-top: 22px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; color: var(--mist); font-size: 0.875rem; }
 .footer-bottom a { color: var(--mist); }
 
 /* ---------- 좁은 화면 ---------- */
@@ -575,3 +579,7 @@ dialog.viewer::backdrop { background: rgb(2 9 14 / 0.86); backdrop-filter: blur(
   .caption-line > span { forced-color-adjust: none; background: Canvas; color: CanvasText; }
   .btn { border-color: ButtonText; }
 }
+
+.video-transcript { margin-top: 12px; color: var(--mist); font-size: 0.925rem; line-height: 1.65; }
+.video-transcript summary { cursor: pointer; color: var(--text); }
+.video-transcript p { margin: 8px 0 0; }
