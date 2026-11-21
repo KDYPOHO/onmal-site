@@ -13,7 +13,7 @@ export const APP_ICON_URL =
   'https://avatars.fastly.steamstatic.com/d400f0f805a3c684da34b0c242fdaba682751507_full.jpg?original=1';
 
 const BASE = import.meta.env?.BASE_URL ?? '/onmal-site/';
-const SHOT_BASE = `${BASE}shots/0.1.0/`;
+const SHOT_BASE = `${BASE}shots/0.2.0/`;
 
 /** The app's real logo mark (from the Windows app icon), cut out on a transparent background. */
 export const BRAND = {
@@ -28,63 +28,63 @@ export const MEDIA = {
 
 /** Pixel sizes of the screenshots, so the browser can reserve space before they load. */
 export const SHOT_SIZES: Record<number, { width: number; height: number }> = {
-  1: { width: 1400, height: 900 },
-  2: { width: 560, height: 620 },
-  3: { width: 620, height: 660 },
-  4: { width: 1400, height: 900 },
-  5: { width: 560, height: 620 },
+  1: { width: 1086, height: 773 },
+  2: { width: 800, height: 280 },
+  3: { width: 1086, height: 773 },
+  4: { width: 1086, height: 773 },
+  5: { width: 408, height: 339 },
 };
 
 export const SCREENSHOTS: ScreenshotItem[] = [
   {
     id: 1,
-    url: `${SHOT_BASE}main-dark.png`,
-    titleKo: '통역 화면 (다크 테마 · Windows 0.1.0)',
-    titleEn: 'Interpret Screen (Dark Theme · Windows 0.1.0)',
-    descKo: '번역할 소리(예: Discord), 상대가 말하는 언어, 번역할 언어, 통역 품질을 고르고 시작하는 기본 화면입니다. 실제 Windows PC에서 찍었고, 이 확인 PC에는 인식 모델을 설치하지 않아 아래에 모델 안내가 보입니다.',
-    descEn: 'The main screen where you choose the sound to translate (e.g. Discord), the spoken language, the subtitle language and quality, then start. Captured on a real Windows PC; recognition models were not installed on that test PC, so a model notice appears at the bottom.',
-    altKo: '온말 Windows 0.1.0 통역 화면 — 다크 테마',
-    altEn: 'Onmal Windows 0.1.0 interpret screen — dark theme',
+    url: `${SHOT_BASE}01-main.png`,
+    titleKo: '자막이 나오는 통역 화면 (Windows 0.2.0)',
+    titleEn: 'Interpret screen with live captions (Windows 0.2.0)',
+    descKo: '유리 느낌의 기본 화면입니다. 번역할 소리와 언어, 품질을 고르고 시작하면 자막이 바로 나옵니다.',
+    descEn: 'The glass main screen. Pick the sound, languages and quality, start, and captions appear right away.',
+    altKo: '온말 Windows 0.2.0 — 자막이 나오는 통역 화면',
+    altEn: 'Onmal Windows 0.2.0 — Interpret screen with live captions',
   },
   {
     id: 2,
-    url: `${SHOT_BASE}setup-source.png`,
-    titleKo: '처음 설정 2단계 · 들을 앱 고르기 (Windows 0.1.0)',
-    titleEn: 'First-run Setup Step 2 · Choose the App to Listen To (Windows 0.1.0)',
-    descKo: '팀원 목소리가 나오는 앱이나 출력 장치와 자막 언어를 고르는 처음 설정 화면입니다. 앱 소리 안의 팀원 음성과 게임 효과음은 자동으로 나뉘지 않는다고 함께 안내합니다.',
-    descEn: 'First-run setup screen for choosing the app or output device that plays teammates’ voices, and the subtitle language. It also notes that voices and game effects inside one app are not separated automatically.',
-    altKo: '온말 Windows 0.1.0 처음 설정 — 소리 가져올 곳과 자막 언어 선택',
-    altEn: 'Onmal Windows 0.1.0 first-run setup — audio source and subtitle language',
+    url: `${SHOT_BASE}02-overlay.png`,
+    titleKo: '게임 위 자막 · 목소리 색과 이름 (Windows 0.2.0)',
+    titleEn: 'In-game captions · voice colours and names (Windows 0.2.0)',
+    descKo: '게임 위에 뜨는 유리 자막 띠입니다. 목소리마다 색 띠와 기호, 직접 붙인 이름표가 붙습니다(이름은 시험용).',
+    descEn: 'The glass caption strip over a game. Each voice gets a colour bar, a symbol and the name you gave it (test names).',
+    altKo: '온말 Windows 0.2.0 — 게임 위 자막 · 목소리 색과 이름',
+    altEn: 'Onmal Windows 0.2.0 — In-game captions · voice colours and names',
   },
   {
     id: 3,
-    url: `${SHOT_BASE}main-narrow.png`,
-    titleKo: '좁은 창의 통역 화면 (Windows 0.1.0)',
-    titleEn: 'Interpret Screen in a Narrow Window (Windows 0.1.0)',
-    descKo: '창을 좁히면 자막 영역이 위로, 소리·언어·품질 선택이 아래로 내려갑니다. 왼쪽 메뉴에서 통역·친구·통역 준비·설정·안내로 이동합니다.',
-    descEn: 'In a narrow window the subtitle area moves to the top and the sound, language and quality controls move below it. The left menu leads to Interpret, Friends, Preparation, Settings and Info.',
-    altKo: '온말 Windows 0.1.0 좁은 창 통역 화면',
-    altEn: 'Onmal Windows 0.1.0 interpret screen in a narrow window',
+    url: `${SHOT_BASE}03-voice-names.png`,
+    titleKo: '목소리 이름 붙이기 (Windows 0.2.0)',
+    titleEn: 'Name the voices (Windows 0.2.0)',
+    descKo: '홈 화면에서 팀원 이름을 적어 두면 같은 목소리의 자막에 이름이 붙고, 음성 인식도 그 이름을 더 잘 알아듣습니다. 온말을 끄면 지워집니다.',
+    descEn: 'Type teammate names on the home screen: that voice’s captions show the name and recognition hears it better. Erased when Onmal closes.',
+    altKo: '온말 Windows 0.2.0 — 목소리 이름 붙이기',
+    altEn: 'Onmal Windows 0.2.0 — Name the voices',
   },
   {
     id: 4,
-    url: `${SHOT_BASE}main-light.png`,
-    titleKo: '통역 화면 (라이트 테마 · Windows 0.1.0)',
-    titleEn: 'Interpret Screen (Light Theme · Windows 0.1.0)',
-    descKo: '같은 통역 화면의 라이트 테마입니다. 왼쪽에서 소리와 언어를 고르고, 오른쪽 넓은 영역에 자막이 표시됩니다.',
-    descEn: 'The same interpret screen in the light theme. Choose sound and languages on the left; subtitles appear in the large area on the right.',
-    altKo: '온말 Windows 0.1.0 통역 화면 — 라이트 테마',
-    altEn: 'Onmal Windows 0.1.0 interpret screen — light theme',
+    url: `${SHOT_BASE}04-settings.png`,
+    titleKo: '설정 · 품질과 게임 중 가벼운 모드 (Windows 0.2.0)',
+    titleEn: 'Settings · quality and light mode while gaming (Windows 0.2.0)',
+    descKo: '품질 3단계(최소·권장·최고), 게임 중 자동 가벼운 모드, 욕설 가리기를 한 화면에서 고릅니다.',
+    descEn: 'Choose the three quality tiers, automatic light mode while gaming and the swear filter in one place.',
+    altKo: '온말 Windows 0.2.0 — 설정 · 품질과 게임 중 가벼운 모드',
+    altEn: 'Onmal Windows 0.2.0 — Settings · quality and light mode while gaming',
   },
   {
     id: 5,
-    url: `${SHOT_BASE}setup-game.png`,
-    titleKo: '처음 설정 3단계 · 게임 화면 모드 안내 (Windows 0.1.0)',
-    titleEn: 'First-run Setup Step 3 · Game Display Mode (Windows 0.1.0)',
-    descKo: '자막은 게임 위에 별도 창으로 그려지므로 창 모드나 테두리 없는 창 모드에서 보인다는 안내와 단축키를 보여줍니다. 온말은 게임에 아무것도 주입하지 않습니다.',
-    descEn: 'Explains that subtitles are drawn as a separate window over the game, so they show in windowed or borderless mode, and lists the shortcuts. Onmal injects nothing into games.',
-    altKo: '온말 Windows 0.1.0 처음 설정 — 게임 화면 모드와 단축키 안내',
-    altEn: 'Onmal Windows 0.1.0 first-run setup — game display mode and shortcuts',
+    url: `${SHOT_BASE}06-start.png`,
+    titleKo: '시작 화면 (Windows 0.2.0)',
+    titleEn: 'Start screen (Windows 0.2.0)',
+    descKo: '앱을 켤 때 보이는 유리 느낌의 시작 화면입니다.',
+    descEn: 'The glass start screen shown when the app opens.',
+    altKo: '온말 Windows 0.2.0 — 시작 화면',
+    altEn: 'Onmal Windows 0.2.0 — Start screen',
   },
 ];
 
