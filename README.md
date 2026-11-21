@@ -20,6 +20,10 @@ The video section presents the supplied 10-second promotional concept with simul
 
 </details>
 
+## Korean-law review — 2026-11-21
+
+The privacy policy now lists every item required by 개인정보 보호법 제30조 and 시행령 제31조 (purpose, items, legal basis, retention and destruction, no third-party provision, Gmail storage as entrustment and overseas transfer with the 제28조의8 ② items, safety measures, rights and how to use them, privacy officer, automatic collection on the site, effective date). The homepage marks subtitles as AI-generated (AI 기본법 제31조), shows the operator and that nothing is sold, softens two unverified claims, and passes axe-core WCAG 2.2 AA checks in both themes at desktop and phone width. The licenses page now lists what the 0.1.0 Windows build actually ships. The terms text is unchanged (it is hashed for in-app consent). Details and the 조문 checked: Game_Steam `docs/compliance/2026-11-21-homepage-korean-law-review.ko.md`. After changing `privacy.html`, `terms.html` or `licenses.html`, re-run `python tools/make-fonts.py` so the policy-page font subset keeps every character.
+
 ## Changing the release status later
 
 0.1.0 became the Playtest default build on 2026-11-21 (Build 26823802). For the next release, all status wording lives in `website/src/utils/i18n.ts` (both `ko` and `en`). Update these keys together, then re-run `python tools/make-home-fonts.py …` if new characters appear (`npm test` fails when a character is missing from the font subset):

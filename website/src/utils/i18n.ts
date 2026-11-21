@@ -60,7 +60,7 @@ export const translations = {
     hero: {
       statusBadge: 'Windows 11 64비트 전용 · 개발·테스트 중',
       headline: '게임 대화를,\n내 언어 자막으로.',
-      supporting: '팀원의 음성과 스토리 대사를 번역 자막으로 읽도록 돕는 Windows 앱.',
+      supporting: '팀원의 음성과 스토리 대사를 내 PC의 AI가 번역 자막으로 만들어, 읽을 수 있게 돕는 Windows 앱.',
       ctaSteam: 'Steam에서 Playtest 참여',
       ctaDiscord: 'Discord 커뮤니티',
       unreleasedNotice: 'Steam Playtest 참여 가능 · 현재 기본 빌드 0.1.0 · 정식 출시 미정 (2026-11-21 확인)',
@@ -87,8 +87,8 @@ export const translations = {
         {
           num: '02',
           title: '팀 음성·스토리 모드',
-          meta: '상황별 용어집 전환 · 콜아웃 보존',
-          desc: '팀 음성 채팅에서는 게임 용어집이 B 사이트 같은 전술 콜아웃의 보존을 돕고, 스토리 대사에서는 용어집을 기본으로 끕니다. 인식·번역 결과에는 오류가 생길 수 있습니다.',
+          meta: '상황별 용어집 전환 · 콜아웃 보존을 도움',
+          desc: '팀 음성 채팅에서는 게임 용어집이 B 사이트 같은 전술 콜아웃의 보존을 돕고, 스토리 대사에서는 용어집을 기본으로 끕니다. 실제 게임에서 얼마나 잘 지켜지는지는 아직 확인 중이며, 인식·번역 결과에는 오류가 생길 수 있습니다.',
         },
         {
           num: '03',
@@ -232,7 +232,7 @@ export const translations = {
         { question: '업데이트가 왜 느린가요?', answer: '온말은 개발자 한 명이 여가 시간에 만드는 무료 개인 프로젝트라 개발과 업데이트에 시간이 오래 걸립니다. 서두르기보다 실제 Windows에서 확인한 뒤 조금씩 내놓겠습니다. 문의 답변도 늦어질 수 있으니 양해 부탁드립니다.' },
         { question: 'Mac에서도 다운로드할 수 있나요?', answer: '현재 공개 검증 대상은 Windows 11 64비트입니다. macOS는 개발 환경이며 Mac 다운로드는 제공하지 않습니다.' },
         { question: '무료인가요? 인터넷이나 개인 API가 꼭 필요한가요?', answer: '온말은 무료·비수익으로 준비 중이며 결제·구독·광고가 없습니다. 기본 한영 모델은 동봉되며 내 PC에서 처리합니다. Steam 설치·업데이트와 선택 모델 다운로드에는 인터넷이 필요할 수 있습니다. 개인 API 번역은 0.1.0부터 제공하지 않습니다.' },
-        { question: '매번 시작 버튼을 눌러야 하나요?', answer: '0.1.0부터는 설정에서 켜 두기 모드를 켜면, 앱을 열었을 때 저장해 둔 게임이나 Discord의 소리가 나는 즉시 자동으로 번역을 시작합니다. 기본값은 꺼짐이며, 첫 실행 동의를 마친 뒤에만 동작합니다.' },
+        { question: '매번 시작 버튼을 눌러야 하나요?', answer: '0.1.0부터는 설정에서 켜 두기 모드를 켜면, 앱을 열었을 때 저장해 둔 게임이나 Discord에서 소리가 나면 자동으로 번역을 시작합니다. 기본값은 꺼짐이며, 첫 실행 동의를 마친 뒤에만 동작합니다.' },
         { question: '자막은 사람이 만드나요?', answer: '아니요. 자막은 내 PC에 설치된 AI 음성 인식·기계 번역 모델이 자동으로 만들며, 사람이 확인하거나 고친 내용이 아닙니다. 틀릴 수 있으니 중요한 내용은 직접 확인해 주세요. 앱의 첫 실행 안내와 자막 화면에도 이 사실을 표시합니다.' },
         { question: '팀원 음성만 골라 번역하나요?', answer: '앱별 캡처와 언어 선택을 사용할 수 있지만 한 프로세스에 섞인 팀원 음성·게임 효과음·배경음을 자동으로 분리하지는 않습니다. 실제 입력 소스와 듣는 언어를 확인해야 합니다.' },
         { question: '자막이 없거나 번역이 이상하면 어떻게 하나요?', answer: '소리가 재생되는 출력 장치, 선택한 캡처 소스, 듣는 언어와 모델 준비 상태를 순서대로 확인하세요. 오류가 이어지면 버전·증상·설정 등 필요한 정보만 Discord나 이메일로 보내주세요. API 키나 개인 음성·대화 내용은 공개하지 마세요.' },
@@ -248,6 +248,9 @@ export const translations = {
       closeModal: '영상 닫기',
       audioNotice: '원본 오디오가 포함돼 있습니다. 플레이어의 재생 버튼을 누르면 시작하며 자동 재생하지 않습니다.',
       directLink: '재생되지 않으면 동영상 직접 열기',
+      transcriptLabel: '영상 내용 설명(대본)',
+      transcript:
+        '말소리 없이 배경 음악만 나옵니다. 하늘색과 산호색 리본이 어두운 남색 배경에서 엇갈리며 말풍선 모양 고리가 됩니다. 고리 안으로 영어와 스페인어를 고른 가상의 번역 창이 떠오르고, 점과 선이 이어진 그물 위에 "사용 예시 · 실제 실행 화면 아님 (Concept demonstration)"이라는 글자가 나옵니다. 마지막에 Onmal 로고와 "개발·테스트 중 (In development)"이 표시됩니다.',
     },
     footer: {
       team: '토닥 Todak',
@@ -261,6 +264,9 @@ export const translations = {
       developerProfileLink: '개발자 강동엽 · 네이버 프로필',
       emailLink: '이메일 문의 (todaklife@gmail.com)',
       changeLang: '언어 변경',
+      operator:
+        '운영: 개인 개발자 강동엽(토닥 Todak) · 문의 todaklife@gmail.com · 무료 배포, 판매·결제·광고 없음',
+      aiNotice: '온말의 자막은 이용자 PC의 AI 모델이 자동으로 만든 결과이며 틀릴 수 있습니다.',
       copyright: '© 2026 토닥 Todak. All rights reserved.',
       legalHeading: '정책과 라이선스',
       backToTop: '맨 위로',
@@ -302,7 +308,7 @@ export const translations = {
       statusBadge: 'Windows 11 64-bit Only · In Development & Testing',
       headline: 'Game conversations,\nsubtitled in your language.',
       supporting:
-        'A Windows app that helps you read teammates’ voice chat and story dialogue as translated subtitles.',
+        'A Windows app whose on-PC AI turns teammates’ voice chat and story dialogue into translated subtitles you can read.',
       ctaSteam: 'Join the Playtest on Steam',
       ctaDiscord: 'Discord Community',
       unreleasedNotice:
@@ -331,8 +337,8 @@ export const translations = {
         {
           num: '02',
           title: 'Team Voice & Story Modes',
-          meta: 'Context-aware glossary · Preserves tactical callouts',
-          desc: 'The game glossary helps preserve tactical callouts such as "B Site" in Team Voice Chat mode. Story Dialogue mode turns it off by default. Recognition and translation can still make mistakes.',
+          meta: 'Context-aware glossary · Helps keep tactical callouts',
+          desc: 'The game glossary helps preserve tactical callouts such as "B Site" in Team Voice Chat mode. Story Dialogue mode turns it off by default. How well this holds up in real games is still being checked, and recognition and translation can make mistakes.',
         },
         {
           num: '03',
@@ -477,7 +483,7 @@ export const translations = {
         { question: 'Why are updates slow?', answer: 'Onmal is a free personal project made by one developer in their spare time, so development and updates take a long time. Rather than rushing, each version is checked on real Windows PCs before release. Replies may also be slow; thank you for understanding.' },
         { question: 'Is there a Mac download?', answer: 'Windows 11 64-bit is the current target for public validation. macOS is a development environment, and no Mac download is offered.' },
         { question: 'Is it free? Do I need internet or a personal API?', answer: 'Onmal is being prepared as a free, non-commercial app with no payments, subscriptions or ads. The basic Korean-English models are bundled and run on your PC. Steam installation, updates, and optional model downloads may need internet. Personal API translation is not offered from 0.1.0.' },
-        { question: 'Do I have to press Start every time?', answer: 'From 0.1.0, turn on keep-on mode in Settings and Onmal starts translating as soon as the saved game or Discord makes sound when the app opens. It is off by default and works only after first-run consent.' },
+        { question: 'Do I have to press Start every time?', answer: 'From 0.1.0, turn on keep-on mode in Settings and Onmal starts translating automatically when the saved game or Discord makes sound after the app opens. It is off by default and works only after first-run consent.' },
         { question: 'Are the subtitles made by people?', answer: 'No. Subtitles are generated automatically by AI speech-recognition and machine-translation models installed on your PC, and no person reviews or edits them. They can be wrong, so check anything important yourself. The app’s first-run guide and subtitle screen show this too.' },
         { question: 'Does it isolate only my teammates’ voices?', answer: 'App capture and language selection are available, but voices, effects, and background audio mixed within one process are not automatically separated. Check the actual input source and spoken language.' },
         { question: 'What if subtitles are missing or translation looks wrong?', answer: 'Check the playback device, selected capture source, spoken language, and model readiness in that order. If the issue continues, share only necessary details such as version, symptoms, and settings via Discord or email. Do not post API keys, private audio, or conversation content.' },
@@ -493,6 +499,9 @@ export const translations = {
       closeModal: 'Close video',
       audioNotice: 'Includes the original audio. Use the player’s Play button to start; playback does not begin automatically.',
       directLink: 'Open the video directly if playback fails',
+      transcriptLabel: 'Video description (transcript)',
+      transcript:
+        'Background music only, with no speech. Aqua and coral ribbons cross on a dark navy background and form a speech-bubble ring. A mock translation window with English and Spanish selected appears inside the ring, then the words "사용 예시 · 실제 실행 화면 아님 (Concept demonstration)" appear over a network of dots and lines. It ends with the Onmal logo and "개발·테스트 중 (In development)".',
     },
     footer: {
       team: '토닥 Todak',
@@ -507,6 +516,9 @@ export const translations = {
       developerProfileLink: 'Developer 강동엽 · Naver Profile',
       emailLink: 'Email Contact (todaklife@gmail.com)',
       changeLang: 'Language',
+      operator:
+        'Operated by individual developer 강동엽 (Todak) · Contact todaklife@gmail.com · Free, with no sales, payments or ads',
+      aiNotice: 'Onmal’s subtitles are generated automatically by AI models on the user’s PC and can be wrong.',
       copyright: '© 2026 토닥 Todak. All rights reserved.',
       legalHeading: 'Policies & licenses',
       backToTop: 'Back to top',

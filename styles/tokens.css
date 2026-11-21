@@ -52,7 +52,7 @@
       5.83:1(흰 카드)입니다. 색상은 그대로 두고 명도만 내렸습니다. */
 html[data-theme="light"]{
   --ink:#F1F4F5; --night:#FFFFFF; --indigo:#E3ECEF; --line:#D3DCE0;
-  --jade:#0A6E88; --moon:#8A6A1B; --paper:#1A2026; --dim:#42505C; --coral:#B84B3B;
+  --jade:#0A6E88; --moon:#765A15; --paper:#1A2026; --dim:#42505C; --coral:#B84B3B;
   --card-bg:#FFFFFF;
   color-scheme:light;
   --shot-dark:0;
@@ -63,7 +63,7 @@ html[data-theme="light"]{
 @media (prefers-color-scheme: light){
   html:not([data-theme="dark"]){
     --ink:#F1F4F5; --night:#FFFFFF; --indigo:#E3ECEF; --line:#D3DCE0;
-    --jade:#0A6E88; --moon:#8A6A1B; --paper:#1A2026; --dim:#42505C; --coral:#B84B3B;
+    --jade:#0A6E88; --moon:#765A15; --paper:#1A2026; --dim:#42505C; --coral:#B84B3B;
     --card-bg:#FFFFFF;
     color-scheme:light;
   }

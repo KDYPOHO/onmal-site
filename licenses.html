@@ -11,9 +11,9 @@
 <link rel="preload" href="fonts/GowunBatang-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles/fonts.css?v=7">
-<link rel="stylesheet" href="styles/tokens.css?v=7">
+<link rel="stylesheet" href="styles/tokens.css?v=8">
 <link rel="stylesheet" href="styles/base.css?v=7">
-<link rel="stylesheet" href="styles/doc.css?v=8">
+<link rel="stylesheet" href="styles/doc.css?v=9">
 </head>
 <body>
 <a class="skip" href="#main" data-i18n="a11y.skip">본문으로 건너뛰기</a>
@@ -40,15 +40,34 @@
     <p class="kicker" data-i18n="lic.kicker">법적 고지</p>
     <h1 data-i18n="lic.h1">저작권 및 라이선스</h1>
     <p class="lede" data-i18n="lic.lede">온말은 아래 소프트웨어와 모델 위에서 동작합니다. 각 저작권자와 라이선스를 밝히고, 의도적으로 쓰지 않은 것도 함께 적었습니다.</p>
-    <p class="meta"><span data-i18n="lic.updated">최종 갱신</span> 2026-10-14</p>
+    <p class="meta"><span data-i18n="lic.updated">최종 갱신</span> 2026-11-21</p>
     <p class="meta" style="margin-top:6px">이 문서는 한국어가 정본입니다 · The Korean text is authoritative</p>
     <p class="meta" style="margin-top:6px" data-i18n="lic.same_in_app">같은 내용이 앱 안에도 들어 있습니다 (정보 → 저작권 및 라이선스). 인터넷이 없어도 읽을 수 있습니다.</p>
-    <p class="meta" style="margin-top:6px">사실 안내 갱신 2026-10-20 · 아래 저작권·라이선스 고지의 조건과 전문은 유지합니다.</p>
-    <p class="note" id="release-scope"><span lang="ko">현재 후보는 무료·비수익 Windows 0.3.2입니다. 2026-10-20 Playtest 빌드 26067017과 본편 빌드 26067660의 업로드가 완료됐으며, 둘 다 업로드 당시 비활성 보관 상태였습니다. 정식 출시는 보류 중입니다. 2026-10-20 17:22 KST 확인 기준 Playtest는 미활성이며 빌드 승인 완료는 확인되지 않았습니다. 기본 음성 인식·한영 Marian ONNX 모델과 선택 설치 M2M100·Noto 팩은 구분됩니다. 실제 Windows 음성·통역·게임 성능 검증은 미완료이며, 모델 팩 공개와 파일 무결성 검사는 앱 출시·번역 품질 검증 완료를 뜻하지 않습니다. 이 사실 정정은 법률·라이선스 검토 완료나 설치된 앱의 고지 교체를 뜻하지 않습니다.</span><br>
-      <span lang="en">The current candidate is free, non-commercial Windows 0.3.2. Playtest build 26067017 and main-app build 26067660 were uploaded on 2026-10-20; both were stored as inactive builds at upload. Formal release remains on hold. At the 2026-10-20 17:22 KST check, the Playtest was inactive and completed build approval had not been confirmed. Bundled speech-recognition and Korean–English Marian ONNX models are separate from the optional M2M100/Noto pack. Actual Windows speech, translation and game-performance checks remain incomplete. Publishing a model pack or verifying file integrity does not mean the app is released or translation quality is validated. This factual update does not claim completed legal or license review or replacement of notices in installed apps.</span></p>
+    <p class="note" id="release-scope"><span lang="ko">지금 Steam Playtest 기본 빌드는 무료·비수익 Windows 0.1.0(Build 26823802, 2026-11-21부터)입니다. 아래 "이번 배포에 들어 있는 것"이 실제 0.1.0 배포물의 기준이며, 그 아래 표에는 선택 설치하거나 다른 운영체제·이전 시험판에서만 쓰는 구성요소의 고지도 함께 남겨 둡니다. 앱 안의 동봉 고지(THIRD_PARTY_NOTICES.md)와 같은 내용입니다.</span><br>
+      <span lang="en">The current Steam Playtest default build is free, non-commercial Windows 0.1.0 (Build 26823802, since 2026-11-21). "What this release ships" below is the reference for the actual 0.1.0 distribution; the later tables also keep notices for components used only when installed optionally, on other operating systems or in earlier test builds. This matches the notice bundled in the app (THIRD_PARTY_NOTICES.md).</span></p>
   </header>
 
   <article>
+
+    <h2><span class="num">00</span><span>이번 배포에 들어 있는 것 · What this release ships</span></h2>
+    <p class="dim">Steam Playtest Windows 0.1.0의 앱 디포와 모델 디포 기준입니다(2026-11-20 확인). · Based on the Windows 0.1.0 app and model depots.</p>
+    <div class="scroll" role="region" tabindex="0" aria-label="표 1 · 가로로 스크롤할 수 있습니다">
+      <table>
+        <thead><tr><th>모델 · Model</th><th>저작권자 · Copyright</th><th>라이선스 · License</th><th>용도 · Use</th></tr></thead>
+        <tbody>
+          <tr class="bundled"><td class="name">Silero VAD</td><td>Silero Team</td><td class="lic">MIT</td><td>말소리 구간 감지 · Voice activity detection</td></tr>
+          <tr class="bundled"><td class="name">Whisper tiny · base (ggml)</td><td>OpenAI</td><td class="lic">MIT</td><td>음성 인식·언어 감지 · Speech recognition</td></tr>
+          <tr class="bundled"><td class="name">Whisper large-v3-turbo q8_0 (ggml)</td><td>OpenAI</td><td class="lic">MIT</td><td>최고 품질 음성 인식 · Highest-quality recognition</td></tr>
+          <tr class="bundled"><td class="name">Whisper large-v3 (ggml)</td><td>OpenAI</td><td class="lic">MIT</td><td>직접 고르는 음성 인식 모델 · Selectable recognition model</td></tr>
+          <tr class="bundled"><td class="name">Opus-MT <code>opus-mt-ko-en</code> (ONNX)</td><td>Helsinki-NLP</td><td class="lic">Apache-2.0</td><td>한국어 → 영어 · Korean → English</td></tr>
+          <tr class="bundled"><td class="name">Opus-MT <code>opus-mt-tc-big-en-ko</code> (ONNX)</td><td>Helsinki-NLP</td><td class="lic">CC-BY-4.0</td><td>영어 → 한국어 (저작자 표시는 01장) · English → Korean (attribution in section 01)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>소프트웨어: .NET 10 런타임(self-contained), Whisper.net·whisper.cpp, ONNX Runtime, Microsoft.ML.Tokenizers, NAudio, Steamworks.NET, Microsoft.Extensions 구성요소, Lucide 아이콘, Pretendard 글꼴(각 저작권자·라이선스는 02·04·05장). Valve의 <code>steam_api64.dll</code>은 Steamworks SDK 재배포 파일로 Valve의 Steamworks SDK 접근 계약에 따라 함께 배포합니다.<br>
+      <span lang="en">Software: .NET 10 runtime (self-contained), Whisper.net/whisper.cpp, ONNX Runtime, Microsoft.ML.Tokenizers, NAudio, Steamworks.NET, Microsoft.Extensions components, Lucide icons and the Pretendard font (see sections 02, 04 and 05). Valve's <code>steam_api64.dll</code> is a Steamworks SDK redistributable shipped under Valve's Steamworks SDK Access Agreement.</span></p>
+    <p class="dim">그 밖의 모델·구성요소(Whisper small, 다른 Opus-MT 언어쌍, M2M100·Noto 팩, CTranslate2 네이티브 번역 구성, Supertonic 음성, macOS 구성요소)는 0.1.0 Windows 배포물에 들어 있지 않습니다. 0.1.0에는 읽어주기(음성 합성)가 없습니다.<br>
+      <span lang="en">Other models and components (Whisper small, other Opus-MT pairs, the M2M100/Noto pack, the CTranslate2 native translator, Supertonic voices, macOS components) are not in the 0.1.0 Windows distribution. 0.1.0 has no read-aloud (speech synthesis).</span></p>
 
     <h2><span class="num">01</span><span data-i18n="lic.attr_h2">저작자 표시 — Opus-MT</span></h2>
 
@@ -61,7 +80,7 @@
       <span lang="en">The default Korean–English local translator uses Helsinki-NLP Opus-MT models converted to ONNX. The notices below describe the original language-pair models; they do not mean every listed pair is bundled in the baseline. The optional 0.3 multilingual pack uses the separate MIT-licensed M2M100 model.</span></p>
     <p class="dim" data-i18n="lic.attr_p2">라이선스가 언어쌍마다 다릅니다. 아래 네 쌍은 CC-BY-4.0이라 저작자 표시가 의무이고, 나머지 쌍은 Apache-2.0입니다. 2026-07-29 확인 기준입니다.</p>
 
-    <div class="scroll">
+    <div class="scroll" role="region" tabindex="0" aria-label="표 2 · 가로로 스크롤할 수 있습니다">
       <table>
         <thead><tr>
           <th data-i18n="lic.th_pair">언어쌍</th>
@@ -81,7 +100,7 @@
 
     <h2><span class="num">02</span><span data-i18n="lic.sw_h2">소프트웨어</span></h2>
 
-    <div class="scroll">
+    <div class="scroll" role="region" tabindex="0" aria-label="표 3 · 가로로 스크롤할 수 있습니다">
       <table>
         <thead><tr>
           <th data-i18n="lic.th_component">구성요소</th>
@@ -134,7 +153,7 @@
 
     <h2><span class="num">03</span><span data-i18n="lic.model_h2">모델</span></h2>
 
-    <div class="scroll">
+    <div class="scroll" role="region" tabindex="0" aria-label="표 4 · 가로로 스크롤할 수 있습니다">
       <table>
         <thead><tr>
           <th data-i18n="lic.th_model">모델</th>
@@ -159,7 +178,7 @@
 
     <h2><span class="num">04</span><span data-i18n="lic.font_h2">글꼴</span></h2>
 
-    <div class="scroll">
+    <div class="scroll" role="region" tabindex="0" aria-label="표 5 · 가로로 스크롤할 수 있습니다">
       <table>
         <thead><tr>
           <th data-i18n="lic.th_font">글꼴</th>
@@ -205,7 +224,7 @@
 
     <h2><span class="num">05</span><span data-i18n="lic.icon_h2">아이콘</span></h2>
 
-    <div class="scroll">
+    <div class="scroll" role="region" tabindex="0" aria-label="표 6 · 가로로 스크롤할 수 있습니다">
       <table>
         <thead><tr>
           <th data-i18n="lic.th_set">세트</th>
@@ -226,7 +245,7 @@
 
     <p data-i18n="lic.excl_intro">배제한 것도 기록해 둡니다. 나중에 "왜 안 썼지?" 하고 다시 검토하는 비용을 줄이기 위해서이고, 온말이 라이선스를 어떻게 다루는지 보여주기 위해서입니다.</p>
 
-    <div class="scroll">
+    <div class="scroll" role="region" tabindex="0" aria-label="표 7 · 가로로 스크롤할 수 있습니다">
       <table>
         <thead><tr>
           <th data-i18n="lic.th_item">항목</th>
@@ -266,7 +285,7 @@
   <footer lang="ko">
     <p>
       <a href="index.html" data-i18n="lic.f_home">홈페이지</a> ·
-      <a href="privacy.html" data-i18n="lic.f_privacy">개인정보처리방침</a> ·
+      <a href="privacy.html" data-i18n="lic.f_privacy">개인정보 처리방침</a> ·
       <a href="terms.html" data-i18n="lic.f_terms">이용약관</a>
     </p>
   </footer>
