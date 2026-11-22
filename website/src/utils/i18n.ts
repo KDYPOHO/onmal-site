@@ -63,7 +63,7 @@ export const translations = {
       supporting: '팀원의 음성과 스토리 대사를 내 PC의 AI가 번역 자막으로 만들어, 읽을 수 있게 돕는 Windows 앱.',
       ctaSteam: 'Steam에서 Playtest 참여',
       ctaDiscord: 'Discord 커뮤니티',
-      unreleasedNotice: 'Steam Playtest 참여 가능 · 현재 기본 빌드 0.2.1 · 정식 출시 미정 (2026-11-22 확인)',
+      unreleasedNotice: 'Steam Playtest 참여 가능 · 현재 기본 빌드 0.2.3 · 정식 출시 미정 (2026-11-22 확인)',
       heroImageCaption: '온말 공식 앱 화면 (Windows 0.2.0 실기 화면) — 번역할 소리와 언어를 고르고 시작하는 통역 화면',
       inspectFullSize: '원본 비율 크게 보기',
       themeSwitchDark: '통역 화면',
@@ -159,11 +159,11 @@ export const translations = {
     development: {
       kicker: 'DEVELOPMENT STATUS · 개발 현황',
       title: '현재 개발 및 검증 상태 안내',
-      versionStatus: 'Playtest 0.2.1 공개 중',
+      versionStatus: 'Playtest 0.2.3 공개 중',
       releaseDateStatus: '정식 출시 미정 · 앞서 해보기 예정',
       playtestStatus: 'Steam Playtest 참여 가능',
       leadParagraph:
-        '무료·비수익 운영을 목표로 준비 중입니다. 2026-11-20 확인 기준 Steam 상점 페이지에서 Playtest에 참여할 수 있으며, 2026-11-22부터 기본 빌드는 0.2.1입니다. 실제 게임에서의 음성·통역 품질은 아직 확인 중입니다.',
+        '무료·비수익 운영을 목표로 준비 중입니다. 2026-11-20 확인 기준 Steam 상점 페이지에서 Playtest에 참여할 수 있으며, 2026-11-22부터 기본 빌드는 0.2.3입니다. 실제 게임에서의 음성·통역 품질은 아직 확인 중입니다.',
       specs: [
         {
           label: '공개 대상',
@@ -177,7 +177,7 @@ export const translations = {
         },
         {
           label: '현재 Playtest 빌드',
-          value: '기본 0.2.1 (Build 26842001)',
+          value: '기본 0.2.3 (Build @@BUILD@@)',
           detail: '2026-11-22부터 Steam Playtest 기본 브랜치의 빌드입니다. 그전 기본 빌드는 0.2.0 업데이트(Build 26841016), 0.2.0(Build 26832610), 0.1.1(Build 26830031), 0.1.0(Build 26823802)이었습니다. 본편은 아직 출시되지 않았습니다.',
         },
         {
@@ -191,9 +191,9 @@ export const translations = {
           detail: '실제 기기와 클린 Steam 설치, 음성 인식·통역 품질, 게임 성능 영향을 확인해야 합니다. 속도·정확도·안티치트 호환을 보장하지 않습니다.',
         },
         {
-          label: '0.2.1·0.2.0에서 달라진 점',
+          label: '0.2.3·0.2.1에서 달라진 점',
           value: 'Playtest에서 받을 수 있음',
-          detail: '2026-11-22 0.2.1: 마이크가 멀거나 소리가 작은 사람의 말을 "너무 조용하다"며 버리던 문제를 고쳐 작은 목소리도 자막으로 나오고(시험에서 빈 자막 43줄 중 34줄 → 2줄), 게임 화면이 앞에 있으면 미리보기 자막을 1.4초에 한 번만 만들어 그래픽카드를 덜 씁니다(최종 자막은 그대로). 같은 날 0.2.0 업데이트: 한지 낮·먹 밤의 한국 전통 테마(설정 → 테마), 전체 화면으로 배그·발로란트·CS2를 하면 그 게임 용어집과 게임 말투 번역을 자동으로 쓰고 자막이 게임이 있는 모니터로 따라가는 기능(창 제목과 위치만 확인), 음성방 Steam 초대 버튼, 진단 정보 복사 버튼이 들어갔습니다. 처음 0.2.0에서는 게임 중 그래픽카드 메모리가 모자라면 자동으로 가벼운 모드로 바뀌어 미리보기 자막을 끄고 번역 모델 메모리를 비웁니다(설정에서 끌 수 있음). 게임 소리 속 목소리마다 색과 기호, 직접 붙인 이름이 붙고(온말을 끄면 지워짐), 팀원 이름을 더 잘 알아듣고 번역할 때 이름을 그대로 둡니다. 번역은 직역 대신 그 나라 게이머가 실제로 쓰는 말투에 가깝게 나옵니다. 욕설 가리기(기본 켬)와 유리 느낌의 새 자막 디자인도 들어갔습니다. 0.1.1에서는 유리처럼 맑은 새 화면, 새 번역 모델 Hy-MT2(한국어→영어와 여러 언어), 자주 쓰는 순서로 정리한 설정, 좁은 창에서도 깨지지 않는 음성방과 말하는 사람 표시가 들어갔습니다. 읽어주기, 마이크로 번역 보내기, 개인 클라우드 번역 키, 옛 시작 영상, 단축키 4개는 뺐습니다(남은 단축키: 시작/정지 Alt+Shift+P, 자막 켜기/끄기 Alt+O, 자막 고정 Alt+L). 쓰지 않는 큰 모델을 정리했고, 개인정보 처리방침에 법이 정한 항목을 더했습니다. Steam이 자동으로 업데이트합니다.',
+          detail: '2026-11-22 0.2.3: 그래픽카드 메모리가 8GB 이상이면 권장에서도 가장 정확한 인식 모델(large-v3-turbo)을 써서, 목소리와 마이크가 제각각인 시험 음성 516개의 오류율이 70.8%에서 47.5%로 줄었습니다. 권장·최고에서는 영어→한국어도 Hy-MT2로 옮기고, 게임 중 음성 채팅은 팀원끼리 쓰는 반말로, 게임이 아닐 때는 기본 번역으로 옮깁니다(설정 → 번역 → 한국어 자막 말투에서 고정 가능). 최고에서는 게임 화면이 앞에 있으면 중간 자막을 꺼 렉을 줄입니다. 기본 모양이 한국 전통(한지 낮, 먹 밤)으로 바뀌었고 설정 → 창 색에서 언제든 유리 모양으로 바꿀 수 있습니다(직접 밝게/어둡게를 고른 분은 그대로). 설정과 용어집은 Ctrl+F와 한글 초성으로 찾을 수 있고, 게임 용어집이 8개가 됐고, 말하는 사람 수를 자동 또는 1~6명으로 정할 수 있습니다. 스크롤 막대와 메뉴 표시도 깔끔하게 다듬었습니다. 이전 0.2.1: 마이크가 멀거나 소리가 작은 사람의 말을 "너무 조용하다"며 버리던 문제를 고쳐 작은 목소리도 자막으로 나오고(시험에서 빈 자막 43줄 중 34줄 → 2줄), 게임 화면이 앞에 있으면 미리보기 자막을 1.4초에 한 번만 만들어 그래픽카드를 덜 씁니다(최종 자막은 그대로). 같은 날 0.2.0 업데이트: 한지 낮·먹 밤의 한국 전통 테마(설정 → 테마), 전체 화면으로 배그·발로란트·CS2를 하면 그 게임 용어집과 게임 말투 번역을 자동으로 쓰고 자막이 게임이 있는 모니터로 따라가는 기능(창 제목과 위치만 확인), 음성방 Steam 초대 버튼, 진단 정보 복사 버튼이 들어갔습니다. 처음 0.2.0에서는 게임 중 그래픽카드 메모리가 모자라면 자동으로 가벼운 모드로 바뀌어 미리보기 자막을 끄고 번역 모델 메모리를 비웁니다(설정에서 끌 수 있음). 게임 소리 속 목소리마다 색과 기호, 직접 붙인 이름이 붙고(온말을 끄면 지워짐), 팀원 이름을 더 잘 알아듣고 번역할 때 이름을 그대로 둡니다. 번역은 직역 대신 그 나라 게이머가 실제로 쓰는 말투에 가깝게 나옵니다. 욕설 가리기(기본 켬)와 유리 느낌의 새 자막 디자인도 들어갔습니다. 0.1.1에서는 유리처럼 맑은 새 화면, 새 번역 모델 Hy-MT2(한국어→영어와 여러 언어), 자주 쓰는 순서로 정리한 설정, 좁은 창에서도 깨지지 않는 음성방과 말하는 사람 표시가 들어갔습니다. 읽어주기, 마이크로 번역 보내기, 개인 클라우드 번역 키, 옛 시작 영상, 단축키 4개는 뺐습니다(남은 단축키: 시작/정지 Alt+Shift+P, 자막 켜기/끄기 Alt+O, 자막 고정 Alt+L). 쓰지 않는 큰 모델을 정리했고, 개인정보 처리방침에 법이 정한 항목을 더했습니다. Steam이 자동으로 업데이트합니다.',
         },
         {
           label: 'Windows 실기 확인 (2026-11-20)',
@@ -208,7 +208,7 @@ export const translations = {
         {
           label: '앞으로 계획',
           value: '실제 음성 품질 확인 · 음성방 다듬기',
-          detail: '0.2.1로 실제 게임에서 인식·번역 품질과 지연을 확인하고, Steam 친구를 음성방에 더 쉽게 초대하도록 다듬을 계획입니다. 일정은 정하지 않았습니다.',
+          detail: '0.2.3으로 실제 게임에서 인식·번역 품질과 지연을 확인하고, Steam 친구를 음성방에 더 쉽게 초대하도록 다듬을 계획입니다. 일정은 정하지 않았습니다.',
         },
         {
           label: '개발 속도 안내',
@@ -232,7 +232,7 @@ export const translations = {
       kicker: 'FAQ · 사용 전 확인',
       title: '자주 묻는 질문',
       items: [
-        { question: '지금 설치하거나 Playtest에 참여할 수 있나요?', answer: '네. Steam 상점 페이지에서 Playtest 참여를 누르면 Steam 라이브러리에 추가되고 설치할 수 있습니다(Windows 11 64비트, 약 3.0GB). 현재 기본 빌드는 0.2.1입니다. 테스트 빌드라 오류가 있을 수 있고, 본편 정식 출시일은 아직 정하지 않았습니다.' },
+        { question: '지금 설치하거나 Playtest에 참여할 수 있나요?', answer: '네. Steam 상점 페이지에서 Playtest 참여를 누르면 Steam 라이브러리에 추가되고 설치할 수 있습니다(Windows 11 64비트, 약 3.0GB). 현재 기본 빌드는 0.2.3입니다. 테스트 빌드라 오류가 있을 수 있고, 본편 정식 출시일은 아직 정하지 않았습니다.' },
         { question: '‘온말’은 무슨 뜻인가요?', answer: '‘온’은 온나라처럼 ‘모든, 온전한’을, ‘말’은 사람의 말을 뜻합니다. 온말은 온 나라의 말들이 한데 모인다는 뜻을 담은 이름입니다. 영어 등 다른 언어에서는 로마자로 Onmal이라고 씁니다.' },
         { question: '업데이트가 왜 느린가요?', answer: '온말은 개발자 한 명이 여가 시간에 만드는 무료 개인 프로젝트라 개발과 업데이트에 시간이 오래 걸립니다. 서두르기보다 실제 Windows에서 확인한 뒤 조금씩 내놓겠습니다. 문의 답변도 늦어질 수 있으니 양해 부탁드립니다.' },
         { question: 'Mac에서도 다운로드할 수 있나요?', answer: '아니요. 온말은 Windows 11 64비트 전용이며 Mac 판은 제공하지 않습니다.' },
@@ -259,7 +259,7 @@ export const translations = {
     },
     footer: {
       team: '토닥 Todak',
-      statusSummary: 'Windows 11 64비트 · Steam Playtest 0.2.1 공개 · 무료·비수익',
+      statusSummary: 'Windows 11 64비트 · Steam Playtest 0.2.3 공개 · 무료·비수익',
       description:
         '팀원의 음성과 스토리 대사를 번역 자막으로 읽도록 돕는 Windows 전용 게임 대화 번역 앱 온말(Onmal)의 공식 웹사이트입니다.',
       linksHeading: '공식 링크 및 문의',
@@ -317,7 +317,7 @@ export const translations = {
       ctaSteam: 'Join the Playtest on Steam',
       ctaDiscord: 'Discord Community',
       unreleasedNotice:
-        'Steam Playtest open · Current default build 0.2.1 · Full release TBD (checked 2026-11-22)',
+        'Steam Playtest open · Current default build 0.2.3 · Full release TBD (checked 2026-11-22)',
       heroImageCaption:
         'Official Onmal app screen (real Windows 0.2.0 capture) — interpret screen for choosing the sound and languages, then starting',
       inspectFullSize: 'View original aspect ratio',
@@ -415,11 +415,11 @@ export const translations = {
     development: {
       kicker: 'DEVELOPMENT STATUS · CURRENT PROGRESS',
       title: 'Transparent Development & Verification Status',
-      versionStatus: 'Playtest 0.2.1 live',
+      versionStatus: 'Playtest 0.2.3 live',
       releaseDateStatus: 'Full release TBD · Early Access planned',
       playtestStatus: 'Steam Playtest open to join',
       leadParagraph:
-        'Onmal is being prepared as a free, non-commercial app. As of 2026-11-20 you can join the Playtest from the Steam store page; since 2026-11-22 its default build is 0.2.1. Real in-game audio and translation quality are still being checked.',
+        'Onmal is being prepared as a free, non-commercial app. As of 2026-11-20 you can join the Playtest from the Steam store page; since 2026-11-22 its default build is 0.2.3. Real in-game audio and translation quality are still being checked.',
       specs: [
         {
           label: 'Target platform',
@@ -433,7 +433,7 @@ export const translations = {
         },
         {
           label: 'Current Playtest build',
-          value: 'Default 0.2.1 (Build 26842001)',
+          value: 'Default 0.2.3 (Build @@BUILD@@)',
           detail: 'The build on the Steam Playtest default branch since 2026-11-22. Earlier defaults were the 0.2.0 update (Build 26841016), 0.2.0 (Build 26832610), 0.1.1 (Build 26830031) and 0.1.0 (Build 26823802). The main app has not been released.',
         },
         {
@@ -447,9 +447,9 @@ export const translations = {
           detail: 'Physical hardware, a clean Steam installation, speech and translation quality, and game performance impact still need validation. Speed, accuracy, and anti-cheat compatibility are not guaranteed.',
         },
         {
-          label: 'What changed in 0.2.1 and 0.2.0',
+          label: 'What changed in 0.2.3 and 0.2.1',
           value: 'Available in the Playtest',
-          detail: '0.2.1 on 2026-11-22: speech from distant or quiet microphones is no longer thrown away as "too quiet" (empty captions in our test went from 34 of 43 lines to 2), and while a game is in front preview captions are made at most every 1.4 seconds to use less GPU (final captions unchanged). The 0.2.0 update the same day added a Korean traditional theme with hanji day and ink night looks (Settings → Theme), automatic game detection so PUBG, VALORANT or CS2 in full screen uses that game’s glossary and gamer-style translation and captions follow the game’s monitor (only the window title and position are checked), an Invite with Steam button in the voice room and Copy diagnostic info. The first 0.2.0 build added this: when graphics memory runs short during a game, Onmal switches to light mode on its own, turning off preview captions and freeing the translation model’s memory (can be turned off in Settings). Each voice in the game audio gets a colour, a symbol and a name you add (erased when Onmal closes), teammate names are recognised better and kept as they are in translations, translations sound closer to how gamers actually talk, and there is a swear filter (on by default) and a new glass caption design. 0.1.1 brought a clearer glass-like look, the new Hy-MT2 translation model (Korean→English and many languages), settings ordered by how often you use them, and a voice room that fits narrow windows and shows who is speaking. Read-aloud, sending translations through the mic, personal cloud translation keys, the old startup video and four hotkeys were removed (remaining: Start/Stop Alt+Shift+P, Show/Hide subtitles Alt+O, Pin subtitle Alt+L). Large unused models were dropped, and the privacy policy now lists the items Korean law requires. Steam updates it automatically.',
+          detail: '0.2.3 on 2026-11-22: with 8 GB or more of graphics memory, Recommended now uses the most accurate speech model (large-v3-turbo); on 516 test clips with varied voices and microphones the error rate dropped from 70.8% to 47.5%. On Recommended and Best, English→Korean also uses Hy-MT2, in-game voice chat is translated into casual Korean and other audio gets the standard translation (you can fix the style in Settings → Translation → Korean caption style). On Best, preview captions turn off while a game is in front to reduce stutter. The default look is now Korean traditional (hanji day, ink night), and you can switch to the glass look anytime in Settings → Window colors (if you picked light or dark yourself, nothing changes). Settings and glossaries can be searched with Ctrl+F, there are now 8 game glossaries, and you can set the number of speakers to Auto or 1–6. Scroll bars and menu highlights were tidied up. Earlier, 0.2.1: speech from distant or quiet microphones is no longer thrown away as "too quiet" (empty captions in our test went from 34 of 43 lines to 2), and while a game is in front preview captions are made at most every 1.4 seconds to use less GPU (final captions unchanged). The 0.2.0 update the same day added a Korean traditional theme with hanji day and ink night looks (Settings → Theme), automatic game detection so PUBG, VALORANT or CS2 in full screen uses that game’s glossary and gamer-style translation and captions follow the game’s monitor (only the window title and position are checked), an Invite with Steam button in the voice room and Copy diagnostic info. The first 0.2.0 build added this: when graphics memory runs short during a game, Onmal switches to light mode on its own, turning off preview captions and freeing the translation model’s memory (can be turned off in Settings). Each voice in the game audio gets a colour, a symbol and a name you add (erased when Onmal closes), teammate names are recognised better and kept as they are in translations, translations sound closer to how gamers actually talk, and there is a swear filter (on by default) and a new glass caption design. 0.1.1 brought a clearer glass-like look, the new Hy-MT2 translation model (Korean→English and many languages), settings ordered by how often you use them, and a voice room that fits narrow windows and shows who is speaking. Read-aloud, sending translations through the mic, personal cloud translation keys, the old startup video and four hotkeys were removed (remaining: Start/Stop Alt+Shift+P, Show/Hide subtitles Alt+O, Pin subtitle Alt+L). Large unused models were dropped, and the privacy policy now lists the items Korean law requires. Steam updates it automatically.',
         },
         {
           label: 'Real Windows check (2026-11-20)',
@@ -464,7 +464,7 @@ export const translations = {
         {
           label: 'Plans',
           value: 'Real audio checks · Polishing voice rooms',
-          detail: 'With 0.2.1 out, the plan is to check recognition and translation quality and delay in real games, and to make inviting Steam friends to a voice room easier. No dates are set.',
+          detail: 'With 0.2.3 out, the plan is to check recognition and translation quality and delay in real games, and to make inviting Steam friends to a voice room easier. No dates are set.',
         },
         {
           label: 'Development pace',
@@ -488,7 +488,7 @@ export const translations = {
       kicker: 'FAQ · BEFORE YOU START',
       title: 'Frequently Asked Questions',
       items: [
-        { question: 'Can I install Onmal or join the Playtest now?', answer: 'Yes. Press Join the Playtest on the Steam store page to add it to your Steam library and install it (Windows 11 64-bit, about 3.0GB). The current default build is 0.2.1. It is a test build, so expect bugs; no full release date is set yet.' },
+        { question: 'Can I install Onmal or join the Playtest now?', answer: 'Yes. Press Join the Playtest on the Steam store page to add it to your Steam library and install it (Windows 11 64-bit, about 3.0GB). The current default build is 0.2.3. It is a test build, so expect bugs; no full release date is set yet.' },
         { question: 'What does “Onmal” mean?', answer: 'In Korean, 온 (on) means “all” or “whole”, as in 온나라 (“every nation”), and 말 (mal) means “words” or “speech”. Onmal is the words of every nation coming together.' },
         { question: 'Why are updates slow?', answer: 'Onmal is a free personal project made by one developer in their spare time, so development and updates take a long time. Rather than rushing, each version is checked on real Windows PCs before release. Replies may also be slow; thank you for understanding.' },
         { question: 'Is there a Mac download?', answer: 'No. Onmal is Windows 11 64-bit only, and no Mac version is offered.' },
@@ -516,7 +516,7 @@ export const translations = {
     footer: {
       team: '토닥 Todak',
       statusSummary:
-        'Windows 11 64-bit · Steam Playtest 0.2.1 live · Free and non-commercial',
+        'Windows 11 64-bit · Steam Playtest 0.2.3 live · Free and non-commercial',
       description:
         'Official website for Onmal (온말), a Windows-only gaming conversation translation app by Todak (토닥).',
       linksHeading: 'Official Channels & Contact',
