@@ -30,7 +30,7 @@ OUT = SITE / "fonts"
 CACHE = HERE / ".fontsrc"
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/131.0 Safari/537.36"}
 
-PAGES = ["index.html", "privacy.html", "terms.html", "licenses.html"]
+PAGES = ["index.html", "privacy.html", "privacy.en.html", "terms.html", "licenses.html"]
 
 # 라이선스 전문. 글꼴을 하나라도 더하면 여기에도 한 줄 더해야 합니다.
 # 주소를 여럿 두는 이유: 상류 저장소가 옮겨 다닙니다. 고운바탕은 자체 저장소가
