@@ -2,6 +2,16 @@
 (function () {
   'use strict';
   var page = document.documentElement.getAttribute('data-document-page');
+  var themeButton = document.getElementById('themeBtn');
+  function bindTheme() {
+    themeButton.addEventListener('click', function () {
+      var next = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('onmal-theme', next); } catch (e) { /* Optional preference. */ }
+    });
+  }
+  // The English privacy notice is a separate English page: no language switch, only the theme button.
+  if (page === 'privacy-en') { bindTheme(); return; }
   var labels = {
     ko: { home: '← 홈페이지', language: '언어', privacy: '개인정보 처리방침', terms: '이용약관', licenses: '오픈소스 라이선스', notices: '웹사이트 라이선스 고지', skip: '본문으로 건너뛰기', navigation: '정책 및 고지 문서', select: '문서 표시 언어', theme: '화면 테마 변경', raw: '라이선스 원문 TXT 열기' },
     en: { home: '← Home', language: 'Language', privacy: 'Privacy Policy', terms: 'Terms of Use', licenses: 'Open-source Licenses', notices: 'Website License Notices', skip: 'Skip to content', navigation: 'Policy and notice documents', select: 'Document display language', theme: 'Change color theme', raw: 'Open original license TXT' }
@@ -61,7 +71,9 @@
     note.lang = lang;
     if (page === 'privacy' || page === 'terms') {
       note.textContent = lang === 'en'
-        ? 'This document is currently provided in Korean. The Korean text is authoritative.'
+        ? (page === 'privacy'
+          ? 'This document is in Korean and the Korean text is authoritative. An English privacy notice is linked above.'
+          : 'This document is currently provided in Korean. The Korean text is authoritative.')
         : '문서 본문은 한국어로 제공되며 한국어가 정본입니다.';
     } else if (page === 'notices') {
       note.textContent = lang === 'en'
@@ -92,10 +104,6 @@
     history.replaceState(null, '', url.pathname + url.search + url.hash);
     apply(select.value);
   });
-  document.getElementById('themeBtn').addEventListener('click', function () {
-    var next = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
-    document.documentElement.setAttribute('data-theme', next);
-    try { localStorage.setItem('onmal-theme', next); } catch (e) { /* Optional preference. */ }
-  });
+  bindTheme();
   apply(language);
 }());
