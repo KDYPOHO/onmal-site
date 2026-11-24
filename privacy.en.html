@@ -43,7 +43,7 @@
 <p><em>This is the English notice for people outside Korea. The <a href="privacy.html" lang="ko">Korean privacy policy</a> is the governing text; if the two differ, the Korean text prevails, except where the law of your country requires otherwise.</em></p>
 <h2>In short</h2>
 <ul>
-<li><strong>Onmal processes sound and subtitles on your own PC.</strong> Microphone audio, game or chat audio, subtitles, settings and logs stay on your computer. They are not sent to the developer, and the developer cannot see them.</li>
+<li><strong>Onmal processes sound and subtitles on your own PC.</strong> Microphone audio, game or chat audio, subtitles, settings and logs stay on your computer. They are not sent to the developer, and the developer cannot see them. <strong>Only exception:</strong> if you turn on <strong>Cloud speech recognition</strong> (off by default) and agree in the separate prompt, finished phrases are sent to a server for recognition (see below). Nothing is stored.</li>
 <li><strong>The only personal data the developer receives is an email you choose to send</strong> (support questions, bug reports, privacy requests).</li>
 <li>No account, no sign-in, no ads, no analytics, no automatic crash reports. We do not sell or share personal data, and we do not use it for profiling or advertising.</li>
 <li>Subtitles and translations are produced automatically by AI models running on your PC. They can be wrong. Do not rely on them for important decisions.</li>
@@ -61,6 +61,7 @@
 </tbody>
 </table>
 <p><strong>Voice room (optional).</strong> If you open a voice room with Steam friends, your voice is sent through Valve's Steam network only to the people in that room, and only after you agree and press push-to-talk. Valve's privacy policy applies to the Steam network. Only use it in conversations you are part of, and follow the recording/interception laws of your country.</p>
+<p><strong>Cloud speech recognition (optional, off by default, from 0.2.6).</strong> If you turn it on in Settings and agree in the separate prompt, only finished phrases (0.4–15 s of 16 kHz audio, which may include teammates' voices) are sent over HTTPS to a relay server the developer runs on Cloudflare Workers, transcribed by Cloudflare Workers AI (whisper-large-v3-turbo), and the text is returned. Live preview captions and translation stay on your PC. The server checks a Steam Web API ticket only to confirm you are an Onmal Playtest user. Audio and text are not stored or logged. To manage the free limit it keeps a one-way hash of your Steam ID with the daily seconds used, deleted after two days. If the limit is reached, the reply is slower than 1.5 s, or you are offline, your PC handles that phrase. Turn it off at any time; nothing changes if you never turn it on. Legal basis: your consent (GDPR Art. 6(1)(a); Korea PIPA Art. 15(1)(1) and 28-8(1)(1)).</p>
 <p><strong>Model downloads.</strong> Onmal may download AI model files over HTTPS. Like any download, this reveals your IP address to the download host. No audio or text is sent.</p>
 <h2>3. Support email (the only data the developer receives)</h2>
 <table class="stack">
@@ -75,6 +76,7 @@
 <p>Please do not send recordings, full conversations, other people's names, passwords, API keys or ID numbers. The developer never asks for them.</p>
 <h2>4. International transfer</h2>
 <p>Your email is stored by Google in the United States and other countries where Google operates. For people in the EU/EEA, UK and Switzerland, Google relies on the EU–US Data Privacy Framework and/or Standard Contractual Clauses (check Google's current terms). If you do not want your data transferred, please do not email us; this does not affect your use of the app.</p>
+<p>If you turn on Cloud speech recognition, phrases are processed by Cloudflare, Inc. (USA) in its data centers, and the usage database is in the Seoul region. Cloudflare relies on the EU–US Data Privacy Framework and Standard Contractual Clauses (check Cloudflare's current terms). Keep the switch off if you do not want this transfer.</p>
 <h2>5. Your rights</h2>
 <p>Depending on where you live, you can ask to <strong>access, correct, delete, restrict or object to</strong> the processing of your email data, to <strong>receive a copy</strong> (portability), and to <strong>withdraw consent</strong> where consent is the basis. Email <a href="mailto:todaklife@gmail.com">todaklife@gmail.com</a> from the address you used. We answer within 10 days where possible and always within the period your law allows (GDPR: one month).</p>
 <p>You can also complain to your data protection authority, for example:</p>
