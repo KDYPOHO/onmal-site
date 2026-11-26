@@ -22,8 +22,8 @@ export const BRAND = {
 };
 
 export const MEDIA = {
-  video: `${BASE}media/onmal-promo-concept.mp4`,
-  poster: `${BASE}media/onmal-promo-concept-poster.jpg`,
+  video: `${BASE}media/onmal-promo-voice-2026-11.mp4`,
+  poster: `${BASE}media/onmal-promo-voice-2026-11-poster.jpg`,
 };
 
 /** Pixel sizes of the screenshots, so the browser can reserve space before they load. */
